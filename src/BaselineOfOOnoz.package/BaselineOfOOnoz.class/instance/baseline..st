@@ -5,11 +5,14 @@ baseline: spec
 		for: #common
 		do: [ self
 				seaside3: spec;
-				mdl: spec.
+				mdl: spec;
+				heimdall: spec.
 			spec
 				package: 'OOnoz-Model';
-				package: 'OOnoz-Tests-Model' with: [ spec requires: #('OOnoz-Model') ].
+				package: 'OOnoz-Tests-Model' with: [ spec requires: #('OOnoz-Model') ];
+				package: 'OOnoz-Server';
+				package: 'OOnoz-WebApplication' with: [ spec requires: #('Heimdall' 'Seaside3' 'OOnoz-Model' 'OOnoz-Server' 'MaterialDesignLite') ].
 			spec
 				group: 'Tests' with: #('OOnoz-Tests-Model');
-				group: 'Model' with: #('OOnoz-Model')	";
-				group: 'UI' with: #('') " ]
+				group: 'Model' with: #('OOnoz-Model');
+				group: 'UI' with: #('OOnoz-WebApplication') ]

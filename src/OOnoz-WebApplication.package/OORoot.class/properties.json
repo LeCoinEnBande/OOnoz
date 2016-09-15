@@ -1,0 +1,14 @@
+{
+	"category" : "OOnoz-WebApplication-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "OORoot",
+	"pools" : [
+		 ],
+	"super" : "OOComponent",
+	"type" : "normal" }

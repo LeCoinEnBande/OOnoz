@@ -1,0 +1,14 @@
+{
+	"category" : "OOnoz-Server-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"UniqueInstance" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"configuration" ],
+	"name" : "OOServer",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
