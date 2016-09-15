@@ -1,7 +1,7 @@
 SmalltalkCISpec {
   #loading : [
     SCIMetacelloLoadSpec {
-      #baseline : 'OOnoze',
+      #baseline : 'OOnoz',
       #directory : 'src',
       #platforms : [ #pharo ]
     }
