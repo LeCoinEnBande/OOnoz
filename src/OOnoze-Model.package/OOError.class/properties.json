@@ -1,0 +1,14 @@
+{
+	"category" : "OOnoze-Model-Exceptions",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "OOError",
+	"pools" : [
+		 ],
+	"super" : "Error",
+	"type" : "normal" }

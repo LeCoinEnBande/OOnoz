@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfOOnoze",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfOOnoze",
+	"pools" : [
+		 ],
+	"super" : "BaselineOf",
+	"type" : "normal" }

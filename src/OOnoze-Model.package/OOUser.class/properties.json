@@ -1,0 +1,14 @@
+{
+	"category" : "OOnoze-Model-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"mail" ],
+	"name" : "OOUser",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
