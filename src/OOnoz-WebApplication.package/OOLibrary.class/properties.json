@@ -4,12 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "CyrilFerlicot 9/17/2016 01:00",
 	"instvars" : [
-		"header",
-		"footer" ],
-	"name" : "OORoot",
+		 ],
+	"name" : "OOLibrary",
 	"pools" : [
 		 ],
-	"super" : "OOComponent",
+	"super" : "WAFileLibrary",
 	"type" : "normal" }

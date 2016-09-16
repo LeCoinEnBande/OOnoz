@@ -9,4 +9,5 @@ initialize
 	app
 		addLibrary: HeimdallFileLibrary;
 		addLibrary: JQDeploymentLibrary;
-		addLibrary: MDLLibrary
+		addLibrary: MDLLibrary;
+		addLibrary: OOLibrary 
