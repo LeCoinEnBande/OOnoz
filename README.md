@@ -15,3 +15,32 @@ Master And Development: [![Build Status](https://ci.inria.fr/pharo-contribution/
 
 
 University project for PEPIT
+
+# Documentation
+
+## Launching a Server
+
+To launch a server you first need to initialize a configuration. The configuration has some parameters. Here is the list:
+
+- `port`: The application port. By default: 8080
+- `staticServerPort`: The static file serves port. By default: 1701
+- `resourcesDirectoryPath`: The path to the folder containing the resources of the application relative to the image location. By default: '../../GitRepositories/OOnoz/Resources' 
+
+### Example of configuration file
+
+    Configuration {
+    	#parameters : {
+    		'staticServerPort' : 1701,
+    		'resourcesDirectoryPath' : '../../GitRepositories/OOnoz/Resources',
+    		'port' : 8080
+    	}
+    }
+    
+To set the configuration to the server you can execute the following script with the right path to a configuration file:
+
+    OOServer setConfigurationFromFile: '../../GitRepositories/OOnoz/configuration.ston'
+    
+If you use all the default values you can just execute:
+
+    OOServer setConfigurationWith: OOConfiguration new
+    

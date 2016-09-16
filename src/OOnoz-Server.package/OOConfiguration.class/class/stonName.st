@@ -1,0 +1,3 @@
+STON
+stonName
+	^ #Configuration

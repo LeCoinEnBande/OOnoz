@@ -1,0 +1,3 @@
+accessing
+resourcesDirectory
+	^ self resourcesDirectoryPath asFileReference
