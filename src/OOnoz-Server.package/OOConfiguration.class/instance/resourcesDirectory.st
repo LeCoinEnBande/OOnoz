@@ -1,3 +1,3 @@
-accessing
+conveniance
 resourcesDirectory
 	^ self resourcesDirectoryPath asFileReference

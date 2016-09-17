@@ -24,7 +24,8 @@ To launch a server you first need to initialize a configuration. The configurati
 
 - `port`: The application port. By default: 8080
 - `staticServerPort`: The static file serves port. By default: 1701
-- `resourcesDirectoryPath`: The path to the folder containing the resources of the application relative to the image location. By default: '../../GitRepositories/OOnoz/Resources' 
+- `resourcesDirectoryPath`: The path to the folder containing the resources of the application relative to the image location. By default: '../../GitRepositories/OOnoz/Resources'
+- `domainName`: The domain name used for the static file server. By default: 'localhost'
 
 ### Example of configuration file
 
@@ -32,7 +33,8 @@ To launch a server you first need to initialize a configuration. The configurati
     	#parameters : {
     		'staticServerPort' : 1701,
     		'resourcesDirectoryPath' : '../../GitRepositories/OOnoz/Resources',
-    		'port' : 8080
+    		'port' : 8080,
+    		'domainName' : 'localhost'
     	}
     }
     

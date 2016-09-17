@@ -1,0 +1,52 @@
+@import "Variables.scss";
+
+html, body {
+  @include box;
+  @include font-size();
+  margin: 0;
+  overflow: auto;
+  font-family: $mainFonts;
+}
+
+main {
+  overflow: auto;
+  height: calc(100% - 124px);
+}
+
+[disabled] {
+  cursor: default !important;
+}
+
+button, [type="button"], [type="reset"], [type="submit"] {
+  cursor: pointer;
+}
+
+.mdl-layout__header-row {
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .mdl-navigation form {
+    .mdl-textfield {
+      width: 300px !important;
+    }
+
+    .mdl-textfield__input {
+      color: #000;
+    }
+
+    .logged {
+      color: $red;
+    }
+
+    .notLogged {
+      color: $green;
+      cursor: pointer;
+    }
+  }
+}
+
+.mdl-mini-footer {
+  padding: 12px 16px;
+}
