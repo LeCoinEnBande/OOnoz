@@ -4,11 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "CyrilFerlicot 9/17/2016 20:40",
 	"instvars" : [
-		"mail" ],
-	"name" : "OOUser",
+		 ],
+	"name" : "OOObject",
 	"pools" : [
 		 ],
-	"super" : "OOObject",
+	"super" : "Object",
 	"type" : "normal" }

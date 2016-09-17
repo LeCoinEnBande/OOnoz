@@ -1,13 +1,15 @@
 {
-	"category" : "OOnoz-Model-Core",
+	"category" : "OOnoz-Model-MCQ",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"mail" ],
-	"name" : "OOUser",
+		"description",
+		"answers",
+		"media" ],
+	"name" : "OOQuestion",
 	"pools" : [
 		 ],
 	"super" : "OOObject",

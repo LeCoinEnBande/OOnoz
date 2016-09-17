@@ -1,14 +1,14 @@
 {
-	"category" : "OOnoz-Model-Core",
+	"category" : "OOnoz-Tests-Model",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"mail" ],
-	"name" : "OOUser",
+		"question" ],
+	"name" : "OOQuestionTest",
 	"pools" : [
 		 ],
-	"super" : "OOObject",
+	"super" : "TestCase",
 	"type" : "normal" }
