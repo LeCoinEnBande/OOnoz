@@ -1,0 +1,14 @@
+{
+	"category" : "OOnoz-Development",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "ManifestOOnozDevelopment",
+	"pools" : [
+		 ],
+	"super" : "PackageManifest",
+	"type" : "normal" }

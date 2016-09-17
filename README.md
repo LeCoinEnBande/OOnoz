@@ -46,3 +46,12 @@ If you use all the default values you can just execute:
 
     OOServer setConfigurationWith: OOConfiguration new
     
+## Development helpers
+
+To help with the development the project contains some developers features.
+Those features contains for example:
+
+* Activation of the in-image debugger: `OODevHelper useInImageDebugger`
+* Installation of GitFileTree: `OODevHelper installGitFileTree`
+
+    

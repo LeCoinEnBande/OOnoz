@@ -1,0 +1,14 @@
+{
+	"category" : "OOnoz-Development",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "CyrilFerlicot 9/17/2016 21:27",
+	"instvars" : [
+		 ],
+	"name" : "OODevHelper",
+	"pools" : [
+		 ],
+	"super" : "OOObject",
+	"type" : "normal" }
