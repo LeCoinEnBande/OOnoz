@@ -1,16 +1,13 @@
 {
-	"category" : "OOnoz-WebApplication-Core",
+	"category" : "OOnoz-WebApplication-Components",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"header",
-		"footer",
-		"component",
-		"componentsInstances" ],
-	"name" : "OORoot",
+		 ],
+	"name" : "OOTestComponent",
 	"pools" : [
 		 ],
 	"super" : "OOComponent",

@@ -74,7 +74,7 @@ testingMCQInstance
 					('Sylvie' -> false).
 					('Laurence' -> false).
 					('Clément' -> false)}).
-			('Random ?!'
+			('Random ?! Test your luck.'
 				->
 					{('Aurélien' -> false).
 					('Cyril' -> false).
