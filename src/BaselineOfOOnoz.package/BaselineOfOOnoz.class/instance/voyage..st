@@ -6,4 +6,4 @@ voyage: spec
 		baseline: 'Voyage'
 		with: [ spec
 				repository: 'github://pharo-nosql/voyage:master/mc';
-				loads: #('mongo') ]
+				loads: #('mongo' 'memory') ]
