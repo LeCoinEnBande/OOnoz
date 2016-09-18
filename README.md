@@ -54,4 +54,4 @@ Those features contains for example:
 * Activation of the in-image debugger: `OODevHelper useInImageDebugger`
 * Installation of GitFileTree: `OODevHelper installGitFileTree`
 * Launch in memory voyage backend for development database: `OODevHelper launchInMemoryVoyageBackEnd`
-    
+* Get an instance of MCQ: `OODevHelper testingMCQInstance`
