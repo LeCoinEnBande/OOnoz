@@ -1,7 +1,7 @@
 rendering
 renderContentOn: html
 	html
-		mdlCell: [ html
-				span: self model description;
-				break.
-			self answers do: [ :answer | html render: answer ] ]
+		mdlCellDesktop: 6
+		tablet: 8
+		phone: 4
+		with: [ html form: [ self renderQuestionOn: html ] ]

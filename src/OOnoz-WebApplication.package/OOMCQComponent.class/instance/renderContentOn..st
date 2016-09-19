@@ -4,8 +4,9 @@ renderContentOn: html
 	html
 		render:
 			(MDLCardWidget new
-				style: 'width: 90%;margin: 20px auto; ';
-				shadow: 2;
+				style: 'width: 90%;margin: 20px auto; background-color: #CFD8DC; ';
 				addComponentOrBlock: self headerMCQ;
-				addTextContainer: [ self questions do: [ :question | html render: question ] ];
+				title: self displayResult level: 3 class: #result;
+				title: self displayAnswered level: 3 class: #answered;
+				addTextContainer: [ html mdlGrid: [ self questions do: [ :question | html render: question ] ] ];
 				yourself)
