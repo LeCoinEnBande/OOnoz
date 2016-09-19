@@ -1,3 +1,3 @@
 accessing
 selectorsToInclude
-	^ #(#iconCss #materialminJs #materialredorangeminCss #dialogpolyfillminCss #dialogpolyfillminJs #robotoCss)
+	^ #(#iconCss #materialminJs #materialdeeppurplepinkminCss #dialogpolyfillminCss #dialogpolyfillminJs #robotoCss)
