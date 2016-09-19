@@ -1,3 +1,4 @@
 accessing
-question: anObject
-	question := anObject
+question: aQuestion
+	question := aQuestion.
+	self messageText: self question asString , ' is an invalid question.'
