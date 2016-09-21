@@ -10,7 +10,8 @@
 		"answers",
 		"result",
 		"userAnswers",
-		"isValidated" ],
+		"isValidated",
+		"mcq" ],
 	"name" : "OOQuestionComponent",
 	"pools" : [
 		 ],

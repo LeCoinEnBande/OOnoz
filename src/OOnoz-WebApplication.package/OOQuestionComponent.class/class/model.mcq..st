@@ -1,5 +1,6 @@
 instance creation
-model: aQuestion
+model: aQuestion mcq: aMCQ
 	^ self new
 		model: aQuestion;
+		mcq: aMCQ;
 		yourself
