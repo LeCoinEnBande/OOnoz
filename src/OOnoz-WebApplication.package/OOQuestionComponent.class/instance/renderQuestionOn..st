@@ -1,12 +1,12 @@
 rendering
 renderQuestionOn: html
-	html
-		render:
-			(MDLCardWidget new
-				style: 'width: 90%;margin: auto;';
-				title: self model description;
-				addTextContainer: [ self renderQuestionResultOn: html.
-					self answers do: [ :answer | self renderAnswer: html on: answer ] ];
-				addAction: [ self renderValidationButtonOn: html ];
-				actionsBordered;
-				yourself)
+	self flag: #style. "Move style to scss"
+	html mdlCard
+		style: 'width: 90%;margin: auto;';
+		with: [ html mdlCardTitle: [ html mdlCardTitleText: self model description level: 2 ].
+			html
+				mdlCardTextContainer: [ self renderQuestionResultOn: html.
+					self answers do: [ :answer | self renderAnswer: html on: answer ] ].
+			html mdlCardActions
+				border;
+				with: [ self renderValidationButtonOn: html ] ]

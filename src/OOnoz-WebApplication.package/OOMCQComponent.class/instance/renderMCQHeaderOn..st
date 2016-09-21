@@ -1,6 +1,7 @@
 rendering
-headerMCQ
-	^ (MDLCardTitle newWithTitle: '' level: 2 class: #mcqHeader)
+renderMCQHeaderOn: html
+	self flag: #style. "Move style to scss"
+	html mdlCardTitle
 		style:
 			(String
 				streamContents: [ :s | 
