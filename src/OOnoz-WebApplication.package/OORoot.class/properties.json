@@ -7,7 +7,9 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"header",
-		"footer" ],
+		"footer",
+		"component",
+		"componentsInstances" ],
 	"name" : "OORoot",
 	"pools" : [
 		 ],

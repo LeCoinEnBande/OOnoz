@@ -1,0 +1,14 @@
+{
+	"category" : "OOnoz-Tests-Model",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"answer" ],
+	"name" : "OOAnswerTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }
