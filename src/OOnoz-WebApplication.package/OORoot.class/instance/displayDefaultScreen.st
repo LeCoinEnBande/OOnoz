@@ -1,0 +1,3 @@
+initialization
+displayDefaultScreen
+	self setInstanceOf: OOReceptionComponent

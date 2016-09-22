@@ -3,12 +3,12 @@ renderLeftSectionContentOn: html
 	self flag: #todo.	"Do not hardcode the mailto here but use the configuration."
 	html
 		mdlLogo: 'OOnoz';
-		mdlMiniFooterLinkList: [ "self links
+		mdlMiniFooterLinkList: [ self links
 				keysAndValuesDo: [ :name :callback | 
 					html
 						listItem: [ html anchor
 								callback: callback;
-								with: name ] ]".
+								with: name ] ].
 			html
 				listItem: [ html anchor
 						url: 'mailto:cyril.ferlicot@gmail.com';
