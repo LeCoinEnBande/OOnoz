@@ -8,4 +8,11 @@ renderContentOn: html
 			html mdlCardTitle
 				class: #mcq__informations;
 				with: [ self renderMCQInfosOn: html ].
-			html mdlCardTextContainer: [ html mdlGrid: [ self questions do: [ :question | html render: question ] ] ] ]
+			html
+				mdlCardTextContainer: [ self isValidated
+						ifTrue: [ html text: 'QCM fini !' ]
+						ifFalse: [ html mdlGrid: [ self questions do: [ :question | html render: question ] ] ] ].
+			html mdlCardActions
+				border;
+				class: #'mcq__validation';
+				with: [ self renderValidationButtonOn: html ] ]
