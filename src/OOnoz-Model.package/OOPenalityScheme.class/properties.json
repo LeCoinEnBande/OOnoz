@@ -1,14 +1,14 @@
 {
-	"category" : "OOnoz-Tests-Model-MCQ",
+	"category" : "OOnoz-Model-MarkingScheme",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"mcq" ],
-	"name" : "OOMCQTest",
+		 ],
+	"name" : "OOPenalityScheme",
 	"pools" : [
 		 ],
-	"super" : "TestCase",
+	"super" : "OOAbstractMarkingSchemeStrategy",
 	"type" : "normal" }

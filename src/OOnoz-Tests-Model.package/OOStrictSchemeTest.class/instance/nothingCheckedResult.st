@@ -1,0 +1,3 @@
+helpers
+nothingCheckedResult
+	^ 0

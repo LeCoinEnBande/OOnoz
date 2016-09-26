@@ -1,14 +1,14 @@
 {
-	"category" : "OOnoz-Tests-Model-MCQ",
+	"category" : "OOnoz-Model-MarkingScheme",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"mcq" ],
-	"name" : "OOMCQTest",
+		 ],
+	"name" : "OOAbstractMarkingSchemeStrategy",
 	"pools" : [
 		 ],
-	"super" : "TestCase",
+	"super" : "OOObject",
 	"type" : "normal" }

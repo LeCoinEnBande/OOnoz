@@ -1,0 +1,14 @@
+{
+	"category" : "OOnoz-Model-MarkingScheme",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "OOStrictWithPenalityScheme",
+	"pools" : [
+		 ],
+	"super" : "OOAbstractMarkingSchemeStrategy",
+	"type" : "normal" }
