@@ -1,3 +1,3 @@
 magicNumbers
 maximumNumberOfAnswers
-	^ 6
+	^ self subclassResponsibility

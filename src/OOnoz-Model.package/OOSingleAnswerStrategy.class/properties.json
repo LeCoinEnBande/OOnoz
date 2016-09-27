@@ -1,0 +1,14 @@
+{
+	"category" : "OOnoz-Model-Kind",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "OOSingleAnswerStrategy",
+	"pools" : [
+		 ],
+	"super" : "OOAbstractQuestionKindStrategy",
+	"type" : "normal" }

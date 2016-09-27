@@ -1,0 +1,14 @@
+{
+	"category" : "OOnoz-Tests-Model-Kind",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "OOSingleAnswerStrategyTest",
+	"pools" : [
+		 ],
+	"super" : "OOAbstractQuestionKindStrategyTest",
+	"type" : "normal" }
