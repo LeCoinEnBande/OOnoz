@@ -1,0 +1,19 @@
+{
+	"category" : "OOnoz-WebApplication-Components",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"model",
+		"answers",
+		"result",
+		"userAnswers",
+		"isValidated",
+		"mcq" ],
+	"name" : "OOQuestionComponent",
+	"pools" : [
+		 ],
+	"super" : "OOComponent",
+	"type" : "normal" }

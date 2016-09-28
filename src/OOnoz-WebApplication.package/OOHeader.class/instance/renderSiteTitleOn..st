@@ -1,5 +1,5 @@
 rendering
 renderSiteTitleOn: html
 	html anchor
-		callback: [ self flag: #todo ];
+		callback: [ self displayDefaultScreen ];
 		with: [ html mdlLayoutTitle: 'OOnoz' ]

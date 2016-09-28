@@ -1,0 +1,14 @@
+{
+	"category" : "OOnoz-Tests-Model",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"mcq" ],
+	"name" : "OOMCQTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

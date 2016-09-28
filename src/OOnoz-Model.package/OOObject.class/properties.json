@@ -1,0 +1,14 @@
+{
+	"category" : "OOnoz-Model-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "CyrilFerlicot 9/17/2016 20:40",
+	"instvars" : [
+		 ],
+	"name" : "OOObject",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
