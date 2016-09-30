@@ -55,3 +55,4 @@ Those features contains for example:
 * Installation of GitFileTree: `OODevHelper installGitFileTree`
 * Launch in memory voyage backend for development database: `OODevHelper launchInMemoryVoyageBackEnd`
 * Get an instance of MCQ: `OODevHelper testingMCQInstance`
+* Install new branch: `OODevHelper installNewBranch: 'myBranch'`
