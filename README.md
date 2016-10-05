@@ -56,3 +56,6 @@ Those features contains for example:
 * Launch in memory voyage backend for development database: `OODevHelper launchInMemoryVoyageBackEnd`
 * Get an instance of MCQ: `OODevHelper testingMCQInstance`
 * Install new branch: `OODevHelper installNewBranch: 'myBranch'`
+* Launch OOnoz with the default configuration: `OODevHelper defaultServerLaunching`
+* Set Lille 1 proxy: `OODevHelper setLille1Proxy`
+* Remove the proxy: `OODevHelper removeProxy`
