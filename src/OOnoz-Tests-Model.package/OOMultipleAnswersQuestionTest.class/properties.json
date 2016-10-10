@@ -7,7 +7,7 @@
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		 ],
-	"name" : "OOSingleAnswerStrategyTest",
+	"name" : "OOMultipleAnswersQuestionTest",
 	"pools" : [
 		 ],
 	"super" : "OOAbstractQuestionTest",
