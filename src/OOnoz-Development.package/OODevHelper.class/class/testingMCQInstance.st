@@ -83,7 +83,7 @@ testingMCQInstance
 					('Laurence' -> false).
 					('Clément' -> false)})}
 				collect: [ :each | 
-					OOQuestion
+					OOMultipleAnswersQuestion
 						description: each key
 						answers: (each value collect: [ :asso | OOAnswer text: asso key isRight: asso value ]) asSet ])
 				asSet

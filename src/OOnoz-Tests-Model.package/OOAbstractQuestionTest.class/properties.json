@@ -4,11 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "<historical>",
+	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "OOSingleAnswerStrategyTest",
+		"question" ],
+	"name" : "OOAbstractQuestionTest",
 	"pools" : [
 		 ],
-	"super" : "OOAbstractQuestionTest",
+	"super" : "TestCase",
 	"type" : "normal" }

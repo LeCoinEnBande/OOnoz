@@ -1,3 +1,3 @@
 accessing
 actualClass
-	^ OOSingleAnswerStrategy
+	^ OOSingleAnswerQuestion

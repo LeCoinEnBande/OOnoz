@@ -1,3 +1,3 @@
 accessing
 actualClass
-	^ OOMultipleAnswersStrategy
+	^ OOMultipleAnswersQuestion
