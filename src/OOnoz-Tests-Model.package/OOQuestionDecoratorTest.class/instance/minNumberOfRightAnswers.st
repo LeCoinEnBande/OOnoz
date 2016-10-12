@@ -1,0 +1,3 @@
+helpers
+minNumberOfRightAnswers
+	^ 1
