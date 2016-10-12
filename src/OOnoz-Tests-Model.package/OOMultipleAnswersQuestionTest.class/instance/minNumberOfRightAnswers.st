@@ -1,3 +1,3 @@
 helpers
 minNumberOfRightAnswers
-	^ self actualClass minimumNumberOfAnswers
+	^ self actualClass minNumberOfRightAnswers 

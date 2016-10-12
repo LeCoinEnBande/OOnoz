@@ -7,7 +7,7 @@ generateAnswersUpTo: anInteger rights: aSecondInteger
 		into: [ :coll :ind | 
 			| mock |
 			mock := Mock named: 'Answer' , ind asString.
-			numbersOfRightAnswersLeft < 0
+			numbersOfRightAnswersLeft > 0
 				ifTrue: [ numbersOfRightAnswersLeft := numbersOfRightAnswersLeft - 1.
 					mock stub isRight willReturn: true ]
 				ifFalse: [ mock stub isRight willReturn: false ].

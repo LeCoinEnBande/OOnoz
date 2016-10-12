@@ -1,3 +1,3 @@
 helpers
 maxNumberOfRightAnswers
-	^ self actualClass maximumNumberOfAnswers
+	^ self actualClass maxNumberOfRightAnswers
