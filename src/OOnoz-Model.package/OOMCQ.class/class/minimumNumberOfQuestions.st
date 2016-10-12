@@ -1,0 +1,3 @@
+magicNumbers
+minimumNumberOfQuestions
+	^ 1

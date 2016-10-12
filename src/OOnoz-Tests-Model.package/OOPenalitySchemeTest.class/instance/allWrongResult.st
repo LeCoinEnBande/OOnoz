@@ -1,3 +1,3 @@
 helpers
 allWrongResult
-	^ -2 / 3
+	^ -2 / 5
