@@ -29,6 +29,3 @@ Internal Representation and Key Implementation Points
 	markingScheme:		<aMarkingScheme> 	An object to mark a user answers
 	questions:			<aSet>				A Set of questions
 	title:				<aString>			The title of the MCQ
-
-
-    Implementation Points
