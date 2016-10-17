@@ -6,12 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"description",
-		"answers",
-		"media",
 		"explanation" ],
-	"name" : "OOAbstractQuestion",
+	"name" : "OOExplanation",
 	"pools" : [
 		 ],
-	"super" : "OOObject",
+	"super" : "OOAbstractExplanation",
 	"type" : "normal" }
