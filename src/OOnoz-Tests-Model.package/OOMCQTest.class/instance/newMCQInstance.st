@@ -1,3 +1,6 @@
 instance creation
 newMCQInstance
-	^ OOMCQ questions: (Set with: OOMultipleAnswersQuestionTest new newQuestionInstance)
+	^ OOMCQ new
+		questions: (Set with: OOMultipleAnswersQuestionTest new newQuestionInstance);
+		title: 'A title';
+		yourself

@@ -4,4 +4,5 @@ validate
 		on: OOInvalidQuestion
 		do: [ :e | self invalidate ].
 	(self questions size between: self class minimumNumberOfQuestions and: self class maximumNumberOfQuestions)
-		ifFalse: [ self invalidate ]
+		ifFalse: [ self invalidate ].
+	self title ifNil: [ self invalidate ]
