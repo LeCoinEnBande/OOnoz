@@ -1,0 +1,15 @@
+@import "compass";
+
+@import "../modules/all";
+
+body
+{
+  color: $inverse-color;
+}
+
+*:focus
+{
+  //DEBUG CAUSE ITS POSSIBLE BAD
+  outline: none;
+  @include box-shadow(none);
+}
