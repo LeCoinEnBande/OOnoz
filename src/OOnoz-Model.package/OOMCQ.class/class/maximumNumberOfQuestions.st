@@ -1,0 +1,3 @@
+magicNumbers
+maximumNumberOfQuestions
+	^ 20

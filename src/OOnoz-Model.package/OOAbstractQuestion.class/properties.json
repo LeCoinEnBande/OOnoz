@@ -1,0 +1,17 @@
+{
+	"category" : "OOnoz-Model-MCQ",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "CyrilFerlicot 10/17/2016 22:25",
+	"instvars" : [
+		"description",
+		"answers",
+		"media",
+		"explanation" ],
+	"name" : "OOAbstractQuestion",
+	"pools" : [
+		 ],
+	"super" : "OOObject",
+	"type" : "normal" }

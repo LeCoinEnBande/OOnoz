@@ -1,0 +1,1 @@
+I am a question with only one right answer. I can have between 2 and 6 answers.

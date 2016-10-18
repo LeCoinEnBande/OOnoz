@@ -1,0 +1,1 @@
+I am used as a Nil Object Pattern for explanations.

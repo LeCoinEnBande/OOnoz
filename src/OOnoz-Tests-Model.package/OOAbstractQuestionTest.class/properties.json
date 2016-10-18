@@ -1,0 +1,14 @@
+{
+	"category" : "OOnoz-Tests-Model-MCQ",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"question" ],
+	"name" : "OOAbstractQuestionTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

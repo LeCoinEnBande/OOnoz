@@ -1,0 +1,3 @@
+magicNumbers
+minimumNumberOfAnswers
+	^ 2

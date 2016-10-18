@@ -1,0 +1,14 @@
+{
+	"category" : "OOnoz-Tests-Model-MarkingScheme",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "OOStrictSchemeTest",
+	"pools" : [
+		 ],
+	"super" : "OOAbstractMarkingSchemeStrategyTest",
+	"type" : "normal" }
