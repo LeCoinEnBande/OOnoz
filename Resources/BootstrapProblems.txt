@@ -1,1 +1,4 @@
 - Pas possible d'utiliser TBS sans le theme optionnel.
+- NavBar pas correct (div/nav, class nav)
+- Pas de composant pour les collapse dans les navbar
+- Pas de boutons avec un tag a
