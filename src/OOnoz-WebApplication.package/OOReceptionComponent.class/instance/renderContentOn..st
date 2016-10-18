@@ -1,4 +1,4 @@
-as yet unclassified
+rendering
 renderContentOn: html
 	html text: 'C''est l''écran d''accueil qu''il va falloir faire.'.
 	html anchor

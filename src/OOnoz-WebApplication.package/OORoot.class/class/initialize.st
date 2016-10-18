@@ -9,5 +9,5 @@ initialize
 	app
 		addLibrary: HeimdallFileLibrary;
 		addLibrary: JQDeploymentLibrary;
-		addLibrary: MDLLibrary;
-		addLibrary: OOLibrary 
+		addLibrary: TBSLightDeploymentLibrary;
+		addLibrary: OOLibrary

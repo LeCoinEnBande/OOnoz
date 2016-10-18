@@ -4,11 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "CyrilFerlicot 10/18/2016 19:38",
 	"instvars" : [
 		 ],
-	"name" : "OOFooter",
+	"name" : "TBSLightDeploymentLibrary",
 	"pools" : [
 		 ],
-	"super" : "OOComponent",
+	"super" : "TBSDeploymentLibrary",
 	"type" : "normal" }

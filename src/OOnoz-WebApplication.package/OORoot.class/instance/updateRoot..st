@@ -5,5 +5,11 @@ updateRoot: anHtmlRoot
 	"anHtmlRoot link
 		beShortcutIcon;
 		url: ."
-	anHtmlRoot title: 'OOnoz'.
+	anHtmlRoot meta
+		responseHeaderName: 'X-UA-Compatible';
+		content: 'IE=edge'.
+	anHtmlRoot meta
+		attributeAt: 'name' put: 'viewport';
+		content: 'width=device-width, initial-scale=1'.
+	anHtmlRoot title: 'OOnoz - Des milliers de questionnaires'.
 	anHtmlRoot stylesheet url: self configuration resourcesURL , '/css/main.css'
