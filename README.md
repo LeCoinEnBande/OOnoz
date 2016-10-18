@@ -42,7 +42,7 @@ To set the configuration to the server you can execute the following script with
 
     OOServer setConfigurationFromFile: '../../GitRepositories/OOnoz/configuration.ston'
     
-If you use all the default values you can just execute:
+**If you use all the default values you can just execute:**
 
     OOServer setConfigurationWith: OOConfiguration new
     
