@@ -1,0 +1,12 @@
+@mixin btn-outline($color)
+{
+  border-color: $color;
+  color: $color;
+}
+
+@mixin btn($color)
+{
+  background-color: $color;
+  border-color: $color;
+  color: $neutral-color;
+}

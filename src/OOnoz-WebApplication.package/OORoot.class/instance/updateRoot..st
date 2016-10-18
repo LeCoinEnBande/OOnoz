@@ -6,4 +6,4 @@ updateRoot: anHtmlRoot
 		beShortcutIcon;
 		url: ."
 	anHtmlRoot title: 'OOnoz'.
-	anHtmlRoot stylesheet url: self configuration resourcesURL , '/css/OOnoz.css'
+	anHtmlRoot stylesheet url: self configuration resourcesURL , '/css/main.css'
