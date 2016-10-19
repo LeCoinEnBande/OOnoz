@@ -8,6 +8,7 @@
 	"instvars" : [
 		"questions",
 		"title",
+		"description",
 		"markingScheme" ],
 	"name" : "OOMCQ",
 	"pools" : [
