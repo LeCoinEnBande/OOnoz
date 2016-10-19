@@ -7,6 +7,7 @@ renderToolbarFor: anId on: html
 				beOutline;
 				callback: [ self flag: #todo ];
 				with: 'Ajouter'.
+			html space.
 			html tbsButton
 				beDanger;
 				beOutline;

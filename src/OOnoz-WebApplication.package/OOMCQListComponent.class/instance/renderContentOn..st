@@ -9,31 +9,8 @@ renderContentOn: html
 				attributeAt: #'data-toggle' put: 'table';
 				attributeAt: #'data-search' put: 'true';
 				attributeAt: #'data-pagination' put: 'true';
-				attributeAt: 'data-toolbar' put: toolbarId;
-				with: [ html
-						tableHead: [ html
-								tableRow: [ html tableHeading attributeAt: 'data-checkbox' put: 'true'.
-									#('Nom' 'Communauté' 'Type' 'Prix' 'Complété' 'Ouvert' 'Actions') do: [ :title | html tableHeading: title ] ] ].
+				attributeAt: 'data-toolbar' put: '#' , toolbarId;
+				with: [ html tableHead: [ self renderHeaderOn: html ].
 					html
 						tableBody: [ self currentUser mcqs
-								do: [ :mcq | 
-									html
-										tableRow: [ {''.
-											mcq title.
-											[ html tbsLabel
-												bePrimary;
-												with: 'Rien'.
-											html tbsLabel
-												beDefault;
-												with: 'Rien' ].
-											'Pas fait'.
-											[ html tbsLabel
-												beInfo;
-												with: 'TODO' ].
-											[ html tbsLabel
-												beInfo;
-												with: 'TODO' ].
-											[ html tbsLabel
-												beSuccess;
-												with: 'TODO' ].
-											'TODO'} do: [ :content | html tableData: content ] ] ] ] ] ]
+								do: [ :mcq | html tableRow: [ (self tableEntriesFrom: mcq On: html) do: [ :content | html tableData: content ] ] ] ] ] ]
