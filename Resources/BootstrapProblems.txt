@@ -2,3 +2,5 @@
 - NavBar pas correct (div/nav, class nav)
 - Pas de composant pour les collapse dans les navbar
 - Pas de boutons avec un tag a
+- Il n'y a pas le normalizer
+- pas de #tbsFormControl sur les selects
