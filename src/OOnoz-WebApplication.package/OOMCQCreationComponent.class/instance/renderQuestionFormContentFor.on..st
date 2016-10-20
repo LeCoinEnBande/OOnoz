@@ -11,13 +11,21 @@ renderQuestionFormContentFor: anInteger on: html
 							html label
 								class: #'radio-inline';
 								with: [ group radioButton
-										selected: ((self questionAt: anInteger) ifNil: [ false ] ifNotNil: [ :q | class = q class ]);
+										selected:
+											((self questionAt: anInteger)
+												ifNil: [ false ]
+												ifNotNil: [ :q | class = q class ]);
 										callback: [ self questionAt: anInteger put: class new.
-											(self questionAt: anInteger) class minimumNumberOfAnswers timesRepeat: [ self answersAt: anInteger put: (OrderedCollection with: OOAnswer new with: OOAnswer new) ] ];
+											(self questionAt: anInteger) class minimumNumberOfAnswers
+												timesRepeat: [ self
+														answersAt: anInteger
+														put: (OrderedCollection with: OOAnswer new with: OOAnswer new) ] ];
 										onChange:
 											(html jQuery ajax
 												serializeThis;
-												onSuccess: ((html jQuery id: (self questionIdFor: anInteger)) load html: [ :r | self renderQuestionFormContentFor: anInteger on: r ]));
+												onSuccess:
+													((html jQuery id: (self questionIdFor: anInteger)) load
+														html: [ :r | self renderQuestionFormContentFor: anInteger on: r ]));
 										with: class label ] ] ].
 			(self questionAt: anInteger)
 				ifNotNil: [ :question | 
@@ -37,16 +45,5 @@ renderQuestionFormContentFor: anInteger on: html
 								rows: 1 ].
 					html div
 						id: (self questionIdFor: anInteger) , 'Answers';
-						with: [ (self answersAt: anInteger)
-								doWithIndex: [ :answer :answerInd | 
-									html
-										tbsFormGroup: [ html
-												tbsInputGroup: [ html
-														tbsInputGroupAddOn: [ html checkbox
-																value: answer isRight;
-																callback: [ :confirmation | answer isRight: confirmation ] ].
-													html textInput
-														tbsFormControl;
-														value: answer text;
-														placeholder: 'Réponse ' , answerInd asString;
-														callback: [ :text | answer text: text ] ] ] ] ] ] ]
+						with:
+								[ self renderAnswersFor: anInteger on: html ] ] ]

@@ -22,6 +22,7 @@ renderMCQFormsOn: html
 								id: id;
 								placeholder: label;
 								callback: [ :title | self mcq title: title ];
+								pattern: '.{5,}';
 								value: self mcq title;
 								rows: 1 ].
 					html

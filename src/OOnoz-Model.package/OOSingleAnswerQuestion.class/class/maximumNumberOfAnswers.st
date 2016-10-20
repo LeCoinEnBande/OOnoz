@@ -1,3 +1,3 @@
 magicNumbers
 maximumNumberOfAnswers
-	^ 2
+	^ 6
