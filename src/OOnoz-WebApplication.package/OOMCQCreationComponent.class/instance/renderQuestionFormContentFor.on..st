@@ -11,21 +11,13 @@ renderQuestionFormContentFor: anInteger on: html
 							html label
 								class: #'radio-inline';
 								with: [ group radioButton
-										selected:
-											((self questionAt: anInteger)
-												ifNil: [ false ]
-												ifNotNil: [ :q | class = q class ]);
+										selected: ((self questionAt: anInteger) ifNil: [ false ] ifNotNil: [ :q | class = q class ]);
 										callback: [ self questionAt: anInteger put: class new.
-											(self questionAt: anInteger) class minimumNumberOfAnswers
-												timesRepeat: [ self
-														answersAt: anInteger
-														put: (OrderedCollection with: OOAnswer new with: OOAnswer new) ] ];
+											(self questionAt: anInteger) class minimumNumberOfAnswers timesRepeat: [ self answersAt: anInteger put: (OrderedCollection with: OOAnswer new with: OOAnswer new) ] ];
 										onChange:
 											(html jQuery ajax
 												serializeThis;
-												onSuccess:
-													((html jQuery id: (self questionIdFor: anInteger)) load
-														html: [ :r | self renderQuestionFormContentFor: anInteger on: r ]));
+												onSuccess: ((html jQuery id: (self questionIdFor: anInteger)) load html: [ :r | self renderQuestionFormContentFor: anInteger on: r ]));
 										with: class label ] ] ].
 			(self questionAt: anInteger)
 				ifNotNil: [ :question | 
@@ -44,6 +36,5 @@ renderQuestionFormContentFor: anInteger on: html
 								value: self mcq title;
 								rows: 1 ].
 					html div
-						id: (self questionIdFor: anInteger) , 'Answers';
-						with:
-								[ self renderAnswersFor: anInteger on: html ] ] ]
+						id: (self answersIdFor: anInteger);
+						with: [ self renderAnswersFor: anInteger on: html ] ] ]

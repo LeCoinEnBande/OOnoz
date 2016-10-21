@@ -1,5 +1,5 @@
 *OOnoz-WebApplication
-renderAnswers: aCollection on: html
+renderAnswers: aCollection ofQuestionAt: aQuestionId from: aComponent on: html
 	| radioGroup |
 	radioGroup := html radioGroup.
 	aCollection
