@@ -7,7 +7,8 @@
 	"commentStamp" : "CyrilFerlicot 10/17/2016 22:15",
 	"instvars" : [
 		"text",
-		"isRight" ],
+		"isRight",
+		"index" ],
 	"name" : "OOAnswer",
 	"pools" : [
 		 ],
