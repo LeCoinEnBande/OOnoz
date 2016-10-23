@@ -1,10 +1,10 @@
 rendering
-renderAnswersFor: aQuestion on: html
-	aQuestion class isAbstract ifTrue: [ ^ self ].
+renderAnswersOn: html
+	self question class isAbstract ifTrue: [ ^ self ].
 	
-	aQuestion renderAnswersFrom: self on: html.
-	self renderAddAnswerButtonFor: aQuestion on: html.
-	aQuestion hasCorrection
+	self question renderAnswersFrom: self on: html.
+	self renderAddAnswerButtonOn: html.
+	self question hasCorrection
 		ifTrue: [ html
 				tbsFormGroup: [ html
 						tbsInputGroup: [ | id label |
@@ -17,26 +17,26 @@ renderAnswersFor: aQuestion on: html
 								tbsFormControl;
 								id: id;
 								placeholder: label;
-								callback: [ :explanation | aQuestion correction: explanation ];
-								value: aQuestion correction;
+								callback: [ :explanation | self question correction: explanation ];
+								value: self question correction;
 								rows: 1.
 							html
 								tbsInputGroupButton: [ html tbsButton
 										bePush;
 										beDefault;
 										onClick:
-											((html jQuery id: (self answersIdFor: aQuestion)) load
+											((html jQuery id: (self answersId)) load
 												html: [ :r | 
-													aQuestion removeCorrection.
-													self renderAnswersFor: aQuestion on: html ]);
+													self question removeCorrection.
+													self renderAnswersOn: html ]);
 										with: [ html tbsGlyphIcon iconRemove ] ] ] ] ]
 		ifFalse: [ html tbsButton
 				beInfo;
 				beOutline;
 				bePush;
 				onClick:
-					((html jQuery id: (self answersIdFor: aQuestion)) load
+					((html jQuery id: (self answersId)) load
 						html: [ :r | 
-							aQuestion correction: ''.
-							self renderAnswersFor: aQuestion on: html ]);
+							self question correction: ''.
+							self renderAnswersOn: html ]);
 				with: 'Ajouter une correction' ]

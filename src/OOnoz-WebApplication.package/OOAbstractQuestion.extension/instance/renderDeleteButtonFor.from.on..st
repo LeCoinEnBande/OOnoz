@@ -7,8 +7,8 @@ renderDeleteButtonFor: anAnswer from: aComponent on: html
 				bePush;
 				beDefault;
 				onClick:
-					((html jQuery id: (aComponent answersIdFor: self)) load
+					((html jQuery id: (aComponent answersId)) load
 						html: [ :r | 
 							self removeAnswer: anAnswer.
-							aComponent renderAnswersFor: self on: r ]);
+							aComponent renderAnswersOn: r ]);
 				with: [ html tbsGlyphIcon iconRemove ] ]

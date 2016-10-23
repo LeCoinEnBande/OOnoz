@@ -4,7 +4,7 @@ renderContentOn: html
 	html hr.
 	html
 		form: [ self renderMCQFormsOn: html.
-			(self mcq questions asArray sort: [ :a :b | a index < b index ]) do: [ :aQuestion | self renderQuestionFormFor: aQuestion on: html ].
+			self questionComponents sort do: [ :comp | html render: comp ].
 			html hr.
 			self renderValidationButtonOn: html ].
 	html anchor

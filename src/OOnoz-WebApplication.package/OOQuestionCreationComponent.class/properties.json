@@ -6,10 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"mcq",
-		"questionComponents",
-		"hasBeenValidated" ],
-	"name" : "OOMCQCreationComponent",
+		"question",
+		"owner" ],
+	"name" : "OOQuestionCreationComponent",
 	"pools" : [
 		 ],
 	"super" : "OOComponent",
