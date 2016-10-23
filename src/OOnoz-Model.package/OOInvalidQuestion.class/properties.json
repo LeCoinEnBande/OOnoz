@@ -10,5 +10,5 @@
 	"name" : "OOInvalidQuestion",
 	"pools" : [
 		 ],
-	"super" : "OOError",
+	"super" : "OOInvalidObject",
 	"type" : "normal" }

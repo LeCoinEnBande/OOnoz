@@ -6,9 +6,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"mcq" ],
-	"name" : "OOInvalidMCQ",
+		"object",
+		"reason" ],
+	"name" : "OOInvalidObject",
 	"pools" : [
 		 ],
-	"super" : "OOInvalidObject",
+	"super" : "OOError",
 	"type" : "normal" }
