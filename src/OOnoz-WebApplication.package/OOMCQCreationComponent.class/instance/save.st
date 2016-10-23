@@ -1,18 +1,10 @@
 action
 save
-	| computed |
 	self flag: #todo.	"Manage the errors."
-	computed := self questions
-		inject: self mcq
-		into: [ :m :asso | 
-			m
-				addQuestion:
-					(asso value
-						inject: asso key
-						into: [ :question :answer | 
-							question addAnswer: answer.
-							question ]).
-			m ].
-	self currentUser addMCQ: computed.
-	computed save.
-	self currentUser save
+	self mcq questions: (self questions select: [ :a | a key isNotNil ] thenCollect: [ :asso | asso key answers: (asso value ifNil: [ Set new ] ifNotNil: [ :coll | coll asSet ]) ]) asSet.
+	[ self mcq validate.
+	self currentUser addMCQ: self mcq.
+	self mcq save.
+	self currentUser save ]
+		on: OOInvalidObject
+		do: [ self hasBeenValidated: true ]

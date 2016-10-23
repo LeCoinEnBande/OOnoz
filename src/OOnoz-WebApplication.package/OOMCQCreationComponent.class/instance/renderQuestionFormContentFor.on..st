@@ -6,7 +6,7 @@ renderQuestionFormContentFor: anInteger on: html
 		with: [ html
 				tbsFormGroup: [ | group |
 					group := html radioGroup.
-					(OOAbstractQuestion allSubclasses select: #isQuestionKind)
+					self questionKinds
 						do: [ :class | 
 							html label
 								class: #'radio-inline';
@@ -19,22 +19,4 @@ renderQuestionFormContentFor: anInteger on: html
 												serializeThis;
 												onSuccess: ((html jQuery id: (self questionIdFor: anInteger)) load html: [ :r | self renderQuestionFormContentFor: anInteger on: r ]));
 										with: class label ] ] ].
-			(self questionAt: anInteger)
-				ifNotNil: [ :question | 
-					html
-						tbsFormGroup: [ | id label |
-							label := 'Intitulé de la question ' , anInteger asString.
-							html label
-								for: (id := html nextId);
-								tbsScreenReaderOnly;
-								with: label.
-							html textArea
-								tbsFormControl;
-								id: id;
-								placeholder: label;
-								callback: [ :title | question description: title ];
-								value: self mcq title;
-								rows: 1 ].
-					html div
-						id: (self answersIdFor: anInteger);
-						with: [ self renderAnswersFor: anInteger on: html ] ] ]
+			self renderConcreteQuestionFormFor: anInteger on: html ]

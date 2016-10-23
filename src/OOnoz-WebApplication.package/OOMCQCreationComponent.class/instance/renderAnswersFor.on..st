@@ -8,17 +8,11 @@ renderAnswersFor: anInteger on: html
 		ofQuestionAt: anInteger
 		from: self
 		on: html.
-	question class maximumNumberOfAnswers = answers size
-		ifFalse: [ html tbsButton
-				bePrimary;
-				beOutline;
-				bePush;
-				onClick:
-					((html jQuery id: (self answersIdFor: anInteger)) load
-						html: [ :r | 
-							(self answersAt: anInteger) add: OOAnswer new.
-							self renderAnswersFor: anInteger on: html ]);
-				with: 'Ajouter une réponse' ].
+	self
+		renderAddAnswerButtonFor: question
+		at: anInteger
+		answers: answers
+		on: html.
 	question hasCorrection
 		ifTrue: [ html
 				tbsFormGroup: [ html
@@ -46,7 +40,7 @@ renderAnswersFor: anInteger on: html
 													self renderAnswersFor: anInteger on: html ]);
 										with: [ html tbsGlyphIcon iconRemove ] ] ] ] ]
 		ifFalse: [ html tbsButton
-				bePrimary;
+				beInfo;
 				beOutline;
 				bePush;
 				onClick:

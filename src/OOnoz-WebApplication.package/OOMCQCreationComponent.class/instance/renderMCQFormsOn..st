@@ -6,6 +6,7 @@ renderMCQFormsOn: html
 				level2;
 				class: #h5;
 				with: 'Configuration' ].
+	self renderMCQErrorOn: html.
 	html
 		tbsRow: [ html tbsColumn
 				mediumSize: 6;
