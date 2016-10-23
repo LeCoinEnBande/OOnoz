@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"message" ],
-	"name" : "OOQuestionnairePage",
+		"momento" ],
+	"name" : "OOMCQEditionComponent",
 	"pools" : [
 		 ],
-	"super" : "OOComponent",
+	"super" : "OOAbstractMCQEditionComponent",
 	"type" : "normal" }

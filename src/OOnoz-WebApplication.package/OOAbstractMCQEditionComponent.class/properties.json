@@ -6,8 +6,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"message" ],
-	"name" : "OOQuestionnairePage",
+		"mcq",
+		"questionComponents",
+		"hasBeenValidated" ],
+	"name" : "OOAbstractMCQEditionComponent",
 	"pools" : [
 		 ],
 	"super" : "OOComponent",

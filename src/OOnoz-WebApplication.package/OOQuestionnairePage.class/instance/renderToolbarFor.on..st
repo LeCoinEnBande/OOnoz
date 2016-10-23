@@ -5,7 +5,8 @@ renderToolbarFor: anId on: html
 		with: [ html tbsAnchor
 				beSuccess;
 				beOutline;
-				callback: [ (self call: OOMCQCreationComponent new) ifTrue: [ self hasNewMCQ: true ] ];
+				callback: [ (self call: OOMCQCreationComponent new)
+						ifTrue: [ self message: 'Nouveau QCM créé.' ] ];
 				with: 'Ajouter'.
 			html space.
 			self flag: #todo	"We need to check if we keep this one."

@@ -4,11 +4,11 @@ renderContentOn: html
 	html hr.
 	html
 		form: [ self renderMCQFormsOn: html.
-			self questionComponents sort do: [ :comp | html render: comp ].
+			self questionComponents asArray sort do: [ :comp | html render: comp ].
 			html hr.
 			self renderValidationButtonOn: html ].
 	html anchor
-		callback: [ self answer: false ];
+		callback: [ self cancel ];
 		with: [ html tbsButton
 				beOutline;
 				beDanger;

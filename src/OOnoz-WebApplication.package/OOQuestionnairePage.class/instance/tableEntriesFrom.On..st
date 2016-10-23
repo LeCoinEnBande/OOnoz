@@ -20,7 +20,8 @@ tableEntriesFrom: mcq On: html
 		beSuccess;
 		with: 'TODO' ].
 	[ html anchor
-		callback: [ self flag: #todo ];
+		callback: [ (self call: (OOMCQEditionComponent mcq: mcq))
+				ifTrue: [ self message: 'QCM édité.' ] ];
 		with: [ html tbsGlyphIcon iconEdit ].
 	html space.
 	html anchor

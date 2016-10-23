@@ -6,8 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"message" ],
-	"name" : "OOQuestionnairePage",
+		"question",
+		"owner" ],
+	"name" : "OOAbstractQuestionEditionComponent",
 	"pools" : [
 		 ],
 	"super" : "OOComponent",

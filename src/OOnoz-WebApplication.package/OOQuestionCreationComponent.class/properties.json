@@ -6,10 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"question",
-		"owner" ],
+		 ],
 	"name" : "OOQuestionCreationComponent",
 	"pools" : [
 		 ],
-	"super" : "OOComponent",
+	"super" : "OOAbstractQuestionEditionComponent",
 	"type" : "normal" }

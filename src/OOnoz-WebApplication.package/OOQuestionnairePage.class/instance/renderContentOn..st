@@ -1,11 +1,12 @@
 rendering
 renderContentOn: html
 	self renderTitleAndDescriptionOn: html.
-	self hasNewMCQ
-		ifTrue: [ html tbsAlert
+	self message
+		ifNotNil: [ :mess | 
+			html tbsAlert
 				beInfo;
-				with: [ html strong: 'Nouveau QCM créé.' ].
-			self hasNewMCQ: false ].
+				with: [ html strong: mess ].
+			self message: nil ].
 	html
 		section: [ | toolbarId |
 			self renderToolbarFor: (toolbarId := #toolbar) on: html.
