@@ -4,6 +4,6 @@ renderContentOn: html
 	html hr.
 	html
 		form: [ self renderMCQFormsOn: html.
-			self questions doWithIndex: [ :aQuestion :ind | self renderQuestionFormFor: ind on: html ].
+			(self mcq questions asArray sort: [ :a :b | a index < b index ]) do: [ :aQuestion | self renderQuestionFormFor: aQuestion on: html ].
 			html hr.
 			self renderValidationButtonOn: html ]

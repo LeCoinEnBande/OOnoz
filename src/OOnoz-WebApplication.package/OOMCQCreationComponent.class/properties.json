@@ -7,7 +7,6 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"mcq",
-		"questions",
 		"hasBeenValidated" ],
 	"name" : "OOMCQCreationComponent",
 	"pools" : [

@@ -1,3 +1,3 @@
 accessing
-answersIdFor: anInteger
-	^ (self questionIdFor: anInteger) , 'Answers'
+answersIdFor: aQuestion
+	^ (self questionIdFor: aQuestion) , 'Answers'

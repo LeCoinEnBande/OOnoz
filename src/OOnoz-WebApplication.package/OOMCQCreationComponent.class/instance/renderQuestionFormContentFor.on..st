@@ -1,5 +1,5 @@
 rendering
-renderQuestionFormContentFor: anInteger on: html
+renderQuestionFormContentFor: aQuestion on: html
 	html tbsColumn
 		mediumSize: 6;
 		mediumOffset: 3;
@@ -11,12 +11,16 @@ renderQuestionFormContentFor: anInteger on: html
 							html label
 								class: #'radio-inline';
 								with: [ group radioButton
-										selected: ((self questionAt: anInteger) ifNil: [ false ] ifNotNil: [ :q | class = q class ]);
-										callback: [ self questionAt: anInteger put: class new.
-											(self questionAt: anInteger) class minimumNumberOfAnswers timesRepeat: [ self answersAt: anInteger put: (OrderedCollection with: OOAnswer new with: OOAnswer new) ] ];
+										selected: aQuestion class = class;
+										callback: [ aQuestion class = class
+												ifFalse: [ | newQuestion |
+													self mcq removeQuestion: aQuestion.
+													self mcq addQuestion: (newQuestion := class new index: aQuestion index).
+													class minimumNumberOfAnswers timesRepeat: [ self addEmptyAnswerAt: newQuestion ] ] ];
 										onChange:
 											(html jQuery ajax
 												serializeThis;
-												onSuccess: ((html jQuery id: (self questionIdFor: anInteger)) load html: [ :r | self renderQuestionFormContentFor: anInteger on: r ]));
+												onSuccess:
+													((html jQuery id: (self questionIdFor: aQuestion)) load html: [ :r | self renderQuestionFormContentFor: (self mcq questions detect: [ :q | q index = aQuestion index ]) on: r ]));
 										with: class label ] ] ].
-			self renderConcreteQuestionFormFor: anInteger on: html ]
+			self renderConcreteQuestionFormFor: aQuestion on: html ]

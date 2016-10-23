@@ -5,12 +5,13 @@ renderToolbarFor: anId on: html
 		with: [ html tbsAnchor
 				beSuccess;
 				beOutline;
-				callback: [ self flag: #todo ];
+				callback: [ (self call: OOMCQCreationComponent new) ifTrue: [ self hasNewMCQ: true ] ];
 				with: 'Ajouter'.
 			html space.
-			html tbsButton
+			self flag: #todo	"We need to check if we keep this one."
+			"html tbsButton
 				beDanger;
 				beOutline;
 				disabled;
 				callback: [ self flag: #todo ];
-				with: 'Supprimer' ]
+				with: 'Supprimer'" ]

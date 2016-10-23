@@ -1,3 +1,3 @@
 accessing
-questionIdFor: anInteger
-	^ 'Question' , anInteger asString
+questionIdFor: aQuestion
+	^ 'Question' , aQuestion index asString

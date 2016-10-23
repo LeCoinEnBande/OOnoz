@@ -1,11 +1,10 @@
 rendering
-renderConcreteQuestionFormFor: anInteger on: html
-	| question |
-	(self questionAt: anInteger) ifNil: [ ^ self ] ifNotNil: [ :q | question := q ].
+renderConcreteQuestionFormFor: aQuestion on: html
+	aQuestion class isAbstract ifTrue: [ ^ self ].
 	
 	html
 		tbsFormGroup: [ | id label |
-			label := 'Intitulé de la question ' , anInteger asString.
+			label := 'Intitulé de la question ' , aQuestion index asString.
 			html label
 				for: (id := html nextId);
 				tbsScreenReaderOnly;
@@ -14,9 +13,9 @@ renderConcreteQuestionFormFor: anInteger on: html
 				tbsFormControl;
 				id: id;
 				placeholder: label;
-				callback: [ :title | question description: title ];
-				value: self mcq title;
+				callback: [ :title | aQuestion description: title ];
+				value: aQuestion description;
 				rows: 1 ].
 	html div
-		id: (self answersIdFor: anInteger);
-		with: [ self renderAnswersFor: anInteger on: html ]
+		id: (self answersIdFor: aQuestion);
+		with: [ self renderAnswersFor: aQuestion on: html ]
