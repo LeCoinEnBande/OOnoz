@@ -24,5 +24,5 @@ tableEntriesFrom: mcq On: html
 		with: [ html tbsGlyphIcon iconEdit ].
 	html space.
 	html anchor
-		callback: [ self flag: #todo ];
+		callback: [ self delete: mcq ];
 		with: [ html tbsGlyphIcon iconTrash ] ]}
