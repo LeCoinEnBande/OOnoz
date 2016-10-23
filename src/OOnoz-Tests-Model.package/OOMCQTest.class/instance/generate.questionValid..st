@@ -7,6 +7,6 @@ generate: anInteger questionValid: aBoolean
 			mock := Mock named: 'Question' , ind asString.
 			aBoolean
 				ifTrue: [ mock stub validate willReturn: true ]
-				ifFalse: [ mock stub validate willRaise: (OOInvalidQuestion question: mock) ].
+				ifFalse: [ mock stub validate willRaise: (OOInvalidQuestion modelObject: mock) ].
 			coll add: mock.
 			coll ]
