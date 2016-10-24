@@ -1,5 +1,5 @@
 hook
 cancel
-	self mcq restoreFromMomento: self momento.
+	self mcq restoreFromMemento: self memento.
 	self questionComponents do: #reset.
 	super cancel

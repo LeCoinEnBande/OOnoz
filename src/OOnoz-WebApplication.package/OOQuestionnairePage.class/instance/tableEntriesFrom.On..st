@@ -1,7 +1,6 @@
 rendering
 tableEntriesFrom: mcq On: html
-	^ {''.
-	mcq title.
+	^ {mcq title.
 	[ html tbsLabel
 		bePrimary;
 		with: 'Rien'.

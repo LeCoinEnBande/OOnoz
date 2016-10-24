@@ -1,3 +1,3 @@
 accessing
 reset
-	self question restoreFromMomento: self momento
+	self question restoreFromMemento: self memento

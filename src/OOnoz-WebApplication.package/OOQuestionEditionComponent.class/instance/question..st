@@ -1,4 +1,4 @@
 accessing
 question: anObject
 	question := anObject.
-	self momento: question createMomento
+	self memento: question createMemento
