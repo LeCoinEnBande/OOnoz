@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 testInvalidateQuestionWithTooManyAnswers
 	question answers: (self generateAnswersUpTo: self decoratedClass maximumNumberOfAnswers + 1 rights: 0).
 	self

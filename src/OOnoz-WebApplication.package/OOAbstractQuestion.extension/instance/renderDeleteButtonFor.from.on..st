@@ -1,6 +1,6 @@
 *OOnoz-WebApplication
 renderDeleteButtonFor: anAnswer from: aComponent on: html
-	self answers size > self class minimumNumberOfAnswers ifFalse: [ ^ self ].
+	self answers size > self questionClass minimumNumberOfAnswers ifFalse: [ ^ self ].
 	
 	html
 		tbsInputGroupButton: [ html tbsButton

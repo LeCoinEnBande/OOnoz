@@ -1,4 +1,4 @@
 copying
 postCopy
 	super postCopy.
-	answers := answers collect: #copy
+	self answers: (self answers collect: #copy)
