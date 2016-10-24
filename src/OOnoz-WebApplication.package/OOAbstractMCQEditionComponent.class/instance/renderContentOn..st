@@ -6,7 +6,7 @@ renderContentOn: html
 		form: [ self renderMCQFormsOn: html.
 			self questionComponents asArray sort do: [ :comp | html render: comp ].
 			html hr.
-			self renderValidationButtonOn: html ].
+			self renderButtonsOn: html ].
 	html anchor
 		callback: [ self cancel ];
 		with: [ html tbsButton

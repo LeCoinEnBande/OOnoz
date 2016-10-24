@@ -5,10 +5,11 @@ renderDeleteButtonFor: anAnswer from: aComponent on: html
 	html
 		tbsInputGroupButton: [ html tbsButton
 				bePush;
-				beDefault;
+				beDanger;
+				beLink;
 				onClick:
 					((html jQuery id: (aComponent answersId)) load
 						html: [ :r | 
 							self removeAnswer: anAnswer.
 							aComponent renderAnswersOn: r ]);
-				with: [ html tbsGlyphIcon iconRemove ] ]
+				with: [ html tbsGlyphIcon iconTrash ] ]

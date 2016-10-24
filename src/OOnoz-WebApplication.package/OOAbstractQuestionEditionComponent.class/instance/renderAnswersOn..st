@@ -1,7 +1,7 @@
 rendering
 renderAnswersOn: html
-	self question class isAbstract ifTrue: [ ^ self ].
-	
+	self question class isAbstract
+		ifTrue: [ ^ self ].
 	self question renderAnswersFrom: self on: html.
 	self renderAddAnswerButtonOn: html.
 	self question hasCorrection
@@ -23,19 +23,21 @@ renderAnswersOn: html
 							html
 								tbsInputGroupButton: [ html tbsButton
 										bePush;
-										beDefault;
+										beDanger;
+										beLink;
 										onClick:
-											((html jQuery id: (self answersId)) load
+											((html jQuery id: self answersId) load
 												html: [ :r | 
 													self question removeCorrection.
 													self renderAnswersOn: html ]);
-										with: [ html tbsGlyphIcon iconRemove ] ] ] ] ]
-		ifFalse: [ html tbsButton
+										with: [ html tbsGlyphIcon iconTrash ] ] ] ] ]
+		ifFalse: [ html space.
+			html tbsButton
 				beInfo;
 				beOutline;
 				bePush;
 				onClick:
-					((html jQuery id: (self answersId)) load
+					((html jQuery id: self answersId) load
 						html: [ :r | 
 							self question correction: ''.
 							self renderAnswersOn: html ]);
