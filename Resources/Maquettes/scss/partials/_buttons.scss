@@ -7,6 +7,11 @@
   @include border-radius();
 }
 
+.btn-link
+{
+  border: 0;
+}
+
 .btn-outline
 {
   background-color: transparent;
@@ -27,7 +32,15 @@
   @include btn-outline($danger-color);
 }
 
+.btn-info
+{
+  @include btn-outline($info-color);
+}
 
+.btn-warning
+{
+  @include btn-outline($warning-color);
+}
 
 .btn-primary:hover
 {
@@ -42,4 +55,14 @@
 .btn-danger:hover
 {
   @include btn($danger-color);
+}
+
+.btn-info:hover
+{
+  @include btn($info-color);
+}
+
+.btn-warning:hover
+{
+  @include btn($warning-color);
 }
