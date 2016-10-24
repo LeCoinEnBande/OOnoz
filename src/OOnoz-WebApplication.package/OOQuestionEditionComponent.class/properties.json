@@ -1,0 +1,14 @@
+{
+	"category" : "OOnoz-WebApplication-Components",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"memento" ],
+	"name" : "OOQuestionEditionComponent",
+	"pools" : [
+		 ],
+	"super" : "OOAbstractQuestionEditionComponent",
+	"type" : "normal" }

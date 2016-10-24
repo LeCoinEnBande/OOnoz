@@ -1,3 +1,3 @@
 accessing
 answers
-	^ self question answers
+	^ self question ifNotNil: [ :q | q answers ]

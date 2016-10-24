@@ -1,3 +1,3 @@
 accessing
 description
-	^ self question description
+	^ self question ifNotNil: [ :q | q description ]

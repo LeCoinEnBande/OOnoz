@@ -10,5 +10,5 @@
 	"name" : "OOInvalidMCQ",
 	"pools" : [
 		 ],
-	"super" : "OOError",
+	"super" : "OOInvalidObject",
 	"type" : "normal" }

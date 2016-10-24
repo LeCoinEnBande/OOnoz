@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 testNotEnoughRightAnswers
 	question answers: (self generateAnswersUpTo: self decoratedClass minimumNumberOfAnswers rights: self minNumberOfRightAnswers - 1).
 	self

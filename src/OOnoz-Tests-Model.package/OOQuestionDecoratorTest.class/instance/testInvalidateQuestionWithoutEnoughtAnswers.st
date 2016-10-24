@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 testInvalidateQuestionWithoutEnoughtAnswers
 	question answers: (self generateAnswersUpTo: self decoratedClass minimumNumberOfAnswers - 1 rights: 0).
 	self
