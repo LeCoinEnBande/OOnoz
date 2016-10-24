@@ -1,12 +1,7 @@
 rendering
 renderContentOn: html
 	self renderTitleAndDescriptionOn: html.
-	self message
-		ifNotNil: [ :mess | 
-			html tbsAlert
-				beInfo;
-				with: [ html strong: mess ].
-			self message: nil ].
+	self renderMessageOn: html.
 	html
 		section: [ | toolbarId |
 			self renderToolbarFor: (toolbarId := #toolbar) on: html.
@@ -17,4 +12,9 @@ renderContentOn: html
 				attributeAt: #'data-pagination' put: 'true';
 				attributeAt: 'data-toolbar' put: '#' , toolbarId;
 				with: [ html tableHead: [ self renderHeaderOn: html ].
-					html tableBody: [ self currentUser mcqs do: [ :mcq | html tableRow: [ (self tableEntriesFrom: mcq On: html) do: [ :content | html tableData: content ] ] ] ] ] ]
+					html
+						tableBody: [ self currentUser mcqs
+								do: [ :mcq | 
+									html
+										tableRow: [ (self tableEntriesFrom: mcq On: html)
+												do: [ :content | html tableData: content ] ] ] ] ] ]
