@@ -31,3 +31,8 @@ textarea
   @include border-radius(0);
   @include box-shadow(none);
 }
+
+.input-group-btn
+{
+  top: 1px;
+}
