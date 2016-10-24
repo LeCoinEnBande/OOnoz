@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>OOnoz - Des milliers de questionnaires</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!--Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"
+          integrity="sha256-AIodEDkC8V/bHBkfyxzolUMw57jeQ9CauwhVW6YJ9CA=" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.0/bootstrap-table.min.css">
+
+    <!--Custom-->
+    <link rel="stylesheet" href="../../css/main.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<header>
+    <div class="container-fluid">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <!-- !! Make a fancy responsive menu, when got time -->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#mainNavbar" aria-expanded="false">
+                        <span class="sr-only">Basculer la navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand"  href="#">
+                        <img alt="OOnoz" src="../../images/logo_min.png">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">Communautés</a></li>
+                        <li class="active"><a href="#">Questionnaires</a></li>
+                        <li><a href="#">Statistiques</a></li>
+                        <li><a href="#">Tony Montana</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<main>
+    <div class="container">
+        <div class="text-center">
+            <h1>Gérer les questionnaires existants</h1>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ex erat, tincidunt sed ante
+                        id, gravida tempor purus. Etiam id vehicula dui, ut tempus quam. Vestibulum et commodo
+                        mauris. </p>
+                </div>
+            </div>
+        </div>
+        <section class="">
+            <section id="toolbar">
+                <a href="add.html" class="btn btn-success btn-outline">Ajouter</a>
+                <button class="btn btn-danger btn-outline" disabled>Supprimer</button>
+            </section>
+            <table data-toggle="table" data-search="true" data-pagination="true"
+                   data-toolbar="#toolbar" class="table table-no-bordered">
+                <thead>
+                <tr>
+                    <th data-checkbox="true"></th>
+                    <th>Nom</th>
+                    <th>Communauté</th>
+                    <th>Type</th>
+                    <th>Prix</th>
+                    <th>Complété</th>
+                    <th>Ouvert</th>
+                    <th>Actions</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td></td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ex erat, tincidunt sed ante id, gravida tempor purus. Etiam id vehicula dui, ut tempus quam. Vestibulum et commodo mauris.Lorem ipsum dolor sit amet</td>
+                    <td><span class="label label-primary">Automobile</span> <span class="label label-default">BMW</span></td>
+                    <td>E-Learning</td>
+                    <td><span class="label label-info">1C</span></td>
+                    <td><span class="label label-info">53 fois</span></td>
+                    <td><span class="label label-success">Oui</span></td>
+                    <td><a class=""><span class="glyphicon glyphicon-edit"></span> </a>
+                        <a class=""><span class="glyphicon glyphicon-trash"></span></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Loremipsumdolorsitamet.</td>
+                    <td><span class="label label-primary">Histoire</span> <span class="label label-default">Roi de France</span>
+                    </td>
+                    <td>Challenge</td>
+                    <td><span class="label label-default">NA</span></td>
+                    <td><span class="label label-info">105 fois</span></td>
+                    <td><span class="label label-success">Oui</span></td>
+                    <td>
+                        <a class=""><span class="glyphicon glyphicon-edit"></span> </a>
+                        <a class=""><span class="glyphicon glyphicon-trash"></span></a>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Suspendisse iaculis augue vitae orci volutpat</td>
+                    <td><span class="label label-primary">Musique</span> <span
+                            class="label label-default">Rock anglais</span>
+                    </td>
+                    <td>Classique</td>
+                    <td><span class="label label-default">NA</span></td>
+                    <td><span class="label label-danger">0 fois</span></td>
+                    <td><span class="label label-danger">Non</span></td>
+                    <td>
+                        <a class=""><span class="glyphicon glyphicon-edit"></span> </a>
+                        <a class=""><span class="glyphicon glyphicon-trash"></span></a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+</main>
+</div>
+</div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.0/bootstrap-table.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.0/locale/bootstrap-table-fr-FR.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script type="text/javascript">
+
+</script>
+</body>
+</html>
+

@@ -1,0 +1,1 @@
+An OOAbstractMarkingSchemeStrategyTest is a test class for testing the behavior of OOAbstractMarkingSchemeStrategy

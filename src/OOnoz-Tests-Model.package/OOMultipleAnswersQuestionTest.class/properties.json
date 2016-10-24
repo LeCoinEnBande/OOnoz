@@ -1,0 +1,14 @@
+{
+	"category" : "OOnoz-Tests-Model-MCQ",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "OOMultipleAnswersQuestionTest",
+	"pools" : [
+		 ],
+	"super" : "OOAbstractQuestionTest",
+	"type" : "normal" }

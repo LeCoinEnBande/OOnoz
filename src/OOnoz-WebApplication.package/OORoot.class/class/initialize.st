@@ -8,6 +8,6 @@ initialize
 	app configuration at: #maximumRelativeAge put: self sessionDuration.
 	app
 		addLibrary: HeimdallFileLibrary;
-		addLibrary: JQDeploymentLibrary;
-		addLibrary: MDLLibrary;
-		addLibrary: OOLibrary 
+		"addLibrary: JQDeploymentLibrary;
+		addLibrary: TBSLightDeploymentLibrary;"
+		addLibrary: OOLibrary

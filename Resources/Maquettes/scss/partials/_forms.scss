@@ -1,0 +1,38 @@
+@import "compass";
+
+@import "../modules/all";
+
+.form-control
+{
+  @include border-radius(0);
+  border: none;
+  border-bottom: 1px solid $default-color;
+  @include box-shadow(none);
+}
+
+.form-control:focus
+{
+  //DEBUG CAUSE ITS POSSIBLE BAD
+  outline: none;
+  @include box-shadow(none);
+  border-color: $primary-color;
+}
+
+textarea
+{
+  resize: none;
+}
+
+.input-group-addon
+{
+  background-color: transparent;
+  border: none;
+  //border-bottom: 1px solid $default-color;
+  @include border-radius(0);
+  @include box-shadow(none);
+}
+
+.input-group-btn
+{
+  top: 1px;
+}

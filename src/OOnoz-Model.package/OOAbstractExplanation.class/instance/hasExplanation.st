@@ -1,0 +1,5 @@
+testing
+hasExplanation
+	"Hook"
+
+	^ true

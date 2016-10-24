@@ -4,9 +4,12 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "CyrilFerlicot 10/17/2016 22:06",
 	"instvars" : [
-		"questions" ],
+		"questions",
+		"title",
+		"description",
+		"markingScheme" ],
 	"name" : "OOMCQ",
 	"pools" : [
 		 ],

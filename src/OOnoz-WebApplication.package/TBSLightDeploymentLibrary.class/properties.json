@@ -1,0 +1,14 @@
+{
+	"category" : "OOnoz-WebApplication-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "CyrilFerlicot 10/18/2016 19:38",
+	"instvars" : [
+		 ],
+	"name" : "TBSLightDeploymentLibrary",
+	"pools" : [
+		 ],
+	"super" : "TBSDeploymentLibrary",
+	"type" : "normal" }

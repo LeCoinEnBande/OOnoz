@@ -42,7 +42,7 @@ To set the configuration to the server you can execute the following script with
 
     OOServer setConfigurationFromFile: '../../GitRepositories/OOnoz/configuration.ston'
     
-If you use all the default values you can just execute:
+**If you use all the default values you can just execute:**
 
     OOServer setConfigurationWith: OOConfiguration new
     
@@ -53,9 +53,10 @@ Those features contains for example:
 
 * Activation of the in-image debugger: `OODevHelper useInImageDebugger`
 * Installation of GitFileTree: `OODevHelper installGitFileTree`
-* Launch in memory voyage backend for development database: `OODevHelper launchInMemoryVoyageBackEnd`
+* Launch in memory voyage backend for development database and create a user with mcqs: `OODevHelper setupMemoryDB`
 * Get an instance of MCQ: `OODevHelper testingMCQInstance`
 * Install new branch: `OODevHelper installNewBranch: 'myBranch'`
 * Launch OOnoz with the default configuration: `OODevHelper defaultServerLaunching`
 * Set Lille 1 proxy: `OODevHelper setLille1Proxy`
 * Remove the proxy: `OODevHelper removeProxy`
+

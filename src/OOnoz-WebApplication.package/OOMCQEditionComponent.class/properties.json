@@ -1,0 +1,14 @@
+{
+	"category" : "OOnoz-WebApplication-Components",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"memento" ],
+	"name" : "OOMCQEditionComponent",
+	"pools" : [
+		 ],
+	"super" : "OOAbstractMCQEditionComponent",
+	"type" : "normal" }

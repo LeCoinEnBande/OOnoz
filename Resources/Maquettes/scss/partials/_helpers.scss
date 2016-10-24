@@ -1,0 +1,13 @@
+@import "compass";
+
+@import "../modules/all";
+
+hr
+{
+  //border-color: $info-color;
+}
+
+.text-info
+{
+  color: $info-color;
+}

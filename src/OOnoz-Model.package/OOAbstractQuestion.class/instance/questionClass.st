@@ -1,0 +1,3 @@
+accessing
+questionClass
+	^ self class

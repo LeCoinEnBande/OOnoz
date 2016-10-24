@@ -1,0 +1,15 @@
+{
+	"category" : "OOnoz-Model-Exceptions",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"object",
+		"reason" ],
+	"name" : "OOInvalidObject",
+	"pools" : [
+		 ],
+	"super" : "OOError",
+	"type" : "normal" }
