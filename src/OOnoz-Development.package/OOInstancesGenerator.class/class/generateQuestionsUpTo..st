@@ -6,7 +6,7 @@ generateQuestionsUpTo: anInteger
 		| question |
 		question := (OOAbstractQuestion allSubclasses reject: #isAbstract) atRandom new.
 		question description: (self randomStringBetween: 10 and: 100).
-		question index: anInteger.
+		question index: int.
 		question
 			answers:
 				(self
