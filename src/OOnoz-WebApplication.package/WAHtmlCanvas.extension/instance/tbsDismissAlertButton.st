@@ -4,5 +4,5 @@ tbsDismissAlertButton
 		dataDismiss: #alert;
 		beClose;
 		bePush;
-		attributeAt: #'aria-label' put: #Close;
+		ariaLabel: #Close;
 		with: [ self tbsAlertCloseSpan ]
