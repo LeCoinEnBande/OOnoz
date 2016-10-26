@@ -9,7 +9,9 @@
 		"mcq",
 		"user",
 		"questionResults",
-		"isFinished" ],
+		"isFinished",
+		"dateBegin",
+		"dateEnd" ],
 	"name" : "OOMCQResult",
 	"pools" : [
 		 ],

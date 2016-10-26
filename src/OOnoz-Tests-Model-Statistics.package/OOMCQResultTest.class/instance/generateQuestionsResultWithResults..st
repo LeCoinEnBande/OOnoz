@@ -1,4 +1,4 @@
-tests
+helpers
 generateQuestionsResultWithResults: results
 	^ (1 to: 20)
 		inject: OrderedCollection new
