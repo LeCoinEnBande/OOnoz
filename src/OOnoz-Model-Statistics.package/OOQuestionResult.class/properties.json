@@ -6,7 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"question" ],
+		"owner",
+		"question",
+		"userAnswers" ],
 	"name" : "OOQuestionResult",
 	"pools" : [
 		 ],
