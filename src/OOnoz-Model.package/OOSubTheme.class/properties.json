@@ -1,0 +1,14 @@
+{
+	"category" : "OOnoz-Model-Theme",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "OOSubTheme",
+	"pools" : [
+		 ],
+	"super" : "OOAbstractTheme",
+	"type" : "normal" }
