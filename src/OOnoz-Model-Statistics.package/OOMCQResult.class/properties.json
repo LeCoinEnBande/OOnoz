@@ -1,0 +1,17 @@
+{
+	"category" : "OOnoz-Model-Statistics-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"mcq",
+		"user",
+		"questionResults",
+		"isFinished" ],
+	"name" : "OOMCQResult",
+	"pools" : [
+		 ],
+	"super" : "OOObject",
+	"type" : "normal" }

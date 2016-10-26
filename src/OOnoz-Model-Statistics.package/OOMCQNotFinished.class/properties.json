@@ -1,0 +1,14 @@
+{
+	"category" : "OOnoz-Model-Statistics-Exceptions",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "OOMCQNotFinished",
+	"pools" : [
+		 ],
+	"super" : "OOError",
+	"type" : "normal" }
