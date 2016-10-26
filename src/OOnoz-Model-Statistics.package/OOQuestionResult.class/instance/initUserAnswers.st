@@ -1,4 +1,9 @@
 initialization
 initUserAnswers
 	self
-		userAnswers: (Dictionary withAll: (self question answers collect: [ :answer | answer -> nil ]))
+		userAnswers:
+			(self question answers
+				inject: Dictionary new
+				into: [ :dico :answer | 
+					dico add: answer -> nil.
+					dico ])
