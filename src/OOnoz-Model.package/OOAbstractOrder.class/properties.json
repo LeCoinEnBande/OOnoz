@@ -4,14 +4,10 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "CyrilFerlicot 10/17/2016 22:06",
+	"commentStamp" : "",
 	"instvars" : [
-		"questions",
-		"title",
-		"description",
-		"markingScheme",
-		"orderer" ],
-	"name" : "OOMCQ",
+		 ],
+	"name" : "OOAbstractOrder",
 	"pools" : [
 		 ],
 	"super" : "OOObject",

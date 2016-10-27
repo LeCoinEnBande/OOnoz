@@ -1,0 +1,14 @@
+{
+	"category" : "OOnoz-Tests-Model",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"aSet" ],
+	"name" : "OOAbstractOrderTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }
