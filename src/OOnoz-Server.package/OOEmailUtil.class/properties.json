@@ -1,0 +1,14 @@
+{
+	"category" : "OOnoz-Server",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "CyrilFerlicot 10/27/2016 23:46",
+	"instvars" : [
+		 ],
+	"name" : "OOEmailUtil",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
