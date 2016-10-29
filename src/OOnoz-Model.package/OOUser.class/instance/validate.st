@@ -8,4 +8,4 @@ validate
 	self mail isEmptyOrNil
 		ifTrue: [ self invalidate: 'L''email doit être renseigné.' ].
 	self password isEmptyOrNil
-		ifTrue: [ self invalidate: 'Les mots de passes doivent être valides renseignés.' ]
+		ifTrue: [ self invalidate: 'Les mots de passes doivent être valides renseignés.' ].

@@ -13,4 +13,5 @@ renderFormContentOn: html
 							self renderInputsNameOn: html.
 							self renderEmailInputOn: html.
 							self renderPasswordInputsOn: html.
+							self renderBirthdayOn: html.
 							self renderGenderInputOn: html ] ] ]
