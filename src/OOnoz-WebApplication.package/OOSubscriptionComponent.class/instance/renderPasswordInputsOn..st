@@ -1,6 +1,5 @@
 rendering
 renderPasswordInputsOn: html
-	self flag: #todo.	"callbacks."
 	html
 		tbsFormGroup: [ | id label helpId |
 			label := 'Mot de passe'.
