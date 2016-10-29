@@ -1,0 +1,3 @@
+accessing
+subscriptionComponent
+	^ subscriptionComponent

@@ -1,14 +1,14 @@
 {
-	"category" : "OOnoz-Model-Exceptions",
+	"category" : "OOnoz-WebApplication-Components",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "OOInvalidQuestion",
+		"subscriptionComponent" ],
+	"name" : "OOProfilPage",
 	"pools" : [
 		 ],
-	"super" : "OOInvalidObject",
+	"super" : "OOComponent",
 	"type" : "normal" }

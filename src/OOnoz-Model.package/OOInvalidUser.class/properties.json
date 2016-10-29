@@ -6,8 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "OOInvalidQuestion",
+		"question" ],
+	"name" : "OOInvalidUser",
 	"pools" : [
 		 ],
 	"super" : "OOInvalidObject",

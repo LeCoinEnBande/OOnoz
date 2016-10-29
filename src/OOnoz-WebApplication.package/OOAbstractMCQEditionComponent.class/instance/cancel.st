@@ -1,4 +1,4 @@
-hook
+hooks
 cancel
 	"hook"
 

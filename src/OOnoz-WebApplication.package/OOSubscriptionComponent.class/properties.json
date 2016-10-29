@@ -7,10 +7,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"mcq",
-		"questionComponents",
+		"user",
 		"hasBeenValidated" ],
-	"name" : "OOAbstractMCQEditionComponent",
+	"name" : "OOSubscriptionComponent",
 	"pools" : [
 		 ],
 	"super" : "OOComponent",

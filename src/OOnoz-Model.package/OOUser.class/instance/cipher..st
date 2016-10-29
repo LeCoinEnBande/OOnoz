@@ -1,0 +1,3 @@
+accessing
+cipher: aString
+	^ aString

@@ -1,0 +1,3 @@
+hooks
+children
+	^ { self subscriptionComponent }

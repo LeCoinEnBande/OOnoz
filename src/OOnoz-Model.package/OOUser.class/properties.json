@@ -6,7 +6,13 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
+		"firstName",
+		"lastName",
 		"mail",
+		"password",
+		"birthday",
+		"gender",
+		"avatarPath",
 		"mcqs" ],
 	"name" : "OOUser",
 	"pools" : [

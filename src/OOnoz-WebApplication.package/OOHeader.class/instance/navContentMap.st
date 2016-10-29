@@ -5,4 +5,4 @@ navContentMap
 		with: 'Communautés' -> OOTestComponent
 		with: 'Questionnaires' -> OOQuestionnairePage
 		with: 'Statistiques' -> OOTestComponent
-		with: 'Tony Montana' -> OOMCQCreationComponent
+		with: 'Tony Montana' -> OOProfilPage
