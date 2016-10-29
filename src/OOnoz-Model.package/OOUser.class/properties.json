@@ -13,7 +13,8 @@
 		"birthday",
 		"gender",
 		"avatarPath",
-		"mcqs" ],
+		"mcqs",
+		"isActivated" ],
 	"name" : "OOUser",
 	"pools" : [
 		 ],

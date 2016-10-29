@@ -26,6 +26,10 @@ To launch a server you first need to initialize a configuration. The configurati
 - `staticServerPort`: The static file serves port. By default: 1701
 - `resourcesDirectoryPath`: The path to the folder containing the resources of the application relative to the image location. By default: '../../GitRepositories/OOnoz/Resources'
 - `domainName`: The domain name used for the static file server. By default: 'localhost'
+- `email`: The email that should be use to send the mails of the application. By default: 'oonoz.company@gmail.com'
+- `emailPass`: The email password that should be use to send the mails of the application.
+- `emailServer`: The email server that should be use to send the mails of the application. By default: 'smtp.gmail.com'
+- `emailPort`: The email server port that should be use to send the mails of the application. By default: 465
 
 ### Example of configuration file
 

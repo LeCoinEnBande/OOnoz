@@ -1,8 +1,9 @@
 action
 save
-	[ self user validate.
+	[ self checkIfUserCanBeCreated.
+	self sendSubscriptionEmail.
 	self user save.
 	self flag: #todo
 	"self answer: true" ]
-		on: OOInvalidUser
+		on: Error
 		do: [ :err | self hasBeenValidated: true ]

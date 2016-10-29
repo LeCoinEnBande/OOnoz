@@ -2,4 +2,5 @@ initialization
 initialize
 	super initialize.
 	self mcqs: OrderedCollection new.
-	self beOtherGender
+	self beOtherGender.
+	self desactivate

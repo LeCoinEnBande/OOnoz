@@ -1,0 +1,3 @@
+conveniance
+emailUtils
+	^ OOEmailUtil
