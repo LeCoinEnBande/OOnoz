@@ -12,7 +12,7 @@
 		"password",
 		"birthday",
 		"gender",
-		"avatarPath",
+		"hasAvatar",
 		"mcqs",
 		"isActivated" ],
 	"name" : "OOUser",

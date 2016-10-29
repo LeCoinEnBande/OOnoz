@@ -1,0 +1,3 @@
+rendering
+renderComponentContentOn: html
+	self subclassResponsibility

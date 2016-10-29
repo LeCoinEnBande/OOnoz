@@ -15,8 +15,7 @@ renderBirthdayOn: html
 						id: id;
 						required;
 						placeholder: label;
-						callback: [ :string | 
-							self user birthday: (Date fromDDMMYYY: string)];
+						callback: [ :string | self user birthday: (Date fromDDMMYYY: string) ];
 						value: (self user birthday ifNotNil: [ :date | date ddmmyyyy ]) ].
 			html span
 				class: #'input-group-addon';

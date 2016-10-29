@@ -11,10 +11,16 @@ renderContentOn: html
 		beSuccess;
 		callback: [ self call: OOLoginComponent new ];
 		with: 'Connexion'.
-	html space.
 	self isLogged
-		ifTrue: [ html tbsAnchor
+		ifTrue: [ html space.
+			html tbsAnchor
 				beOutline;
 				beSuccess;
 				callback: [ self logout ];
-				with: 'Deconnexion' ]
+				with: 'Deconnexion' ].
+	html space.
+	html tbsAnchor
+		beOutline;
+		beSuccess;
+		callback: [ self call: OOProfileComponent new ];
+		with: 'Profile'

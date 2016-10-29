@@ -1,7 +1,7 @@
 rendering
-renderButtonsOn: html
+renderPasswordButtonsOn: html
 	| id |
-	self renderSaveButtonOn: html.
+	self renderPasswordSaveButtonOn: html.
 	html space.
 	self renderResetButtonOn: html.
 	html space.

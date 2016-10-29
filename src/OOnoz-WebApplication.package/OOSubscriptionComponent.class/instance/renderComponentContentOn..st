@@ -1,7 +1,5 @@
 rendering
-renderContentOn: html
-	self renderTitleAndDescriptionOn: html.
-	html hr.
+renderComponentContentOn: html
 	html form
 		class: #'text-center';
 		with: [ self renderFormContentOn: html.
