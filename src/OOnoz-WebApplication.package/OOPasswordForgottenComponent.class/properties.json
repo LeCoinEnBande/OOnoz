@@ -6,8 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "OOProfilPage",
+		"hasBeenValidated",
+		"user" ],
+	"name" : "OOPasswordForgottenComponent",
 	"pools" : [
 		 ],
 	"super" : "OOComponent",

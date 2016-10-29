@@ -15,10 +15,7 @@ renderPasswordInputsOn: html
 				pattern: '(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$';
 				placeholder: label;
 				callback: [ :pass | self user password: pass ].
-			html
-				tbsHelpBlockId: helpId
-				with:
-					'Un mot de passe doit comporter au moins 8 caractères avec des minuscules, des majuscules et des nombres/caractères spéciaux.' ].
+			html tbsHelpBlockId: helpId with: 'Un mot de passe doit comporter au moins 8 caractères avec des minuscules, des majuscules et des nombres/caractères spéciaux.' ].
 	html
 		tbsFormGroup: [ | id label |
 			label := 'Confirmation du mot de passe'.
@@ -33,5 +30,5 @@ renderPasswordInputsOn: html
 				pattern: '(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$';
 				placeholder: label;
 				callback: [ :pass | 
-					self user password = (self user cipher: pass)
+					(self user passwordMatch: pass)
 						ifFalse: [ self user password: nil ] ] ]

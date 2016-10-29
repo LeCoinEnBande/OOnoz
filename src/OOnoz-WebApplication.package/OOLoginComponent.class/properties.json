@@ -2,13 +2,16 @@
 	"category" : "OOnoz-WebApplication-Components",
 	"classinstvars" : [
 		 ],
+	"classtraitcomposition" : "OOTClassicForm classTrait",
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "OOProfilPage",
+		"hasBeenValidated",
+		"user" ],
+	"name" : "OOLoginComponent",
 	"pools" : [
 		 ],
 	"super" : "OOComponent",
+	"traitcomposition" : "OOTClassicForm",
 	"type" : "normal" }

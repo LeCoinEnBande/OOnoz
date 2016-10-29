@@ -9,7 +9,7 @@ sendEmailTo: anEmail subject: aString htmlBody: html
 	(smtpClient := ZdcSecureSMTPClient new)
 		user: self configuration email;
 		password: self configuration emailPass.
-	smtpClient openOnHost: (NetNameResolver addressForName: self configuration emailServer) port: self configuration emailPort.
+	smtpClient openOnHost: (NetNameResolver addressForName: (self configuration emailServer)) port: self configuration emailPort.
 	^ smtpClient
 		mailFrom: 'oonoz.company@gmail.com' to: (Array with: anEmail) text: mailMessage text;
 		quit;

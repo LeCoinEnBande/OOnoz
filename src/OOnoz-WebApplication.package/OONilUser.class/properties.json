@@ -1,5 +1,5 @@
 {
-	"category" : "OOnoz-WebApplication-Components",
+	"category" : "OOnoz-WebApplication-Core",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
@@ -7,8 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "OOProfilPage",
+	"name" : "OONilUser",
 	"pools" : [
 		 ],
-	"super" : "OOComponent",
+	"super" : "OOUser",
 	"type" : "normal" }

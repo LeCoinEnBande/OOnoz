@@ -7,4 +7,4 @@ renderTitleAndDescriptionOn: html
 				tbsRow: [ html tbsColumn
 						mediumSize: 8;
 						mediumOffset: 2;
-						with: [ html paragraph: self description ] ] ]
+						with: [ html paragraph: String loremIpsum ] ] ]

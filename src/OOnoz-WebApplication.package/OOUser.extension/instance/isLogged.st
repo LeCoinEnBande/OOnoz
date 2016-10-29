@@ -1,0 +1,3 @@
+*OOnoz-WebApplication
+isLogged
+	^ true

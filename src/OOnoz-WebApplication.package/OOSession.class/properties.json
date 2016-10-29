@@ -1,14 +1,15 @@
 {
-	"category" : "OOnoz-WebApplication-Components",
+	"category" : "OOnoz-WebApplication-Core",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "OOProfilPage",
+		"rootComponent",
+		"user" ],
+	"name" : "OOSession",
 	"pools" : [
 		 ],
-	"super" : "OOComponent",
+	"super" : "WASession",
 	"type" : "normal" }

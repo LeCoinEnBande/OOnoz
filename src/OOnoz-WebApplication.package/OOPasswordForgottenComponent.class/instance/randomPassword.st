@@ -1,4 +1,4 @@
-as yet unclassified
+generation
 randomPassword
 	| rand lastSet charsets |
 	rand := Random seed: Time millisecondClockValue hash.
