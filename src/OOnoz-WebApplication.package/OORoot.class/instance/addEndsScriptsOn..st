@@ -5,4 +5,4 @@ addEndsScriptsOn: html
 	html script url: self configuration resourcesURL , '/Dependencies/bootstrap-datepicker/js/bootstrap-datepicker.min.js'.
 	html script url: self configuration resourcesURL , '/Dependencies/bootstrap-datepicker/locales/bootstrap-datepicker.fr.min.js'.
 	html script url: 'https://cdn.jsdelivr.net/jquery.autosize/3.0.17/autosize.min.js'.
-	html script: 'autosize($(''textarea''));'
+	html script: 'autosize($(''textarea''));'.

@@ -2,7 +2,6 @@
 	"category" : "OOnoz-WebApplication-Components",
 	"classinstvars" : [
 		 ],
-	"classtraitcomposition" : "OOTClassicForm classTrait",
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
@@ -13,5 +12,4 @@
 	"pools" : [
 		 ],
 	"super" : "OOComponent",
-	"traitcomposition" : "OOTClassicForm",
 	"type" : "normal" }

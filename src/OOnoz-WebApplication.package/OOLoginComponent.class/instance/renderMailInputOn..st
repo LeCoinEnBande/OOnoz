@@ -12,5 +12,5 @@ renderMailInputOn: html
 				id: id;
 				required;
 				placeholder: label;
-				callback: [ :mail | self user: (OOUser selectOne: [ :u | u mail = mail address ]) ];
+				callback: [ :mail | self user: (OOUser selectOne: [ :u | u isActivated and: [ u mail = mail address ] ]) ];
 				value: self user mail ]

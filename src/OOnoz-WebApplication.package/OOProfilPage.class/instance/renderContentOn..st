@@ -23,4 +23,4 @@ renderContentOn: html
 		beOutline;
 		beSuccess;
 		callback: [ self call: OOProfileComponent new ];
-		with: 'Profile'
+		with: 'Profil'
