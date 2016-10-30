@@ -1,6 +1,5 @@
 rendering
-renderPasswordFormContentOn: html
-	self flag: #todo.
+renderFormContentOn: html
 	html
 		tbsContainer: [ html heading
 				level2;
@@ -10,4 +9,6 @@ renderPasswordFormContentOn: html
 				tbsRow: [ html tbsColumn
 						mediumSize: 6;
 						mediumOffset: 3;
-						with: [ self renderPasswordInputsOn: html ] ] ]
+						with: [ self renderErrorMessageOn: html.
+							self renderOldPasswordInputOn: html.
+							self renderNewPasswordInputsOn: html ] ] ]

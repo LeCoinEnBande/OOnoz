@@ -1,8 +1,8 @@
 rendering
-renderPasswordInputsOn: html
+renderNewPasswordInputsOn: html
 	html
 		tbsFormGroup: [ | id label helpId |
-			label := 'Mot de passe'.
+			label := 'Nouveau mot de passe'.
 			html label
 				for: (id := html nextId);
 				tbsScreenReaderOnly;
@@ -14,7 +14,9 @@ renderPasswordInputsOn: html
 				required;
 				pattern: '(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$';
 				placeholder: label;
-				callback: [ :pass | self user password: pass ].
+				callback: [ :pass | 
+					self isOldPasswordValid
+						ifTrue: [ self newPassword: (self user cipher: pass) ] ].
 			html tbsHelpBlockId: helpId with: 'Un mot de passe doit comporter au moins 8 caractères avec des minuscules, des majuscules et des nombres/caractères spéciaux.' ].
 	html
 		tbsFormGroup: [ | id label |
@@ -30,5 +32,6 @@ renderPasswordInputsOn: html
 				pattern: '(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$';
 				placeholder: label;
 				callback: [ :pass | 
-					(self user passwordMatch: pass)
-						ifFalse: [ self user password: nil ] ] ]
+					(self isOldPasswordValid and: [ self newPassword isNotEmpty ])
+						ifTrue: [ (self user cipher: pass) = newPassword
+								ifFalse: [ self newPassword: nil ] ] ] ]

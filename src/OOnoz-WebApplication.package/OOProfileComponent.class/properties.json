@@ -6,7 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"memento" ],
+		"memento",
+		"avatarError",
+		"changePasswordComponent" ],
 	"name" : "OOProfileComponent",
 	"pools" : [
 		 ],

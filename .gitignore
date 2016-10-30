@@ -3,6 +3,7 @@
 src/.gitattributes
 
 configuration.ston
+Resources/Avatars/*.png
 
 **/.sass-cache/
 **/.idea

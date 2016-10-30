@@ -1,0 +1,18 @@
+{
+	"category" : "OOnoz-WebApplication-Components",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "OOTClassicForm classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"errorMessage",
+		"isOldPasswordValid",
+		"newPassword" ],
+	"name" : "OOChangePasswordnComponent",
+	"pools" : [
+		 ],
+	"super" : "OOComponent",
+	"traitcomposition" : "OOTClassicForm - {#cancel. #renderCancelButtonOn:. #renderCancelModalFor:on:}",
+	"type" : "normal" }

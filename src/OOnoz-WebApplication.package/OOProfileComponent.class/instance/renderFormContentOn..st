@@ -1,5 +1,5 @@
 rendering
-renderInfosFormContentOn: html
+renderFormContentOn: html
 	html
 		tbsContainer: [ html heading
 				level2;

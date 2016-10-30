@@ -6,8 +6,6 @@ restoreFromMemento: aMemento
 	self firstName: aMemento firstName.
 	self lastName: aMemento lastName.
 	self mail: aMemento mail.
-	self hasAvatar: aMemento hasAvatar.
 	self isActivated: aMemento isActivated.
 	self birthday: aMemento birthday.
-	self password: aMemento password.
 	self gender: aMemento gender

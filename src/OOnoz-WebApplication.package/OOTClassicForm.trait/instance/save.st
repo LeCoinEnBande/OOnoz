@@ -1,3 +1,3 @@
 action
 save
-	^ self explicitRequirement
+	self explicitRequirement
