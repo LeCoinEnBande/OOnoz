@@ -8,4 +8,9 @@ restoreFromMemento: aMemento
 	self mail: aMemento mail.
 	self isActivated: aMemento isActivated.
 	self birthday: aMemento birthday.
-	self gender: aMemento gender
+	self gender: aMemento gender.
+	self country: aMemento country.
+	self state: aMemento state.
+	self zip: aMemento zip.
+	self address: aMemento address.
+	self city: aMemento city

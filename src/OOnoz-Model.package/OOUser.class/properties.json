@@ -14,7 +14,12 @@
 		"gender",
 		"hasAvatar",
 		"mcqs",
-		"isActivated" ],
+		"isActivated",
+		"country",
+		"state",
+		"city",
+		"zip",
+		"address" ],
 	"name" : "OOUser",
 	"pools" : [
 		 ],
