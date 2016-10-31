@@ -4,5 +4,5 @@ save
 	self sendSubscriptionEmail.
 	self user save.
 	self answer: true ]
-		on: Error
+		on: OOError
 		do: [ :err | self hasBeenValidated: true ]

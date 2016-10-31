@@ -5,7 +5,7 @@ restoreFromMemento: aMemento
 
 	self firstName: aMemento firstName.
 	self lastName: aMemento lastName.
-	self mail: aMemento mail.
+	self directMail: aMemento mail.
 	self isActivated: aMemento isActivated.
 	self birthday: aMemento birthday.
 	self gender: aMemento gender.

@@ -12,5 +12,5 @@ renderEmailInputOn: html
 				id: id;
 				required;
 				placeholder: label;
-				callback: [ :mail | self user mail: mail address ];
+				callback: [ :mail | self user directMail: mail address ];
 				value: self user mail ]
