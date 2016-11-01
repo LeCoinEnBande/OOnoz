@@ -2,32 +2,3 @@
 
 @import "../modules/all";
 
-.label
-{
-  @include border-radius();
-}
-
-.label.label-default
-{
-  background-color: $default-color;
-}
-
-.label.label-primary
-{
-  background-color: $primary-color;
-}
-
-.label.label-info
-{
-  background-color: $info-color;
-}
-
-.label.label-success
-{
-  background-color: $success-color;
-}
-
-.label.label-danger
-{
-  background-color: $danger-color;
-}
