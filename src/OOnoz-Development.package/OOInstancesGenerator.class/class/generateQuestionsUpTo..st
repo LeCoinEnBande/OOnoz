@@ -5,7 +5,7 @@ generateQuestionsUpTo: anInteger
 	1 to: anInteger do: [ :int | 
 		| question |
 		question := (OOAbstractQuestion allSubclasses reject: #isAbstract) atRandom new.
-		question description: (self randomStringBetween: 10 and: 100).
+		question description: self lorem atRandom.
 		question index: int.
 		question
 			answers:
@@ -13,6 +13,6 @@ generateQuestionsUpTo: anInteger
 					generateAnswersUpTo: (question questionClass minimumNumberOfAnswers to: question questionClass maximumNumberOfAnswers) atRandom
 					rights: (question questionClass minNumberOfRightAnswers to: question questionClass maxNumberOfRightAnswers) atRandom).
 		(1 to: 2) atRandom even
-			ifTrue: [ question correction: (self randomStringBetween: 10 and: 100) ].
+			ifTrue: [ question correction: self lorem atRandom ].
 		res add: question ].
 	^ res
