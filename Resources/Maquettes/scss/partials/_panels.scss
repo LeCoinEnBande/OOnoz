@@ -2,3 +2,40 @@
 
 @import "../modules/all";
 
+
+.panel
+{
+  background-color: $base-color;
+  @include box-shadow(none);
+}
+
+.panel-default
+{
+  border: 0;
+}
+
+.panel-footer
+{
+  background-color: $base-color;
+  @include border-bottom-left-radius();
+  @include border-bottom-right-radius();
+}
+
+.panel-group .panel
+{
+  @include border-radius();
+}
+
+//Since it's mandatory to use panel to accordion in Bootstrap, I transform the panel-default to a base color panel, so the user don't see any box
+//Maybe use transparency indeed ?
+.panel-default>.panel-heading
+{
+  background-color: $base-color;
+  @include border-top-left-radius();
+  @include border-top-right-radius();
+}
+
+.panel-group .panel-heading+.panel-collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body
+{
+  border-top: 0;
+}
