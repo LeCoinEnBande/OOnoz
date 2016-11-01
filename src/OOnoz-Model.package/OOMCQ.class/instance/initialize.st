@@ -1,4 +1,5 @@
 initialization
 initialize
 	super initialize.
-	self questions: Set new
+	self questions: Set new.
+	self defaultOrderer

@@ -51,4 +51,16 @@ renderMCQFormsOn: html
 								list: (OOAbstractMarkingSchemeStrategy allSubclasses reject: #isAbstract);
 								labels: [ :each | each label ];
 								selected: self mcq markingScheme;
-								callback: [ :class | self mcq markingScheme: class ] ] ] ]
+								callback: [ :class | self mcq markingScheme: class ] ].
+					html tbsFormGroup
+						class: #'text-center';
+						with: [ | group |
+							group := html radioGroup.
+							self orderers
+								do: [ :class | 
+									html label
+										class: #'radio-inline';
+										with: [ group radioButton
+												selected: self mcq orderer = class;
+												callback: [ self mcq orderer: class ];
+												with: class label ] ] ] ] ]
