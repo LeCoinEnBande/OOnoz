@@ -5,5 +5,5 @@ initUserAnswers
 			(self question answers
 				inject: Dictionary new
 				into: [ :dico :answer | 
-					dico add: answer -> nil.
+					dico add: answer -> false.
 					dico ])

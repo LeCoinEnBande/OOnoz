@@ -1,3 +1,3 @@
 accessing
 question
-	^ question
+	^ self result question
