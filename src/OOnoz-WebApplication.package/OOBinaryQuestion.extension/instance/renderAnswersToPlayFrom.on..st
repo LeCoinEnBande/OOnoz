@@ -6,11 +6,10 @@ renderAnswersToPlayFrom: aComponent on: html
 		do: [ :answer | 
 			html div
 				class: 'radio';
-				with: [ | id |
-					group radioButton
+				with: [ group radioButton
 						selected: (aComponent result at: answer);
-						id: (id := html nextId);
+						id: html nextId;
 						callback: [ aComponent result at: answer put: true ].
 					html label
-						for: id;
+						for: html lastId;
 						with: answer text ] ]

@@ -1,6 +1,7 @@
 instance creation
-result: aQuestionResult index: anInteger
+owner: aComponent result: aQuestionResult index: anInteger
 	^ self new
+		owner: aComponent;
 		result: aQuestionResult;
 		index: anInteger;
 		yourself

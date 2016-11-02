@@ -6,9 +6,9 @@ renderFooterOn: html
 		with: [ html div
 				tbsPullRight;
 				with: [ html tbsButton
-						role: #button;
+						bePush;
 						beOutline;
-						beReset;
+						onClick: ((html jQuery id: self answersId) load html: [ :r | self renderAnswersOn: r ]);
 						beWarning;
 						with: 'Effacer'.
 					self renderNextQuestionButtonOn: html ] ]

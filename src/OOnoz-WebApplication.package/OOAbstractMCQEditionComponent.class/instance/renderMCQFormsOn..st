@@ -12,38 +12,38 @@ renderMCQFormsOn: html
 				mediumSize: 6;
 				mediumOffset: 3;
 				with: [ html
-						tbsFormGroup: [ | id label |
+						tbsFormGroup: [ | label |
 							label := 'Titre du questionnaire'.
 							html label
-								for: (id := html nextId);
+								for: html nextId;
 								tbsScreenReaderOnly;
 								with: label.
 							html textArea
 								tbsFormControl;
-								id: id;
+								id: html lastId;
 								placeholder: label;
 								callback: [ :title | self mcq title: title ];
 								pattern: '.{5,}';
 								value: self mcq title;
 								rows: 1 ].
 					html
-						tbsFormGroup: [ | id label |
+						tbsFormGroup: [ | label |
 							label := 'Description du questionnaire'.
 							html label
-								for: (id := html nextId);
+								for: html nextId;
 								tbsScreenReaderOnly;
 								with: label.
 							html textArea
 								tbsFormControl;
-								id: id;
+								id: html lastId;
 								placeholder: label;
 								callback: [ :descr | self mcq description: descr ];
 								value: self mcq description;
 								rows: 1 ].
 					html
-						tbsFormGroup: [ | id |
+						tbsFormGroup: [
 							html label
-								for: (id := html nextId);
+								for: html nextId;
 								tbsScreenReaderOnly;
 								with: 'Barème'.
 							html select

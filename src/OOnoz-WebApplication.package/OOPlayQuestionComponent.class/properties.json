@@ -6,8 +6,11 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
+		"owner",
 		"result",
-		"index" ],
+		"index",
+		"isActive",
+		"timeOfActivation" ],
 	"name" : "OOPlayQuestionComponent",
 	"pools" : [
 		 ],

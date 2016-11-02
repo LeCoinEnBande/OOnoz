@@ -7,4 +7,9 @@ renderContentOn: html
 				id: #questionsList;
 				role: #tablist;
 				ariaMultiselctable: true;
-				with: [ self questions do: [ :q | html render: q ] ] ]
+				with: [ self questions do: [ :q | html render: q ] ].
+			html tbsAnchor
+				beOutline;
+				beSuccess;
+				callback: [ self finish ];
+				with: 'Terminer' ]

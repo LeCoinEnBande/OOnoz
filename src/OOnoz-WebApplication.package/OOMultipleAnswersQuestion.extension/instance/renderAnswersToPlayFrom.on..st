@@ -4,11 +4,10 @@ renderAnswersToPlayFrom: aComponent on: html
 		do: [ :answer | 
 			html div
 				class: #checkbox;
-				with: [ | id |
-					html checkbox
+				with: [ html checkbox
+						id: html nextId;
 						value: (aComponent result at: answer);
-						id: (id := html nextId);
 						callback: [ :isChecked | aComponent at: answer put: isChecked ].
 					html label
-						for: id;
+						for: html lastId;
 						with: answer text ] ]

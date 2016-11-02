@@ -8,11 +8,13 @@ renderContentOn: html
 				id: self id;
 				class: #'panel-collapse';
 				class: #collapse;
-				class: #in if: self isFirst;
+				class: #in if: self isActive;
 				role: #tabpanel;
 				ariaLabelledBy: self titleId;
 				with: [ html section
 						class: #'panel-body';
 						with: [ html heading: self question description.
-							self question renderAnswersToPlayFrom: self on: html.
+							html div
+								id: self answersId;
+								with: [ self renderAnswersOn: html ].
 							self renderFooterOn: html ] ] ]

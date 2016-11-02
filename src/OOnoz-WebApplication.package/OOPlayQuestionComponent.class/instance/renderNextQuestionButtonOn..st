@@ -1,7 +1,7 @@
 rendering
 renderNextQuestionButtonOn: html
-	self isLast ifTrue: [ ^ self ].
-	
+	self isLast
+		ifTrue: [ ^ self ].
 	html space.
 	html tbsAnchor
 		beOutline;
@@ -12,4 +12,8 @@ renderNextQuestionButtonOn: html
 		ariaExpanded: true;
 		ariaControles: self id;
 		bePrimary;
+		onClick:
+			(html jQuery ajax
+				callback: [ self desactivate.
+					self owner activateQuestionAt: self index + 1 ]);
 		with: 'Question suivante'
