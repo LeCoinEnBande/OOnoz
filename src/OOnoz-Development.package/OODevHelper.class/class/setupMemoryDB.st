@@ -2,4 +2,5 @@ helpers
 setupMemoryDB
 	<script>
 	self launchInMemoryVoyageBackEnd.
-	self generateUserWithMCQsInDB
+	self generateUserWithMCQsInDB.
+	self generateAppInDB 

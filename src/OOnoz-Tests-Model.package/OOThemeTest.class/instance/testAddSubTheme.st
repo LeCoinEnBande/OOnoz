@@ -1,5 +1,5 @@
 tests-adding
-testAddSousTheme
+testAddSubTheme
 	| size |
 	size := theme subThemes size.
 	theme addSubTheme: (OOSubTheme title: 'titre du sous-theme' description: 'description du ss-theme').
