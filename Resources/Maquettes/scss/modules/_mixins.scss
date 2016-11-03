@@ -11,3 +11,10 @@
   background-color: $base-color;
   border-color: $border-color;
 }
+
+@mixin alert($color)
+{
+  color: $color;
+  border-color: $color;
+  background-color: lighten($color, 90%);
+}
