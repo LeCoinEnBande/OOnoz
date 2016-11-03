@@ -5,6 +5,6 @@
 .checkbox label::before
 {
   //!! DEBUG ONLY
-  border: $default-border-thickness solid #333;
+  border: $main-border-thickness solid #333;
   @include border-radius();
 }

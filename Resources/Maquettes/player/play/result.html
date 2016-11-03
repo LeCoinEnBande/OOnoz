@@ -77,8 +77,7 @@
                         <h3 class="panel-title">
                             Question 1
                             <div class="pull-right">
-                                <span class="badge">0/6 </span>
-                                <span class="badge">00:52</span>
+                                <span class="badge label label-success">2/2 </span>
                             </div>
                         </h3>
                     </header>
@@ -86,26 +85,30 @@
                          aria-labelledby="question1Title">
                         <section class="panel-body">
                             <h1>Lorem ipsum ?</h1>
+                            <aside class="alert alert-success">Fusce aliquam magna magna, sit amet ornare sapien varius quis. Donec euismod hendrerit
+                                ex. Maecenas molestie lacus eget mauris euismod rhoncus. Etiam ac diam quis ante
+                                vehicula dictum interdum nec tortor. Quisque ac aliquet nunc, id efficitur est. Nam
+                                pellentesque velit quis tellus hendrerit sollicitudin.</aside>
                             <div class="checkbox">
-                                <input type="checkbox" id="question1Answer1">
+                                <input type="checkbox" id="question1Answer1" >
                                 <label for="question1Answer1">
                                     Aenean semper rutrum nisi.
                                 </label>
                             </div>
-                            <div class="checkbox">
-                                <input type="checkbox" id="question1Answer2">
+                            <div class="checkbox checkbox-success">
+                                <input type="checkbox" id="question1Answer2"checked >
                                 <label for="question1Answer2">
                                     Aenean semper rutrum nisi.
                                 </label>
                             </div>
                             <div class="checkbox">
-                                <input type="checkbox" id="question1Answer3">
+                                <input type="checkbox" id="question1Answer3" >
                                 <label for="question1Answer3">
                                     Mauris metus ex, posuere quis est non, rutrum aliquam mauris.
                                 </label>
                             </div>
-                            <div class="checkbox">
-                                <input type="checkbox" id="question1Answer4">
+                            <div class="checkbox checkbox-success">
+                                <input type="checkbox" id="question1Answer4" checked >
                                 <label for="question1Answer4">
                                     Aenean malesuada vehicula dapibus.
                                 </label>
@@ -117,7 +120,7 @@
                                 </label>
                             </div>
                             <div class="checkbox">
-                                <input type="checkbox" id="question1Answer6">
+                                <input type="checkbox" id="question1Answer6" >
                                 <label for="question1Answer6">
                                     Ut pharetra mattis elit, id semper eros luctus quis.
                                 </label>
@@ -126,7 +129,73 @@
                         </section>
                         <footer class="panel-footer clearfix">
                             <div class="pull-right">
-                                <button type="button" role="button" class="btn btn-warning">Effacer</button>
+                                <a role="button" data-toggle="collapse" data-parent="#questionsList"
+                                   href="#question2"
+                                   aria-expanded="true" aria-controls="question1" class="btn btn-primary">Question
+                                    suivante</a>
+                            </div>
+                        </footer>
+                    </div>
+                </article>
+                <article class="panel panel-default">
+                    <header class="panel-heading" role="tab" id="questionTitle2" data-toggle="collapse"
+                            data-target="#question2" data-parent="#questionsList" role="button" aria-expanded="true"
+                            aria-controls="question2">
+                        <h3 class="panel-title">
+                            Question 2
+                            <div class="pull-right">
+                                <span class="badge label label-danger">0/6 </span>
+                            </div>
+                        </h3>
+                    </header>
+                    <div id="question2" class="panel-collapse collapse" role="tabpanel"
+                         aria-labelledby="question2Title">
+                        <section class="panel-body">
+                            <h1>Lorem ipsum ?</h1>
+                            <aside class="alert alert-danger">Fusce aliquam magna magna, sit amet ornare sapien varius quis. Donec euismod hendrerit
+                                ex. Maecenas molestie lacus eget mauris euismod rhoncus. Etiam ac diam quis ante
+                                vehicula dictum interdum nec tortor. Quisque ac aliquet nunc, id efficitur est. Nam
+                                pellentesque velit quis tellus hendrerit sollicitudin.</aside>
+                            <div class="checkbox">
+                                <input type="checkbox" id="question2Answer1" >
+                                <label for="question2Answer1">
+                                    Aenean semper rutrum nisi.
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-danger">
+                                <input type="checkbox" id="question2Answer2"checked >
+                                <label for="question2Answer2">
+                                    Aenean semper rutrum nisi.
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" id="question2Answer3" >
+                                <label for="question2Answer3">
+                                    Mauris metus ex, posuere quis est non, rutrum aliquam mauris.
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-danger">
+                                <input type="checkbox" id="question2Answer4" checked >
+                                <label for="question2Answer4">
+                                    Aenean malesuada vehicula dapibus.
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" id="question2Answer5">
+                                <label for="question2Answer5">
+                                    Sed malesuada, lectus nec mollis lobortis.
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" id="question2Answer6" >
+                                <label for="question2Answer6">
+                                    Ut pharetra mattis elit, id semper eros luctus quis.
+                                </label>
+                            </div>
+
+                        </section>
+                        <footer class="panel-footer clearfix">
+                            <div class="pull-right">
                                 <a role="button" data-toggle="collapse" data-parent="#questionsList"
                                    href="#question1"
                                    aria-expanded="true" aria-controls="question1" class="btn btn-primary">Question

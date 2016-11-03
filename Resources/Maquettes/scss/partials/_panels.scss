@@ -39,3 +39,11 @@
 {
   border-top: 0;
 }
+
+.panel-group .panel-default>.panel-heading
+{
+  //!! DEBUG ONLY
+  border-top: $second-border-thickness solid #eee;
+  padding-top: $second-margin;
+  padding-bottom: $second-margin;
+}
