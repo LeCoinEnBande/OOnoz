@@ -8,7 +8,10 @@ renderFooterOn: html
 				with: [ html tbsButton
 						bePush;
 						beOutline;
-						onClick: ((html jQuery id: self answersId) load html: [ :r | self renderAnswersOn: r ]);
+						onClick:
+							((html jQuery id: self answersId) load
+								html: [ :r | self renderAnswersOn: r ];
+								onComplete: self owner initCheckboxesJs);
 						beWarning;
 						with: 'Effacer'.
 					self renderNextQuestionButtonOn: html ] ]

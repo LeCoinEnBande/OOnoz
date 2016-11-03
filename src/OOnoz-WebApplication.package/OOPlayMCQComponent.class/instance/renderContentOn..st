@@ -8,8 +8,8 @@ renderContentOn: html
 				role: #tablist;
 				ariaMultiselctable: true;
 				with: [ self questions do: [ :q | html render: q ] ].
-			html tbsAnchor
-				beOutline;
-				beSuccess;
-				callback: [ self finish ];
-				with: 'Terminer' ]
+			html document addLoadScript: self initCheckboxesJs.
+			html
+				section: [ html div
+						tbsPullRight;
+						with: [ self renderButtonsOn: html ] ] ]

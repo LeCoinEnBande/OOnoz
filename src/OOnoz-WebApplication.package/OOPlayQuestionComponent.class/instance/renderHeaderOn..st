@@ -16,4 +16,4 @@ renderHeaderOn: html
 			if: true;
 		with: [ html tbsPanelTitle
 				level3;
-				with: 'Question ' , self index asString ]
+				with: 'Question ' , self index greaseString ]
