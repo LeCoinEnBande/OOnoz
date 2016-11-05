@@ -9,6 +9,7 @@ renderFormContentOn: html
 					self questionKinds
 						do: [ :class | 
 							html label
+								tbsTooltip: class description;
 								class: #'radio-inline';
 								with: [ group radioButton
 										selected: self question class = class;
