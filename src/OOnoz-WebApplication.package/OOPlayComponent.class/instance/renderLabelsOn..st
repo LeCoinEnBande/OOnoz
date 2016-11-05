@@ -12,6 +12,6 @@ renderLabelsOn: html
 		beSuccess;
 		with: self mcq orderer label.
 	html space.
-	^ html tbsLabel
+	html tbsLabel
 		beInfo;
 		with: '0 crédit'

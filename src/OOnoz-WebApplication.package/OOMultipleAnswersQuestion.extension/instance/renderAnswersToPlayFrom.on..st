@@ -6,8 +6,8 @@ renderAnswersToPlayFrom: aComponent on: html
 				class: #checkbox;
 				with: [ html checkbox
 						id: html nextId;
-						value: (aComponent result at: answer);
-						callback: [ :isChecked | aComponent at: answer put: isChecked ].
+						value: (aComponent resultAt: answer);
+						callback: [ :isChecked | aComponent resultAt: answer put: isChecked ].
 					html label
 						for: html lastId;
 						with: answer text ] ]

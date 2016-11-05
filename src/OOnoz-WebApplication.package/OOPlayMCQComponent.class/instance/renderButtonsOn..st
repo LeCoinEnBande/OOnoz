@@ -1,7 +1,6 @@
 rendering
 renderButtonsOn: html
-	html tbsButton
-		bePush;
+	html tbsAnchor
 		beDanger;
 		beOutline;
 		dataToggle: 'modal';
@@ -9,8 +8,9 @@ renderButtonsOn: html
 		with: 'Quitter'.
 	self renderCancelModalFor: html lastId on: html.
 	html space.
-	html tbsAnchor
+	html tbsButton
 		beOutline;
 		beSuccess;
+		beSubmit;
 		callback: [ self finish ];
 		with: 'Envoyer mes réponses'

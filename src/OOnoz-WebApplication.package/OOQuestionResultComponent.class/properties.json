@@ -6,8 +6,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "OOTestComponent",
+		"owner",
+		"result",
+		"index" ],
+	"name" : "OOQuestionResultComponent",
 	"pools" : [
 		 ],
 	"super" : "OOComponent",

@@ -6,8 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "OOTestComponent",
+		"mcqResult",
+		"questions" ],
+	"name" : "OOResultPageComponent",
 	"pools" : [
 		 ],
 	"super" : "OOComponent",

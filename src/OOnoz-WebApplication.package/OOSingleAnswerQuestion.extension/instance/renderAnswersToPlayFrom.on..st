@@ -7,9 +7,9 @@ renderAnswersToPlayFrom: aComponent on: html
 			html div
 				class: 'radio';
 				with: [ group radioButton
-						selected: (aComponent result at: answer);
+						selected: (aComponent resultAt: answer);
 						id: html nextId;
-						callback: [ aComponent result at: answer put: true ].
+						callback: [ aComponent resultAt: answer put: true ].
 					html label
 						for: html lastId;
 						with: answer text ] ]
