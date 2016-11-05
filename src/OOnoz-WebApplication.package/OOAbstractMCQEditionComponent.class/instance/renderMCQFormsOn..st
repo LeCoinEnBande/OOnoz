@@ -11,49 +11,48 @@ renderMCQFormsOn: html
 		tbsRow: [ html tbsColumn
 				mediumSize: 6;
 				mediumOffset: 3;
+				class: #'text-center';
 				with: [ html
-						tbsFormGroup: [ | label |
+						tbsFormGroup: [ | id label |
 							label := 'Titre du questionnaire'.
 							html label
-								for: html nextId;
+								for: (id := html nextId);
 								tbsScreenReaderOnly;
 								with: label.
 							html textArea
 								tbsFormControl;
-								id: html lastId;
+								id: id;
 								placeholder: label;
 								callback: [ :title | self mcq title: title ];
 								pattern: '.{5,}';
 								value: self mcq title;
 								rows: 1 ].
 					html
-						tbsFormGroup: [ | label |
+						tbsFormGroup: [ | id label |
 							label := 'Description du questionnaire'.
 							html label
-								for: html nextId;
+								for: (id := html nextId);
 								tbsScreenReaderOnly;
 								with: label.
 							html textArea
 								tbsFormControl;
-								id: html lastId;
+								id: id;
 								placeholder: label;
 								callback: [ :descr | self mcq description: descr ];
 								value: self mcq description;
 								rows: 1 ].
 					html
-						tbsFormGroup: [
-							html label
-								for: html nextId;
-								tbsScreenReaderOnly;
-								with: 'Barème'.
-							html select
-								class: 'form-control';
-								list: (OOAbstractMarkingSchemeStrategy allSubclasses reject: #isAbstract);
-								labels: [ :each | each label ];
-								selected: self mcq markingScheme;
-								callback: [ :class | self mcq markingScheme: class ] ].
+						tbsFormGroup: [ | group |
+							group := html radioGroup.
+							self markingSchemes
+								do: [ :class | 
+									html label
+										tbsTooltip: class description;
+										class: #'radio-inline';
+										with: [ group radioButton
+											selected: self mcq markingScheme = class;
+											callback: [ self mcq markingScheme: class ] ] ] ]
 					html tbsFormGroup
-						class: #'text-center';
 						with: [ | group |
 							group := html radioGroup.
 							self orderers
