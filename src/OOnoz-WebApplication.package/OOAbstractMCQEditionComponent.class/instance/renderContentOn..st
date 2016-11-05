@@ -18,4 +18,5 @@ renderContentOn: html
 						dataToggle: 'modal';
 						dataTarget: '#' , (id := html nextId);
 						with: 'Annuler' ] ].
-	self renderCancelModalFor: id on: html
+	self renderCancelModalFor: id on: html.
+	html document addLoadScript: ' $(''[data-toggle="tooltip"]'').tooltip()' js

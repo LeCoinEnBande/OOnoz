@@ -11,6 +11,7 @@ renderMCQFormsOn: html
 		tbsRow: [ html tbsColumn
 				mediumSize: 6;
 				mediumOffset: 3;
+				class: #'text-center';
 				with: [ html
 						tbsFormGroup: [ | id label |
 							label := 'Titre du questionnaire'.
@@ -41,19 +42,17 @@ renderMCQFormsOn: html
 								value: self mcq description;
 								rows: 1 ].
 					html
-						tbsFormGroup: [ | id |
-							html label
-								for: (id := html nextId);
-								tbsScreenReaderOnly;
-								with: 'Barème'.
-							html select
-								class: 'form-control';
-								list: (OOAbstractMarkingSchemeStrategy allSubclasses reject: #isAbstract);
-								labels: [ :each | each label ];
-								selected: self mcq markingScheme;
-								callback: [ :class | self mcq markingScheme: class ] ].
+						tbsFormGroup: [ | group |
+							group := html radioGroup.
+							self markingSchemes
+								do: [ :class | 
+									html label
+										tbsTooltip: class description;
+										class: #'radio-inline';
+										with: [ group radioButton
+											selected: self mcq markingScheme = class;
+											callback: [ self mcq markingScheme: class ] ] ] ]
 					html tbsFormGroup
-						class: #'text-center';
 						with: [ | group |
 							group := html radioGroup.
 							self orderers
