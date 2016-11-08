@@ -1,6 +1,6 @@
 printing
 printResultOn: aStream
 	aStream
-		<< self result;
+		<< (self result printShowingMaxDecimalPlaces: 2);
 		<< $/;
 		<< self questionResults size

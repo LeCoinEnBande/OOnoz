@@ -12,5 +12,4 @@ printDetailedResult
 				ifTrue: [ s << $s ].
 			s
 				<< ' sur ';
-				<< self questionResults size;
-				<< $. ]
+				<< self questionResults size ]
