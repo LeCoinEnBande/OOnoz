@@ -6,7 +6,7 @@ renderContentOn: html
 				class: #'panel-group';
 				id: #questionsList;
 				role: #tablist;
-				ariaMultiselctable: true;
+				ariaMultiselectable: true;
 				with: [ self questions do: [ :q | html render: q ] ].
 			html document addLoadScript: self initCheckboxesJs.
 			html

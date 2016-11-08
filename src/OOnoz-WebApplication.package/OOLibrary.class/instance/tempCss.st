@@ -1,6 +1,6 @@
 css
 tempCss
-	^ '.playing-question.panel-heading[aria-expanded=true], .playing-question.panel-heading[aria-expanded="aria-expanded"]{
+	^ '.playing-question.panel-heading[aria-expanded=true]{
    pointer-events: none;
 }
 
