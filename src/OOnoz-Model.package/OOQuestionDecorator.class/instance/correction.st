@@ -1,3 +1,3 @@
 accessing
 correction
-	^ self question ifNotNil: [ :q | q explanation ]
+	^ self question ifNotNil: [ :q | q correction ]
