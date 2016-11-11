@@ -9,8 +9,10 @@ renderFooterOn: html
 						bePush;
 						beOutline;
 						onClick:
-							((html jQuery id: self answersId) load
-								html: [ :r | self renderAnswersOn: r ];
+							((html jQuery this closest: '.panel') load
+								html: [ :r | 
+									self resetAnswers.
+									self renderQuestionOn: r ];
 								onComplete: self owner initCheckboxesJs);
 						beWarning;
 						with: 'Effacer'.
