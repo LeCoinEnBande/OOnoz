@@ -1,6 +1,6 @@
 tests-adding
 testAddSubTheme
 	| size |
-	size := theme subThemes size.
-	theme addSubTheme: (OOSubTheme title: 'titre du sous-theme' description: 'description du ss-theme').
-	self assert: theme subThemes size equals: size + 1
+	size := instance subThemes size.
+	instance addSubTheme: (OOSubTheme title: 'titre du sous-theme' description: 'description du ss-theme').
+	self assert: instance subThemes size equals: size + 1

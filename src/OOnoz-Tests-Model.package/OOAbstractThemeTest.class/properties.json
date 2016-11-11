@@ -1,14 +1,14 @@
 {
-	"category" : "OOnoz-Model-Theme",
+	"category" : "OOnoz-Tests-Model-Theme",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"theme" ],
-	"name" : "OOSubTheme",
+		"instance" ],
+	"name" : "OOAbstractThemeTest",
 	"pools" : [
 		 ],
-	"super" : "OOAbstractTheme",
+	"super" : "TestCase",
 	"type" : "normal" }

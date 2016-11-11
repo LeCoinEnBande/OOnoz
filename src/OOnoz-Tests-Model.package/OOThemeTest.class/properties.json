@@ -10,5 +10,5 @@
 	"name" : "OOThemeTest",
 	"pools" : [
 		 ],
-	"super" : "TestCase",
+	"super" : "OOAbstractThemeTest",
 	"type" : "normal" }

@@ -1,3 +1,3 @@
 public
 delete: aTheme
-"todo"
+	self flag: #todo "désactivation / suppression a discuter"
