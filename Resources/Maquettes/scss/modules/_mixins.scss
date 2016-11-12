@@ -16,5 +16,5 @@
 {
   color: $color;
   border-color: $color;
-  background-color: lighten($color, 90%);
+  background-color: $base-color;
 }
