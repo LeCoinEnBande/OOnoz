@@ -4,6 +4,16 @@
 
 .badge
 {
-  background: transparent;
+}
+
+.label
+{
+  @include border-radius();
+  border: 2px solid transparent;
+}
+
+.label-primary
+{
+  @include btn($primary-color);
 }
 
