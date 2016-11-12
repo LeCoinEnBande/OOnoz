@@ -1,4 +1,4 @@
 initialization
 initialize
 	super initialize.
-	themes:= self currentApp themes
+	themes:= OOTheme selectAll
