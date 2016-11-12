@@ -12,3 +12,11 @@ smalltalk:
 matrix:
   allow_failures:
     - smalltalk: Pharo-6.0
+
+notifications:
+  email:
+    recipients:
+      - c.ferlicot-delbecque@etudiant.univ-lille1.fr
+      - maxime.piquet@etudiant.univ-lille1.fr
+    on_success: never
+    on_failure: always
