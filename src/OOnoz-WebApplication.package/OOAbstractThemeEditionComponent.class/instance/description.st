@@ -1,3 +1,3 @@
 accessing
 description
-	^ 'Création d''une thématique'
+	^ self subclassResponsibility

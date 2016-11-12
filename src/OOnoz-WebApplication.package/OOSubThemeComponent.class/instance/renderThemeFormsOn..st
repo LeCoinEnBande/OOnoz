@@ -2,11 +2,12 @@ rendering
 renderThemeFormsOn: html
 	html
 		tbsRow: [ html tbsColumn
-				mediumSize: 6;
-				mediumOffset: 3;
-				with: [ html
-						tbsFormGroup: [ | id label |
-							label := 'Titre du thème'.
+				mediumSize: 10;
+				mediumOffset: 1;
+				with: [  
+					html heading level: 6; with: self subTheme title. 
+					html tbsFormGroup: [ | id label |
+							label := 'Titre du sous-thème'.
 							html label
 								for: (id := html nextId);
 								tbsScreenReaderOnly;
@@ -15,13 +16,13 @@ renderThemeFormsOn: html
 								tbsFormControl;
 								id: id;
 								placeholder: label;
-								callback: [ :title | self theme title: title ];
+								callback: [ :title | self subTheme title: title ];
 								pattern: '.{5,}';
-								value: self theme title;
+								value: self subTheme title;
 								rows: 1 ].
 					html
 						tbsFormGroup: [ | id label |
-							label := 'Description du thème'.
+							label := 'Description du sous-thème'.
 							html label
 								for: (id := html nextId);
 								tbsScreenReaderOnly;
@@ -30,10 +31,7 @@ renderThemeFormsOn: html
 								tbsFormControl;
 								id: id;
 								placeholder: label;
-								callback: [ :description | self theme description: description ];
+								callback: [ :description | self subTheme description: description ];
 								pattern: '.{5,}';
-								value: self theme description;
-								rows: 1 ].
-					html
-						tbsFormGroup: [  						
-							subThemesComponents do: [ :subTheme | subTheme renderThemeFormsOn: html  ] ] ] ]
+								value: self subTheme description;
+								rows: 1 ] ] ]

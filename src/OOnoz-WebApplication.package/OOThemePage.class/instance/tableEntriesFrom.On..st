@@ -8,7 +8,7 @@ tableEntriesFrom: theme On: html
 		with: 'TODO' ].
 	[ html anchor
 		callback: [ (self call: (OOThemeEditionComponent theme: theme))
-				ifTrue: [ self message: 'Thème édité.' ] ];
+				ifTrue: [ self message: 'Thème modifié.' ] ];
 		with: [ html tbsGlyphIcon iconEdit ].
 	html space.
 	html anchor

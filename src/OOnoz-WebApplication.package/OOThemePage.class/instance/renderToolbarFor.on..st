@@ -5,6 +5,6 @@ renderToolbarFor: anId on: html
 		with: [ html tbsAnchor
 				beSuccess;
 				beOutline;
-				callback: [ (self call: OOThemeEditionComponent new)
+				callback: [ (self call: OOThemeCreationComponent new)
 						ifTrue: [ self message: 'Nouveau thème créé.' ] ];
 				with: 'Ajouter' ]
