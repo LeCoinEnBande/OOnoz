@@ -1,8 +1,13 @@
 rendering
 tableEntriesFrom: theme On: html
-	^ {
-	theme title.
+	^ {theme title.
 	theme description.
+	[ theme subThemes
+		do: [ :st | 
+			html tbsLabel
+				beDefault;
+				with: st title.
+			html space ] ].
 	[ html tbsLabel
 		beSuccess;
 		with: 'TODO' ].
