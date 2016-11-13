@@ -4,6 +4,24 @@
 
 .badge
 {
-  background: transparent;
 }
+
+
+.badge-success, .panel-default>.panel-heading .badge .badge-success
+{
+  @include btn($success-color);
+}
+
+.label
+{
+  @include border-radius();
+  border: 2px solid transparent;
+}
+
+.label-primary
+{
+  @include btn($primary-color);
+}
+
+
 
