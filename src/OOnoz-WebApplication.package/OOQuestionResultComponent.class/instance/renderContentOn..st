@@ -13,7 +13,9 @@ renderContentOn: html
 				ariaLabelledBy: self titleId;
 				with: [ html section
 						class: #'panel-body';
-						with: [ html heading: self question description.
+						with: [ html heading
+								level2;
+								with: self question description.
 							self renderAlertOn: html.
 							html div
 								id: self answersId;

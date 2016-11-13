@@ -1,7 +1,7 @@
 rendering
 renderQuestionOn: html
 	self renderHeaderOn: html.
-	^ html div
+	html div
 		id: self id;
 		class: #'panel-collapse';
 		class: #collapse;
@@ -10,7 +10,9 @@ renderQuestionOn: html
 		ariaLabelledBy: self titleId;
 		with: [ html section
 				class: #'panel-body';
-				with: [ html heading: self question description.
+				with: [ html heading
+						level2;
+						with: self question description.
 					(html tag: #em) with: self question questionClass description.
 					html div
 						id: self answersId;

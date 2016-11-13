@@ -4,7 +4,6 @@ renderHeaderOn: html
 		id: self titleId;
 		class: #'panel-heading';
 		class: #'playing-question';
-		class: #collapsed if: self isActive not;
 		role: #tab;
 		attributeAt: #'data-toggle' put: #collapse;
 		attributeAt: #'data-parent' put: #'#questionsList';

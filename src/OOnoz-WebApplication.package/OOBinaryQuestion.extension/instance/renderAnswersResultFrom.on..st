@@ -6,10 +6,10 @@ renderAnswersResultFrom: aComponent on: html
 		do: [ :answer | 
 			html div
 				class: 'radio';
-				class: #'radio-success' if: (aComponent resultAt: answer) = answer isRight;
-				class: #'radio-danger' if: (aComponent resultAt: answer) ~= answer isRight;
+				class: #'checkbox-success' if: answer isRight;
+				class: #'checkbox-danger' if: ((aComponent resultAt: answer) and: [ answer isRight not ]);
 				with: [ group radioButton
-						selected: answer isRight;
+						selected: (aComponent resultAt: answer);
 						id: html nextId;
 						disabled.
 					html label

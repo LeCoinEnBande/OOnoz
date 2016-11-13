@@ -10,7 +10,5 @@ renderRulesOn: html
 												header: [ html heading
 														level3;
 														with: title ].
-											html section
-												class: #'text-justify';
-												with: description ] ]
+											html section: description ] ]
 								mediumSize: 4 ] ] ]
