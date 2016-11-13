@@ -2,32 +2,26 @@
 
 @import "../modules/all";
 
+.badge
+{
+}
+
+
+.badge-success, .panel-default>.panel-heading .badge .badge-success
+{
+  @include btn($success-color);
+}
+
 .label
 {
   @include border-radius();
+  border: 2px solid transparent;
 }
 
-.label.label-default
+.label-primary
 {
-  background-color: $default-color;
+  @include btn($primary-color);
 }
 
-.label.label-primary
-{
-  background-color: $primary-color;
-}
 
-.label.label-info
-{
-  background-color: $info-color;
-}
 
-.label.label-success
-{
-  background-color: $success-color;
-}
-
-.label.label-danger
-{
-  background-color: $danger-color;
-}

@@ -2,52 +2,25 @@
 
 @import "../modules/all";
 
-@import 'https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:300';
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
 
 body
 {
-  font-family: 'Roboto', sans-serif;
-
-  //DEBUG ONLY
-  font-size: 16px;
+  text-align: justify;
 }
 
-.navbar
-{
-  font-size: 13px;
-  //font-family: 'Montserrat', sans-serif;
-}
+//Reuse already existing Bootstrap class for alternative style heading
 
-h1,h2,h3,h4,h5,h6, .h1, .h2, .h3, .h4, .h5, .h6
+h1,h2,h3,h4,h5,h6
 {
-  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6
+h1
 {
   text-transform: uppercase;
-  //color: $default-color;
-
+  font-size: 35px;
+  color: $primary-color;
 }
 
-.label
-{
-  font-weight: 400;
-}
-
-.btn
-{
-}
-
-a
-{
-  //color: $primary-color;
-}
-
-a:hover
-{
-  text-decoration: none;
-  color: $info-color;
-}
 

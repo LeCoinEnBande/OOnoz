@@ -2,37 +2,45 @@
 
 @import "../modules/all";
 
-.form-control
+//Checkbox style
+.checkbox label::before
 {
-  @include border-radius(0);
-  border: none;
-  border-bottom: 1px solid $default-color;
-  @include box-shadow(none);
+  //!! DEBUG ONLY
+  border: $main-border-thickness solid #333;
+  @include border-radius();
 }
 
-.form-control:focus
+//!! DEBUG ONLY, will create a color property useless
+.checkbox-success input[type="checkbox"]:checked + label::before, .checkbox-success input[type="radio"]:checked + label::before
 {
-  //DEBUG CAUSE ITS POSSIBLE BAD
-  outline: none;
-  @include box-shadow(none);
-  border-color: $primary-color;
+  @include btn($success-color);
 }
 
-textarea
+.checkbox-success>label
 {
-  resize: none;
+  color: $success-color;
 }
 
-.input-group-addon
+.checkbox-danger input[type="checkbox"]:checked + label::before, .checkbox-danger input[type="radio"]:checked + label::before
 {
-  background-color: transparent;
-  border: none;
-  //border-bottom: 1px solid $default-color;
-  @include border-radius(0);
-  @include box-shadow(none);
+  @include btn($danger-color);
 }
 
-.input-group-btn
+.checkbox-danger>label
 {
-  top: 1px;
+  color: $danger-color;
+}
+
+//Radio style
+.radio label::before
+{
+  border: $main-border-thickness solid #333;
+}
+
+.radio label::after
+{
+  width: 9px;
+  height: 9px;
+  top: 4px;
+  left: 4px;
 }
