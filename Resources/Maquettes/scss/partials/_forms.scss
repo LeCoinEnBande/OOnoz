@@ -2,9 +2,34 @@
 
 @import "../modules/all";
 
+//Checkbox style
 .checkbox label::before
 {
   //!! DEBUG ONLY
   border: $main-border-thickness solid #333;
   @include border-radius();
+}
+
+.checkbox-success input[type="checkbox"]:checked + label::before, .checkbox-success input[type="radio"]:checked + label::before
+{
+  @include btn($success-color);
+}
+
+.checkbox-success>label
+{
+  color: $success-color;
+}
+
+//Radio style
+.radio label::before
+{
+  border: $main-border-thickness solid #333;
+}
+
+.radio label::after
+{
+  width: 9px;
+  height: 9px;
+  top: 4px;
+  left: 4px;
 }
