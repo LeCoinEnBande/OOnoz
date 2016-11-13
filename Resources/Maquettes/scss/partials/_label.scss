@@ -6,6 +6,12 @@
 {
 }
 
+
+.badge-success, .panel-default>.panel-heading .badge .badge-success
+{
+  @include btn($success-color);
+}
+
 .label
 {
   @include border-radius();
@@ -16,4 +22,6 @@
 {
   @include btn($primary-color);
 }
+
+
 
