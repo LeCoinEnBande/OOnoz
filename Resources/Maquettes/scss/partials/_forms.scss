@@ -10,6 +10,7 @@
   @include border-radius();
 }
 
+//!! DEBUG ONLY, will create a color property useless
 .checkbox-success input[type="checkbox"]:checked + label::before, .checkbox-success input[type="radio"]:checked + label::before
 {
   @include btn($success-color);
@@ -18,6 +19,16 @@
 .checkbox-success>label
 {
   color: $success-color;
+}
+
+.checkbox-danger input[type="checkbox"]:checked + label::before, .checkbox-danger input[type="radio"]:checked + label::before
+{
+  @include btn($danger-color);
+}
+
+.checkbox-danger>label
+{
+  color: $danger-color;
 }
 
 //Radio style
