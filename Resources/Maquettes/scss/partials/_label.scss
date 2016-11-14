@@ -7,10 +7,16 @@
 }
 
 
-.badge-success, .panel-default>.panel-heading .badge .badge-success
+.panel-default>.panel-heading .badge.badge-success
 {
   @include btn($success-color);
 }
+
+.panel-default>.panel-heading .badge.badge-danger
+{
+  @include btn($danger-color);
+}
+
 
 .label
 {
