@@ -5,64 +5,46 @@
 .btn
 {
   @include border-radius();
-}
-
-.btn-link
-{
-  border: 0;
-}
-
-.btn-outline
-{
-  background-color: transparent;
+  border: 2px solid transparent;
 }
 
 .btn-primary
 {
-  @include btn-outline($primary-color);
+  @include btn($primary-color);
+}
+
+.btn-primary:hover,.btn-primary:active
+{
+  @include btn-hover($primary-color);
+}
+
+
+.btn-warning
+{
+  @include btn($warning-color);
+}
+
+.btn-warning:hover, .btn-warning:active
+{
+  @include btn-hover($warning-color);
 }
 
 .btn-success
 {
-  @include btn-outline($success-color);
+  @include btn($success-color);
+}
+
+.btn-success:hover, .btn-success:active
+{
+  @include btn-hover($success-color);
 }
 
 .btn-danger
 {
-  @include btn-outline($danger-color);
-}
-
-.btn-info
-{
-  @include btn-outline($info-color);
-}
-
-.btn-warning
-{
-  @include btn-outline($warning-color);
-}
-
-.btn-primary:hover
-{
-  @include btn($primary-color);
-}
-
-.btn-success:hover
-{
-  @include btn($success-color);
-}
-
-.btn-danger:hover
-{
   @include btn($danger-color);
 }
 
-.btn-info:hover
+.btn-danger:hover, .btn-danger:active
 {
-  @include btn($info-color);
-}
-
-.btn-warning:hover
-{
-  @include btn($warning-color);
+  @include btn-hover($danger-color);
 }

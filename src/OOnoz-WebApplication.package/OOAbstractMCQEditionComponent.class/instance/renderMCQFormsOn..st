@@ -51,7 +51,7 @@ renderMCQFormsOn: html
 										class: #'radio-inline';
 										with: [ group radioButton
 											selected: self mcq markingScheme = class;
-											callback: [ self mcq markingScheme: class ] ] ] ]
+											callback: [ self mcq markingScheme: class ] ] ] ].
 					html tbsFormGroup
 						with: [ | group |
 							group := html radioGroup.

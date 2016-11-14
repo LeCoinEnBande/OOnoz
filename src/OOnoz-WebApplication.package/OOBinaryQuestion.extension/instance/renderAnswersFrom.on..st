@@ -8,7 +8,7 @@ renderAnswersFrom: aComponent on: html
 				tbsFormGroup: [ html
 						tbsInputGroup: [ html
 								tbsInputGroupAddOn: [ radioGroup radioButton
-										checked: (answer isRight or: [ answer index = 1 and: [ self answers detect: [ :ans | ans isRight ] ifFound: [ false ] ifNone: [ true ] ] ]);
+										checked: (self shouldCheck: answer);
 										onChange: html jQuery ajax serializeThis;
 										callback: [ answer beRight ] ].
 							self renderTextInputFor: answer from: aComponent on: html ] ] ]

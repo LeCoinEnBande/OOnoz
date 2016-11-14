@@ -1,12 +1,20 @@
-@mixin btn-outline($color)
+@mixin btn($background-color)
 {
-  border-color: $color;
-  color: $color;
+  color: $base-color;
+  background-color: $background-color;
+  border-color: $background-color;
 }
 
-@mixin btn($color)
+@mixin btn-hover($border-color)
 {
-  background-color: $color;
+  color: $border-color;
+  background-color: $base-color;
+  border-color: $border-color;
+}
+
+@mixin alert($color)
+{
+  color: $color;
   border-color: $color;
-  color: $neutral-color;
+  background-color: $base-color;
 }

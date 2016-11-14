@@ -1,0 +1,12 @@
+@import "compass";
+
+@import "../modules/all";
+
+.support
+{
+}
+
+.support .support-object
+{
+  margin-top: $second-margin * 2;
+}

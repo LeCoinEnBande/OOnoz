@@ -1,0 +1,14 @@
+{
+	"category" : "OOnoz-Tests-Model-Statistics",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"result" ],
+	"name" : "OOQuestionResultTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

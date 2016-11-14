@@ -1,3 +1,3 @@
 magicNumbers
 minimumNumberOfAnswers
-	^ 2
+	^ 3
