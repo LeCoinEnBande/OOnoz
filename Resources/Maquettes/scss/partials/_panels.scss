@@ -26,6 +26,11 @@
   @include border-radius();
 }
 
+.panel-group .panel-body h2
+{
+  margin-top: 0;
+}
+
 //Since it's mandatory to use panel to accordion in Bootstrap, I transform the panel-default to a base color panel, so the user don't see any box
 //Maybe use transparency indeed ?
 .panel-default>.panel-heading
