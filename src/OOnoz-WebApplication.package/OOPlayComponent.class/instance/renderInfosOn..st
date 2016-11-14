@@ -7,7 +7,7 @@ renderInfosOn: html
 						extraSmallSize: 3;
 						with: [ html image
 								class: #'img-responsive';
-								url: 'http://static.wamiz.fr/images/news/medium/acheter-jouet-pour-chat-pas-cher.jpg' ].
+								url: 'https://static.fermedebeaumont.com/images/poules-coqs-race/poules-pondeuses-fermieres/poule-pondeuse-fermiere-rousse-elevage-vente.jpg' ].
 					html tbsColumn
 						extraSmallSize: 9;
 						with: [ html article: [ html render: (OOMCQHeaderComponent mcq: self mcq) ].
