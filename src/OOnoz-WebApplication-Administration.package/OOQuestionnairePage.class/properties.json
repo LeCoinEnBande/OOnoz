@@ -1,0 +1,14 @@
+{
+	"category" : "OOnoz-WebApplication-Administration",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"message" ],
+	"name" : "OOQuestionnairePage",
+	"pools" : [
+		 ],
+	"super" : "OOComponent",
+	"type" : "normal" }

@@ -1,0 +1,15 @@
+{
+	"category" : "OOnoz-WebApplication-Administration",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"question",
+		"owner" ],
+	"name" : "OOAbstractQuestionEditionComponent",
+	"pools" : [
+		 ],
+	"super" : "OOComponent",
+	"type" : "normal" }

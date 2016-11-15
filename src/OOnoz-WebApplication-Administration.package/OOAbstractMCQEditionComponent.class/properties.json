@@ -1,0 +1,16 @@
+{
+	"category" : "OOnoz-WebApplication-Administration",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"mcq",
+		"questionComponents",
+		"hasBeenValidated" ],
+	"name" : "OOAbstractMCQEditionComponent",
+	"pools" : [
+		 ],
+	"super" : "OOComponent",
+	"type" : "normal" }

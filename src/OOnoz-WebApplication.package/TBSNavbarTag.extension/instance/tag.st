@@ -1,3 +1,0 @@
-*OOnoz-WebApplication
-tag
-	^ 'nav'

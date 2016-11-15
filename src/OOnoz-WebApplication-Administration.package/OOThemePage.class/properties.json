@@ -1,0 +1,15 @@
+{
+	"category" : "OOnoz-WebApplication-Administration",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"message",
+		"themes" ],
+	"name" : "OOThemePage",
+	"pools" : [
+		 ],
+	"super" : "OOComponent",
+	"type" : "normal" }

@@ -1,0 +1,16 @@
+{
+	"category" : "OOnoz-WebApplication-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"header",
+		"component",
+		"componentsInstances" ],
+	"name" : "OOAbstractRoot",
+	"pools" : [
+		 ],
+	"super" : "OOComponent",
+	"type" : "normal" }
