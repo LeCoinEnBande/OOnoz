@@ -1,0 +1,14 @@
+{
+	"category" : "OOnoz-Tests-Model-Statistics",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "ManifestOOnozTestsModelStatistics",
+	"pools" : [
+		 ],
+	"super" : "PackageManifest",
+	"type" : "normal" }

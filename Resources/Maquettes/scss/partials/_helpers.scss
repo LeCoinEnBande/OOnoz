@@ -2,12 +2,8 @@
 
 @import "../modules/all";
 
-hr
+.page-header
 {
-  //border-color: $info-color;
+  border-bottom: 0;
 }
 
-.text-info
-{
-  color: $info-color;
-}

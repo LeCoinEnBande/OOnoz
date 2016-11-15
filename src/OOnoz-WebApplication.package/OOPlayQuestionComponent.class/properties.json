@@ -1,0 +1,18 @@
+{
+	"category" : "OOnoz-WebApplication-Components",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"owner",
+		"result",
+		"index",
+		"isActive",
+		"timeOfActivation" ],
+	"name" : "OOPlayQuestionComponent",
+	"pools" : [
+		 ],
+	"super" : "OOComponent",
+	"type" : "normal" }

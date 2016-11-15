@@ -1,0 +1,14 @@
+{
+	"category" : "OOnoz-Model-MCQ",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "aurelienRousseau 11/14/2016 10:56",
+	"instvars" : [
+		 ],
+	"name" : "OOAbstractOrder",
+	"pools" : [
+		 ],
+	"super" : "OOObject",
+	"type" : "normal" }

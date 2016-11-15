@@ -4,12 +4,6 @@
 
 body
 {
-  color: $inverse-color;
-}
+  font-family: 'Roboto', sans-serif;
 
-*:focus
-{
-  //DEBUG CAUSE ITS POSSIBLE BAD
-  outline: none;
-  @include box-shadow(none);
 }

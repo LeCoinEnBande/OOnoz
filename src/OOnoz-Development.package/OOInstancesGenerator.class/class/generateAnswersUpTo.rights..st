@@ -6,10 +6,10 @@ generateAnswersUpTo: anInteger rights: anotherInteger
 	1 to: anInteger do: [ :int | 
 		| answer |
 		answer := OOAnswer new.
-		answer index: anInteger.
-		answer text: (self randomStringBetween: 10 and: 200).
+		answer index: int.
+		answer text: self lorem atRandom.
 		remainingRights = 0
 			ifFalse: [ remainingRights := remainingRights - 1.
-				answer isRight: true ].
+				answer isRight: true ]..
 		res add: answer ].
 	^ res

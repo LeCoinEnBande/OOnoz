@@ -1,0 +1,14 @@
+{
+	"category" : "OOnoz-Tests-Model-Theme",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"theme" ],
+	"name" : "OOThemeTest",
+	"pools" : [
+		 ],
+	"super" : "OOAbstractThemeTest",
+	"type" : "normal" }

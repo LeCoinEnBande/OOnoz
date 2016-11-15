@@ -1,0 +1,14 @@
+{
+	"category" : "OOnoz-WebApplication-Components",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"mcq" ],
+	"name" : "OOPlayComponent",
+	"pools" : [
+		 ],
+	"super" : "OOComponent",
+	"type" : "normal" }

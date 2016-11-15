@@ -1,0 +1,24 @@
+@import "compass";
+
+@import "../modules/all";
+
+.alert
+{
+  @include border-radius();
+  border: $main-border-thickness solid transparent;
+}
+
+.alert-danger
+{
+  @include alert($danger-color);
+}
+
+.alert-success
+{
+  @include alert($success-color);
+}
+
+.alert-primary
+{
+  @include alert($primary-color);
+}
