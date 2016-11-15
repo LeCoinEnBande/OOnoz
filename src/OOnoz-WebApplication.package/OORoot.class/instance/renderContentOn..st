@@ -1,6 +1,5 @@
 rendering
 renderContentOn: html
 	html render: self header.
-	(html tag: #main)
-		with: [ html tbsContainer: [ html render: self component ] ].
+	(html tag: #main) with: [ html render: self component ].
 	self addEndsScriptsOn: html

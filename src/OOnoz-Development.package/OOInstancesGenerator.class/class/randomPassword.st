@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 randomPassword
 	| rand generator charsets |
 	"Not ideal random for passwords..."

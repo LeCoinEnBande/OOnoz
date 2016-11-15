@@ -7,15 +7,15 @@ renderAnswersOn: html
 	self question hasCorrection
 		ifTrue: [ html
 				tbsFormGroup: [ html
-						tbsInputGroup: [ | id label |
+						tbsInputGroup: [ | label |
 							label := 'Explication de la réponse'.
 							html label
-								for: (id := html nextId);
+								for: html nextId;
 								tbsScreenReaderOnly;
 								with: label.
 							html textArea
 								tbsFormControl;
-								id: id;
+								id: html lastId;
 								placeholder: label;
 								callback: [ :explanation | self question correction: explanation ];
 								value: self question correction;

@@ -4,25 +4,20 @@
 
 .navbar
 {
-  border: 0;
+  margin-top: $main-margin;
+  margin-bottom: $main-margin;
 }
 
 .navbar-default
 {
   background-color: transparent;
-
-  //!!DEBUG
-  margin: 40px;
-}
-
-.navbar-default .navbar-nav>li>a
-{
-  color: $default-color;
+  @include border-radius();
+  border: 0;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover
 {
   background-color: transparent;
-  color: $primary-color;
-  //border-bottom: 1px solid $primary-color;
+  border-bottom: 2px solid $primary-color;
 }
+

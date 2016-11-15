@@ -1,0 +1,17 @@
+{
+	"category" : "OOnoz-Model-Statistics-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"owner",
+		"question",
+		"userAnswers",
+		"duration" ],
+	"name" : "OOQuestionResult",
+	"pools" : [
+		 ],
+	"super" : "OOObject",
+	"type" : "normal" }

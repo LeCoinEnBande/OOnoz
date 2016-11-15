@@ -60,3 +60,15 @@ Those features contains for example:
 * Set Lille 1 proxy: `OODevHelper setLille1Proxy`
 * Remove the proxy: `OODevHelper removeProxy`
 
+
+To keep: 
+
+   location / {
+      try_files $uri $uri/index.html @proxy;
+   }
+
+   location @proxy {
+      proxy_set_header  Host $host;
+      proxy_set_header  X-Real-IP  $remote_addr;
+      proxy_pass http://localhost:7850;
+   }
