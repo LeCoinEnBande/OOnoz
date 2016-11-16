@@ -1,0 +1,14 @@
+{
+	"category" : "OOnoz-WebApplication-Front-Pages",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "OOPlayPage",
+	"pools" : [
+		 ],
+	"super" : "OOComponent",
+	"type" : "normal" }

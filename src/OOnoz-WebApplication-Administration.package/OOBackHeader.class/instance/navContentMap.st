@@ -11,4 +11,4 @@ navContentMap
 					s
 						<< (self currentUser firstName ifNil: [ 'Tony' ]);
 						<< ' ';
-						<< (self currentUser lastName ifNil: [ 'Montana' ]) ]) -> OOProfilPage
+						<< (self currentUser lastName ifNil: [ 'Montana' ]) ]) -> OOProfilePage

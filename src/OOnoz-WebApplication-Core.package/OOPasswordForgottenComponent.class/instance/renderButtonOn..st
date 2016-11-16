@@ -5,4 +5,9 @@ renderButtonOn: html
 		beOutline;
 		beSubmit;
 		callback: [ self sendNewPassword ];
-		with: 'Réinitialiser le mot de passe'
+		with: 'Réinitialiser le mot de passe'.
+	html space.
+	html tbsAnchor
+		beDanger;
+		callback: [ self answer ];
+		with: 'Annuler'

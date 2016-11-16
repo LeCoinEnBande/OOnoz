@@ -1,6 +1,3 @@
 accessing
 navContentMap
-	^ OrderedDictionary
-		with: 'À propos' -> OOReceptionComponent
-		with: 'Aide' -> OOReceptionComponent
-		with: 'Jouer' -> OOReceptionComponent
+	^ OrderedDictionary with: 'À propos' -> OOWelcomePage with: 'Aide' -> OOHelpPage with: 'Jouer' -> OOPlayPage

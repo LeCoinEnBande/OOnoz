@@ -1,0 +1,14 @@
+{
+	"category" : "OOnoz-WebApplication-Front-Components",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"user" ],
+	"name" : "OOSubscriptionComponent",
+	"pools" : [
+		 ],
+	"super" : "OOAbstractUserEditionComponent",
+	"type" : "normal" }

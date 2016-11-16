@@ -9,5 +9,4 @@ renderNavbarContentOn: html
 		id: id;
 		with: [ html unorderedList
 				class: #'nav navbar-nav navbar-right';
-				with:
-						[ self renderMenuOn: html ] ]
+				with: [ self renderMenuOn: html ] ]
