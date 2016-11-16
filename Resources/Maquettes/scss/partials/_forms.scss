@@ -2,6 +2,12 @@
 
 @import "../modules/all";
 
+.checkbox input[type="checkbox"], .checkbox input[type="radio"]
+{
+  display: none;
+}
+
+
 //Checkbox style
 .checkbox label::before
 {
@@ -16,8 +22,7 @@
   @include btn($success-color);
 }
 
-.checkbox-success>label
-{
+.checkbox-success input:checked+label{
   color: $success-color;
 }
 
@@ -26,7 +31,7 @@
   @include btn($danger-color);
 }
 
-.checkbox-danger>label
+.checkbox-danger input:checked+label
 {
   color: $danger-color;
 }
@@ -54,6 +59,13 @@
 {
   border-color: $danger-color;
 }
+
+.checkbox input[type="checkbox"]:indeterminate + label::after, .checkbox input[type="radio"]:indeterminate + label::after
+{
+  display: none;
+}
+
+
 
 
 
