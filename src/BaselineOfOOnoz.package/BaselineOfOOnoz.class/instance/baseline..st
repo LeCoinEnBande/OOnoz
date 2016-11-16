@@ -6,7 +6,6 @@ baseline: spec
 		do: [ self
 				seaside3: spec;
 				bootstrap: spec;
-				heimdall: spec;
 				voyage: spec;
 				mocketry: spec.
 			spec
@@ -16,7 +15,7 @@ baseline: spec
 				package: 'OOnoz-Tests-Model-Statistics' with: [ spec requires: #('OOnoz-Model-Statistics' 'Mocketry') ];
 				package: 'OOnoz-Server';
 				package: 'OOnoz-WebApplication-Core'
-					with: [ spec requires: #('Heimdall' 'Seaside3' 'OOnoz-Model' 'OOnoz-Model-Statistics' 'OOnoz-Server' 'Bootstrap') ];
+					with: [ spec requires: #('Seaside3' 'OOnoz-Model' 'OOnoz-Model-Statistics' 'OOnoz-Server' 'Bootstrap') ];
 				package: 'OOnoz-WebApplication-Administration'
 					with: [ spec requires: #('OOnoz-WebApplication-Core') ];
 				package: 'OOnoz-WebApplication-Front'

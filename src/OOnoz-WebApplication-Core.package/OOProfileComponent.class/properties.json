@@ -1,0 +1,16 @@
+{
+	"category" : "OOnoz-WebApplication-Core-Components",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"memento",
+		"avatarError",
+		"changePasswordComponent" ],
+	"name" : "OOProfileComponent",
+	"pools" : [
+		 ],
+	"super" : "OOAbstractUserEditionComponent",
+	"type" : "normal" }

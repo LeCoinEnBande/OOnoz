@@ -2,6 +2,5 @@ initialization
 initialize
 	super initialize.
 	self session rootComponent: self.
-	self componentsInstances: Dictionary new.
-	self displayDefaultScreen.
+	self initScreens.
 	self header: self defaultHeader

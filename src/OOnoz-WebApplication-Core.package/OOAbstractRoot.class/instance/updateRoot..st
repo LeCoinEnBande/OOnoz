@@ -21,4 +21,6 @@ updateRoot: anHtmlRoot
 		attributeAt: 'integrity' put: 'sha256-AIodEDkC8V/bHBkfyxzolUMw57jeQ9CauwhVW6YJ9CA=';
 		attributeAt: 'crossorigin' put: 'anonymous'.
 	anHtmlRoot stylesheet url: 'https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.0/bootstrap-table.min.css'.
+	anHtmlRoot stylesheet
+		url: self configuration resourcesURL , '/Dependencies/bootstrap-datepicker/css/bootstrap-datepicker3.standalone.min.css'.
 	anHtmlRoot stylesheet url: self configuration resourcesURL , '/Maquettes/css/main.css'

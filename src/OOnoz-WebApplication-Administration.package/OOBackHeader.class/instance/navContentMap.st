@@ -5,4 +5,10 @@ navContentMap
 		with: 'Communautés' -> OOThemePage
 		with: 'Questionnaires' -> OOQuestionnairePage
 		with: 'Statistiques' -> OOPlayComponent
-		with: 'Tony Montana' -> OOMCQCreationComponent
+		with:
+			(String
+				streamContents: [ :s | 
+					s
+						<< (self currentUser firstName ifNil: [ 'Tony' ]);
+						<< ' ';
+						<< (self currentUser lastName ifNil: [ 'Montana' ]) ]) -> OOProfilPage

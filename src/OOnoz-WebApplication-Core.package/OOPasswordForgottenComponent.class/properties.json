@@ -1,0 +1,15 @@
+{
+	"category" : "OOnoz-WebApplication-Core-Components",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"hasBeenValidated",
+		"user" ],
+	"name" : "OOPasswordForgottenComponent",
+	"pools" : [
+		 ],
+	"super" : "OOComponent",
+	"type" : "normal" }
