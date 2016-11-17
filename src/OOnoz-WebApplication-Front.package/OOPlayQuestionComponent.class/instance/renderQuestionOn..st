@@ -12,8 +12,9 @@ renderQuestionOn: html
 				class: #'panel-body';
 				with: [ html heading
 						level2;
-						with: self question description.
-					(html tag: #em) with: self question questionClass description.
+						with: [ html text: self question description.
+							html space.
+							html small: self question uiDescription ].
 					html div
 						id: self answersId;
 						with: [ self renderAnswersOn: html ].

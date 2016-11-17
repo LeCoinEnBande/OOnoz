@@ -5,12 +5,11 @@ renderAnswersToPlayFrom: aComponent on: html
 	self orderedAnswers
 		do: [ :answer | 
 			html div
-				class: 'radio';
+				class: 'checkbox';
 				with: [ group radioButton
 						checked: (aComponent resultAt: answer);
 						id: html nextId;
-						callback:
-								[ aComponent resetAnswers.	"We do this because of the ajax we can have two callback called."
+						callback: [ aComponent resetAnswers.	"We do this because of the ajax we can have two callback called."
 							aComponent resultAt: answer put: true ];
 						onChange:
 							(html jQuery ajax

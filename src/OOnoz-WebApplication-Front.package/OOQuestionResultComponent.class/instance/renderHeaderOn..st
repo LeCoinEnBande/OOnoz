@@ -14,7 +14,7 @@ renderHeaderOn: html
 				with: [ html text: 'Question ' , self index greaseString.
 					html div
 						tbsPullRight;
-						with: [ html tbsLabel
-								class: #'label-success' if: self result isCorrect;
-								class: #'label-danger' if: self result isCorrect not;
+						with: [ html tbsBadge
+								beSuccessIf: self result isCorrect;
+								beDangerIf: self result isCorrect not;
 								with: self result printResult ] ] ]

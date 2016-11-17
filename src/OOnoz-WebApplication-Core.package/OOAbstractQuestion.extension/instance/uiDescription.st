@@ -1,3 +1,3 @@
 *OOnoz-WebApplication-Core
-description
+uiDescription
 	^ self subclassResponsibility
