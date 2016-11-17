@@ -1,3 +1,3 @@
 initialization
 displayDefaultScreen
-	self subclassResponsibility
+	self setInstanceOf: OODashboardPage
