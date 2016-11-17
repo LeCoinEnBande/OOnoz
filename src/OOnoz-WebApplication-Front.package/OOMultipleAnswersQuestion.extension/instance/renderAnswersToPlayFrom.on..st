@@ -1,4 +1,4 @@
-*OOnoz-WebApplication-Core
+*OOnoz-WebApplication-Front
 renderAnswersToPlayFrom: aComponent on: html
 	self orderedAnswers
 		do: [ :answer | 

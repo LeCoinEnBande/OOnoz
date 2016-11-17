@@ -17,6 +17,4 @@ renderContentOn: html
 								level2;
 								with: self question description.
 							self renderAlertOn: html.
-							html div
-								id: self answersId;
-								with: [ self renderAnswersOn: html ] ] ] ]
+							html tbsRow: [ self renderAnswersOn: html ] ] ] ]

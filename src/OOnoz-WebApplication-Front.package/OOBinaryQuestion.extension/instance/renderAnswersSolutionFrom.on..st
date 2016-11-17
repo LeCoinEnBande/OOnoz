@@ -1,15 +1,14 @@
-*OOnoz-WebApplication-Core
-renderAnswersResultFrom: aComponent on: html
+*OOnoz-WebApplication-Front
+renderAnswersSolutionFrom: aComponent on: html
 	| group |
 	group := html radioGroup.
-	self orderedAnswers
+	self sortedAnswers
 		do: [ :answer | 
 			html div
 				class: 'checkbox';
 				class: #'checkbox-success' if: answer isRight;
-				class: #'checkbox-danger' if: ((aComponent resultAt: answer) and: [ answer isRight not ]);
 				with: [ group radioButton
-						selected: (aComponent resultAt: answer);
+						selected: answer isRight;
 						id: html nextId;
 						disabled.
 					html label

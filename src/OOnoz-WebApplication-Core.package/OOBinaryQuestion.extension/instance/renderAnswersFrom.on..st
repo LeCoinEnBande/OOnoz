@@ -2,7 +2,7 @@
 renderAnswersFrom: aComponent on: html
 	| radioGroup |
 	radioGroup := html radioGroup.
-	(self answers asArray sort: [ :a :b | a index < b index ])
+	self sortedAnswers
 		do: [ :answer | 
 			html
 				tbsFormGroup: [ html

@@ -1,6 +1,6 @@
 *OOnoz-WebApplication-Core
 renderAnswersFrom: aComponent on: html
-	(self answers asArray sort: [ :a :b | a index < b index ])
+	self sortedAnswers
 		do: [ :answer | 
 			html
 				tbsFormGroup: [ html

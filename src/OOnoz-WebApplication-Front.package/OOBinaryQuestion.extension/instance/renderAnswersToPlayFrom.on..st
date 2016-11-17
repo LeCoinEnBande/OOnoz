@@ -1,4 +1,4 @@
-*OOnoz-WebApplication-Core
+*OOnoz-WebApplication-Front
 renderAnswersToPlayFrom: aComponent on: html
 	| group |
 	group := html radioGroup.
@@ -7,7 +7,7 @@ renderAnswersToPlayFrom: aComponent on: html
 			html div
 				class: 'checkbox';
 				with: [ group radioButton
-						selected: (aComponent resultAt: answer);
+						checked: (aComponent resultAt: answer);
 						id: html nextId;
 						callback: [ aComponent resetAnswers.	"We do this because of the ajax we can have two callback called."
 							aComponent resultAt: answer put: true ];
