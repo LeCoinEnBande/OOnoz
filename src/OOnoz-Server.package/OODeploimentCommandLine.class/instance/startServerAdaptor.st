@@ -1,0 +1,3 @@
+activation
+startServerAdaptor
+	ZnZincServerAdaptor startOn: OOServer current configuration port

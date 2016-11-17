@@ -1,0 +1,3 @@
+accessing
+defaultConfigurationFileName
+	^ 'configurationServer.ston'
