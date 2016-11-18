@@ -1,6 +1,6 @@
 tests
 testInvalidateMCQWithInvalidQuestions
-	mcq questions: (self generate: OOMCQ minimumNumberOfQuestions questionValid: false).
+	mcq questions: (self generate: self actualClass minimumNumberOfQuestions questionValid: false).
 	self
 		should: [ mcq validate ]
 		raise: OOInvalidQuestion

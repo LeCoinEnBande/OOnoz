@@ -1,6 +1,6 @@
 tests
 testInvalidateMCQWithTooMuchQuestions
-	mcq questions: (self generate: OOMCQ maximumNumberOfQuestions + 1 questionValid: true).
+	mcq questions: (self generate: self actualClass maximumNumberOfQuestions + 1 questionValid: true).
 	self
 		should: [ mcq validate ]
 		raise: OOInvalidMCQ

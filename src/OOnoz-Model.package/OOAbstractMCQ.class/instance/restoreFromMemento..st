@@ -5,4 +5,5 @@ restoreFromMemento: aMemento
 
 	self description: aMemento description.
 	self markingScheme: aMemento markingScheme.
-	self title: aMemento title
+	self title: aMemento title.
+	self orderer: aMemento orderer

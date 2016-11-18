@@ -1,5 +1,5 @@
 {
-	"category" : "OOnoz-Tests-Model-MCQ",
+	"category" : "OOnoz-Model-MCQ",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
@@ -7,8 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "OOMCQTest",
+	"name" : "OOChallengeMCQ",
 	"pools" : [
 		 ],
-	"super" : "OOAbstractMCQTest",
+	"super" : "OOMCQDecorator",
 	"type" : "normal" }

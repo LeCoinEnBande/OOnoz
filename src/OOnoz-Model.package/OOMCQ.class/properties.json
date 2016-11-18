@@ -14,5 +14,5 @@
 	"name" : "OOMCQ",
 	"pools" : [
 		 ],
-	"super" : "OOObject",
+	"super" : "OOAbstractMCQ",
 	"type" : "normal" }

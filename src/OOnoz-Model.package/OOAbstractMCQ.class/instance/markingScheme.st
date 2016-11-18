@@ -1,0 +1,3 @@
+accessing
+markingScheme
+	^ self subclassResponsibility

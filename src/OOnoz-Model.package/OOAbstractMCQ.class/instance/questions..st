@@ -1,0 +1,3 @@
+accessing
+questions: aCollection
+	self subclassResponsibility
