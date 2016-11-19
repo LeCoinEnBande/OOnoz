@@ -7,7 +7,6 @@ renderFooterOn: html
 				tbsPullRight;
 				with: [ html tbsButton
 						bePush;
-						beOutline;
 						onClick:
 							((html jQuery this closest: '.panel') load
 								html: [ :r | 

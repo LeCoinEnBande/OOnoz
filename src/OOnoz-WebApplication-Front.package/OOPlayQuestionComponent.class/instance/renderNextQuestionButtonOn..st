@@ -4,7 +4,6 @@ renderNextQuestionButtonOn: html
 		ifTrue: [ ^ self ].
 	html space.
 	html tbsAnchor
-		beOutline;
 		role: #button;
 		url: '#' , 'question' , (self index + 1) greaseString;
 		attributeAt: #'data-toggle' put: #collapse;

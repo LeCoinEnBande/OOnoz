@@ -34,7 +34,6 @@ renderAnswersOn: html
 		ifFalse: [ html space.
 			html tbsButton
 				beInfo;
-				beOutline;
 				bePush;
 				onClick:
 					((html jQuery id: self answersId) load

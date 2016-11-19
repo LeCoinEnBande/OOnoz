@@ -2,8 +2,7 @@ rendering
 renderContentOn: html
 	html tbsContainer
 		class: 'text-center';
-		with: [ | id |
-			self renderTitleAndDescriptionOn: html.
+		with: [ self renderTitleAndDescriptionOn: html.
 			html hr.
 			html
 				form: [ self renderMCQFormsOn: html.
@@ -11,14 +10,6 @@ renderContentOn: html
 					html hr.
 					html tbsContainer
 						class: #'text-center';
-						with: [ self renderButtonsOn: html.
-							html space.
-							html tbsButton
-								bePush;
-								beDanger;
-								beOutline;
-								dataToggle: 'modal';
-								dataTarget: '#' , (id := html nextId);
-								with: 'Annuler' ] ].
-			self renderCancelModalFor: id on: html ].
-	html document addLoadScript: ' $(''[data-toggle="tooltip"]'').tooltip()' js
+						with: [ self renderButtonsOn: html ] ].
+			self renderCancelModalFor: html lastId on: html ].
+	html document addLoadScript: '$(''[data-toggle="tooltip"]'').tooltip()' js

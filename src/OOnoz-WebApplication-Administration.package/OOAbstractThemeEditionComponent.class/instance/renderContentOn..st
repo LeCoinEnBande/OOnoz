@@ -13,7 +13,6 @@ renderContentOn: html
 					html tbsButton
 						bePush;
 						beDanger;
-						beOutline;
 						dataToggle: 'modal';
 						dataTarget: '#' , (id := html nextId);
 						with: 'Annuler' ] ].

@@ -2,13 +2,18 @@ rendering
 renderButtonsOn: html
 	html tbsButton
 		beSuccess;
-		beOutline;
 		beSubmit;
 		callback: [ self save ];
 		with: 'Valider'.
 	html space.
 	html tbsButton
 		beWarning;
-		beOutline;
 		beReset;
-		with: 'Réinitialiser'
+		with: 'Réinitialiser'.
+	html space.
+	html tbsButton
+		bePush;
+		beDanger;
+		dataToggle: 'modal';
+		dataTarget: '#' , html nextId;
+		with: 'Annuler'
