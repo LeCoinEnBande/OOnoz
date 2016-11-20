@@ -8,13 +8,17 @@ tableEntriesFrom: mcq On: html
 	html tbsLabel
 		beDefault;
 		with: 'Rien' ].
-	'Pas fait'.
+	mcq class kind.
 	[ html tbsLabel
-		beInfo;
-		with: 'TODO' ].
-	[ html tbsLabel
-		beInfo;
-		with: 'TODO' ].
+		beInfoIf: mcq price > 0;
+		beDefaultIf: mcq price = 0;
+		with: mcq printPrice ].
+	[ | times |
+	times := (OOMCQResult selectMany: [ :result | result mcq = mcq and: [ result isFinished ] ]) size.
+	html tbsLabel
+		beInfoIf: times > 0;
+		beDangerIf: times = 0;
+		with: times asString , ' fois' ].
 	[ html tbsLabel
 		beSuccess;
 		with: 'TODO' ].

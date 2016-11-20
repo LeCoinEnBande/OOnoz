@@ -1,3 +1,3 @@
 accessing
 price: anInteger
-	^ anInteger
+	price := anInteger

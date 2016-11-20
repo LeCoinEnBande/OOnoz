@@ -5,6 +5,10 @@ addEndsScriptsOn: html
 		url: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js';
 		attributeAt: 'integrity' put: 'sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa';
 		attributeAt: 'crossorigin' put: 'anonymous'.
+	html script
+		url: 'https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.2.0/bootstrap-slider.min.js';
+		attributeAt: 'integrity' put: 'sha256-jkZPPiQWvKWEpTyXospDAsDOUMnqYwPObBRISK6FNHM=';
+		attributeAt: 'crossorigin' put: 'anonymous'.
 	html script url: 'https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.0/bootstrap-table.min.js'.
 	html script url: 'https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.0/locale/bootstrap-table-fr-FR.min.js'.
 	html script url: self configuration resourcesURL , '/Dependencies/bootstrap-datepicker/js/bootstrap-datepicker.min.js'.
