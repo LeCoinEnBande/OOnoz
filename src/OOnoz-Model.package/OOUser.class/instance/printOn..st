@@ -3,7 +3,7 @@ printOn: aStream
 	super printOn: aStream.
 	aStream
 		<< $[;
-		<< self firstName;
+		<< (self firstName ifNil: [ 'No name' ]);
 		space;
-		<< self lastName;
+		<< (self lastName ifNil: [ 'No surname' ]);
 		<< $]
