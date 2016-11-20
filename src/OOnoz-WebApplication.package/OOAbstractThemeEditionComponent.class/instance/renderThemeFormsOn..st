@@ -4,7 +4,8 @@ renderThemeFormsOn: html
 		tbsRow: [ html tbsColumn
 				mediumSize: 6;
 				mediumOffset: 3;
-				with: [ html
+				with:
+					[ html
 						tbsFormGroup: [ | id label |
 							label := 'Titre du thème'.
 							html label
@@ -34,6 +35,8 @@ renderThemeFormsOn: html
 								pattern: '.{5,}';
 								value: self theme description;
 								rows: 1 ].
-					html
-						tbsFormGroup: [  						
-							subThemesComponents do: [ :subTheme | subTheme renderThemeFormsOn: html  ] ] ] ]
+					html tbsFormGroup: [ subThemesComponents do: [ :subTheme | subTheme renderThemeFormsOn: html ] ].
+					html tbsButton 
+						beDefault;
+						callback: [ self addSubTheme.  ];
+						with: 'Ajouter un sous-thème' ] ]
