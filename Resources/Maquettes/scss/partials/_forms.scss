@@ -11,8 +11,7 @@
 //Checkbox style
 .checkbox label::before
 {
-  //!! DEBUG ONLY
-  border: $main-border-thickness solid #333;
+  border: $main-border-thickness solid $default-color;
   @include border-radius();
 }
 
@@ -39,7 +38,7 @@
 //Radio style
 .radio label::before
 {
-  border: $main-border-thickness solid #333;
+  border: $main-border-thickness solid $default-color;
 }
 
 .radio-success input[type="radio"]:checked + label::before{
@@ -78,7 +77,7 @@
 {
   @include border-radius();
   @include box-shadow(none);
-  border: $main-border-thickness solid #333;
+  border: $main-border-thickness solid $default-color;
 }
 
 textarea
