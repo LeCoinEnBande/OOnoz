@@ -51,6 +51,6 @@ renderChallengeOptionsOn: html
 				tbsFormControl;
 				id: html lastId;
 				placeholder: label;
-				callback: [ :gift | gift ifNotEmpty: [ self mcq gift: gift ] ];
-				value: self mcq gift;
+				callback: [ :gift | gift ifNotEmpty: [ self mcq giftDescription: gift ] ];
+				value: self mcq giftDescription;
 				rows: 1 ]

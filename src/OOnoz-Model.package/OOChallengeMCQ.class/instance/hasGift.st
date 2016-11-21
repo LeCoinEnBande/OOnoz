@@ -1,3 +1,3 @@
 testing
 hasGift
-	^ self gift isNotEmpty
+	^ self gift hasGift

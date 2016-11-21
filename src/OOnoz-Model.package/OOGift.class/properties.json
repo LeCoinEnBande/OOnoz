@@ -1,0 +1,14 @@
+{
+	"category" : "OOnoz-Model-MCQ",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"description" ],
+	"name" : "OOGift",
+	"pools" : [
+		 ],
+	"super" : "OOAbstractGift",
+	"type" : "normal" }
