@@ -48,3 +48,8 @@
 {
   @include btn-hover($danger-color);
 }
+
+.btn.dropdown-toggle
+{
+  @include btn-hover($default-color);
+}
