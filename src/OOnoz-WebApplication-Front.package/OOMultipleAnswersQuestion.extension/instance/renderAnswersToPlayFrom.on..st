@@ -11,7 +11,7 @@ renderAnswersToPlayFrom: aComponent on: html
 						onChange:
 							(html jQuery ajax
 								serializeThisCheckbox;
-								onSuccess: ((html jQuery id: aComponent badgeId) load html: [ :r | aComponent renderBadgesOn: r ])).
+								onSuccess: ((html jQuery id: aComponent badgeId) load html: [ :r | aComponent renderValidationBadgeOn: r ])).
 					html label
 						for: html lastId;
 						with: answer text ] ]

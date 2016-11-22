@@ -10,5 +10,6 @@ renderButtonsOn: html
 	html tbsButton
 		beSuccess;
 		beSubmit;
+		class: #question20;
 		callback: [ self finish ];
 		with: 'Envoyer mes réponses'

@@ -14,4 +14,6 @@ renderContentOn: html
 					html
 						section: [ html div
 								tbsPullRight;
-								with: [ self renderButtonsOn: html ] ] ] ]
+								with: [ self renderButtonsOn: html ] ] ] ].
+	self mcq isChallenge
+		ifTrue: [ html document addLoadScript: 'initalizeClock();launchClock(1);' js ]
