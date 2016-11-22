@@ -16,7 +16,6 @@ renderThemeFormsOn: html
 								id: id;
 								placeholder: label;
 								callback: [ :title | self theme title: title ];
-								pattern: '.{5,}';
 								value: self theme title;
 								rows: 1 ].
 					html
@@ -31,9 +30,11 @@ renderThemeFormsOn: html
 								id: id;
 								placeholder: label;
 								callback: [ :description | self theme description: description ];
-								pattern: '.{5,}';
 								value: self theme description;
 								rows: 1 ].
 					html
-						tbsFormGroup: [  						
-							subThemesComponents do: [ :subTheme | subTheme renderThemeFormsOn: html  ] ] ] ]
+						tbsFormGroup: [ subThemesComponents do: [ :subTheme | subTheme renderThemeFormsOn: html ] ].
+					html tbsButton
+						beDefault;
+						callback: [ self addSubTheme ];
+						with: 'Ajouter un sous-thème' ] ]
