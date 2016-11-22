@@ -21,17 +21,4 @@ renderChallengeOptionsOn: html
 				attributeAt: 'data-slider-ticks-labels' put: '["30sec","7min30","15min","22min30","30min"]';
 				attributeAt: 'data-slider-step' put: '30';
 				attributeAt: 'data-slider-value' put: self mcq timeByQuestion asSeconds asString ].
-	html
-		tbsFormGroup: [ | label |
-			label := 'Description du cadeau'.
-			html label
-				for: html nextId;
-				tbsScreenReaderOnly;
-				with: label.
-			html textArea
-				tbsFormControl;
-				id: html lastId;
-				placeholder: label;
-				callback: [ :gift | gift ifNotEmpty: [ self mcq giftDescription: gift ] ];
-				value: self mcq giftDescription;
-				rows: 1 ]
+	html render: self giftComponent

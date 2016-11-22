@@ -6,11 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"description",
-		"number",
-		"winningStrategy" ],
-	"name" : "OOGift",
+		"gift" ],
+	"name" : "OOAbstractGiftStrategy",
 	"pools" : [
 		 ],
-	"super" : "OOAbstractGift",
+	"super" : "OOObject",
 	"type" : "normal" }

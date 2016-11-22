@@ -6,11 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"mcq",
-		"questionComponents",
-		"hasBeenValidated",
-		"challengeComponent" ],
-	"name" : "OOAbstractMCQEditionComponent",
+		"owner",
+		"giftComponent" ],
+	"name" : "OOChallengeEditionComponent",
 	"pools" : [
 		 ],
 	"super" : "OOComponent",

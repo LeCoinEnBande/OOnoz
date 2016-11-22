@@ -1,7 +1,7 @@
 rendering
 renderMCQOrdererSelectionOn: html
 	html text: 'Ordre des questions'.
-	^ html tbsFormGroup
+	html tbsFormGroup
 		with: [ | group |
 			group := html radioGroup.
 			self orderers
