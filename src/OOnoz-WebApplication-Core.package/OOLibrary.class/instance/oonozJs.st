@@ -13,17 +13,7 @@ function timeFor(aDate){
 }
 
 function formatedOutputFor(aDate){
-  var date = "";
-  if(aDate.minutes < 10){
-    date += "0";
-  }
-  date += aDate.minutes;
-  date += ":";
-  if(aDate.seconds < 10){
-    date += "0";
-  }
-  date += aDate.seconds;
-  return date;
+  return ("0" + aDate.minutes).slice (-2) + ":" + ("0" + aDate.seconds).slice (-2);
 }
 
 function launchClock(questionNumber){
