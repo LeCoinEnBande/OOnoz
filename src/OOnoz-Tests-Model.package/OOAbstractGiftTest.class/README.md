@@ -1,0 +1,1 @@
+An OOAbstractGiftTest is a test class for testing the behavior of OOAbstractGift
