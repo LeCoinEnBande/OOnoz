@@ -12,4 +12,4 @@ renderContentOn: html
 						class: #'text-center';
 						with: [ self renderButtonsOn: html ] ].
 			self renderCancelModalFor: html lastId on: html ].
-	html document addLoadScript: '$(''[data-toggle="tooltip"]'').tooltip()' js
+	html document addLoadScript: '$(''[data-toggle="tooltip"]'').tooltip();$("input.slider").slider();' js

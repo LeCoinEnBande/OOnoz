@@ -11,6 +11,7 @@ renderMCQFormsOn: html
 					self renderMCQDescriptionInputOn: html.
 					self renderMarkingSchemeSelectionOn: html.
 					self renderMCQOrdererSelectionOn: html.
+					self renderMCQPriceOn: html.
 					html div
 						id: #'creation-challenge';
 						with: [ self renderChallengeOptionOn: html ] ] ]

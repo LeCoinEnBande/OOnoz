@@ -9,7 +9,7 @@ renderChallengeOptionOn: html
 				html: [ :r | 
 					self toggleIsChallenge.
 					self renderChallengeOptionOn: r ];
-				onComplete: '$("input.slider").bootstrapSlider();' js);
+				onComplete: '$("input.slider").slider();' js);
 		with:
 			(self mcq isChallenge
 				ifFalse: [ 'Transformer en QCM challenge.' ]
