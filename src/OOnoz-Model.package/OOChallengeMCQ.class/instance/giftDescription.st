@@ -1,3 +1,3 @@
 accessing
 giftDescription
-	self gift description
+	^ self gift description

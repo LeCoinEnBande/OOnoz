@@ -1,5 +1,5 @@
 initialization
 initialize
 	super initialize.
-	self price: 0.
-	self timeByQuestion: (Duration seconds: 90)
+	self timeByQuestion: (Duration seconds: 90).
+	self gift: OONilGift new

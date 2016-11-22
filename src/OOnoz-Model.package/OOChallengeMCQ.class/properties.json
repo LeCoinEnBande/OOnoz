@@ -6,7 +6,6 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"price",
 		"timeByQuestion",
 		"gift" ],
 	"name" : "OOChallengeMCQ",
