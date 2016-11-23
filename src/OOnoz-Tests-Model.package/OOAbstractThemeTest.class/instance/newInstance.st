@@ -1,3 +1,3 @@
 instance creation
 newInstance
-    ^ self actualClass title: 'title' description: 'description'
+	^ self actualClass title: 'title' description: 'description'

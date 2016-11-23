@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"subTheme" ],
+		"subTheme",
+		"shouldDisplayThemeSelection" ],
 	"name" : "OOSubThemeComponent",
 	"pools" : [
 		 ],

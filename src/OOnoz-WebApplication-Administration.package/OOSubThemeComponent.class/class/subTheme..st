@@ -1,5 +1,5 @@
-accessing
-subTheme: aSubTheme
+instance creation
+subTheme: aBlock
 	^ self new
-	 	subTheme: aSubTheme; 
+		subTheme: aBlock;
 		yourself

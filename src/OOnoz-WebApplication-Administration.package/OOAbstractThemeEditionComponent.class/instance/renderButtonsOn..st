@@ -4,9 +4,10 @@ renderButtonsOn: html
 		beSuccess;
 		beSubmit;
 		callback: [ self save ];
-		with: 'Valider'.
+		with: 'Publier le thème'.
 	html space.
 	html tbsButton
 		beWarning;
 		beReset;
-		with: 'Réinitialiser'
+		with: 'Réinitialiser'.
+	html space

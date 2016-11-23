@@ -1,4 +1,4 @@
 initialization
 initialize
 	super initialize.
-	self theme: OOTheme new.
+	self hasBeenValidated: false

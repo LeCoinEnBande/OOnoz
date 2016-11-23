@@ -1,4 +1,4 @@
 tests
 testInitialize
-	self should: instance title isNotNil.
-	self should: instance description isNotNil.
+	self assert: instance title isNotNil.
+	self assert: instance description isNotNil

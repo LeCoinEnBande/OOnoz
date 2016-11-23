@@ -1,3 +1,3 @@
 accessing
 subTheme
-	^ subTheme
+	^ subTheme value

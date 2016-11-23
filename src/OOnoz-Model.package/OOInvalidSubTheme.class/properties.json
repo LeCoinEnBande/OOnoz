@@ -1,0 +1,14 @@
+{
+	"category" : "OOnoz-Model-Exceptions",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "OOInvalidSubTheme",
+	"pools" : [
+		 ],
+	"super" : "OOInvalidObject",
+	"type" : "normal" }

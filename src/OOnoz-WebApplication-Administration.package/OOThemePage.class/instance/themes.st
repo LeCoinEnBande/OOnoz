@@ -1,3 +1,3 @@
 accessing
 themes
-	^ themes
+	^ OOTheme selectAll
