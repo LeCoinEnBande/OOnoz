@@ -9,6 +9,7 @@ renderMCQFormsOn: html
 				class: #'text-center';
 				with: [ self renderMCQTitleInputOn: html.
 					self renderMCQDescriptionInputOn: html.
+					self renderThemeSelectionOn: html.
 					self renderMarkingSchemeSelectionOn: html.
 					self renderMCQOrdererSelectionOn: html.
 					self renderMCQPriceOn: html.

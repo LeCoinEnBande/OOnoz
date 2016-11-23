@@ -11,7 +11,8 @@
 		"description",
 		"markingScheme",
 		"orderer",
-		"price" ],
+		"price",
+		"subThemes" ],
 	"name" : "OOMCQ",
 	"pools" : [
 		 ],

@@ -1,13 +1,7 @@
 rendering
 tableEntriesFrom: mcq On: html
 	^ {mcq title.
-	[ html tbsLabel
-		bePrimary;
-		with: 'Rien'.
-	html space.
-	html tbsLabel
-		beDefault;
-		with: 'Rien' ].
+	[ mcq renderThemeAndSubThemesOn: html ].
 	mcq class kind.
 	[ html tbsLabel
 		beInfoIf: mcq price > 0;

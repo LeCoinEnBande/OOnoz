@@ -9,7 +9,8 @@
 		"mcq",
 		"questionComponents",
 		"hasBeenValidated",
-		"challengeComponent" ],
+		"challengeComponent",
+		"theme" ],
 	"name" : "OOAbstractMCQEditionComponent",
 	"pools" : [
 		 ],

@@ -1,12 +1,6 @@
 rendering
 renderLabelsOn: html
-	html tbsLabel
-		bePrimary;
-		with: 'ThemeTODO'.
-	html space.
-	html tbsLabel
-		beDefault;
-		with: 'SubthemeTODO'.
+	self mcq renderThemeAndSubThemesOn: html.
 	html space.
 	html tbsLabel
 		beSuccess;
