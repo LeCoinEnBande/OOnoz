@@ -1,5 +1,6 @@
 rendering
 renderSubThemeSelectionOn: html
+	self theme ifNil: [ ^ self ].
 	html
 		tbsFormGroup: [ html multiSelect
 				title: 'Sous thèmes';

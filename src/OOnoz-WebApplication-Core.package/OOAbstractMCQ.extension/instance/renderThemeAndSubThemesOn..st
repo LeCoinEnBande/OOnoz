@@ -9,8 +9,9 @@ renderThemeAndSubThemesOn: html
 			html tbsLabel
 				beDefault;
 				with: s title ].
-	self subThemes size > 2
-		ifTrue: [ html space.
-			html tbsLabel
-				beDefault;
-				with: '...' ]
+	self subThemes size > 3
+		ifFalse: [ ^ self ].
+	html space.
+	html tbsLabel
+		beDefault;
+		with: '...'

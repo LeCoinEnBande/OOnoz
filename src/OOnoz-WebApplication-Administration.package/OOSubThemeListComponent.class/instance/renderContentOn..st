@@ -2,10 +2,9 @@ rendering
 renderContentOn: html
 	html
 		tbsContainer: [ self renderTitleOn: html.
-			self renderMessageOn: html.
 			html
 				section: [ | toolbarId |
-					self renderToolbarFor: (toolbarId := #toolbar) on: html.
+					self renderToolbarFor: (toolbarId := #toolbarSubTheme) on: html.
 					html tbsTable
 						class: #'table-no-bordered';
 						attributeAt: #'data-toggle' put: 'table';
@@ -14,8 +13,4 @@ renderContentOn: html
 						attributeAt: 'data-toolbar' put: '#' , toolbarId;
 						with: [ html tableHead: [ self renderHeaderOn: html ].
 							html
-								tableBody:
-									[ self themes do: [ :theme | html tableRow: [ (self tableEntriesFrom: theme On: html) do: [ :content | html tableData: content ] ] ] ] ] ] ].
-	html tbsContainer
-		id: #'list-subthemes';
-		with: [ self subThemesComponent ifNotNil: [ :c | html render: c ] ]
+								tableBody: [ self subThemes do: [ :st | html tableRow: [ (self tableEntriesFrom: st On: html) do: [ :content | html tableData: content ] ] ] ] ] ] ]

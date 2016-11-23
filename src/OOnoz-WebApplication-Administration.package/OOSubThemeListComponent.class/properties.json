@@ -1,15 +1,14 @@
 {
-	"category" : "OOnoz-WebApplication-Administration-Pages",
+	"category" : "OOnoz-WebApplication-Administration-Components",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"message",
-		"themes",
-		"subThemesComponent" ],
-	"name" : "OOThemePage",
+		"theme",
+		"owner" ],
+	"name" : "OOSubThemeListComponent",
 	"pools" : [
 		 ],
 	"super" : "OOComponent",

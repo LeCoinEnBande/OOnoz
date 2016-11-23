@@ -1,3 +1,3 @@
 accessing
 columns
-	^ #('Titre' 'Description' 'Sous-Thèmes' 'Ouvert' 'Actions')
+	^ #('Titre' 'Description' 'Sous-Thèmes' 'Actions')

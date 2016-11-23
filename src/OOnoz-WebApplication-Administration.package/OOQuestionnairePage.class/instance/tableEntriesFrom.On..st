@@ -19,8 +19,12 @@ tableEntriesFrom: mcq On: html
 	[ html anchor
 		callback: [ (self call: (OOMCQEditionComponent mcq: mcq))
 				ifTrue: [ self message: 'QCM édité.' ] ];
-		with: [ html tbsGlyphIcon iconEdit ].
+		with: [ html tbsGlyphIcon
+				tbsTooltip: 'Éditer';
+				iconEdit ].
 	html space.
 	html anchor
 		callback: [ self delete: mcq ];
-		with: [ html tbsGlyphIcon iconTrash ] ]}
+		with: [ html tbsGlyphIcon
+				tbsTooltip: 'Supprimer';
+				iconTrash ] ]}
