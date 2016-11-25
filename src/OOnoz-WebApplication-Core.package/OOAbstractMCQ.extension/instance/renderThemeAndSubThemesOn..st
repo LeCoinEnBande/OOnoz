@@ -1,8 +1,10 @@
 *OOnoz-WebApplication-Core
 renderThemeAndSubThemesOn: html
-	html tbsLabel
-		bePrimary;
-		with: self theme title.
+	self theme
+		ifNotNil: [ :t | 
+			html tbsLabel
+				bePrimary;
+				with: t title ].
 	(self subThemes first: (3 min: self subThemes size))
 		do: [ :s | 
 			html space.

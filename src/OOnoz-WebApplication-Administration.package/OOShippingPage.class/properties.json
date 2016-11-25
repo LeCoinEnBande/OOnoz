@@ -1,0 +1,14 @@
+{
+	"category" : "OOnoz-WebApplication-Administration-Pages",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "OOShippingPage",
+	"pools" : [
+		 ],
+	"super" : "OOComponent",
+	"type" : "normal" }

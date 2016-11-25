@@ -1,3 +1,3 @@
 accessing
 remainingGifts
-	^ self number - self winningStrategy winners size max: 0
+	^ self number - self winners size max: 0
