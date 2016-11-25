@@ -1,3 +1,3 @@
 removing
-removeSubThemes: aSubTheme
+removeSubTheme: aSubTheme
 	self subThemes remove: aSubTheme
