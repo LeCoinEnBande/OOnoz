@@ -10,4 +10,4 @@ renderPanelsFor: aCollectionOfMCQs on: html
 					html article
 						class: #panel;
 						class: #'panel-default';
-						with: [ self renderPanelFor: mcq index: i on: html ] ] ]
+						with: [ html render: (OOShippingMCQComponent mcq: mcq index: i) ] ] ]
