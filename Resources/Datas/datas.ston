@@ -2180,5 +2180,1594 @@ OrderedCollection [
 				}
 			]
 		}
+	],
+	Set [
+		OOMCQResult {
+			#mcq : @151,
+			#user : OOUser {
+				#firstName : 'Cyril',
+				#lastName : 'Ferlicot',
+				#mail : 'cyril.ferlicot@gmail.com',
+				#password : 'f1062e555197142a53f75a0134fe6070e9e0337b6e284bc11fd2e51aa421fe61',
+				#birthday : Date [ '1993-08-20' ],
+				#gender : #male,
+				#hasAvatar : false,
+				#mcqs : OrderedCollection [ ],
+				#isActivated : true,
+				#country : 'France',
+				#state : 'Auvergne-Rhône-Alpes',
+				#city : 'Lille',
+				#zip : '59800',
+				#address : '1 Place de la République'
+			},
+			#questionResults : OrderedCollection [
+				OOQuestionResult {
+					#owner : @602,
+					#question : @211,
+					#userAnswers : {
+						@213 : true,
+						@215 : false,
+						@214 : false
+					},
+					#duration : Duration {
+						#nanos : 327834000,
+						#seconds : 9
+					}
+				},
+				OOQuestionResult {
+					#owner : @602,
+					#question : @217,
+					#userAnswers : {
+						@219 : true,
+						@220 : false
+					},
+					#duration : Duration {
+						#nanos : 743007000,
+						#seconds : 13
+					}
+				},
+				OOQuestionResult {
+					#owner : @602,
+					#question : @252,
+					#userAnswers : {
+						@254 : true,
+						@255 : false
+					},
+					#duration : Duration {
+						#nanos : 718293000,
+						#seconds : 4
+					}
+				},
+				OOQuestionResult {
+					#owner : @602,
+					#question : @197,
+					#userAnswers : {
+						@200 : true,
+						@199 : false
+					},
+					#duration : Duration {
+						#nanos : 429213000,
+						#seconds : 5
+					}
+				},
+				OOQuestionResult {
+					#owner : @602,
+					#question : @181,
+					#userAnswers : {
+						@183 : true,
+						@184 : false
+					},
+					#duration : Duration {
+						#nanos : 291376000,
+						#seconds : 5
+					}
+				},
+				OOQuestionResult {
+					#owner : @602,
+					#question : @202,
+					#userAnswers : {
+						@206 : true,
+						@205 : true,
+						@204 : false,
+						@208 : true,
+						@207 : true,
+						@209 : true
+					},
+					#duration : Duration {
+						#nanos : 480836000,
+						#seconds : 20
+					}
+				},
+				OOQuestionResult {
+					#owner : @602,
+					#question : @186,
+					#userAnswers : {
+						@188 : true,
+						@189 : false
+					},
+					#duration : Duration {
+						#nanos : 79526000,
+						#seconds : 6
+					}
+				},
+				OOQuestionResult {
+					#owner : @602,
+					#question : @228,
+					#userAnswers : {
+						@230 : true,
+						@231 : false
+					},
+					#duration : Duration {
+						#nanos : 405218000,
+						#seconds : 5
+					}
+				},
+				OOQuestionResult {
+					#owner : @602,
+					#question : @245,
+					#userAnswers : {
+						@248 : true,
+						@250 : false,
+						@249 : false,
+						@247 : false
+					},
+					#duration : Duration {
+						#nanos : 573471000,
+						#seconds : 5
+					}
+				},
+				OOQuestionResult {
+					#owner : @602,
+					#question : @257,
+					#userAnswers : {
+						@259 : true,
+						@260 : false
+					},
+					#duration : Duration {
+						#nanos : 932875000,
+						#seconds : 5
+					}
+				},
+				OOQuestionResult {
+					#owner : @602,
+					#question : @239,
+					#userAnswers : {
+						@243 : false,
+						@242 : true,
+						@241 : false
+					},
+					#duration : Duration {
+						#nanos : 819883000,
+						#seconds : 6
+					}
+				},
+				OOQuestionResult {
+					#owner : @602,
+					#question : @191,
+					#userAnswers : {
+						@194 : false,
+						@193 : true,
+						@195 : false
+					},
+					#duration : Duration {
+						#nanos : 991579000,
+						#seconds : 5
+					}
+				},
+				OOQuestionResult {
+					#owner : @602,
+					#question : @154,
+					#userAnswers : {
+						@159 : true,
+						@158 : false,
+						@157 : true,
+						@156 : false
+					},
+					#duration : Duration {
+						#nanos : 871632000,
+						#seconds : 141
+					}
+				},
+				OOQuestionResult {
+					#owner : @602,
+					#question : @233,
+					#userAnswers : {
+						@235 : true,
+						@236 : false,
+						@237 : false
+					},
+					#duration : Duration {
+						#nanos : 614012000,
+						#seconds : 4
+					}
+				},
+				OOQuestionResult {
+					#owner : @602,
+					#question : @222,
+					#userAnswers : {
+						@226 : false,
+						@224 : true,
+						@225 : false
+					},
+					#duration : Duration {
+						#nanos : 976550000,
+						#seconds : 1
+					}
+				},
+				OOQuestionResult {
+					#owner : @602,
+					#question : @262,
+					#userAnswers : {
+						@264 : true,
+						@265 : false
+					},
+					#duration : Duration {
+						#nanos : 614803000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @602,
+					#question : @161,
+					#userAnswers : {
+						@163 : true,
+						@164 : false
+					},
+					#duration : Duration {
+						#nanos : 384587000,
+						#seconds : 3
+					}
+				},
+				OOQuestionResult {
+					#owner : @602,
+					#question : @166,
+					#userAnswers : {
+						@168 : true,
+						@169 : false
+					},
+					#duration : Duration {
+						#nanos : 741031000,
+						#seconds : 18
+					}
+				},
+				OOQuestionResult {
+					#owner : @602,
+					#question : @176,
+					#userAnswers : {
+						@178 : true,
+						@179 : false
+					},
+					#duration : Duration {
+						#nanos : 593454000,
+						#seconds : 3
+					}
+				},
+				OOQuestionResult {
+					#owner : @602,
+					#question : @171,
+					#userAnswers : {
+						@173 : true,
+						@174 : false
+					},
+					#duration : Duration {
+						#nanos : 550684000,
+						#seconds : 4
+					}
+				}
+			],
+			#isFinished : true,
+			#dateBegin : DateAndTime [ '2016-11-26T20:08:45.960823+01:00' ],
+			#dateEnd : DateAndTime [ '2016-11-26T20:11:13.194492+01:00' ]
+		},
+		OOMCQResult {
+			#mcq : @382,
+			#user : OOUser {
+				#firstName : 'Toto',
+				#lastName : 'L\'asticot',
+				#mail : 'totot.piquet@gmail.com',
+				#password : '881a6e7ff4f845fd6dc6ba797ec1be0575cb5544aab3666215888d59d6d68888',
+				#birthday : Date [ '1973-09-12' ],
+				#gender : #female,
+				#hasAvatar : false,
+				#mcqs : OrderedCollection [ ],
+				#isActivated : true,
+				#country : 'France',
+				#state : 'Hauts-de-France',
+				#city : 'Lille',
+				#zip : '59000',
+				#address : 'une adresse - JeSuisToto2'
+			},
+			#questionResults : OrderedCollection [
+				OOQuestionResult {
+					#owner : @669,
+					#question : @385,
+					#userAnswers : {
+						@387 : true,
+						@388 : false
+					},
+					#duration : Duration {
+						#nanos : 331124000,
+						#seconds : 3
+					}
+				},
+				OOQuestionResult {
+					#owner : @669,
+					#question : @390,
+					#userAnswers : {
+						@392 : true,
+						@393 : false
+					},
+					#duration : Duration {
+						#nanos : 134901000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @669,
+					#question : @395,
+					#userAnswers : {
+						@397 : true,
+						@398 : false
+					},
+					#duration : Duration {
+						#nanos : 309005000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @669,
+					#question : @400,
+					#userAnswers : {
+						@402 : true,
+						@403 : false
+					},
+					#duration : Duration {
+						#nanos : 332133000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @669,
+					#question : @405,
+					#userAnswers : {
+						@407 : true,
+						@408 : false
+					},
+					#duration : Duration {
+						#nanos : 482036000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @669,
+					#question : @410,
+					#userAnswers : {
+						@412 : true,
+						@413 : false
+					},
+					#duration : Duration {
+						#nanos : 396570000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @669,
+					#question : @415,
+					#userAnswers : {
+						@417 : true,
+						@418 : false
+					},
+					#duration : Duration {
+						#nanos : 826783000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @669,
+					#question : @420,
+					#userAnswers : {
+						@422 : true,
+						@423 : false
+					},
+					#duration : Duration {
+						#nanos : 128997000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @669,
+					#question : @425,
+					#userAnswers : {
+						@427 : true,
+						@428 : false
+					},
+					#duration : Duration {
+						#nanos : 693376000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @669,
+					#question : @430,
+					#userAnswers : {
+						@432 : true,
+						@433 : false
+					},
+					#duration : Duration {
+						#nanos : 694749000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @669,
+					#question : @435,
+					#userAnswers : {
+						@437 : true,
+						@438 : false
+					},
+					#duration : Duration {
+						#nanos : 94179000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @669,
+					#question : @440,
+					#userAnswers : {
+						@442 : true,
+						@443 : false
+					},
+					#duration : Duration {
+						#nanos : 750266000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @669,
+					#question : @445,
+					#userAnswers : {
+						@447 : true,
+						@448 : false
+					},
+					#duration : Duration {
+						#nanos : 652800000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @669,
+					#question : @450,
+					#userAnswers : {
+						@452 : true,
+						@453 : false
+					},
+					#duration : Duration {
+						#nanos : 643092000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @669,
+					#question : @455,
+					#userAnswers : {
+						@457 : true,
+						@458 : false
+					},
+					#duration : Duration {
+						#nanos : 355918000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @669,
+					#question : @460,
+					#userAnswers : {
+						@462 : true,
+						@463 : false
+					},
+					#duration : Duration {
+						#nanos : 109796000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @669,
+					#question : @465,
+					#userAnswers : {
+						@467 : true,
+						@468 : false
+					},
+					#duration : Duration {
+						#nanos : 983783000,
+						#seconds : 1
+					}
+				},
+				OOQuestionResult {
+					#owner : @669,
+					#question : @470,
+					#userAnswers : {
+						@472 : true,
+						@473 : false
+					},
+					#duration : Duration {
+						#nanos : 484693000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @669,
+					#question : @475,
+					#userAnswers : {
+						@477 : true,
+						@478 : false
+					},
+					#duration : Duration {
+						#nanos : 898842000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @669,
+					#question : @480,
+					#userAnswers : {
+						@482 : true,
+						@483 : false
+					},
+					#duration : Duration {
+						#nanos : 415743000,
+						#seconds : 2
+					}
+				}
+			],
+			#isFinished : true,
+			#dateBegin : DateAndTime [ '2016-11-26T20:28:09.210082+01:00' ],
+			#dateEnd : DateAndTime [ '2016-11-26T20:28:58.929785+01:00' ]
+		},
+		OOMCQResult {
+			#mcq : @382,
+			#user : OOUser {
+				#firstName : 'Maxime',
+				#lastName : 'Piquet',
+				#mail : 'maxime.piquet@gmail.com',
+				#password : '4e9aa45cadda1f4cfc48cd5621dd3647b1b7217f189cdf2d18cbe9e54f8bbff8',
+				#birthday : Date [ '1993-01-12' ],
+				#gender : #male,
+				#hasAvatar : false,
+				#mcqs : OrderedCollection [ ],
+				#isActivated : true,
+				#country : 'France',
+				#state : 'Hauts-de-France',
+				#city : 'Hellemmes',
+				#zip : '59260',
+				#address : '69 rue Solferino - JeSuisMaxime1'
+			},
+			#questionResults : OrderedCollection [
+				OOQuestionResult {
+					#owner : @736,
+					#question : @385,
+					#userAnswers : {
+						@387 : true,
+						@388 : false
+					},
+					#duration : Duration {
+						#nanos : 410515000,
+						#seconds : 4
+					}
+				},
+				OOQuestionResult {
+					#owner : @736,
+					#question : @390,
+					#userAnswers : {
+						@392 : true,
+						@393 : false
+					},
+					#duration : Duration {
+						#nanos : 853606000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @736,
+					#question : @395,
+					#userAnswers : {
+						@397 : true,
+						@398 : false
+					},
+					#duration : Duration {
+						#nanos : 964339000,
+						#seconds : 1
+					}
+				},
+				OOQuestionResult {
+					#owner : @736,
+					#question : @400,
+					#userAnswers : {
+						@402 : true,
+						@403 : false
+					},
+					#duration : Duration {
+						#nanos : 731702000,
+						#seconds : 3
+					}
+				},
+				OOQuestionResult {
+					#owner : @736,
+					#question : @405,
+					#userAnswers : {
+						@407 : true,
+						@408 : false
+					},
+					#duration : Duration {
+						#nanos : 942978000,
+						#seconds : 4
+					}
+				},
+				OOQuestionResult {
+					#owner : @736,
+					#question : @410,
+					#userAnswers : {
+						@412 : true,
+						@413 : false
+					},
+					#duration : Duration {
+						#nanos : 833623000,
+						#seconds : 1
+					}
+				},
+				OOQuestionResult {
+					#owner : @736,
+					#question : @415,
+					#userAnswers : {
+						@417 : true,
+						@418 : false
+					},
+					#duration : Duration {
+						#nanos : 349864000,
+						#seconds : 3
+					}
+				},
+				OOQuestionResult {
+					#owner : @736,
+					#question : @420,
+					#userAnswers : {
+						@422 : true,
+						@423 : false
+					},
+					#duration : Duration {
+						#nanos : 445157000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @736,
+					#question : @425,
+					#userAnswers : {
+						@427 : true,
+						@428 : false
+					},
+					#duration : Duration {
+						#nanos : 93754000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @736,
+					#question : @430,
+					#userAnswers : {
+						@432 : true,
+						@433 : false
+					},
+					#duration : Duration {
+						#nanos : 63759000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @736,
+					#question : @435,
+					#userAnswers : {
+						@437 : true,
+						@438 : false
+					},
+					#duration : Duration {
+						#nanos : 124438000,
+						#seconds : 3
+					}
+				},
+				OOQuestionResult {
+					#owner : @736,
+					#question : @440,
+					#userAnswers : {
+						@442 : true,
+						@443 : false
+					},
+					#duration : Duration {
+						#nanos : 457730000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @736,
+					#question : @445,
+					#userAnswers : {
+						@447 : true,
+						@448 : false
+					},
+					#duration : Duration {
+						#nanos : 946332000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @736,
+					#question : @450,
+					#userAnswers : {
+						@452 : true,
+						@453 : false
+					},
+					#duration : Duration {
+						#nanos : 294726000,
+						#seconds : 3
+					}
+				},
+				OOQuestionResult {
+					#owner : @736,
+					#question : @455,
+					#userAnswers : {
+						@457 : true,
+						@458 : false
+					},
+					#duration : Duration {
+						#nanos : 148496000,
+						#seconds : 3
+					}
+				},
+				OOQuestionResult {
+					#owner : @736,
+					#question : @460,
+					#userAnswers : {
+						@462 : true,
+						@463 : false
+					},
+					#duration : Duration {
+						#nanos : 825998000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @736,
+					#question : @465,
+					#userAnswers : {
+						@467 : true,
+						@468 : false
+					},
+					#duration : Duration {
+						#nanos : 722508000,
+						#seconds : 3
+					}
+				},
+				OOQuestionResult {
+					#owner : @736,
+					#question : @470,
+					#userAnswers : {
+						@472 : true,
+						@473 : false
+					},
+					#duration : Duration {
+						#nanos : 542057000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @736,
+					#question : @475,
+					#userAnswers : {
+						@477 : true,
+						@478 : false
+					},
+					#duration : Duration {
+						#nanos : 733054000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @736,
+					#question : @480,
+					#userAnswers : {
+						@482 : true,
+						@483 : false
+					},
+					#duration : Duration {
+						#nanos : 493528000,
+						#seconds : 2
+					}
+				}
+			],
+			#isFinished : true,
+			#dateBegin : DateAndTime [ '2016-11-26T20:26:36.669457+01:00' ],
+			#dateEnd : DateAndTime [ '2016-11-26T20:27:35.64901+01:00' ]
+		},
+		OOMCQResult {
+			#mcq : @382,
+			#user : OOUser {
+				#firstName : 'Laurence',
+				#lastName : 'Duchien',
+				#mail : 'laurence@gmail.com',
+				#password : 'afd922028f52deef865b3d8dfeea242a652b5914cf2629d16332c371a1d8bc5a',
+				#birthday : Date [ '1970-01-01' ],
+				#gender : #female,
+				#hasAvatar : false,
+				#mcqs : OrderedCollection [ ],
+				#isActivated : true,
+				#country : 'France',
+				#state : 'Hauts-de-France',
+				#city : 'Lille',
+				#zip : '59000',
+				#address : 'une adresse - JeSuisLaurence1'
+			},
+			#questionResults : OrderedCollection [
+				OOQuestionResult {
+					#owner : @803,
+					#question : @385,
+					#userAnswers : {
+						@387 : true,
+						@388 : false
+					},
+					#duration : Duration {
+						#nanos : 993516000,
+						#seconds : 3
+					}
+				},
+				OOQuestionResult {
+					#owner : @803,
+					#question : @390,
+					#userAnswers : {
+						@392 : true,
+						@393 : false
+					},
+					#duration : Duration {
+						#nanos : 306250000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @803,
+					#question : @395,
+					#userAnswers : {
+						@397 : true,
+						@398 : false
+					},
+					#duration : Duration {
+						#nanos : 204375000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @803,
+					#question : @400,
+					#userAnswers : {
+						@402 : true,
+						@403 : false
+					},
+					#duration : Duration {
+						#nanos : 390976000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @803,
+					#question : @405,
+					#userAnswers : {
+						@407 : true,
+						@408 : false
+					},
+					#duration : Duration {
+						#nanos : 363239000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @803,
+					#question : @410,
+					#userAnswers : {
+						@412 : true,
+						@413 : false
+					},
+					#duration : Duration {
+						#nanos : 341571000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @803,
+					#question : @415,
+					#userAnswers : {
+						@417 : true,
+						@418 : false
+					},
+					#duration : Duration {
+						#nanos : 319375000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @803,
+					#question : @420,
+					#userAnswers : {
+						@422 : true,
+						@423 : false
+					},
+					#duration : Duration {
+						#nanos : 922952000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @803,
+					#question : @425,
+					#userAnswers : {
+						@427 : true,
+						@428 : false
+					},
+					#duration : Duration {
+						#nanos : 462392000,
+						#seconds : 6
+					}
+				},
+				OOQuestionResult {
+					#owner : @803,
+					#question : @430,
+					#userAnswers : {
+						@432 : true,
+						@433 : false
+					},
+					#duration : Duration {
+						#nanos : 445979000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @803,
+					#question : @435,
+					#userAnswers : {
+						@437 : true,
+						@438 : false
+					},
+					#duration : Duration {
+						#nanos : 379362000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @803,
+					#question : @440,
+					#userAnswers : {
+						@442 : true,
+						@443 : false
+					},
+					#duration : Duration {
+						#nanos : 352020000,
+						#seconds : 3
+					}
+				},
+				OOQuestionResult {
+					#owner : @803,
+					#question : @445,
+					#userAnswers : {
+						@447 : true,
+						@448 : false
+					},
+					#duration : Duration {
+						#nanos : 335130000,
+						#seconds : 3
+					}
+				},
+				OOQuestionResult {
+					#owner : @803,
+					#question : @450,
+					#userAnswers : {
+						@452 : true,
+						@453 : false
+					},
+					#duration : Duration {
+						#nanos : 42283000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @803,
+					#question : @455,
+					#userAnswers : {
+						@457 : true,
+						@458 : false
+					},
+					#duration : Duration {
+						#nanos : 525764000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @803,
+					#question : @460,
+					#userAnswers : {
+						@462 : true,
+						@463 : false
+					},
+					#duration : Duration {
+						#nanos : 403711000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @803,
+					#question : @465,
+					#userAnswers : {
+						@467 : true,
+						@468 : false
+					},
+					#duration : Duration {
+						#nanos : 543916000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @803,
+					#question : @470,
+					#userAnswers : {
+						@472 : true,
+						@473 : false
+					},
+					#duration : Duration {
+						#nanos : 684974000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @803,
+					#question : @475,
+					#userAnswers : {
+						@477 : true,
+						@478 : false
+					},
+					#duration : Duration {
+						#nanos : 155779000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @803,
+					#question : @480,
+					#userAnswers : {
+						@482 : true,
+						@483 : false
+					},
+					#duration : Duration {
+						#nanos : 286938000,
+						#seconds : 2
+					}
+				}
+			],
+			#isFinished : true,
+			#dateBegin : DateAndTime [ '2016-11-26T20:33:03.978498+01:00' ],
+			#dateEnd : DateAndTime [ '2016-11-26T20:33:59.440186+01:00' ]
+		},
+		OOMCQResult {
+			#mcq : @382,
+			#user : OOUser {
+				#firstName : 'Clement',
+				#lastName : 'Bera',
+				#mail : 'clement@gmail.com',
+				#password : '6dfe62ca2a6922e0fb0775a49b46ae1acf435ffbdd772a2d4f0ab9272d32c1e1',
+				#birthday : Date [ '1990-01-01' ],
+				#gender : #male,
+				#hasAvatar : false,
+				#mcqs : OrderedCollection [
+					@382,
+					@494,
+					@151,
+					@279
+				],
+				#isActivated : true,
+				#country : 'France',
+				#state : 'Hauts-de-France',
+				#city : 'Lille',
+				#zip : '59000',
+				#address : 'une adresse - JeSuisClement1'
+			},
+			#questionResults : OrderedCollection [
+				OOQuestionResult {
+					#owner : @870,
+					#question : @385,
+					#userAnswers : {
+						@387 : true,
+						@388 : false
+					},
+					#duration : Duration {
+						#nanos : 790495000,
+						#seconds : 3
+					}
+				},
+				OOQuestionResult {
+					#owner : @870,
+					#question : @390,
+					#userAnswers : {
+						@392 : true,
+						@393 : false
+					},
+					#duration : Duration {
+						#nanos : 795000,
+						#seconds : 3
+					}
+				},
+				OOQuestionResult {
+					#owner : @870,
+					#question : @395,
+					#userAnswers : {
+						@397 : true,
+						@398 : false
+					},
+					#duration : Duration {
+						#nanos : 634755000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @870,
+					#question : @400,
+					#userAnswers : {
+						@402 : true,
+						@403 : false
+					},
+					#duration : Duration {
+						#nanos : 370287000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @870,
+					#question : @405,
+					#userAnswers : {
+						@407 : true,
+						@408 : false
+					},
+					#duration : Duration {
+						#nanos : 87046000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @870,
+					#question : @410,
+					#userAnswers : {
+						@412 : true,
+						@413 : false
+					},
+					#duration : Duration {
+						#nanos : 396189000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @870,
+					#question : @415,
+					#userAnswers : {
+						@417 : true,
+						@418 : false
+					},
+					#duration : Duration {
+						#nanos : 672417000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @870,
+					#question : @420,
+					#userAnswers : {
+						@422 : true,
+						@423 : false
+					},
+					#duration : Duration {
+						#nanos : 962864000,
+						#seconds : 3
+					}
+				},
+				OOQuestionResult {
+					#owner : @870,
+					#question : @425,
+					#userAnswers : {
+						@427 : true,
+						@428 : false
+					},
+					#duration : Duration {
+						#nanos : 122849000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @870,
+					#question : @430,
+					#userAnswers : {
+						@432 : true,
+						@433 : false
+					},
+					#duration : Duration {
+						#nanos : 305841000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @870,
+					#question : @435,
+					#userAnswers : {
+						@437 : true,
+						@438 : false
+					},
+					#duration : Duration {
+						#nanos : 656514000,
+						#seconds : 4
+					}
+				},
+				OOQuestionResult {
+					#owner : @870,
+					#question : @440,
+					#userAnswers : {
+						@442 : true,
+						@443 : false
+					},
+					#duration : Duration {
+						#nanos : 614766000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @870,
+					#question : @445,
+					#userAnswers : {
+						@447 : true,
+						@448 : false
+					},
+					#duration : Duration {
+						#nanos : 233191000,
+						#seconds : 4
+					}
+				},
+				OOQuestionResult {
+					#owner : @870,
+					#question : @450,
+					#userAnswers : {
+						@452 : true,
+						@453 : false
+					},
+					#duration : Duration {
+						#nanos : 650427000,
+						#seconds : 3
+					}
+				},
+				OOQuestionResult {
+					#owner : @870,
+					#question : @455,
+					#userAnswers : {
+						@457 : true,
+						@458 : false
+					},
+					#duration : Duration {
+						#nanos : 888619000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @870,
+					#question : @460,
+					#userAnswers : {
+						@462 : true,
+						@463 : false
+					},
+					#duration : Duration {
+						#nanos : 424267000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @870,
+					#question : @465,
+					#userAnswers : {
+						@467 : true,
+						@468 : false
+					},
+					#duration : Duration {
+						#nanos : 303289000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @870,
+					#question : @470,
+					#userAnswers : {
+						@472 : true,
+						@473 : false
+					},
+					#duration : Duration {
+						#nanos : 898699000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @870,
+					#question : @475,
+					#userAnswers : {
+						@477 : true,
+						@478 : false
+					},
+					#duration : Duration {
+						#nanos : 938216000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @870,
+					#question : @480,
+					#userAnswers : {
+						@482 : true,
+						@483 : false
+					},
+					#duration : Duration {
+						#nanos : 971459000,
+						#seconds : 2
+					}
+				}
+			],
+			#isFinished : true,
+			#dateBegin : DateAndTime [ '2016-11-26T20:35:49.053053+01:00' ],
+			#dateEnd : DateAndTime [ '2016-11-26T20:36:47.977164+01:00' ]
+		},
+		OOMCQResult {
+			#mcq : @382,
+			#user : @603,
+			#questionResults : OrderedCollection [
+				OOQuestionResult {
+					#owner : @937,
+					#question : @385,
+					#userAnswers : {
+						@387 : true,
+						@388 : false
+					},
+					#duration : Duration {
+						#nanos : 771438000,
+						#seconds : 3
+					}
+				},
+				OOQuestionResult {
+					#owner : @937,
+					#question : @390,
+					#userAnswers : {
+						@392 : true,
+						@393 : false
+					},
+					#duration : Duration {
+						#nanos : 475534000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @937,
+					#question : @395,
+					#userAnswers : {
+						@397 : true,
+						@398 : false
+					},
+					#duration : Duration {
+						#nanos : 69003000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @937,
+					#question : @400,
+					#userAnswers : {
+						@402 : true,
+						@403 : false
+					},
+					#duration : Duration {
+						#nanos : 269864000,
+						#seconds : 3
+					}
+				},
+				OOQuestionResult {
+					#owner : @937,
+					#question : @405,
+					#userAnswers : {
+						@407 : true,
+						@408 : false
+					},
+					#duration : Duration {
+						#nanos : 97781000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @937,
+					#question : @410,
+					#userAnswers : {
+						@412 : true,
+						@413 : false
+					},
+					#duration : Duration {
+						#nanos : 241909000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @937,
+					#question : @415,
+					#userAnswers : {
+						@417 : true,
+						@418 : false
+					},
+					#duration : Duration {
+						#nanos : 495302000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @937,
+					#question : @420,
+					#userAnswers : {
+						@422 : true,
+						@423 : false
+					},
+					#duration : Duration {
+						#nanos : 231208000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @937,
+					#question : @425,
+					#userAnswers : {
+						@427 : true,
+						@428 : false
+					},
+					#duration : Duration {
+						#nanos : 669314000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @937,
+					#question : @430,
+					#userAnswers : {
+						@432 : true,
+						@433 : false
+					},
+					#duration : Duration {
+						#nanos : 677268000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @937,
+					#question : @435,
+					#userAnswers : {
+						@437 : true,
+						@438 : false
+					},
+					#duration : Duration {
+						#nanos : 722175000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @937,
+					#question : @440,
+					#userAnswers : {
+						@442 : true,
+						@443 : false
+					},
+					#duration : Duration {
+						#nanos : 187024000,
+						#seconds : 3
+					}
+				},
+				OOQuestionResult {
+					#owner : @937,
+					#question : @445,
+					#userAnswers : {
+						@447 : true,
+						@448 : false
+					},
+					#duration : Duration {
+						#nanos : 126317000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @937,
+					#question : @450,
+					#userAnswers : {
+						@452 : true,
+						@453 : false
+					},
+					#duration : Duration {
+						#nanos : 651492000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @937,
+					#question : @455,
+					#userAnswers : {
+						@457 : true,
+						@458 : false
+					},
+					#duration : Duration {
+						#nanos : 327029000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @937,
+					#question : @460,
+					#userAnswers : {
+						@462 : true,
+						@463 : false
+					},
+					#duration : Duration {
+						#nanos : 405068000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @937,
+					#question : @465,
+					#userAnswers : {
+						@467 : true,
+						@468 : false
+					},
+					#duration : Duration {
+						#nanos : 846017000,
+						#seconds : 12
+					}
+				},
+				OOQuestionResult {
+					#owner : @937,
+					#question : @470,
+					#userAnswers : {
+						@472 : true,
+						@473 : false
+					},
+					#duration : Duration {
+						#nanos : 124027000,
+						#seconds : 2
+					}
+				},
+				OOQuestionResult {
+					#owner : @937,
+					#question : @475,
+					#userAnswers : {
+						@477 : true,
+						@478 : false
+					},
+					#duration : Duration {
+						#nanos : 955173000,
+						#seconds : 3
+					}
+				},
+				OOQuestionResult {
+					#owner : @937,
+					#question : @480,
+					#userAnswers : {
+						@482 : true,
+						@483 : false
+					},
+					#duration : Duration {
+						#nanos : 328209000,
+						#seconds : 2
+					}
+				}
+			],
+			#isFinished : true,
+			#dateBegin : DateAndTime [ '2016-11-26T20:19:32.628347+01:00' ],
+			#dateEnd : DateAndTime [ '2016-11-26T20:20:29.019504+01:00' ]
+		}
 	]
 ]
