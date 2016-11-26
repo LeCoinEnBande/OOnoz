@@ -1,16 +1,9 @@
 tests
 testCannotGetTwoTimesTheSameQuestion
-	| size |
+	| size question |
 	size := mcq questions size.
-	mcq
-		addQuestion:
-			(OOAbstractQuestion
-				description: 'I am another question'
-				answers: (Set with: (OOAnswer text: 'I am an answer' isRight: true))).
+	question := OOAbstractQuestion description: 'I am another question' answers: (Set with: (OOAnswer text: 'I am an answer' isRight: true)).
+	mcq addQuestion: question.
 	self assert: mcq questions size equals: size + 1.
-	mcq
-		addQuestion:
-			(OOAbstractQuestion
-				description: 'I am another question'
-				answers: (Set with: (OOAnswer text: 'I am an answer' isRight: true))).
+	mcq addQuestion: question.
 	self assert: mcq questions size equals: size + 1
