@@ -39,5 +39,6 @@ renderAnswersOn: html
 					((html jQuery id: self answersId) load
 						html: [ :r | 
 							self question correction: ''.
-							self renderAnswersOn: html ]);
+							self renderAnswersOn: html ];
+						onComplete: 'autosize($(''textarea''));' js);
 				with: 'Ajouter une correction' ]

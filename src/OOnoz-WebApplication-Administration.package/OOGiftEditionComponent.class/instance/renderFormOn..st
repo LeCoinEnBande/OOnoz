@@ -27,6 +27,6 @@ renderFormOn: html
 				tbsFormControl;
 				id: html lastId;
 				placeholder: label;
-				min: 0;
+				min: 1;
 				callback: [ :number | self gift number: number asInteger ];
 				value: self gift number ]

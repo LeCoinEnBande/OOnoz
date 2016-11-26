@@ -2,4 +2,4 @@ initialization
 initialize
 	super initialize.
 	self beFirstToWin.
-	self number: 0
+	self number: 1
