@@ -7,18 +7,31 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>OOnoz - Des milliers de questionnaires</title>
 
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../images/favicon/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="../../../images/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../../../images/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="../../../images/favicon/manifest.json">
+    <link rel="mask-icon" href="../../../images/favicon/safari-pinned-tab.svg" color="#2196f3">
+    <meta name="msapplication-TileColor" content="#ff0000">
+    <meta name="msapplication-TileImage" content="../../images/favicon/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <!--Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"
-          integrity="sha256-AIodEDkC8V/bHBkfyxzolUMw57jeQ9CauwhVW6YJ9CA=" crossorigin="anonymous"/>
+    <!-- Bootstrap slider -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.2.0/css/bootstrap-slider.min.css"
+          integrity="sha256-H6C3l25ZwMalTkgPDWuhR+1AaD6bKtFU4gTKJprFIt8=" crossorigin="anonymous"/>
 
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.0/bootstrap-table.min.css">
+    <!-- Bootstrap checkbox -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/awesome-bootstrap-checkbox/0.3.7/awesome-bootstrap-checkbox.min.css"
+          integrity="sha256-itsQMXiC7vueKlWeyXjigvif6ghxz++wfCOcdczJQRE=" crossorigin="anonymous"/>
 
     <!--Custom-->
-    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../../css/main.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -29,117 +42,57 @@
 </head>
 <body>
 <header>
-    <div class="container-fluid">
-        <nav class="navbar navbar-default">
+    <div class="container">
+        <nav class="navbar navbar-default" role="navigation">
             <div class="container-fluid">
-                <div class="navbar-header">
-                    <!-- !! Make a fancy responsive menu, when got time -->
+                <section class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                             data-target="#mainNavbar" aria-expanded="false">
-                        <span class="sr-only">Basculer la navigation</span>
+                    <span class="sr-only">
+                        Basculer vers la navigation
+                    </span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand"  href="#">
-                        <img alt="OOnoz" src="../../images/logo_min.png">
-                    </a>
-                </div>
-                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <a class="navbar-brand" href="#">OOnoz</a>
+                </section>
+                <section class="collapse navbar-collapse" id="mainNavbar">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Dashboard</a></li>
-                        <li><a href="#">Communautés</a></li>
-                        <li class="active"><a href="#">Questionnaires</a></li>
-                        <li><a href="#">Statistiques</a></li>
-                        <li><a href="#">Tony Montana</a></li>
+                        <li><a href="#">À propos</a></li>
+                        <li><a href="#">Aide</a></li>
+                        <li class="active"><a href="#">Jouer</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true" aria-expanded="false">
+                                Richard Hammond <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Mes communautés</a></li>
+                                <li><a href="#">Mes questionnaires joués</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Voir mon profil</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Se déconnecter</a></li>
+                            </ul>
+                        </li>
                     </ul>
-                </div>
+                </section>
             </div>
         </nav>
     </div>
 </header>
 <main>
     <div class="container">
-        <div class="text-center">
-            <h1>Gérer les questionnaires existants</h1>
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ex erat, tincidunt sed ante
-                        id, gravida tempor purus. Etiam id vehicula dui, ut tempus quam. Vestibulum et commodo
-                        mauris. </p>
-                </div>
-            </div>
-        </div>
-        <section class="">
-            <section id="toolbar">
-                <a href="add.html" class="btn btn-success btn-outline">Ajouter</a>
-                <button class="btn btn-danger btn-outline" disabled>Supprimer</button>
-            </section>
-            <table data-toggle="table" data-search="true" data-pagination="true"
-                   data-toolbar="#toolbar" class="table table-no-bordered">
-                <thead>
-                <tr>
-                    <th data-checkbox="true"></th>
-                    <th>Nom</th>
-                    <th>Communauté</th>
-                    <th>Type</th>
-                    <th>Prix</th>
-                    <th>Complété</th>
-                    <th>Ouvert</th>
-                    <th>Actions</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td></td>
-                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ex erat, tincidunt sed ante id, gravida tempor purus. Etiam id vehicula dui, ut tempus quam. Vestibulum et commodo mauris.Lorem ipsum dolor sit amet</td>
-                    <td><span class="label label-primary">Automobile</span> <span class="label label-default">BMW</span></td>
-                    <td>E-Learning</td>
-                    <td><span class="label label-info">1C</span></td>
-                    <td><span class="label label-info">53 fois</span></td>
-                    <td><span class="label label-success">Oui</span></td>
-                    <td><a class=""><span class="glyphicon glyphicon-edit"></span> </a>
-                        <a class=""><span class="glyphicon glyphicon-trash"></span></a>
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Loremipsumdolorsitamet.</td>
-                    <td><span class="label label-primary">Histoire</span> <span class="label label-default">Roi de France</span>
-                    </td>
-                    <td>Challenge</td>
-                    <td><span class="label label-default">NA</span></td>
-                    <td><span class="label label-info">105 fois</span></td>
-                    <td><span class="label label-success">Oui</span></td>
-                    <td>
-                        <a class=""><span class="glyphicon glyphicon-edit"></span> </a>
-                        <a class=""><span class="glyphicon glyphicon-trash"></span></a>
-                    </td>
-
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Suspendisse iaculis augue vitae orci volutpat</td>
-                    <td><span class="label label-primary">Musique</span> <span
-                            class="label label-default">Rock anglais</span>
-                    </td>
-                    <td>Classique</td>
-                    <td><span class="label label-default">NA</span></td>
-                    <td><span class="label label-danger">0 fois</span></td>
-                    <td><span class="label label-danger">Non</span></td>
-                    <td>
-                        <a class=""><span class="glyphicon glyphicon-edit"></span> </a>
-                        <a class=""><span class="glyphicon glyphicon-trash"></span></a>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-        </section>
+        <header class="page-header">
+            <h1>Créer un thème</h1>
+        </header>
+    </div>
+    <div class="container">
+        <form>
+        </form>
     </div>
 </main>
-</div>
-</div>
-
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -148,12 +101,15 @@
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
 
-<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.0/bootstrap-table.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.0/locale/bootstrap-table-fr-FR.min.js"></script>
+<!-- Bootstrap slider -->
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.2.0/bootstrap-slider.min.js"
+        integrity="sha256-jkZPPiQWvKWEpTyXospDAsDOUMnqYwPObBRISK6FNHM=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.autosize/3.0.17/autosize.min.js"></script>
 
 <!-- Latest compiled and minified JavaScript -->
 <script type="text/javascript">
-
+    autosize($('textarea'));
 </script>
 </body>
 </html>
