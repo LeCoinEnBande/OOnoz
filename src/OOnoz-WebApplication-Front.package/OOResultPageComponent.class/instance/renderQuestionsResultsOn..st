@@ -1,5 +1,6 @@
 rendering
 renderQuestionsResultsOn: html
+	self renderGiftAlertOn: html.
 	html section
 		class: #'panel-group';
 		id: #questionsList;
