@@ -78,7 +78,8 @@
 {
   @include border-radius();
   @include box-shadow(none);
-  border: $main-border-thickness solid $default-color;
+  border: 0;
+  border-bottom: $second-border-thickness solid $default-color;
 }
 
 textarea

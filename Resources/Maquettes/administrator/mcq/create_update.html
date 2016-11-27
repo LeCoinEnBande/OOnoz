@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>OOnoz - Des milliers de questionnaires</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../../images/favicon/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="../../images/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../../images/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="../../images/favicon/manifest.json">
+    <link rel="mask-icon" href="../../images/favicon/safari-pinned-tab.svg" color="#2196f3">
+    <meta name="msapplication-TileColor" content="#ff0000">
+    <meta name="msapplication-TileImage" content="../../images/favicon/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Bootstrap slider -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.2.0/css/bootstrap-slider.min.css"
+          integrity="sha256-H6C3l25ZwMalTkgPDWuhR+1AaD6bKtFU4gTKJprFIt8=" crossorigin="anonymous"/>
+
+    <!-- Bootstrap checkbox -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/awesome-bootstrap-checkbox/0.3.7/awesome-bootstrap-checkbox.min.css"
+          integrity="sha256-itsQMXiC7vueKlWeyXjigvif6ghxz++wfCOcdczJQRE=" crossorigin="anonymous"/>
+
+    <!--Custom-->
+    <link rel="stylesheet" href="../../css/main.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<header>
+    <div class="container">
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <section class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#mainNavbar" aria-expanded="false">
+                    <span class="sr-only">
+                        Basculer vers la navigation
+                    </span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">OOnoz</a>
+                </section>
+                <section class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">À propos</a></li>
+                        <li><a href="#">Aide</a></li>
+                        <li class="active"><a href="#">Jouer</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true" aria-expanded="false">
+                                Richard Hammond <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Mes communautés</a></li>
+                                <li><a href="#">Mes questionnaires joués</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Voir mon profil</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Se déconnecter</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </nav>
+    </div>
+</header>
+<main>
+    <div class="container">
+        <header class="page-header">
+            <h1>Créer un questionnaire</h1>
+        </header>
+    </div>
+    <div class="container">
+        <form role="form">
+            <section class="panel-group" id="questionsList" role="tablist" aria-multiselctable="true">
+                <article class="panel panel-default">
+                    <header class="panel-heading" role="tab" id="configurationTitle" data-toggle="collapse"
+                            data-target="#configuration" data-parent="#questionsList" aria-expanded="true"
+                            aria-controls="configuration">
+                        <h2 class="panel-title">
+                            Configuration
+                            <span class="pull-right">
+                                <span class="badge badge-success">OK</span>
+                            </span>
+                        </h2>
+                    </header>
+                    <div id="configuration" class="panel-collapse collapse in" role="tabpanel"
+                         aria-labelledby="configuration">
+                        <section class="panel-body">
+                            <div class="row">
+                                <div class="col-md-8 col-md-offset-2">
+
+                            <h3>Configuration globale</h3>
+                            <div class="form-group">
+                                <label for="mcqTitle" class="sr-only">
+                                    Titre du questionnaire
+                                </label>
+                                <input type="text" class="form-control" id="mcqTitle"
+                                       placeholder="Titre du questionnaire">
+                            </div>
+                            <div class="form-group">
+                                <label for="mcqDescription" class="sr-only">
+                                    Description du questionnaire
+                                </label>
+                                <textarea class="form-control" id="mcqDescription"
+                                          placeholder="Description du questionnaire" rows="3"></textarea>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <section>
+                                        <h3>Notation du questionnaire</h3>
+                                        <section>
+                                            <div class="radio">
+                                                <input type="radio" name="mcqNotation" id="mcqNotation1" checked>
+                                                <label for="mcqNotation1">Conformité relative</label>
+                                            </div>
+                                            <div class="radio">
+                                                <input type="radio" name="mcqNotation" id="mcqNotation2">
+                                                <label for="mcqNotation2">Conformité stricte</label>
+                                            </div>
+                                            <div class="radio">
+                                                <input type="radio" name="mcqNotation" id="mcqNotation3">
+                                                <label for="mcqNotation3">Conformité stricte avec pénalité</label>
+                                            </div>
+                                        </section>
+                                    </section>
+                                </div>
+                                <div class="col-md-6">
+                                    <section>
+                                        <h3>Ordre des quetions</h3>
+                                        <div class="radio">
+                                            <input type="radio" name="mcqOrder" id="mcqOrder1" checked>
+                                            <label for="mcqOrder1">Ordonnées</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input type="radio" name="mcqOrder" id="mcqOrder2">
+                                            <label for="mcqOrder2">Aléatoires</label>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                            <section>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h3>Tarification</h3>
+                                        <div class="radio">
+                                            <input type="radio" name="mcqPrice" id="mcqPrice1" data-toggle="collapse"
+                                                   data-target="#priceOptions" checked>
+                                            <label for="mcqPrice1" checked>Gratuit</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input type="radio" name="mcqPrice" id="mcqPrice2" data-toggle="collapse"
+                                                   data-target="#priceOptions">
+                                            <label for="mcqPrice2">Payant</label>
+                                        </div>
+                                        <section class="collapse panel" id="priceOptions">
+
+                                        </section>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h3>Type de questionnaire</h3>
+                                        <div class="radio">
+                                            <input type="radio" name="mcqType" id="mcqType1" data-toggle="collapse"
+                                                   data-target="#challengeOptions" checked>
+                                            <label for="mcqType1" checked>E-Learning</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input type="radio" name="mcqType" id="mcqType2" data-toggle="collapse"
+                                                   data-target="#challengeOptions">
+                                            <label for="mcqType2">Challenge</label>
+                                        </div>
+                                        <section class="collapse panel" id="challengeOptions">
+
+                                        </section>
+                                    </div>
+                                </div>
+
+                                <!--<div class="row">
+                                    <div class="col-md-6">
+                                    </div>
+                                    <div class="col-md-6">
+
+                                    </div>
+                                </div>-->
+                            </section>
+                            <section>
+                                <h3>Autres options</h3>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="URL de l'image">
+                                </div>
+                            </section>
+                            </div>
+                            </div>
+                        </section>
+                        <footer class="panel-footer clearfix">
+                            <div class="pull-right">
+                                <button type="button" role="button" class="btn btn-warning">Effacer</button>
+                                <a role="button" data-toggle="collapse" data-parent="#questionsList"
+                                   href="#question2"
+                                   aria-expanded="true" aria-controls="question1" class="btn btn-primary">Créer
+                                    les questions</a>
+                            </div>
+                        </footer>
+                    </div>
+                </article>
+                <article class="panel panel-default">
+                    <header class="panel-heading" role="tab" id="questionTitle1" data-toggle="collapse"
+                            data-target="#question1" data-parent="#questionsList" aria-expanded="true"
+                            aria-controls="question1">
+                        <h2 class="panel-title">
+                            Question 1
+                        </h2>
+                    </header>
+                    <div id="question2" class="panel-collapse collapse" role="tabpanel"
+                         aria-labelledby="question1Title">
+                        <section class="panel-body">
+                        </section>
+                        <footer class="panel-footer clearfix">
+                            <div class="pull-right">
+                                <button type="button" role="button" class="btn btn-warning">Effacer</button>
+                            </div>
+                        </footer>
+                    </div>
+                </article>
+            </section>
+            <section>
+                <div class="pull-right">
+                    <a href="init.html" class="btn btn-danger">Quitter</a>
+                    <button type="submit" class="btn btn-success">Publier le questionnaire</button>
+                </div>
+            </section>
+        </form>
+    </div>
+
+</main>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+<!-- Bootstrap slider -->
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.2.0/bootstrap-slider.min.js"
+        integrity="sha256-jkZPPiQWvKWEpTyXospDAsDOUMnqYwPObBRISK6FNHM=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.autosize/3.0.17/autosize.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script type="text/javascript">
+    autosize($('textarea'));
+</script>
+</body>
+</html>
+
