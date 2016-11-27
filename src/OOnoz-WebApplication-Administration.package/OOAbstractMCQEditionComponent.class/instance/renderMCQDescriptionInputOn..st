@@ -13,4 +13,4 @@ renderMCQDescriptionInputOn: html
 				placeholder: label;
 				callback: [ :descr | self mcq description: descr ];
 				value: self mcq description;
-				rows: 1 ]
+				rows: 3 ]

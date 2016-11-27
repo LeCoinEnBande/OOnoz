@@ -1,3 +1,3 @@
 accessing
 id
-	^ 'Question' , self question index asString
+	^ 'question' , self index greaseString

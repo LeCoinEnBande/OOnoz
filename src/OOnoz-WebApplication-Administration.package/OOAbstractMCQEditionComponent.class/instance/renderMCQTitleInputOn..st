@@ -7,10 +7,10 @@ renderMCQTitleInputOn: html
 				for: (id := html nextId);
 				tbsScreenReaderOnly;
 				with: label.
-			html textArea
+			html textInput
 				tbsFormControl;
 				id: id;
+				required;
 				placeholder: label;
 				callback: [ :title | self mcq title: title ];
-				value: self mcq title;
-				rows: 1 ]
+				value: self mcq title ]
