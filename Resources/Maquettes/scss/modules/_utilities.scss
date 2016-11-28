@@ -1,5 +1,17 @@
-$default-border-radius: 0px;
+//Border thickness
 $main-border-thickness: 2px;
 $second-border-thickness: 1px;
+
+//Border Radius (Default override Compass rule
+$default-border-radius: 0;
+$main-border-radius: 2px;
+
+//Margin and padding
 $main-margin: 50px;
-$second-margin: 20px;
+$second-margin: 25px;
+
+//Navbar
+$main-navbar-height: 100px;
+
+//Typography
+$main-line-height: 20px;
