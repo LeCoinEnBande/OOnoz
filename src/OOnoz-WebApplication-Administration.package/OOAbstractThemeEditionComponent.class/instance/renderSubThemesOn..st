@@ -19,6 +19,7 @@ renderSubThemesOn: html
 				render:
 					((OOSubThemeComponent subTheme: subTheme)
 						noThemeSelection;
+						index: i;
 						yourself).
 			html tbsButton
 				bePush;

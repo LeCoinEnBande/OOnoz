@@ -11,10 +11,13 @@ renderOtherOptionsOn: html
 						for: html nextId;
 						tbsScreenReaderOnly;
 						with: label.
-					html textArea
+					html textInput
 						tbsFormControl;
 						id: html lastId;
 						placeholder: label;
 						callback: [ :url | self theme mediaLink: url ];
 						value: self theme mediaLink;
-						rows: 1 ] ]
+						onChange:
+							(html jQuery ajax
+								serializeThis;
+								onComplete: ((html jQuery id: #themeImage) load html: [ :r | self renderImageOn: r ])) ] ]
