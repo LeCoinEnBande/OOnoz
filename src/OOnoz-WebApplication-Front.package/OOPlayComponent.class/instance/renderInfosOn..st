@@ -14,4 +14,5 @@ renderInfosOn: html
 								section: [ html
 										paragraph:
 											(self mcq description isEmptyOrNil
-												ifTrue: [ 'Le créateur du QCM n''a pas fourni de descrption pour ce QCM.' ]) ] ] ] ]
+												ifTrue: [ 'Le créateur du QCM n''a pas fourni de descrption pour ce QCM.' ]
+												ifFalse: [ self mcq description ]) ] ] ] ]

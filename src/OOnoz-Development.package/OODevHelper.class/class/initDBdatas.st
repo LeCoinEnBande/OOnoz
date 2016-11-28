@@ -3,5 +3,5 @@ initDBdatas
 	<script>
 	(STON
 		fromString:
-			(FileSystem workingDirectory / '..' / '..' / 'GitRepositories' / 'OOnoz' / 'Resources'
-				/ 'Datas' / 'datas.ston') contents) do: [ :set | set do: #save ]
+			(OOServer current configuration resourcesDirectory / 'Datas'
+				/ 'datas.ston') contents) do: [ :set | set do: #save ]
