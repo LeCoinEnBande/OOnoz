@@ -28,6 +28,7 @@ tableEntriesFrom: theme On: html
 				html: [ :r | 
 					self subThemesComponent: (OOSubThemeListComponent theme: theme owner: self).
 					r render: self subThemesComponent ];
-				onComplete: '$("table").bootstrapTable();' js);
+				onComplete:
+					'$("table").bootstrapTable();$("html, body").scrollTop($("#list-subthemes").offset().top);' js);
 		tbsTooltip: 'Afficher les sous thèmes';
 		iconList ]}

@@ -12,4 +12,5 @@ activate
 		protectConfigByPassword;
 		protectToolsByPassword;
 		removeDevToolbar;
-		setAsDefault
+		setAsDefault.
+	Smalltalk snapshot: true andQuit: true
