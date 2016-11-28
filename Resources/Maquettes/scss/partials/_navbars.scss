@@ -17,10 +17,10 @@
 
 .navbar.shrink
 {
-  height: $main-margin;
+  height: $main-line-height * 3;
   border-bottom: 1px solid $base-shade2;
-  padding-top: ($main-margin - $main-line-height) / 2;
-  padding-bottom: ($main-margin - $main-line-height) / 2;
+  padding-top: $main-line-height;
+  padding-bottom: $main-line-height;
 }
 
 .navbar.shrink .navbar-nav>li>a
