@@ -1,12 +1,10 @@
 rendering
 renderPanelHeaderOn: html
-	html header
+	html tbsArticlePanelHeader
 		id: self titleId;
-		class: #'panel-heading';
-		role: #tab;
-		attributeAt: #'data-parent' put: #'#mcqsList';
-		attributeAt: #'data-toggle' put: #collapse;
-		attributeAt: #'data-target' put: '#' , self id;
+		parent: #'#mcqsList';
+		toggle: #collapse;
+		target: self id;
 		ariaExpanded: self index = 1;
 		ariaControles: self id;
 		with: [ html tbsPanelTitle

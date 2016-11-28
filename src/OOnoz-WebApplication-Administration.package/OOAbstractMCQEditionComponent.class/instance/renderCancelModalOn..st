@@ -1,12 +1,12 @@
 rendering
-renderCancelModalFor: id on: html
+renderCancelModalOn: html
 	| titleId |
 	html tbsModal
 		beFade;
 		tabIndex: -1;
 		role: 'dialog';
 		ariaLabelledBy: (titleId := html nextId);
-		id: id;
+		id: self modalId;
 		with: [ html tbsModalDialog
 				role: 'document';
 				class: #'modal-sm';

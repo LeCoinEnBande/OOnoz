@@ -26,4 +26,5 @@ renderFormContentOn: html
 														tbsTooltip: class description;
 														for: html lastId;
 														with: class label ] ] ].
-							self renderConcreteFormOn: html ] ] ]
+							self renderConcreteFormOn: html ] ].
+			self renderFooterOn: html ]

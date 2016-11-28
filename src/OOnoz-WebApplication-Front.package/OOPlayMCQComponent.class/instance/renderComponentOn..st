@@ -5,11 +5,8 @@ renderComponentOn: html
 	html
 		tbsContainer: [ html form
 				role: #form;
-				with: [ html section
-						class: #'panel-group';
-						id: #questionsList;
-						role: #tablist;
-						ariaMultiselectable: true;
+				with: [ html
+						tbsPanelGroupId: #questionsList
 						with: [ self questions do: [ :q | html render: q ] ].
 					html document addLoadScript: self initCheckboxesJs.
 					html

@@ -1,17 +1,12 @@
 rendering
 renderContentOn: html
-	html article
-		class: #panel;
-		class: #'panel-default';
-		with: [ html header
-				id: 'questionTitle' , self index greaseString;
-				class: #'panel-heading';
-				role: #tab;
-				attributeAt: #'data-parent' put: #'#mcqCreation';
-				attributeAt: #'data-toggle' put: #collapse;
-				attributeAt: #'data-target' put: '#' , self id;
-				ariaExpanded: true;
-				ariaControles: self id;
+	html tbsArticlePanel
+		beDefault;
+		with: [ html tbsArticlePanelHeader
+				parent: #'#mcqCreation';
+				toggle: #collapse;
+				target: self id;
+				onClick: (html jQuery ajax callback: [ self headerClickAction ]);
 				with: [ html tbsPanelTitle
 						level2;
 						with: 'Question ' , self index asString ].
@@ -20,7 +15,6 @@ renderContentOn: html
 				id: self id;
 				class: #'panel-collapse';
 				class: #collapse;
-				class: #in;
+				class: #in if: self isActive;
 				role: #tabpanel;
-				ariaLabelledBy: 'questionTitle' , self index greaseString;
 				with: [ self renderFormContentOn: html ] ]
