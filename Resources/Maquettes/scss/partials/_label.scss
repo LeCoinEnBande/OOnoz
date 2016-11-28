@@ -2,38 +2,7 @@
 
 @import "../modules/all";
 
-.label
-{
-  display: inline-block;
-  padding: $second-margin / 4;
-}
 
-.badge
-{
-}
-
-
-.panel-default>.panel-heading .badge.badge-success
-{
-  @include btn($success-color);
-}
-
-.panel-default>.panel-heading .badge.badge-danger
-{
-  @include btn($danger-color);
-}
-
-
-.label
-{
-  @include border-radius();
-  border: 2px solid transparent;
-}
-
-.label-primary
-{
-  @include btn($primary-color);
-}
 
 
 

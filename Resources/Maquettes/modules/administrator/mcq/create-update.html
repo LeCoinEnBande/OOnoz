@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>OOnoz - Des milliers de QCM</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../../images/favicon/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="../../images/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../../images/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="../../images/favicon/manifest.json">
+    <link rel="mask-icon" href="../../images/favicon/safari-pinned-tab.svg" color="#2196f3">
+    <meta name="msapplication-TileColor" content="#ff0000">
+    <meta name="msapplication-TileImage" content="../../images/favicon/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!--Font awesome-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!--Bootstrap select -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/css/bootstrap-select.min.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom stylesheet for OOnoz -->
+    <link rel="stylesheet" href="../../../css/main.css">
+
+</head>
+<header>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <section class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#mainNavigation" aria-expanded="false">
+                    <span class="sr-only">Enclencher la navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand">OOnoz</a>
+            </section>
+            <section class="collapse navbar-collapse" id="mainNavigation">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Accueil</a></li>
+                    <li class="active"><a href="#">Jouer</a></li>
+                    <li><a href="#">Aide</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">
+                            Jeremy C. <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Mes communuatés</a></li>
+                            <li><a href="#">Mes questionnaires</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Mon profil</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Me déconnecter</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </nav>
+</header>
+<main>
+    <aside class="indicator mcq-indicator-1">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li><a href="#">Questionnaire</a></li>
+                <li class="active">Nouveau</li>
+            </ol>
+        </div>
+    </aside>
+    <div class="container">
+        <header class="page-header">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <h1 class="text-center">Création d'un questionnaire</h1>
+                    <p>Cet utilitaire vous permet de créer un nouveau questionnaire. D'abord, choisissez votre
+                        configuration
+                        globale, comme le prix, le type, puis
+                        créez les 20 questions associées.</p>
+                </div>
+            </div>
+
+        </header>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <form>
+                    <section class="panel-group" id="questionsAccordion" role="tablist" aria-multiselctable="true">
+                        <article class="panel panel-default">
+                            <header class="panel-heading" data-toggle="collapse" data-parent="#questionsAccordion"
+                                    data-target="#initialization">
+                                <h2 class="panel-title">
+                                    Configuration <span class="accordion-status"></span>
+
+                                </h2>
+                            </header>
+
+                            <div id="initialization" class="panel-collapse collapse in" role="tabpanel">
+                                <section class="panel-body">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <div class="form-group">
+                                                <label for="mcqTitle" class="sr-only">Titre du questionnaire:</label>
+                                                <input type="text" class="form-control" id="mcqTitle"
+                                                       placeholder="Titre du questionnaire">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <div class="form-group">
+                                                <label for="mcqTheme" class="sr-only">Thème du questionnaire:</label>
+                                                <input type="text" class="form-control" id="mcqTheme"
+                                                       placeholder="Thème du questionnaire">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <div class="form-group">
+                                                <label for="mcqSubTheme" class="sr-only">Sous thème du
+                                                    questionnaire:</label>
+                                                <input type="text" class="form-control" id="mcqSubTheme"
+                                                       placeholder="Sous thème du questionnaire">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <div class="radio">
+                                                    <input type="radio" id="mcqNotationType1" name="mcqNotationType">
+                                                    <label for="mcqNotationType1">Conformité relative</label>
+                                                </div>
+                                                <div class="radio">
+                                                    <input type="radio" id="mcqNotationType2" name="mcqNotationType">
+                                                    <label for="mcqNotationType2">Conformité stricte</label>
+                                                </div>
+                                                <div class="radio ">
+                                                    <input type="radio" id="mcqNotationType3" name="mcqNotationType">
+                                                    <label for="mcqNotationType3">Conformité stricte avec
+                                                        pénalité</label>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <div class="radio">
+                                                    <input type="radio" id="mcqQuestionsOrder1"
+                                                           name="mcqQuestionsOrder">
+                                                    <label for="mcqQuestionsOrder1">Questions ordonées</label>
+                                                </div>
+                                                <div class="radio ">
+                                                    <input type="radio" id="mcqQuestionsOrder2"
+                                                           name="mcqQuestionsOrder">
+                                                    <label for="mcqQuestionsOrder2">Questions aléatoires</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+
+                                </section>
+                                <footer class="panel-footer clearfix">
+                                    <div class="pull-right">
+                                        <a href="#question1" data-toggle="collapse" data-parent="#questionsAccordion"
+                                           class="btn btn-primary">Suivant</a>
+                                    </div>
+                                </footer>
+                            </div>
+                        </article>
+                        <article class="panel panel-default">
+                            <header class="panel-heading" data-toggle="collapse" data-parent="#questionsAccordion"
+                                    data-target="#question1">
+                                <h2 class="panel-title">
+                                    Question 1
+                                </h2>
+                            </header>
+
+                            <div id="question1" class="panel-collapse collapse" role="tabpanel">
+                                <section class="panel-body">
+
+                                </section>
+                            </div>
+                        </article>
+                        <article class="panel panel-default">
+                            <header class="panel-heading" data-toggle="collapse" data-parent="#questionsAccordion"
+                                    data-target="#question2">
+                                <h2 class="panel-title">
+                                    Question 2
+                                </h2>
+                            </header>
+
+                            <div id="question2" class="panel-collapse collapse" role="tabpanel">
+                                <section class="panel-body">
+                                </section>
+                            </div>
+                        </article>
+                        <article class="panel panel-default">
+                            <header class="panel-heading" data-toggle="collapse" data-parent="#questionsAccordion"
+                                    data-target="#question3">
+                                <h2 class="panel-title">
+                                    Question 3
+                                </h2>
+                            </header>
+
+                            <div id="question3" class="panel-collapse collapse" role="tabpanel">
+                                <section class="panel-body">
+                                </section>
+                            </div>
+                        </article>
+                        <article class="panel panel-default">
+                            <header class="panel-heading" data-toggle="collapse" data-parent="#questionsAccordion"
+                                    data-target="#question4">
+                                <h2 class="panel-title">
+                                    Question 4
+                                </h2>
+                            </header>
+
+                            <div id="question4" class="panel-collapse collapse" role="tabpanel">
+                                <section class="panel-body">
+                                </section>
+                            </div>
+                        </article>
+                        <article class="panel panel-default">
+                            <header class="panel-heading" data-toggle="collapse" data-parent="#questionsAccordion"
+                                    data-target="#question5">
+                                <h2 class="panel-title">
+                                    Question 5
+                                </h2>
+                            </header>
+
+                            <div id="question5" class="panel-collapse collapse" role="tabpanel">
+                                <section class="panel-body">
+                                </section>
+                            </div>
+                        </article>
+                        <article class="panel panel-default">
+                            <header class="panel-heading" data-toggle="collapse" data-parent="#questionsAccordion"
+                                    data-target="#question6">
+                                <h2 class="panel-title">
+                                    Question 6
+                                </h2>
+                            </header>
+
+                            <div id="question6" class="panel-collapse collapse" role="tabpanel">
+                                <section class="panel-body">
+                                </section>
+                            </div>
+                        </article>
+                        <article class="panel panel-default">
+                            <header class="panel-heading" data-toggle="collapse" data-parent="#questionsAccordion"
+                                    data-target="#question7">
+                                <h2 class="panel-title">
+                                    Question 7
+                                </h2>
+                            </header>
+
+                            <div id="question7" class="panel-collapse collapse" role="tabpanel">
+                                <section class="panel-body">
+                                </section>
+                            </div>
+                        </article>
+                        <article class="panel panel-default">
+                            <header class="panel-heading" data-toggle="collapse" data-parent="#questionsAccordion"
+                                    data-target="#question8">
+                                <h2 class="panel-title">
+                                    Question 8
+                                </h2>
+                            </header>
+
+                            <div id="question8" class="panel-collapse collapse" role="tabpanel">
+                                <section class="panel-body">
+                                </section>
+                            </div>
+                        </article>
+                        <article class="panel panel-default">
+                            <header class="panel-heading" data-toggle="collapse" data-parent="#questionsAccordion"
+                                    data-target="#question9">
+                                <h2 class="panel-title">
+                                    Question 9
+                                </h2>
+                            </header>
+
+                            <div id="question9" class="panel-collapse collapse" role="tabpanel">
+                                <section class="panel-body">
+                                </section>
+                            </div>
+                        </article>
+                        <article class="panel panel-default">
+                            <header class="panel-heading" data-toggle="collapse" data-parent="#questionsAccordion"
+                                    data-target="#question10">
+                                <h2 class="panel-title">
+                                    Question 10
+                                </h2>
+                            </header>
+
+                            <div id="question10" class="panel-collapse collapse" role="tabpanel">
+                                <section class="panel-body">
+                                </section>
+                            </div>
+                        </article>
+                        <article class="panel panel-default">
+                            <header class="panel-heading" data-toggle="collapse" data-parent="#questionsAccordion"
+                                    data-target="#question11">
+                                <h2 class="panel-title">
+                                    Question 11
+                                </h2>
+                            </header>
+
+                            <div id="question11" class="panel-collapse collapse" role="tabpanel">
+                                <section class="panel-body">
+                                </section>
+                            </div>
+                        </article>
+                        <article class="panel panel-default">
+                            <header class="panel-heading" data-toggle="collapse" data-parent="#questionsAccordion"
+                                    data-target="#question12">
+                                <h2 class="panel-title">
+                                    Question 12
+                                </h2>
+                            </header>
+
+                            <div id="question12" class="panel-collapse collapse" role="tabpanel">
+                                <section class="panel-body">
+                                </section>
+                            </div>
+                        </article>
+                        <article class="panel panel-default">
+                            <header class="panel-heading" data-toggle="collapse" data-parent="#questionsAccordion"
+                                    data-target="#question13">
+                                <h2 class="panel-title">
+                                    Question 13
+                                </h2>
+                            </header>
+
+                            <div id="question13" class="panel-collapse collapse" role="tabpanel">
+                                <section class="panel-body">
+                                </section>
+                            </div>
+                        </article>
+                        <article class="panel panel-default">
+                            <header class="panel-heading" data-toggle="collapse" data-parent="#questionsAccordion"
+                                    data-target="#question14">
+                                <h2 class="panel-title">
+                                    Question 14
+                                </h2>
+                            </header>
+
+                            <div id="question14" class="panel-collapse collapse" role="tabpanel">
+                                <section class="panel-body">
+                                </section>
+                            </div>
+                        </article>
+                        <article class="panel panel-default">
+                            <header class="panel-heading" data-toggle="collapse" data-parent="#questionsAccordion"
+                                    data-target="#question15">
+                                <h2 class="panel-title">
+                                    Question 15
+                                </h2>
+                            </header>
+
+                            <div id="question15" class="panel-collapse collapse" role="tabpanel">
+                                <section class="panel-body">
+                                </section>
+                            </div>
+                        </article>
+                        <article class="panel panel-default">
+                            <header class="panel-heading" data-toggle="collapse" data-parent="#questionsAccordion"
+                                    data-target="#question16">
+                                <h2 class="panel-title">
+                                    Question 16
+                                </h2>
+                            </header>
+
+                            <div id="question16" class="panel-collapse collapse" role="tabpanel">
+                                <section class="panel-body">
+                                </section>
+                            </div>
+                        </article>
+                        <article class="panel panel-default">
+                            <header class="panel-heading" data-toggle="collapse" data-parent="#questionsAccordion"
+                                    data-target="#question17">
+                                <h2 class="panel-title">
+                                    Question 17
+                                </h2>
+                            </header>
+
+                            <div id="question17" class="panel-collapse collapse" role="tabpanel">
+                                <section class="panel-body">
+                                </section>
+                            </div>
+                        </article>
+                        <article class="panel panel-default">
+                            <header class="panel-heading" data-toggle="collapse" data-parent="#questionsAccordion"
+                                    data-target="#question18">
+                                <h2 class="panel-title">
+                                    Question 18
+                                </h2>
+                            </header>
+
+                            <div id="question18" class="panel-collapse collapse" role="tabpanel">
+                                <section class="panel-body">
+                                </section>
+                            </div>
+                        </article>
+                        <article class="panel panel-default">
+                            <header class="panel-heading" data-toggle="collapse" data-parent="#questionsAccordion"
+                                    data-target="#question19">
+                                <h2 class="panel-title">
+                                    Question 19
+                                </h2>
+                            </header>
+
+                            <div id="question19" class="panel-collapse collapse" role="tabpanel">
+                                <section class="panel-body">
+                                </section>
+                            </div>
+                        </article>
+                        <article class="panel panel-default">
+                            <header class="panel-heading" data-toggle="collapse" data-parent="#questionsAccordion"
+                                    data-target="#question20">
+                                <h2 class="panel-title">
+                                    Question 20
+                                </h2>
+                            </header>
+
+                            <div id="question20" class="panel-collapse collapse" role="tabpanel">
+                                <section class="panel-body">
+                                </section>
+                            </div>
+                        </article>
+
+                    </section>
+                </form>
+            </div>
+            <!--  <div class="col-md-2 hidden-xs hidden-sm"  >
+                  <aside class="list-group" data-spy="affix" if="questionsList">
+                      <a href="#initialization" class="list-group-item" data-toggle="collapse"
+                         data-parent="#questionsAccordion">Configuration</a>
+                      <a href="#question1" class="list-group-item" data-toggle="collapse"
+                         data-parent="#questionsAccordion">Question
+                          1</a>
+                      <a href="#question2" class="list-group-item" data-toggle="collapse"
+                         data-parent="#questionsAccordion">Question
+                          2</a>
+                      <a href="#question3" class="list-group-item" data-toggle="collapse"
+                         data-parent="#questionsAccordion">Question
+                          3</a>
+                      <a href="#question4" class="list-group-item" data-toggle="collapse"
+                         data-parent="#questionsAccordion">Question
+                          4</a>
+                      <a href="#question5" class="list-group-item" data-toggle="collapse"
+                         data-parent="#questionsAccordion">Question
+                          5</a>
+                      <a href="#question6" class="list-group-item" data-toggle="collapse"
+                         data-parent="#questionsAccordion">Question
+                          6</a>
+                      <a href="#question7" class="list-group-item" data-toggle="collapse"
+                         data-parent="#questionsAccordion">Question
+                          7</a>
+                      <a href="#question8" class="list-group-item" data-toggle="collapse"
+                         data-parent="#questionsAccordion">Question
+                          8</a>
+                      <a href="#question9" class="list-group-item" data-toggle="collapse"
+                         data-parent="#questionsAccordion">Question
+                          9</a>
+                      <a href="#question10" class="list-group-item" data-toggle="collapse"
+                         data-parent="#questionsAccordion">Question
+                          10</a>
+                      <a href="#question11" class="list-group-item" data-toggle="collapse"
+                         data-parent="#questionsAccordion">Question
+                          11</a>
+                      <a href="#question12" class="list-group-item" data-toggle="collapse"
+                         data-parent="#questionsAccordion">Question
+                          12</a>
+                      <a href="#question13" class="list-group-item" data-toggle="collapse"
+                         data-parent="#questionsAccordion">Question
+                          13</a>
+                      <a href="#question14" class="list-group-item" data-toggle="collapse"
+                         data-parent="#questionsAccordion">Question
+                          14</a>
+                      <a href="#question15" class="list-group-item" data-toggle="collapse"
+                         data-parent="#questionsAccordion">Question
+                          15</a>
+                      <a href="#question16" class="list-group-item" data-toggle="collapse"
+                         data-parent="#questionsAccordion">Question
+                          16</a>
+                      <a href="#question17" class="list-group-item" data-toggle="collapse"
+                         data-parent="#questionsAccordion">Question
+                          17</a>
+                      <a href="#question18" class="list-group-item" data-toggle="collapse"
+                         data-parent="#questionsAccordion">Question
+                          18</a>
+                      <a href="#question19" class="list-group-item" data-toggle="collapse"
+                         data-parent="#questionsAccordion">Question
+                          19</a>
+                      <a href="#question20" class="list-group-item" data-toggle="collapse"
+                         data-parent="#questionsAccordion">Question
+                          20</a>
+
+                  </aside>
+          </div>-->
+        </div>
+    </div>
+</main>
+
+<footer>
+
+</footer>
+</body>
+</html>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/bootstrap-select.min.js"></script>
+
+
+<!--Custom script -->
+<script type="text/javascript" src="../../../script/main.js"></script>
+<script type="text/javascript" src="../../../script/partial/_navbar.js"></script>
+</body>
+</html>

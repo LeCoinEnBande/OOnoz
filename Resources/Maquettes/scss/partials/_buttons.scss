@@ -4,62 +4,35 @@
 
 .btn
 {
-  @include border-radius();
-  border: 2px solid transparent;
+  @include border-radius($main-border-radius);
 }
 
 .btn-primary
 {
-  @include btn($primary-color);
+  @include button($primary-shade1);
 }
 
-.btn-primary:hover,.btn-primary:active
+.btn-primary:hover, .btn-primary:focus
 {
-  @include btn-hover($primary-color);
+  @include button($primary-shade2);
 }
 
-
-.btn-warning
+.btn-primary.active, .btn-primary:active, .open>.dropdown-toggle.btn-primary, .btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover
 {
-  @include btn($warning-color);
-}
-
-.btn-warning:hover, .btn-warning:active
-{
-  @include btn-hover($warning-color);
-}
-
-.btn-success
-{
-  @include btn($success-color);
-}
-
-.btn-success:hover, .btn-success:active
-{
-  @include btn-hover($success-color);
+  @include button($primary-shade3)
 }
 
 .btn-danger
 {
-  @include btn($danger-color);
+  @include button($danger-shade1);
 }
 
-.btn-danger:hover, .btn-danger:active
+.btn-danger:hover, .btn-danger:focus
 {
-  @include btn-hover($danger-color);
+  @include button($danger-shade2);
 }
 
-.btn-info
+.btn-danger.active, .btn-danger:active, .open>.dropdown-toggle.btn-danger, .btn-danger.active.focus, .btn-danger.active:focus, .btn-danger.active:hover, .btn-danger:active.focus, .btn-danger:active:focus, .btn-danger:active:hover, .open>.dropdown-toggle.btn-danger.focus, .open>.dropdown-toggle.btn-danger:focus, .open>.dropdown-toggle.btn-danger:hover
 {
-  @include btn($info-color);
-}
-
-.btn-info:hover, .btn-info:active
-{
-  @include btn-hover($info-color)
-}
-
-.btn.dropdown-toggle
-{
-  @include btn-hover($default-color);
+  @include button($danger-shade3)
 }
