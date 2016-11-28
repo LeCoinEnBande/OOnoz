@@ -1,0 +1,15 @@
+{
+	"category" : "OOnoz-WebApplication-Administration-Pages",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"mcq",
+		"index" ],
+	"name" : "OOShippingMCQComponent",
+	"pools" : [
+		 ],
+	"super" : "OOComponent",
+	"type" : "normal" }

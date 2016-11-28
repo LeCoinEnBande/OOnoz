@@ -1,3 +1,3 @@
 running
 setUp
-    instance := self newInstance
+	instance := self newInstance

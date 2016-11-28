@@ -1,4 +1,3 @@
 adding
 removeSubTheme: aSubTheme
-
-	self subThemes remove: aSubTheme 
+	self subThemes remove: aSubTheme ifAbsent: [  ]

@@ -1,0 +1,3 @@
+accessing
+price
+	^ self subclassResponsibility

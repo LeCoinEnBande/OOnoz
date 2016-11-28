@@ -1,4 +1,4 @@
-helpers
+db
 generateUserWithMCQsInDB
 	<script>
 	| user |

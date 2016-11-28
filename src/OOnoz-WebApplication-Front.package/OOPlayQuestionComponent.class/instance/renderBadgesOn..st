@@ -1,8 +1,10 @@
 rendering
 renderBadgesOn: html
-	| checkedAnswers |
-	checkedAnswers := (self result userAnswers values select: [ :r | r ]) size.
 	html tbsBadge
-		beSuccessIf: (checkedAnswers between: self question minNumberOfRightAnswers and: self question maxNumberOfRightAnswers);
-		beDangerIf: (checkedAnswers between: self question minNumberOfRightAnswers and: self question maxNumberOfRightAnswers) not;
-		with: checkedAnswers greaseString
+		class: #'oonoz-timer';
+		class: 'timer' , self index greaseString;
+		attributeAt: 'data-time' put: self mcq timeByQuestion asSeconds.
+	html space.
+	html div
+		id: self badgeId;
+		with: [ self renderValidationBadgeOn: html ]

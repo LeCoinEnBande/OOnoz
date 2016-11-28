@@ -4,9 +4,9 @@ renderNextQuestionButtonOn: html
 		ifTrue: [ ^ self ].
 	html space.
 	html tbsAnchor
-		beOutline;
 		role: #button;
-		url: '#' , 'question' , (self index + 1) greaseString;
+		url: '#question' , (self index + 1) greaseString;
+		class: self id;
 		attributeAt: #'data-toggle' put: #collapse;
 		attributeAt: #'data-parent' put: #'#questionsList';
 		ariaExpanded: true;
@@ -15,5 +15,6 @@ renderNextQuestionButtonOn: html
 		onClick:
 			(html jQuery ajax
 				callback: [ self desactivate.
-					self owner activateQuestionAt: self index + 1 ]);
+					self owner activateQuestionAt: self index + 1 ];
+				onComplete: ('launchClock(' , (self index + 1) greaseString , ')') js);
 		with: 'Question suivante'

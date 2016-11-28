@@ -1,0 +1,14 @@
+{
+	"category" : "OOnoz-Model-MCQ",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "OOFirstGiftStrategy",
+	"pools" : [
+		 ],
+	"super" : "OOAbstractGiftStrategy",
+	"type" : "normal" }

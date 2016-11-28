@@ -1,0 +1,14 @@
+{
+	"category" : "OOnoz-WebApplication-Administration-Components",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"owner" ],
+	"name" : "OOGiftEditionComponent",
+	"pools" : [
+		 ],
+	"super" : "OOComponent",
+	"type" : "normal" }

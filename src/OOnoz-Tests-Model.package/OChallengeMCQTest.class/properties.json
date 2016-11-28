@@ -1,0 +1,14 @@
+{
+	"category" : "OOnoz-Tests-Model-MCQ",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "OChallengeMCQTest",
+	"pools" : [
+		 ],
+	"super" : "OOMCQDecoratorTest",
+	"type" : "normal" }

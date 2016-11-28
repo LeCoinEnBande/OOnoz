@@ -1,4 +1,4 @@
 adding
 addSubTheme: aSubTheme
-
-	self subThemes add: aSubTheme 
+	aSubTheme theme: self.
+	self subThemes add: aSubTheme.

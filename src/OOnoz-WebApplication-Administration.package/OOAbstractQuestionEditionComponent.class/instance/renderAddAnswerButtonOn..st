@@ -4,7 +4,6 @@ renderAddAnswerButtonOn: html
 	
 	html tbsButton
 		bePrimary;
-		beOutline;
 		bePush;
 		onClick:
 			((html jQuery id: self answersId) load

@@ -1,28 +1,30 @@
 rendering
 tableEntriesFrom: mcq On: html
 	^ {mcq title.
+	[ mcq renderThemeAndSubThemesOn: html ].
+	mcq class kind.
 	[ html tbsLabel
-		bePrimary;
-		with: 'Rien'.
-	html space.
+		beInfoIf: mcq price > 0;
+		beDefaultIf: mcq price = 0;
+		with: mcq printPrice ].
+	[ | times |
+	times := (OOMCQResult selectMany: [ :result | result mcq = mcq and: [ result isFinished ] ]) size.
 	html tbsLabel
-		beDefault;
-		with: 'Rien' ].
-	'Pas fait'.
-	[ html tbsLabel
-		beInfo;
-		with: 'TODO' ].
-	[ html tbsLabel
-		beInfo;
-		with: 'TODO' ].
+		beInfoIf: times > 0;
+		beDangerIf: times = 0;
+		with: times asString , ' fois' ].
 	[ html tbsLabel
 		beSuccess;
 		with: 'TODO' ].
 	[ html anchor
 		callback: [ (self call: (OOMCQEditionComponent mcq: mcq))
 				ifTrue: [ self message: 'QCM édité.' ] ];
-		with: [ html tbsGlyphIcon iconEdit ].
+		with: [ html tbsGlyphIcon
+				tbsTooltip: 'Éditer';
+				iconEdit ].
 	html space.
 	html anchor
 		callback: [ self delete: mcq ];
-		with: [ html tbsGlyphIcon iconTrash ] ]}
+		with: [ html tbsGlyphIcon
+				tbsTooltip: 'Supprimer';
+				iconTrash ] ]}

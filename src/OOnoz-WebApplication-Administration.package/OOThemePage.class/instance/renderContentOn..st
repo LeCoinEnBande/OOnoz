@@ -1,7 +1,7 @@
 rendering
 renderContentOn: html
 	html
-		tbsContainer: [ self renderTitleAndDescriptionOn: html.
+		tbsContainer: [ self renderTitleOn: html.
 			self renderMessageOn: html.
 			html
 				section: [ | toolbarId |
@@ -14,5 +14,8 @@ renderContentOn: html
 						attributeAt: 'data-toolbar' put: '#' , toolbarId;
 						with: [ html tableHead: [ self renderHeaderOn: html ].
 							html
-								tableBody: [ self themes do:
-										[ :theme | html tableRow: [ (self tableEntriesFrom: theme On: html) do: [ :content | html tableData: content ] ] ] ] ] ] ]
+								tableBody:
+									[ self themes do: [ :theme | html tableRow: [ (self tableEntriesFrom: theme On: html) do: [ :content | html tableData: content ] ] ] ] ] ] ].
+	html tbsContainer
+		id: #'list-subthemes';
+		with: [ self subThemesComponent ifNotNil: [ :c | html render: c ] ]

@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"mcq" ],
+		 ],
 	"name" : "OOMCQTest",
 	"pools" : [
 		 ],
-	"super" : "TestCase",
+	"super" : "OOAbstractMCQTest",
 	"type" : "normal" }

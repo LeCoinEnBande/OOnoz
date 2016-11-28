@@ -1,10 +1,12 @@
 accessing
 navContentMap
 	self flag: #todo.	"Check if the user is admin or not to restain pages."
-	^ OrderedDictionary
-		with: 'Dashboard' -> OODashboardPage
-		with: 'Communautés' -> OOThemePage
-		with: 'Questionnaires' -> OOQuestionnairePage
-		with: 'Statistiques' -> OOStatisticsPage
-		with: 'Utilisateurs' -> OOUserManagementPage
-		with: self currentUser displayName -> OOProfilePage
+	^ OrderedDictionary new
+		add: 'Dashboard' -> OODashboardPage;
+		add: 'Communautés' -> OOThemePage;
+		add: 'Questionnaires' -> OOQuestionnairePage;
+		add: 'Livraisons' -> OOShippingPage;
+		add: 'Statistiques' -> OOStatisticsPage;
+		add: 'Utilisateurs' -> OOUserManagementPage;
+		add: self currentUser displayName -> OOProfilePage;
+		yourself

@@ -10,5 +10,6 @@ renderAnswersFrom: aComponent on: html
 								tbsInputGroupAddOn: [ radioGroup radioButton
 										checked: (self shouldCheck: answer);
 										onChange: html jQuery ajax serializeThis;
-										callback: [ answer beRight ] ].
+										callback: [ self answers do: #beWrong.
+											answer beRight ] ].
 							self renderTextInputFor: answer from: aComponent on: html ] ] ]

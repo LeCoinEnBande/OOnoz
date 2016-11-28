@@ -1,12 +1,6 @@
 rendering
 renderLabelsOn: html
-	html tbsLabel
-		bePrimary;
-		with: 'ThemeTODO'.
-	html space.
-	html tbsLabel
-		beDefault;
-		with: 'SubthemeTODO'.
+	self mcq renderThemeAndSubThemesOn: html.
 	html space.
 	html tbsLabel
 		beSuccess;
@@ -14,4 +8,9 @@ renderLabelsOn: html
 	html space.
 	html tbsLabel
 		beInfo;
-		with: '0 crédit'
+		with:
+			self mcq price greaseString , ' crédit'
+				,
+					(self mcq price > 1
+						ifTrue: [ 's' ]
+						ifFalse: [ '' ])

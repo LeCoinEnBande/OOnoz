@@ -1,0 +1,14 @@
+{
+	"category" : "OOnoz-Tests-Model-MCQ",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "OOMCQDecoratorTest",
+	"pools" : [
+		 ],
+	"super" : "OOAbstractMCQTest",
+	"type" : "normal" }

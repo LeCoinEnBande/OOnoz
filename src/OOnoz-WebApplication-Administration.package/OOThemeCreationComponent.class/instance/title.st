@@ -1,3 +1,3 @@
 accessing
 title
-	^ 'Création d''un nouveau thème'
+	^ 'Créer un thème'

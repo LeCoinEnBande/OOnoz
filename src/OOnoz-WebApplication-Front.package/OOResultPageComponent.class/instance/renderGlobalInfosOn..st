@@ -29,7 +29,7 @@ renderGlobalInfosOn: html
 												<< 'Rang: ';
 												<<
 													((results
-														select: [ :r | r result > self mcqResult result or: [ r result = self mcqResult and: [ r dateEnd < self mcqResult dateEnd ] ] ])
+														select: [ :r | r result >= self mcqResult result and: [ r dateEnd < self mcqResult dateEnd ] ])
 														size + 1);
 												<< ' sur ';
 												<< results size ]) ]

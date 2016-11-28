@@ -5,8 +5,8 @@ renderHeaderOn: html
 		class: #'panel-heading';
 		class: #'playing-question';
 		role: #tab;
-		attributeAt: #'data-toggle' put: #collapse;
-		attributeAt: #'data-parent' put: #'#questionsList';
+		attributeAt: #'data-parent' put: #'#questionsList' if: self mcq isChallenge not;
+		attributeAt: #'data-toggle' put: #collapse if: self mcq isChallenge not;
 		attributeAt: #'data-target' put: '#' , self id;
 		ariaExpanded: self isActive;
 		ariaControles: self id;
@@ -16,5 +16,5 @@ renderHeaderOn: html
 				with: [ html text: 'Question ' , self index greaseString.
 					html div
 						tbsPullRight;
-						id: self badgeId;
+						class: #'oonoz-badges';
 						with: [ self renderBadgesOn: html ] ] ]

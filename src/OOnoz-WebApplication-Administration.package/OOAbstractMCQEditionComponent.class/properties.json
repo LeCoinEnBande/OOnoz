@@ -8,7 +8,9 @@
 	"instvars" : [
 		"mcq",
 		"questionComponents",
-		"hasBeenValidated" ],
+		"hasBeenValidated",
+		"challengeComponent",
+		"theme" ],
 	"name" : "OOAbstractMCQEditionComponent",
 	"pools" : [
 		 ],

@@ -1,0 +1,15 @@
+{
+	"category" : "OOnoz-WebApplication-Administration-Components",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"theme",
+		"owner" ],
+	"name" : "OOSubThemeListComponent",
+	"pools" : [
+		 ],
+	"super" : "OOComponent",
+	"type" : "normal" }

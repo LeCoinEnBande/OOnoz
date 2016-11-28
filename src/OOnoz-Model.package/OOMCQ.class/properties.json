@@ -10,9 +10,11 @@
 		"title",
 		"description",
 		"markingScheme",
-		"orderer" ],
+		"orderer",
+		"price",
+		"subThemes" ],
 	"name" : "OOMCQ",
 	"pools" : [
 		 ],
-	"super" : "OOObject",
+	"super" : "OOAbstractMCQ",
 	"type" : "normal" }

@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 testBeWrong
 	answer beWrong.
-	self deny: answer isRight
+	self assert: answer isWrong 

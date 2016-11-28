@@ -1,0 +1,14 @@
+{
+	"category" : "OOnoz-WebApplication-Administration-Components",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "OOSubThemeCreationComponent",
+	"pools" : [
+		 ],
+	"super" : "OOAbstractSubThemeEditionComponent",
+	"type" : "normal" }

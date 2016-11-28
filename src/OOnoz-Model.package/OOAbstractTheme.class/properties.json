@@ -7,7 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"title",
-		"description" ],
+		"description",
+		"mediaLink" ],
 	"name" : "OOAbstractTheme",
 	"pools" : [
 		 ],

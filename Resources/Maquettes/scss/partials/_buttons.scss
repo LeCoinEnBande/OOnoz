@@ -48,3 +48,18 @@
 {
   @include btn-hover($danger-color);
 }
+
+.btn-info
+{
+  @include btn($info-color);
+}
+
+.btn-info:hover, .btn-info:active
+{
+  @include btn-hover($info-color)
+}
+
+.btn.dropdown-toggle
+{
+  @include btn-hover($default-color);
+}

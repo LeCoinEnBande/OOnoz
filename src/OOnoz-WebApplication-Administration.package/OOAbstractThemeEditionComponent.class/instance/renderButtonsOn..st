@@ -2,13 +2,12 @@ rendering
 renderButtonsOn: html
 	html tbsButton
 		beSuccess;
-		beOutline;
 		beSubmit;
 		callback: [ self save ];
-		with: 'Valider'.
+		with: 'Publier le thème'.
 	html space.
 	html tbsButton
 		beWarning;
-		beOutline;
 		beReset;
-		with: 'Réinitialiser'
+		with: 'Réinitialiser'.
+	html space

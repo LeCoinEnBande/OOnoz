@@ -1,5 +1,3 @@
 adding
-removeQuestion: aQuestion 
-	self flag: #todo. "baaad"
-	self questions rehash.
+removeQuestion: aQuestion
 	self questions remove: aQuestion
