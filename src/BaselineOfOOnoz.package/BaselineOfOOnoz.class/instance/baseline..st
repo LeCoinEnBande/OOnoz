@@ -4,6 +4,7 @@ baseline: spec
 	spec
 		for: #common
 		do: [ self
+				ston: spec;
 				seaside3: spec;
 				bootstrap: spec;
 				voyage: spec;
@@ -20,7 +21,7 @@ baseline: spec
 					with: [ spec requires: #('OOnoz-WebApplication-Core') ];
 				package: 'OOnoz-WebApplication-Front'
 					with: [ spec requires: #('OOnoz-WebApplication-Core') ];
-				package: 'OOnoz-Development' with: [ spec requires: #('Model' 'Tests' 'UI') ].
+				package: 'OOnoz-Development' with: [ spec requires: #('Model' 'Tests' 'UI' 'STON') ].
 			spec
 				group: 'Model' with: #('OOnoz-Model' 'OOnoz-Model-Statistics');
 				group: 'Tests' with: #('OOnoz-Tests-Model' 'OOnoz-Tests-Model-Statistics');
