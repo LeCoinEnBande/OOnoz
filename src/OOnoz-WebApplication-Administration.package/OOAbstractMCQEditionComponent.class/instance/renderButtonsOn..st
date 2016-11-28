@@ -18,4 +18,4 @@ renderButtonsOn: html
 				beDanger;
 				dataToggle: 'modal';
 				dataTarget: '#' , html nextId;
-				with: 'Annuler' ]
+				with: #Annuler ]
