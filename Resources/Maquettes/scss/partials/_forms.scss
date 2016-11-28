@@ -32,23 +32,26 @@
 .input-group-btn>.btn
 {
   border: 0;
-  background: transparent;
+  background-color: transparent;
 }
 
 //Input Group Button Style, may be move that part in Button Style ?
 
 .input-group-btn>.btn-danger
 {
+  background-color: transparent;
   color: $danger-shade1;
 }
 
 .input-group-btn>.btn-danger:hover, .input-group-btn>.btn-danger:focus
 {
+  background-color: transparent;
   color: $danger-shade2;
 }
 
 
 .input-group-btn>.btn-danger.active, .btn-danger:active //, .open>.dropdown-toggle.btn-danger, .btn-danger.active.focus, .btn-danger.active:focus, .btn-danger.active:hover, .btn-danger:active.focus, .btn-danger:active:focus, .btn-danger:active:hover, .open>.dropdown-toggle.btn-danger.focus, .open>.dropdown-toggle.btn-danger:focus, .open>.dropdown-toggle.btn-danger:hover
 {
+  background-color: transparent;
   color: $danger-shade3;
 }
