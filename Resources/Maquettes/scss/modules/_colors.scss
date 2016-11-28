@@ -7,4 +7,8 @@ $primary-shade2: darken($primary-shade1, 5%);
 $primary-shade3: darken($primary-shade1, 10%);
 $danger-shade1: rgba(231, 76, 60,1);
 $danger-shade2: darken($danger-shade1, 5%);
-$danger-shade3: darken($danger-shade1, 10%)
+$danger-shade3: darken($danger-shade1, 10%);
+$warning-shade1: rgba(241, 196, 15, 1);
+$warning-shade2: darken($warning-shade1, 5%);
+$warning-shade3: darken($warning-shade1, 10%);
+

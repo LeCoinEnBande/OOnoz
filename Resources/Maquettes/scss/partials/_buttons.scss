@@ -36,3 +36,19 @@
 {
   @include button($danger-shade3)
 }
+
+.btn-warning
+{
+  @include button($warning-shade1);
+}
+
+.btn-warning:hover, .btn-warning:focus
+{
+  @include button($warning-shade2);
+}
+
+.btn-warning.active, .btn-warning:active, .open>.dropdown-toggle.btn-warning, .btn-warning.active.focus, .btn-warning.active:focus, .btn-warning.active:hover, .btn-warning:active.focus, .btn-warning:active:focus, .btn-warning:active:hover, .open>.dropdown-toggle.btn-warning.focus, .open>.dropdown-toggle.btn-warning:focus, .open>.dropdown-toggle.btn-warning:hover
+{
+  @include button($warning-shade3);
+}
+
