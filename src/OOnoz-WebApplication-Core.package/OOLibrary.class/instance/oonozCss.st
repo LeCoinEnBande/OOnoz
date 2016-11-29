@@ -34,4 +34,8 @@ background-color: transparent !important;
 { 
   border-color:rgba(33,150,243 ,1) !important; 
   color:rgba(33,150,243 ,1) !important; 
+}
+
+.indicator{
+    background: url(http://placekitten.com/g/1920/1000) repeat;
 }'

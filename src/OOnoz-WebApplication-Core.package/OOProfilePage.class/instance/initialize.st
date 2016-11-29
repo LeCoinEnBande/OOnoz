@@ -1,4 +1,4 @@
 initialization
 initialize
 	super initialize.
-	self profileComponent: OOProfileComponent new
+	self profilComponent: OOProfileComponent new

@@ -11,5 +11,5 @@
 	"name" : "OOThemePage",
 	"pools" : [
 		 ],
-	"super" : "OOComponent",
+	"super" : "OOPage",
 	"type" : "normal" }
