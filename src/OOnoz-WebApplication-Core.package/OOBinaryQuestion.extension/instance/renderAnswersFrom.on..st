@@ -6,10 +6,16 @@ renderAnswersFrom: aComponent on: html
 		do: [ :answer | 
 			html
 				tbsFormGroup: [ html
-						tbsInputGroup: [ html
-								tbsInputGroupAddOn: [ radioGroup radioButton
-										checked: (self shouldCheck: answer);
-										onChange: html jQuery ajax serializeThis;
+						tbsInputGroup: [ html tbsInputGroupAddOn
+								class: 'checkbox';
+								with: [ radioGroup radioButton
+										checked: answer isRight;
+										id: html nextId;
+										onChange:
+											(html jQuery ajax
+												serializeThis;
+												onSuccess: (aComponent refreshBadgeScriptOn: html));
 										callback: [ self answers do: #beWrong.
-											answer beRight ] ].
+											answer beRight ].
+									self renderLabelFor: answer id: html lastId on: html ].
 							self renderTextInputFor: answer from: aComponent on: html ] ] ]

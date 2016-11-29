@@ -15,4 +15,4 @@ renderContentOn: html
 												do: [ :comp | html render: comp ].
 											self renderButtonsOn: html ] ] ] ] ].
 	self renderCancelModalOn: html.
-	html document addLoadScript: '$("input.slider").slider();' js
+	html document addLoadScript: '$("input.slider").slider();$(".checkbox").each(function(i,e){$(e).children("input[type=hidden]").prependTo(e)})' js

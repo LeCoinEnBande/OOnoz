@@ -16,7 +16,7 @@ renderExplanationInputOn: html
 						placeholder: label;
 						callback: [ :explanation | self question correction: explanation ];
 						value: self question correction;
-						rows: 1.
+						rows: 3.
 					html
 						tbsInputGroupButton: [ html tbsButton
 								bePush;
@@ -26,5 +26,8 @@ renderExplanationInputOn: html
 									((html jQuery id: self answersId) load
 										html: [ :r | 
 											self question removeCorrection.
-											self renderAnswersOn: html ]);
-								with: [ html tbsGlyphIcon iconTrash ] ] ] ]
+											self renderAnswersOn: html ];
+										onComplete: '$(".checkbox").each(function(i,e){$(e).children("input[type=hidden]").prependTo(e)})' js);
+								with: [ (html tag: #i)
+										class: 'fa fa-times';
+										ariaHidden: true ] ] ] ]

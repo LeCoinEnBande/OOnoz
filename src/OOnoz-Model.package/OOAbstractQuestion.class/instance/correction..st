@@ -1,3 +1,4 @@
 accessing
 correction: aString
-	self explanation: (OOExplanation explanation: aString)
+	aString isEmptyOrNil
+		ifFalse: [ self explanation: (OOExplanation explanation: aString) ]

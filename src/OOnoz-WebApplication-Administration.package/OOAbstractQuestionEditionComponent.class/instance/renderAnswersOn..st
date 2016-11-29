@@ -2,7 +2,7 @@ rendering
 renderAnswersOn: html
 	self question class isAbstract
 		ifTrue: [ ^ self ].
-	html tbsFormGroup: [ self question renderAnswersFrom: self on: html ].
+	self question renderAnswersFrom: self on: html.
 	html
 		tbsFormGroup: [ self renderAddAnswerButtonOn: html.
 			self question hasCorrection
@@ -13,8 +13,8 @@ renderAnswersOn: html
 						onClick:
 							((html jQuery id: self answersId) load
 								html: [ :r | 
-									self question correction: ''.
+									self question correction: 'Explication'.
 									self renderAnswersOn: html ];
-								onComplete: 'autosize($(''textarea''));' js);
+								onComplete: '$(".checkbox").each(function(i,e){$(e).children("input[type=hidden]").prependTo(e)});autosize($(''textarea''));' js);
 						with: 'Ajouter une correction' ] ].
 	self renderExplanationInputOn: html

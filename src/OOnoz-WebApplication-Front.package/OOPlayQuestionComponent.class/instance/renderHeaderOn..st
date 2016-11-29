@@ -12,7 +12,4 @@ renderHeaderOn: html
 		with: [ html tbsPanelTitle
 				level3;
 				with: [ html text: 'Question ' , self index greaseString.
-					html div
-						tbsPullRight;
-						class: #'oonoz-badges';
-						with: [ self renderBadgesOn: html ] ] ]
+					self renderBadgesOn: html ] ]

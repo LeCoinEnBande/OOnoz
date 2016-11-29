@@ -14,5 +14,4 @@ validateMCQ
 							s
 								<< 'Le nombre de questions valides doit être de ';
 								<< self class minimumNumberOfQuestions;
-								<< $. ]) ].
-	self questions do: [ :each | each validate ]
+								<< $. ]) ]

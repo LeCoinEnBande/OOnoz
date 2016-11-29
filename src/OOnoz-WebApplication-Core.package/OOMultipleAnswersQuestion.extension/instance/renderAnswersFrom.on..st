@@ -4,10 +4,16 @@ renderAnswersFrom: aComponent on: html
 		do: [ :answer | 
 			html
 				tbsFormGroup: [ html
-						tbsInputGroup: [ html
-								tbsInputGroupAddOn: [ html checkbox
+						tbsInputGroup: [ html tbsInputGroupAddOn
+								class: #checkbox;
+								with: [ html checkbox
 										value: answer isRight;
-										onChange: html jQuery ajax serializeThisWithHidden;
-										callback: [ :confirmation | answer isRight: confirmation ] ].
+										id: html nextId;
+										onChange:
+											(html jQuery ajax
+												serializeThisCheckbox;
+												onSuccess: (aComponent refreshBadgeScriptOn: html));
+										callback: [ :confirmation | answer isRight: confirmation ].
+									self renderLabelFor: answer id: html lastId on: html ].
 							self renderTextInputFor: answer from: aComponent on: html.
 							self renderDeleteButtonFor: answer from: aComponent on: html ] ] ]

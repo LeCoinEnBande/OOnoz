@@ -1,9 +1,11 @@
 *OOnoz-WebApplication-Core
 renderTextInputFor: anAnswer from: aComponent on: html
-	self flag: #todo. "Should move to answer?"
 	html textInput
 		tbsFormControl;
 		value: anAnswer text;
-		placeholder: 'Réponse ' , anAnswer index asString;
-		onChange: html jQuery ajax serializeThis;
+		placeholder: 'Proposition ' , anAnswer index asString;
+		onChange:
+			(html jQuery ajax
+				serializeThis;
+				onSuccess: (aComponent refreshBadgeScriptOn: html));
 		callback: [ :text | anAnswer text: text ]

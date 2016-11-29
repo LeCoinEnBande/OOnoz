@@ -7,7 +7,7 @@ renderFooterOn: html
 					(html jQuery ajax
 						callback: [ self resetAnswers ];
 						onComplete:
-							((html jQuery id: self badgeId) load html: [ :r | self renderValidationBadgeOn: r ])
+							(self refreshBadgeScriptOn: html)
 								,
 									((html jQuery id: self answersId) load
 										html: [ :r | self renderAnswersOn: r ];
