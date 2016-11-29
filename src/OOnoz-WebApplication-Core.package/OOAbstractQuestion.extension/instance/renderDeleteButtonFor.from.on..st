@@ -7,13 +7,7 @@ renderDeleteButtonFor: anAnswer from: aComponent on: html
 				bePush;
 				beDanger;
 				beLink;
-				onClick:
-					((html jQuery id: aComponent answersId) load
-						html: [ :r | 
-							self removeAnswer: anAnswer.
-							aComponent renderAnswersOn: r ];
-						onComplete: '$(".checkbox").each(function(i,e){$(e).children("input[type=hidden]").prependTo(e)})' js)
-						, (aComponent refreshBadgeScriptOn: html);
+				onClick: (aComponent refreshDoing: [ self removeAnswer: anAnswer ] on: html);
 				with: [ (html tag: #i)
 						class: 'fa fa-times';
 						ariaHidden: true ] ]

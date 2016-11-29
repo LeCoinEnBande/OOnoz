@@ -18,7 +18,7 @@ renderConcreteFormOn: html
 				onChange:
 					(html jQuery ajax
 						serializeThis;
-						onSuccess: (self refreshBadgeScriptOn: html));
+						onSuccess: (self refreshBadgeOn: html));
 				value: self question description ].
 	html div
 		id: self answersId;

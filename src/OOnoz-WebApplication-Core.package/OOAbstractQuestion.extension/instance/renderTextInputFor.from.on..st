@@ -7,5 +7,5 @@ renderTextInputFor: anAnswer from: aComponent on: html
 		onChange:
 			(html jQuery ajax
 				serializeThis;
-				onSuccess: (aComponent refreshBadgeScriptOn: html));
+				onSuccess: (aComponent refreshBadgeOn: html));
 		callback: [ :text | anAnswer text: text ]

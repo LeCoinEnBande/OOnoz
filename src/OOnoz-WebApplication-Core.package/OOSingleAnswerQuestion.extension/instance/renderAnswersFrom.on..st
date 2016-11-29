@@ -13,7 +13,7 @@ renderAnswersFrom: aComponent on: html
 										onChange:
 											(html jQuery ajax
 												serializeThis;
-												onSuccess: (aComponent refreshBadgeScriptOn: html));
+												onSuccess: (aComponent refreshBadgeOn: html));
 										checked: answer isRight;
 										callback: [ self answers do: #beWrong.
 											answer beRight ].

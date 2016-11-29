@@ -21,11 +21,7 @@ renderFormContentOn: html
 														onChange:
 															(html jQuery ajax
 																serializeThis;
-																onSuccess:
-																	((html jQuery id: self id) load
-																		html: [ :r | self renderFormContentOn: r ];
-																		onComplete: '$(".checkbox").each(function(i,e){$(e).children("input[type=hidden]").prependTo(e)})' js)
-																		, (self refreshBadgeScriptOn: html)).
+																onSuccess: (self refreshOn: html)).
 													html label
 														tbsTooltip: class description;
 														for: html lastId;

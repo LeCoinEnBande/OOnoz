@@ -6,10 +6,9 @@ renderAddAnswerButtonOn: html
 		bePrimary;
 		bePush;
 		onClick:
-			((html jQuery id: self answersId) load
+			((html jQuery id: self panelId) load
 				html: [ :r | 
 					self question addEmptyAnswer.
-					self renderAnswersOn: html ];
-				onComplete: '$(".checkbox").each(function(i,e){$(e).children("input[type=hidden]").prependTo(e)})' js)
-				, (self refreshBadgeScriptOn: html);
+					self renderPanelContentOn: html ];
+				onComplete: self initScript);
 		with: 'Ajouter une réponse'

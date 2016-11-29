@@ -12,5 +12,6 @@ renderFooterOn: html
 				onClick:
 					(html jQuery ajax
 						callback: [ self desactivate.
-							self owner activateQuestionAt: self index + 1 ]);
+							self owner activateQuestionAt: self index + 1 ];
+						onComplete: ('$("html, body").scrollTop($("#' , self panelId , '").offset().top)') js);
 				with: 'Suivant' ]

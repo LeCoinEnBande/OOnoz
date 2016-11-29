@@ -22,12 +22,7 @@ renderExplanationInputOn: html
 								bePush;
 								beDanger;
 								beLink;
-								onClick:
-									((html jQuery id: self answersId) load
-										html: [ :r | 
-											self question removeCorrection.
-											self renderAnswersOn: html ];
-										onComplete: '$(".checkbox").each(function(i,e){$(e).children("input[type=hidden]").prependTo(e)})' js);
+								onClick: (self refreshAnswersDoing: [ self question removeCorrection ] on: html);
 								with: [ (html tag: #i)
 										class: 'fa fa-times';
 										ariaHidden: true ] ] ] ]

@@ -10,11 +10,6 @@ renderAnswersOn: html
 					html tbsButton
 						beInfo;
 						bePush;
-						onClick:
-							((html jQuery id: self answersId) load
-								html: [ :r | 
-									self question correction: 'Explication'.
-									self renderAnswersOn: html ];
-								onComplete: '$(".checkbox").each(function(i,e){$(e).children("input[type=hidden]").prependTo(e)});autosize($(''textarea''));' js);
+						onClick: (self refreshAnswersDoing: [ self question correction: 'Explication' ] on: html);
 						with: 'Ajouter une correction' ] ].
 	self renderExplanationInputOn: html

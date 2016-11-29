@@ -11,7 +11,12 @@ renderMCQFormsOn: html
 				ariaControles: #configuration;
 				with: [ html tbsPanelTitle
 						level2;
-						with: #Configuration ].
+						with: [ html text: #Configuration.
+							html div
+								tbsPullRight;
+								class: #'accordion-status';
+								id: #badge;
+								with: [ self renderValidationBadgeOn: html ] ] ].
 			self renderMCQErrorOn: html.
 			html div
 				id: #configuration;

@@ -14,7 +14,7 @@ renderAnswersFrom: aComponent on: html
 										onChange:
 											(html jQuery ajax
 												serializeThis;
-												onSuccess: (aComponent refreshBadgeScriptOn: html));
+												onSuccess: (aComponent refreshBadgeOn: html));
 										callback: [ self answers do: #beWrong.
 											answer beRight ].
 									self renderLabelFor: answer id: html lastId on: html ].

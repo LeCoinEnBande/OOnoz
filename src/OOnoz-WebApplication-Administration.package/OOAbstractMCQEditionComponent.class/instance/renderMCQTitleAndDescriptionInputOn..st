@@ -13,6 +13,10 @@ renderMCQTitleAndDescriptionInputOn: html
 				required;
 				placeholder: label;
 				callback: [ :title | self mcq title: title ];
+				onChange:
+					(html jQuery ajax
+						serializeThis;
+						onSuccess: (self refreshBadgeOn: html));
 				value: self mcq title ].
 	html
 		tbsFormGroup: [ | label |
@@ -26,5 +30,9 @@ renderMCQTitleAndDescriptionInputOn: html
 				id: html lastId;
 				placeholder: label;
 				callback: [ :descr | self mcq description: descr ];
+				onChange:
+					(html jQuery ajax
+						serializeThis;
+						onSuccess: (self refreshBadgeOn: html));
 				value: self mcq description;
 				rows: 3 ]
