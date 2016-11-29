@@ -5,4 +5,25 @@
 .alert
 {
   @include border-radius($main-border-radius);
+  border: $main-border-radius solid transparent;
+}
+
+.alert-success
+{
+  @include alert($success-shade1);
+}
+
+.alert-danger
+{
+  @include alert($danger-shade1);
+}
+
+.alert-warning
+{
+  @include alert($warning-shade1);
+}
+
+.alert-primary
+{
+  @include alert($primary-shade1);
 }
