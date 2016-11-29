@@ -2,3 +2,7 @@
 
 @import "../modules/all";
 
+.alert
+{
+  @include border-radius($main-border-radius);
+}

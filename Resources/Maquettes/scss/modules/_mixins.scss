@@ -11,3 +11,10 @@
   border-color: $background-color;
   color: $base-shade1;
 }
+
+@mixin  alert($color)
+{
+  background-color: transparent;
+  border-color: $color;
+  color: $color;
+}
