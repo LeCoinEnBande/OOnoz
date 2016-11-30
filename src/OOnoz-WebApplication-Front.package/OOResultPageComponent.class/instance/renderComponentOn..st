@@ -1,5 +1,5 @@
 rendering
-renderContentOn: html
+renderComponentOn: html
 	html tbsContainer: [ html render: (OOMCQHeaderComponent mcq: self mcqResult mcq) ].
 	html
 		tbsContainer: [ self renderTitleAndDescriptionOn: html.

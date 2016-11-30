@@ -1,5 +1,6 @@
 db
 cleanDB
 	<script>
-	OOTheme selectAll do: #remove.
-	OOUser selectAll do: #remove
+	3
+		timesRepeat: [ OOTheme selectAll , OOUser selectAll , OOAbstractMCQ selectAll , OOMCQResult selectAll
+				do: #remove ]

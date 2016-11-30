@@ -1,5 +1,5 @@
 rendering
-renderContentOn: html
+renderComponentOn: html
 	html
 		tbsContainer: [ self renderInfosOn: html.
 			self renderRulesOn: html.
