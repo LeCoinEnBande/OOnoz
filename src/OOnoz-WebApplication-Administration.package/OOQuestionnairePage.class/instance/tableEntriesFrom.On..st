@@ -16,6 +16,7 @@ tableEntriesFrom: mcq On: html
 	[ html tbsLabel
 		beSuccess;
 		with: 'TODO' ].
+	(OOMCQRate displayRateOf: mcq).
 	[ html anchor
 		callback: [ (self call: (OOMCQEditionComponent mcq: mcq))
 				ifTrue: [ self message: 'QCM édité.' ] ];

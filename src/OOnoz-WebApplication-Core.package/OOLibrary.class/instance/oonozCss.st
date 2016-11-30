@@ -18,4 +18,8 @@ background-color:rgba(244,67,54,1);
 
 .checkbox input[type="checkbox"]:indeterminate + label::after, .checkbox input[type="radio"]:indeterminate + label::after{ 
   display: none !important; 
+}
+
+.rating-symbol{
+  font-size: 20px;
 }'

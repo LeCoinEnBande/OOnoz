@@ -4,4 +4,5 @@ renderComponentOn: html
 	html
 		tbsContainer: [ self renderTitleAndDescriptionOn: html.
 			self renderGlobalInfosOn: html.
+			self renderRatingOn: html.
 			self renderQuestionsResultsOn: html ]

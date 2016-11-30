@@ -3775,5 +3775,37 @@ OrderedCollection [
 			#dateBegin : DateAndTime [ '2016-11-26T20:19:32.628347+01:00' ],
 			#dateEnd : DateAndTime [ '2016-11-26T20:20:29.019504+01:00' ]
 		}
+	],
+	Set [
+		OOMCQRate {
+			#mcq : @133,
+			#user : @603,
+			#rate : 2.5
+		},
+		OOMCQRate {
+			#mcq : @133,
+			#user : @804,
+			#rate : 2
+		},
+		OOMCQRate {
+			#mcq : @133,
+			#user : @737,
+			#rate : 1
+		},
+		OOMCQRate {
+			#mcq : @133,
+			#user : @871,
+			#rate : 4
+		},
+		OOMCQRate {
+			#mcq : @133,
+			#user : @670,
+			#rate : 5
+		},
+		OOMCQRate {
+			#mcq : @353,
+			#user : @871,
+			#rate : 4.5
+		}
 	]
 ]
