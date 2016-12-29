@@ -1,0 +1,15 @@
+@import "compass";
+
+@import "../modules/all";
+
+.jumbotron
+{
+  height: 100vh;
+  //background: image_url("http://placekitten.com/g/1920/1000") no-repeat center fixed;
+  background-size: cover;
+}
+
+.jumbotron-content
+{
+  padding-top: $main-navbar-height;
+}
