@@ -4,8 +4,9 @@
 
 .alert
 {
-  @include border-radius($main-border-radius);
-  border: $main-border-radius solid transparent;
+  @include border-radius();
+  border: 0;
+  border-left: $main-border-thickness solid transparent;
 }
 
 .alert-success
