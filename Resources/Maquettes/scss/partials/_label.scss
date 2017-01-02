@@ -2,7 +2,14 @@
 
 @import "../modules/all";
 
+.label
+{
+  display: inline-block;
+}
 
-
+.label-primary
+{
+  @include button($primary-shade1);
+}
 
 

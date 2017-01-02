@@ -13,13 +13,23 @@
 {
   margin-bottom: $main-line-height;
 }
-.form-control
+.form-control, .bootstrap-tagsinput
 {
   @include border-radius();
   @include box-shadow(none);
   border: 0;
   border-bottom: 1px solid $base-shade2;
   padding: 0;
+}
+
+.bootstrap-tagsinput input
+{
+  border: 0;
+  background-color: transparent;
+  outline: none;
+  @include box-shadow(none);
+  @include border-radius();
+
 }
 
 .input-group-addon
