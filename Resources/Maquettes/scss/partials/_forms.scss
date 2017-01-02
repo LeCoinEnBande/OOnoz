@@ -32,12 +32,12 @@
   font-size: 13px;
 }
 
-
 .form-group
 {
   margin-bottom: $main-line-height;
 }
-.form-control, .bootstrap-tagsinput
+
+.form-control
 {
   @include border-radius();
   @include box-shadow(none);
@@ -45,21 +45,6 @@
   border-bottom: 1px solid $base-shade2;
   padding: 0;
   //!! DEBUG ONLY, will be a multiple of a default size ?
-  height: 34px;
-
-  //!!DEBUG ONLY, Bootstrap default value
-  padding-top: 6px;
-  padding-bottom: 6px;
-}
-
-.bootstrap-tagsinput input
-{
-  border: 0;
-  background-color: transparent;
-  outline: none;
-  @include box-shadow(none);
-  @include border-radius();
-
 }
 
 .input-group-addon
@@ -101,4 +86,11 @@
 {
   background-color: transparent;
   color: $danger-shade3;
+}
+
+//Foucus
+.form-control:focus
+{
+  @include box-shadow(none);
+  border-color: $primary-shade1;
 }
