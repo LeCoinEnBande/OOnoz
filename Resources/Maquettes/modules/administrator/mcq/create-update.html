@@ -109,9 +109,9 @@
                         <article class="panel panel-default">
                             <header class="panel-heading" data-toggle="collapse" data-parent="#questionsAccordion"
                                     data-target="#initialization">
-                                <h2 class="panel-title">
-                                    Configuration <span class="accordion-status"></span>
-
+                                <h2 class="panel-title clearfix">
+                                    <span class="pull-left">Configuration</span>
+                                    <span class="pull-right text-success"><i class="fa fa-check-circle-o fa-lg" aria-hidden="true"></i></span>
                                 </h2>
                             </header>
 
@@ -129,19 +129,18 @@
                                     <div class="row">
                                         <div class="col-xs-12">
                                             <div class="form-group">
-                                                <label for="mcqTheme" class="sr-only">Thème du questionnaire:</label>
+                                                <label for="mcqTheme" class="sr-only">Ajouter un thème:</label>
                                                 <input type="text" class="form-control" id="mcqTheme"
-                                                       placeholder="Thème du questionnaire">
+                                                       placeholder="Ajouter un thème">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-xs-12">
                                             <div class="form-group">
-                                                <label for="mcqSubTheme" class="sr-only">Sous thème du
-                                                    questionnaire:</label>
+                                                <label for="mcqSubTheme" class="sr-only">Ajouter un sous-thème:</label>
                                                 <input type="text" class="form-control" id="mcqSubTheme"
-                                                       placeholder="Sous thème du questionnaire">
+                                                       placeholder="Ajouter un sous-thème">
                                             </div>
                                         </div>
                                     </div>
@@ -196,8 +195,11 @@
                         <article class="panel panel-default">
                             <header class="panel-heading" data-toggle="collapse" data-parent="#questionsAccordion"
                                     data-target="#question1">
-                                <h2 class="panel-title">
-                                    Question 1
+                                <h2 class="panel-title clearfix">
+                                    <span class="pull-left">Question 1</span>
+                                    <span class="pull-right text-danger">
+                                    <i class="fa fa-times-circle-o fa-lg " aria-hidden="true"></i>
+                                </span>
                                 </h2>
                             </header>
 
@@ -285,9 +287,13 @@
                         <article class="panel panel-default">
                             <header class="panel-heading" data-toggle="collapse" data-parent="#questionsAccordion"
                                     data-target="#question2">
-                                <h2 class="panel-title">
-                                    Question 2
+                                <h2 class="panel-title clearfix">
+                                    <span class="pull-left">Question 2</span>
+                                    <span class="pull-right text-danger">
+                                    <i class="fa fa-times-circle-o fa-lg " aria-hidden="true"></i>
+                                </span>
                                 </h2>
+
                             </header>
 
                             <div id="question2" class="panel-collapse collapse" role="tabpanel">
@@ -634,10 +640,37 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/bootstrap-select.min.js"></script>
 
+<script src="https://rawgit.com/twitter/typeahead.js/master/dist/bloodhound.min.js"></script>
+<script src="../../../script/vendor/bootstrap3-typeahead.min.js"></script>
+<script src="../../../script/vendor/bootstrap-tagsinput.js"></script>
 
 <!--Custom script -->
 <script type="text/javascript" src="../../../script/main.js"></script>
 <script type="text/javascript" src="../../../script/partial/_navbar.js"></script>
 <script type="text/javascript" src="../../../script/partial/_nav_buttons.js"></script>
+
+<!-- Topic and Sub Topic Tag Exemple Script -->
+<script>
+    var subthemes = new Bloodhound(
+            {
+                datumTokenizer: Bloodhound.tokenizers.obj.whitespace('text'),
+                queryTokenizer: Bloodhound.tokenizers.whitespace
+            }
+    )
+
+    subthemes.initialize();
+
+    var elt = $('#mcqSubTheme');
+    elt.tagsinput({
+        //itemValue: 'value',
+        //itemText: 'text',
+        tagClass: 'label label-primary',
+        typeaheadjs: {
+            name: 'subthemes',
+            displayKey: 'text',
+            source: subthemes.ttAdapter()
+        }
+    });
+</script>
 </body>
 </html>
