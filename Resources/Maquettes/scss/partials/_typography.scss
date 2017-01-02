@@ -59,3 +59,14 @@ h1,h2,h3,h4,h5,h6
 {
   color: $warning-shade1;
 }
+
+a
+{
+  color: $primary-shade1;
+}
+
+a:focus,a:hover
+{
+  color: $primary-shade2;
+  text-decoration: none;
+}
