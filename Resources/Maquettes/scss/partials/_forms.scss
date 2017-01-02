@@ -8,6 +8,30 @@
   display: none;
 }
 
+.checkbox input[type="checkbox"]:indeterminate + label::after, .checkbox input[type="radio"]:indeterminate + label::after
+{
+  display: none;
+}
+
+.radio label::before, .checkbox label::before
+{
+  border: 1px solid $base-shade2;
+}
+
+.checkbox label::before
+{
+  @include border-radius($main-border-radius);
+}
+
+.checkbox label::after
+{
+
+  //!!DEBUG ONLY
+  padding-top: 2px;
+  padding-left: 2px;
+  font-size: 13px;
+}
+
 
 .form-group
 {
@@ -20,6 +44,12 @@
   border: 0;
   border-bottom: 1px solid $base-shade2;
   padding: 0;
+  //!! DEBUG ONLY, will be a multiple of a default size ?
+  height: 34px;
+
+  //!!DEBUG ONLY, Bootstrap default value
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 .bootstrap-tagsinput input
@@ -37,6 +67,13 @@
   background-color: transparent;
   @include border-radius();
   border: 0;
+}
+
+.input-group-addon.checkbox
+{
+  padding-right: 0;
+  //!!DEBUG ONLY
+  padding-top: 8px;
 }
 
 .input-group-btn>.btn
