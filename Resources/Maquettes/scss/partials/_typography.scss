@@ -17,7 +17,7 @@ h1,h2,h3,h4,h5,h6
 
 .navbar
 {
-  text-transform: uppercase;
+  //text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
 }
@@ -70,4 +70,11 @@ a:focus,a:hover
 {
   color: $primary-shade2;
   text-decoration: none;
+}
+
+.navbar  .dropdown-menu>li>a
+{
+  font-family:  'Lato', sans-serif;
+  font-weight: 500;
+  text-transform: none;
 }
