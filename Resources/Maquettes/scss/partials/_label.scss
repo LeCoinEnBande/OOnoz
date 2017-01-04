@@ -5,6 +5,9 @@
 .label
 {
   display: inline-block;
+  //!!DEBUG ONLY
+  padding: 4px 4px 4px;
+  @include border-radius($main-border-radius);
 }
 
 .label-primary
