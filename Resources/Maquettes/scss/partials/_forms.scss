@@ -37,14 +37,22 @@
   margin-bottom: $main-line-height;
 }
 
-.form-control
+.form-control, .bootstrap-tagsinput
 {
+  display: block;
   @include border-radius();
   @include box-shadow(none);
   border: 0;
   border-bottom: 1px solid $base-shade2;
   padding: 0;
   //!! DEBUG ONLY, will be a multiple of a default size ?
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.bootstrap-tagsinput input
+{
+  padding: 0;
 }
 
 .input-group-addon
@@ -88,9 +96,27 @@
   color: $danger-shade3;
 }
 
-//Foucus
-.form-control:focus
+//Focus
+.form-control:hover
 {
+  outline: 0;
   @include box-shadow(none);
   border-color: $primary-shade1;
+  background-color: transparent;
+}
+
+.form-control:focus
+{
+  outline: 0;
+  @include box-shadow(none);
+  border-color: $primary-shade2;
+  background-color: transparent;
+}
+
+.form-control:active
+{
+  outline: 0;
+  @include box-shadow(none);
+  border-color: $primary-shade3;
+  background-color: transparent;
 }
