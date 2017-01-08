@@ -36,6 +36,9 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <!-- Taginput style -->
+    <link rel="stylesheet" href="../../../css/vendor/bootstrap-tagsinput.css">
+
     <!-- Custom stylesheet for OOnoz -->
     <link rel="stylesheet" href="../../../css/main.css">
 
@@ -139,8 +142,13 @@
                                         <div class="col-xs-12">
                                             <div class="form-group">
                                                 <label for="mcqSubTheme" class="sr-only">Ajouter un sous-thème:</label>
-                                                <input type="text" class="form-control" id="mcqSubTheme"
-                                                       placeholder="Ajouter un sous-thème">
+                                                <select type="text" class="selectpicker" id="mcqSubTheme"
+                                                       title="Ajouter un sous-thème" multiple data-live-search="true">
+                                                    <option>Audi</option>
+                                                    <option>BMW</option>
+                                                    <option>Mercedes-Benz</option>
+                                                    <option>Porsche</option>
+                                                    </select>
                                             </div>
                                         </div>
                                     </div>
@@ -637,7 +645,7 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/bootstrap-select.min.js"></script>
 
-<script src="https://rawgit.com/twitter/typeahead.js/master/dist/bloodhound.min.js"></script>
+<script src="https://rawgit.com/twitter/typeahead.js/master/dist/bloodhound.js"></script>
 <script src="../../../script/vendor/bootstrap3-typeahead.min.js"></script>
 <script src="../../../script/vendor/bootstrap-tagsinput.js"></script>
 
@@ -646,28 +654,5 @@
 <script type="text/javascript" src="../../../script/partial/_navbar.js"></script>
 <script type="text/javascript" src="../../../script/partial/_nav_buttons.js"></script>
 
-<!-- Topic and Sub Topic Tag Exemple Script -->
-<script>
-    var subthemes = new Bloodhound(
-            {
-                datumTokenizer: Bloodhound.tokenizers.obj.whitespace('text'),
-                queryTokenizer: Bloodhound.tokenizers.whitespace
-            }
-    )
-
-    subthemes.initialize();
-
-    var elt = $('#mcqSubTheme');
-    elt.tagsinput({
-        //itemValue: 'value',
-        //itemText: 'text',
-        tagClass: 'label label-primary',
-        typeaheadjs: {
-            name: 'subthemes',
-            displayKey: 'text',
-            source: subthemes.ttAdapter()
-        }
-    });
-</script>
 </body>
 </html>
