@@ -132,9 +132,11 @@
                                     <div class="row">
                                         <div class="col-xs-12">
                                             <div class="form-group">
-                                                <label for="mcqTheme" class="sr-only">Ajouter un thème:</label>
-                                                <input type="text" class="form-control" id="mcqTheme"
-                                                       placeholder="Ajouter un thème">
+                                                <label for="mcqSubTheme" class="sr-only">Ajouter un thème:</label>
+                                                <select type="text" class="selectpicker" id="mcqTheme"
+                                                        title="Ajouter un thème"  data-live-search="true">
+                                                    <option>Automobile</option>
+                                                </select>
                                             </div>
                                         </div>
                                     </div>
@@ -156,6 +158,20 @@
                                         <div class="col-md-4">
                                             <div class="form-group">
                                                 <div class="radio">
+                                                    <input type="radio" id="mcqQuestionsType1"
+                                                           name="mcqQuestionsType" data-toggle="collapse" data-target="#challengeOption.in">
+                                                    <label for="mcqQuestionsType1">E-Learning</label>
+                                                </div>
+                                                <div class="radio ">
+                                                    <input type="radio" id="mcqQuestionsType2"
+                                                           name="mcqQuestionsType" data-toggle="collapse" data-target="#challengeOption:not(.in)">
+                                                    <label for="mcqQuestionsType2">Challenge</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <div class="radio">
                                                     <input type="radio" id="mcqNotationType1" name="mcqNotationType">
                                                     <label for="mcqNotationType1">Conformité relative</label>
                                                 </div>
@@ -169,9 +185,7 @@
                                                         pénalité</label>
                                                 </div>
                                             </div>
-
                                         </div>
-
                                         <div class="col-md-4">
                                             <div class="form-group">
                                                 <div class="radio">
@@ -186,11 +200,21 @@
                                                 </div>
                                             </div>
                                         </div>
-
-
                                     </div>
-
-
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <div  class="collapse" id="challengeOption" >
+                                                <section class="well">
+                                                    <h6>Option du challenge</h6>
+                                                    <div class="form-group">
+                                                        <label for="questionDuration" class="sr-only">Temps par question</label>
+                                                        <!-- MOCK ONLY -->
+                                                        <input type="text" name="questionDuration" class="form-control" id="questionDuration" step="1" placeholder="Temps par question" onfocus="(this.type='time')" onblur="(this.type='text')" min="00:00:30" max="01:30:00">
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </section>
                                 <footer class="panel-footer clearfix">
                                     <div class="pull-right">
