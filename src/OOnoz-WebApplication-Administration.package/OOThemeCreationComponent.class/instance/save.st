@@ -3,5 +3,5 @@ save
 	[ self checkValidity.
 	self theme save.
 	self answer: true ]
-		on: OOInvalidTheme , OOIndisponibleTheme , OOInvalidSubTheme , OOIndisponibleSubTheme
+		on: OOInvalidTheme , OOUnavailableTheme , OOInvalidSubTheme , OOUnavailableSubTheme
 		do: [ :e | self hasBeenValidated: true ]

@@ -7,8 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "OOIndisponibleUser",
+	"name" : "OOUnavailableUser",
 	"pools" : [
 		 ],
-	"super" : "OOIndisponibleObject",
+	"super" : "OOUnavailableObject",
 	"type" : "normal" }

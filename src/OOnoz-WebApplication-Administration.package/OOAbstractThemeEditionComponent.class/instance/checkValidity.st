@@ -5,4 +5,4 @@ checkValidity
 	self theme checkDisponibility.
 	subThemes := self theme subThemes collect: [ :s | s title ].
 	subThemes size = subThemes asSet size
-		ifFalse: [ OOIndisponibleSubTheme signal ]
+		ifFalse: [ OOUnavailableSubTheme signal ]

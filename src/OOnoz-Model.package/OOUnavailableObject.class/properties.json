@@ -8,7 +8,7 @@
 	"instvars" : [
 		"object",
 		"reason" ],
-	"name" : "OOIndisponibleObject",
+	"name" : "OOUnavailableObject",
 	"pools" : [
 		 ],
 	"super" : "OOError",

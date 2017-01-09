@@ -8,8 +8,8 @@ renderSubThemesOn: html
 			self hasBeenValidated
 				ifTrue: [ [ subTheme validate.
 					((self theme subThemes collect: #title) select: [ :s | s = subTheme title ]) size = 1
-						ifFalse: [ (OOIndisponibleSubTheme modelObject: subTheme reason: 'Il y a deux sous thèmes avec le même titre.') signal ] ]
-						on: OOInvalidSubTheme , OOIndisponibleSubTheme
+						ifFalse: [ (OOUnavailableSubTheme modelObject: subTheme reason: 'Il y a deux sous thèmes avec le même titre.') signal ] ]
+						on: OOInvalidSubTheme , OOUnavailableSubTheme
 						do: [ :e | 
 							html tbsAlert
 								beDanger;

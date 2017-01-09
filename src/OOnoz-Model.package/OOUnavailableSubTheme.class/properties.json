@@ -7,8 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "OOIndisponibleSubTheme",
+	"name" : "OOUnavailableSubTheme",
 	"pools" : [
 		 ],
-	"super" : "OOIndisponibleObject",
+	"super" : "OOUnavailableObject",
 	"type" : "normal" }

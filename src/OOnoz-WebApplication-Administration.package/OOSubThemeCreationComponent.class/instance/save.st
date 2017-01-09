@@ -4,5 +4,5 @@ save
 	self subTheme theme addSubTheme: self subTheme.
 	self subTheme theme save.
 	self answer: true ]
-		on: OOInvalidSubTheme , OOIndisponibleSubTheme
+		on: OOInvalidSubTheme , OOUnavailableSubTheme
 		do: [ :e | self hasBeenValidated: true ]

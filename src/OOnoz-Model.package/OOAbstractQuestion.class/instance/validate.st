@@ -1,7 +1,7 @@
 validation
 validate
 	self description isEmptyOrNil
-		ifTrue: [ self invalidate: 'Une question devrait avoir une description.' ].
+		ifTrue: [ self invalidate: 'Une question doit avoir une description.' ].
 	(self answers size
 		between: self questionClass minimumNumberOfAnswers
 		and: self questionClass maximumNumberOfAnswers)
