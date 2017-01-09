@@ -28,3 +28,15 @@
 {
   @include alert($primary-shade1);
 }
+
+.well
+{
+  //!!DEBUG ONLY
+  background-color: lighten($inverse-shade1, 95%);
+  border: none;
+  @include border-radius();
+  @include box-shadow(none);
+  border-left: $main-border-thickness solid $inverse-shade1;
+  //!!DEBUG ONLY
+  padding: 5px 20px;
+}
