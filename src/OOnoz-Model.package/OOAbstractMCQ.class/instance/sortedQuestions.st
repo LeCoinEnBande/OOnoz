@@ -1,3 +1,3 @@
 as yet unclassified
 sortedQuestions
-	^ self questions asArray sort: [ :a :b | a index < b index ]
+	^ self questions ifNotNil: [ :qs | qs asArray sort: [ :a :b | a index < b index ] ]
