@@ -1,7 +1,7 @@
 rendering
 renderComponentOn: html
 	html
-		tbsContainer: [ html tbsAlert
+		tbsContainer: [  self renderMessageOn: html.html tbsAlert
 				beDanger;
 				beDismissible;
 				role: #alert;
