@@ -1,6 +1,7 @@
 rendering
 tableEntriesFrom: aUser On: html
 	^ {aUser displayName.
+	aUser role displayName.
 	aUser address.
 	aUser city.
 	aUser state.

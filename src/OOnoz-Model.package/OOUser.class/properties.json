@@ -19,7 +19,8 @@
 		"state",
 		"city",
 		"zip",
-		"address" ],
+		"address",
+		"role" ],
 	"name" : "OOUser",
 	"pools" : [
 		 ],

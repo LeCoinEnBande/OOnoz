@@ -1,0 +1,14 @@
+{
+	"category" : "OOnoz-Model-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "OOContributorRole",
+	"pools" : [
+		 ],
+	"super" : "OOAbstractRole",
+	"type" : "normal" }
