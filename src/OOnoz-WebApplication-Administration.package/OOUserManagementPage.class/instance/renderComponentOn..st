@@ -1,7 +1,8 @@
 rendering
 renderComponentOn: html
 	html
-		tbsContainer: [  self renderMessageOn: html.html tbsAlert
+		tbsContainer: [ self renderMessageOn: html.
+			html tbsAlert
 				beDanger;
 				beDismissible;
 				role: #alert;
@@ -18,5 +19,6 @@ renderComponentOn: html
 						attributeAt: 'data-toolbar' put: '#' , toolbarId;
 						with: [ html tableHead: [ self renderHeaderOn: html ].
 							html
-								tableBody: [ OOUser selectAll
-										do: [ :theme | html tableRow: [ (self tableEntriesFrom: theme On: html) do: [ :content | html tableData: content ] ] ] ] ] ] ]
+								tableBody:
+									[ OOUser selectAll do: [ :theme | html tableRow: [ (self tableEntriesFrom: theme On: html) do: [ :content | html tableData: content ] ] ] ] ] ] ].
+	html document addLoadScript: '$(".material-switch").each(function(i,e){$(e).children("input[type=hidden]").prependTo(e)});' js

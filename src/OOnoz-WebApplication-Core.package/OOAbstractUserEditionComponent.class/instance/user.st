@@ -1,3 +1,3 @@
 accessing
 user
-	^ self subclassResponsibility
+	^ user
