@@ -25,14 +25,14 @@ background-color:rgba(244,67,54,1);
 }
 
 .material-switch > input[type="checkbox"] {
-    display: none;   
+    display: none;
 }
 
 .material-switch > label {
     cursor: pointer;
     height: 0px;
-    position: relative; 
-    width: 40px;  
+    position: relative;
+    width: 28px;
 }
 
 .material-switch > label::before {
@@ -40,25 +40,25 @@ background-color:rgba(244,67,54,1);
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
     border-radius: 8px;
     content: '''';
-    height: 16px;
-    margin-top: -8px;
+    height: 10px;
+    margin-top: -5px;
     position:absolute;
     opacity: 0.3;
     transition: all 0.4s ease-in-out;
-    width: 40px;
+    width: 28px;
 }
 .material-switch > label::after {
     background: rgb(255, 255, 255);
     border-radius: 16px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
     content: '''';
-    height: 24px;
-    left: -4px;
-    margin-top: -8px;
+    height: 16px;
+    left: -1px;
+    margin-top: -5px;
     position: absolute;
-    top: -4px;
+    top: -3px;
     transition: all 0.3s ease-in-out;
-    width: 24px;
+    width: 16px;
 }
 .material-switch > input[type="checkbox"]:checked + label::before {
     background: inherit;
@@ -66,5 +66,5 @@ background-color:rgba(244,67,54,1);
 }
 .material-switch > input[type="checkbox"]:checked + label::after {
     background: inherit;
-    left: 20px;
+    left: 12px;
 }'

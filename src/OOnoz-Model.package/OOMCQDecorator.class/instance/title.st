@@ -1,3 +1,3 @@
 accessing
 title
-	^ self mcq ifNotNil: [ :m | m title ]
+	^ self mcq ifNotNil: #title

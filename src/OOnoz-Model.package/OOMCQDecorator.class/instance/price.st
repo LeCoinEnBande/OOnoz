@@ -1,3 +1,3 @@
 accessing
 price
-	^ self mcq ifNotNil: [ :m | m price ]
+	^ self mcq ifNotNil: #price

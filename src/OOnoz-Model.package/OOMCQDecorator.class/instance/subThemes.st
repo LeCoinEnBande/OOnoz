@@ -1,3 +1,3 @@
 accessing
 subThemes
-	^ self mcq ifNotNil: [ :m | m subThemes ]
+	^ self mcq ifNotNil: #subThemes

@@ -17,15 +17,22 @@ tableEntriesFrom: mcq On: html
 		beSuccess;
 		with: 'TODO' ].
 	(OOMCQRate displayRateOf: mcq).
+	[ html form
+		class: 'material-switch';
+		with: [ html checkbox
+				id: html nextId;
+				callback: [ :bool | 
+					mcq
+						isActivated: bool;
+						save ];
+				onChange: html jQuery ajax serializeThisCheckbox;
+				value: mcq isActivated.
+			html label
+				for: html lastId;
+				class: 'label-success' ] ].
 	[ html anchor
 		callback: [ (self call: (OOMCQEditionComponent mcq: mcq))
 				ifTrue: [ self message: 'QCM édité.' ] ];
 		with: [ html tbsGlyphIcon
 				tbsTooltip: 'Éditer';
-				iconEdit ].
-	html space.
-	html anchor
-		callback: [ self delete: mcq ];
-		with: [ html tbsGlyphIcon
-				tbsTooltip: 'Supprimer';
-				iconTrash ] ]}
+				iconEdit ] ]}
