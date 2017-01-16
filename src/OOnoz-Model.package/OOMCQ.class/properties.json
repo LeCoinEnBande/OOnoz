@@ -13,7 +13,8 @@
 		"orderer",
 		"price",
 		"subThemes",
-		"isActivated" ],
+		"isActivated",
+		"level" ],
 	"name" : "OOMCQ",
 	"pools" : [
 		 ],

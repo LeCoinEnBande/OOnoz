@@ -33,7 +33,8 @@ renderMCQFormsOn: html
 									self renderMCQOrdererSelectionOn: html ].
 							html
 								tbsRow: [ self renderMCQPriceOn: html.
-									self renderKindSelectionOn: html ].
+									self renderKindSelectionOn: html.
+									self renderMCQLevelOn: html ].
 							html div
 								id: #'creation-challenge';
 								beCentered;

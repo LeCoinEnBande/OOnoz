@@ -7,15 +7,16 @@ tableEntriesFrom: mcq On: html
 		beInfoIf: mcq price > 0;
 		beDefaultIf: mcq price = 0;
 		with: mcq printPrice ].
+	[ html tbsLabel
+		beDefault;
+		class: 'difficulty-' , mcq level asString;
+		with: mcq level asString ].
 	[ | times |
 	times := (OOMCQResult selectMany: [ :result | result mcq = mcq and: [ result isFinished ] ]) size.
 	html tbsLabel
 		beInfoIf: times > 0;
 		beDangerIf: times = 0;
 		with: times asString , ' fois' ].
-	[ html tbsLabel
-		beSuccess;
-		with: 'TODO' ].
 	(OOMCQRate displayRateOf: mcq).
 	[ html form
 		class: 'material-switch';

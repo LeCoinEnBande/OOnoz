@@ -1,3 +1,3 @@
 accessing
 columns
-	^ #('Nom' 'Communauté' 'Type' 'Prix' 'Complété' 'Ouvert' 'Note' 'Actif' 'Modifier')
+	^ #('Nom' 'Communauté' 'Type' 'Prix' 'Difficulté' 'Complété' 'Note' 'Actif' 'Modifier')
