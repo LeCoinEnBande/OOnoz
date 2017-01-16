@@ -1,0 +1,100 @@
+@import "compass";
+
+@import "../modules/all";
+
+.bs-wizard
+{
+  //!!DEBUG ONLY
+  //border-bottom: $main-border-thickness solid $primary-shade2;
+  //!!DEBUG ONLY
+  padding:  0 0 10px 0;
+}
+
+.bs-wizard > .bs-wizard-step
+{
+  padding: 0;
+  position: relative;
+}
+
+//!!DEBUG ONLY
+.bs-wizard > .bs-wizard-step > .bs-wizard-dot
+{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  display: block;
+  background: $primary-shade1;
+  top: 45px;
+  left: 50%;
+  margin-top: -15px;
+  margin-left: -15px;
+  @include border-radius(50%);
+}
+
+//!!DEBUG ONLY
+.bs-wizard > .bs-wizard-step > .bs-wizard-dot:after
+{
+  content: ' ';
+  width: 14px;
+  height: 14px;
+  background: $primary-shade3;
+  @include border-radius(50%);
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+
+//!!DEBUG ONLY
+.bs-wizard > .bs-wizard-step > .progress
+{
+  position: relative;
+  @include border-radius();
+  height: 8px;
+  @include box-shadow(none);
+  margin: 20px 0px;
+}
+
+.bs-wizard > .bs-wizard-step > .progress > .progress-bar
+{
+  width: 0px;
+  @include box-shadow(none);
+  background: $primary-shade1;
+}
+
+.bs-wizard > .bs-wizard-step.complete > .progress > .progress-bar
+{
+  width: 100%;
+}
+.bs-wizard > .bs-wizard-step.active > .progress > .progress-bar
+{
+  width: 50%;
+}
+
+.bs-wizard > .bs-wizard-step:first-child.active > .progress > .progress-bar
+{
+  width: 0%;
+}
+
+.bs-wizard > .bs-wizard-step:last-child.active > .progress > .progress-bar
+{
+  width: 100%;
+}
+
+.bs-wizard > .bs-wizard-step:first-child > .progress
+{
+  left: 50%;
+  width: 50%;
+}
+
+.bs-wizard > .bs-wizard-step:last-child > .progress
+{
+  width: 50%;
+}
+
+
+
+
+
+
+
+
