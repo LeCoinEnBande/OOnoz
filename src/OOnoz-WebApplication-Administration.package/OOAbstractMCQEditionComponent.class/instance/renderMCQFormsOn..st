@@ -28,6 +28,8 @@ renderMCQFormsOn: html
 						class: #'panel-body';
 						with: [ self renderMCQTitleAndDescriptionInputOn: html.
 							self renderThemeSelectionOn: html.
+							self renderMCQImageOn: html.
+							self renderMCQBackgroundOn: html.
 							html
 								tbsRow: [ self renderMarkingSchemeSelectionOn: html.
 									self renderMCQOrdererSelectionOn: html ].

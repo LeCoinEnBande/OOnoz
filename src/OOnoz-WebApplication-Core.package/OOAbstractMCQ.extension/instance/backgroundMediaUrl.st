@@ -1,6 +1,6 @@
 *OOnoz-WebApplication-Core
-themeMediaUrl
-	^ self imagePath
+backgroundMediaUrl
+	^ self backgroundPath
 		ifNil: [ self subThemes
 				detect: #hasMedia
 				ifFound: #mediaLink

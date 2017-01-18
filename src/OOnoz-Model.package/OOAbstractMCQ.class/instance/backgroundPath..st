@@ -1,0 +1,3 @@
+accessing
+backgroundPath: anObject
+	self subclassResponsibility

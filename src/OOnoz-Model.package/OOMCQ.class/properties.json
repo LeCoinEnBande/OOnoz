@@ -14,7 +14,9 @@
 		"price",
 		"subThemes",
 		"isActivated",
-		"level" ],
+		"level",
+		"imagePath",
+		"backgroundPath" ],
 	"name" : "OOMCQ",
 	"pools" : [
 		 ],
