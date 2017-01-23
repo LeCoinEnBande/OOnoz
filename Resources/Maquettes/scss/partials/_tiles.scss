@@ -1,0 +1,44 @@
+@import "compass";
+
+@import "../modules/all";
+
+//!!DEBUG ONLY NEED REFACTOR
+
+@media screen and (max-width: 768px){
+  #queryResult[data-columns]::before {
+    content: '1 .column.size-1of1';
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  #queryResult[data-columns]::before {
+    content: '2 .column.size-1of2';
+  }
+}
+@media screen and (min-width: 993px) {
+  #queryResult[data-columns]::before {
+    content: '3 .column.size-1of3';
+  }
+}
+
+.column { float: left; }
+.size-1of1 { width: 100%; }
+.size-1of2 { width: 50%; }
+.size-1of3 { width: 33.333%; }
+
+.grid-item
+{
+  margin: $second-margin / 2;
+}
+
+.thumbnail
+{
+  @include border-radius($main-border-radius);
+  border: $second-border-thickness solid #cccccc;
+  padding: $main-border-radius * 3;
+}
+
+.thumbnail>img
+{
+  @include border-radius($main-border-radius);
+}

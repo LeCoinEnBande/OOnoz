@@ -31,8 +31,7 @@
 
 .well
 {
-  //!!DEBUG ONLY
-  background-color: lighten($inverse-shade1, 95%);
+  background-color: transparent;
   border: none;
   @include border-radius();
   @include box-shadow(none);

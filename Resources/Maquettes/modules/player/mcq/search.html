@@ -72,60 +72,159 @@
 </header>
 <body>
 <main>
-    <aside class="indicator mcq-indicator-1">
+    <!--<aside class="indicator mcq-indicator-1">
         <div class="container">
             <ol class="breadcrumb">
                 <li><a href="#">Questionnaire</a></li>
                 <li class="active">Choisir</li>
             </ol>
         </div>
-    </aside>
+    </aside>-->
     <div class="container">
         <header class="page-header">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
-                    <h1 class="text-center">Titre 1</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer accumsan sit amet felis a egestas. Vivamus et imperdiet leo, eu accumsan enim.  Nunc quis aliquet dui, vel fermentum leo.</p>
+                    <h1 class="text-center">Jouer un questionnaire</h1>
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer accumsan sit amet felis a
+                        egestas. Vivamus et imperdiet leo, eu accumsan enim. Nunc quis aliquet dui, vel fermentum
+                        leo.</p>
                 </div>
             </div>
+            <div class="container">
+                <div class="row bs-wizard">
+                    <div class="col-xs-4 bs-wizard-step complete">
+                        <div class="text-center bs-wizard-stepnum">1</div>
+                        <div class="progress">
+                            <div class="progress-bar"></div>
+                        </div>
+                        <a href="#" class="bs-wizard-dot"></a>
+                        <div class="bs-wizard-info text-center">Choix du thème</div>
+                    </div>
+                    <div class="col-xs-4 bs-wizard-step active">
+                        <div class="text-center bs-wizard-stepnum">2</div>
+                        <div class="progress">
+                            <div class="progress-bar"></div>
+                        </div>
+                        <a href="#" class="bs-wizard-dot"></a>
+                        <div class="bs-wizard-info text-center">Choix du sous-thème</div>
 
+                    </div>
+                    <div class="col-xs-4 bs-wizard-step">
+                        <div class="text-center bs-wizard-stepnum">3</div>
+                        <div class="progress">
+                            <div class="progress-bar"></div>
+                        </div>
+                        <a href="#" class="bs-wizard-dot"></a>
+                        <div class="bs-wizard-info text-center">Choix du questionnaire</div>
+                    </div>
+                </div>
+            </div>
         </header>
     </div>
     <div class="container">
-        <div class="row bs-wizard">
-            <div class="col-xs-4 bs-wizard-step complete">
-                <div class="text-center bs-wizard-stepnum">1</div>
-                <div class="progress"><div class="progress-bar"></div></div>
-                <a href="#" class="bs-wizard-dot"></a>
-                <div class="bs-wizard-info text-center">Choix du thème</div>
-            </div>
-            <div class="col-xs-4 bs-wizard-step active">
-                <div class="text-center bs-wizard-stepnum">2</div>
-                <div class="progress"><div class="progress-bar"></div></div>
-                <a href="#" class="bs-wizard-dot"></a>
-                <div class="bs-wizard-info text-center">Choix du sous-thème</div>
-
-            </div>
-            <div class="col-xs-4 bs-wizard-step">
-                <div class="text-center bs-wizard-stepnum">3</div>
-                <div class="progress"><div class="progress-bar"></div></div>
-                <a href="#" class="bs-wizard-dot"></a>
-                <div class="bs-wizard-info text-center">Choix du questionnaire</div>
-
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <form>
+                    <div class="form-group">
+                        <label for="searchSubTheme" class="sr-only">Rechercher parmis les XXX sous thèmes</label>
+                        <input type="search" placeholder="Rechercher parmis les XXX sous thèmes" class="form-control"
+                               id="searchSubTheme">
+                    </div>
+                </form>
             </div>
         </div>
-
-
-
-
     </div>
-</main>
-<footer>
 
-</footer>
+
+    <section class="container" id="queryResult" data-columns>
+        <figure class="thumbnail grid-item">
+            <img src="http://files1.porsche.com/filestore/image/multimedia/none/991-2nd-r-modelsite-microsite/normal/b75e1f6d-c986-11e5-8bd4-0019999cd470/porsche-normal.jpg">
+            <figcaption>
+                <h3>Sous thème 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tempus ac dolor sit amet
+                    maximus. Nunc ex mi, mollis ac tincidunt ut, accumsan eu mauris.</p>
+            </figcaption>
+        </figure>
+        <figure class="thumbnail grid-item">
+            <img src="http://cbsnews3.cbsistatic.com/hub/i/r/2016/03/23/38e32f54-b910-4612-8852-be9e0fbdbf73/thumbnail/620x350/440a1273973991f75a0ac768f554e37c/cat-istock.jpg">
+            <figcaption>
+                <h3>Sous thème 2</h3>
+                <p>Morbi non justo iaculis, posuere sem nec, aliquam odio. Donec vitae ligula nibh. Integer placerat
+                    ultrices lorem eu cursus. Morbi lacinia euismod mattis.</p>
+            </figcaption>
+        </figure>
+        <figure class="thumbnail grid-item">
+            <img src="http://www.epaifribourg.ch/campusvirtuel/uploads/images/t4/la_famille/la_description/L'Himalaya.jpg">
+            <figcaption>
+                <h3>Sous thème 3</h3>
+                <p>Nullam quis blandit felis, non tincidunt risus. Mauris a lectus ac diam accumsan accumsan in ac
+                    libero. Nulla ut mauris eget erat egestas faucibus nec sed tortor. Etiam vel suscipit lacus.
+                    Curabitur vehicula facilisis molestie.</p>
+            </figcaption>
+        </figure>
+        <figure class="thumbnail grid-item">
+            <img src="http://www.alnas.fr/IMG/jpg/croissant_a.jpg">
+            <figcaption>
+                <h3>Sous thème 4</h3>
+                <p>Morbi eros nisl, egestas venenatis nisi eu, facilisis viverra magna. Nam semper volutpat dolor. In
+                    vitae ipsum eget nulla pharetra pulvinar vitae non turpis. Aliquam euismod ullamcorper arcu, sit
+                    amet malesuada urna euismod ut.</p>
+            </figcaption>
+        </figure>
+        <figure class="thumbnail grid-item">
+            <img src="http://www.seychelles.fr/img/pano-seychelles.jpg">
+            <figcaption>
+                <h3>Sous thème 5</h3>
+                <p>Nullam sit amet nunc nec velit blandit consectetur. Phasellus vulputate ut erat a convallis. Aliquam
+                    efficitur felis nec aliquam condimentum. Praesent nec egestas nunc, sed placerat arcu. Maecenas
+                    lacinia est risus, a varius velit malesuada sit amet. Aenean fringilla ex felis, nec porta ante
+                    pretium a. Cras dictum in sem sed sagittis.</p>
+            </figcaption>
+        </figure>
+        <figure class="thumbnail grid-item">
+            <img src="http://lh3.ggpht.com/qE0-JHabD8JID49nnvZGmCTdic_PvjBxpa-cFMpFswtaPV9j8jbOfBi7FmpL8THlXtXz1fyTZ0P1b8JORNwKvtwSEo-VPEymqsJ748BN=s600">
+            <figcaption>
+                <h3>Sous thème 6</h3>
+                <p>Cras a justo mi. Maecenas et tellus vitae risus malesuada lobortis et at nisi. Integer quam lacus,
+                    vulputate ac libero non, facilisis accumsan libero.</p>
+            </figcaption>
+        </figure>
+        <figure class="thumbnail grid-item">
+            <img src="https://www.msc-yachting.com/images/01-index/index_01.png">
+            <figcaption>
+                <h3>Sous thème 7</h3>
+                <p>Nunc volutpat mi non risus efficitur interdum. Vestibulum blandit neque eget congue aliquam.
+                    Vestibulum a volutpat augue, non egestas neque. Etiam faucibus augue eu urna maximus mattis. Proin
+                    vitae eleifend nibh.</p>
+            </figcaption>
+        </figure>
+        <figure class="thumbnail grid-item">
+            <img src="https://cdn1.img.sputniknews.com/images/103132/64/1031326452.jpg">
+            <figcaption>
+                <h3>Sous thème 8</h3>
+                <p>Phasellus euismod lectus id est convallis feugiat. Morbi feugiat a neque sed condimentum. Nulla
+                    facilisi. In hac habitasse platea dictumst. Integer vitae interdum lacus. </p>
+            </figcaption>
+        </figure>
+        <figure class="thumbnail grid-item">
+            <img src="https://lespoliticiensducomptoir.com/wp-content/uploads/2015/07/welsh-frites.jpg">
+            <figcaption>
+                <h3>Sous thème 9</h3>
+                <p>Vestibulum egestas, neque nec tincidunt tincidunt, nulla mi faucibus nunc, nec ultricies risus tellus
+                    at est. Quisque quis pretium nisi, ut vestibulum ex. Nam dui ligula, accumsan quis dapibus in,
+                    lobortis a arcu. Nunc vel lectus auctor, rhoncus tellus sed, ullamcorper enim. </p>
+            </figcaption>
+        </figure>
+    </section>
+</main>
+
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Salvattore plugin -->
+<script src="../../../script/vendor/salvattore.min.js"></script>
+
+
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"

@@ -3,10 +3,9 @@
 @import "../modules/all";
 
 //General panel style
-.panel
-{
-  border: 0;
-}
+
+
+
 
 .panel-heading
 {
@@ -31,6 +30,7 @@
 //Accordion panel style
 .panel-group .panel
 {
+  border: 0;
   @include box-shadow(none);
   @include border-radius();
 }
