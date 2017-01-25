@@ -1,13 +1,9 @@
 rendering
 renderPanelsFor: aCollectionOfMCQs on: html
-	html section
-		class: #'panel-group';
-		id: #mcqsList;
-		role: #tablist;
-		ariaMultiselectable: true;
+	html
+		tbsPanelGroupId: #mcqsList
 		with: [ aCollectionOfMCQs
 				doWithIndex: [ :mcq :i | 
-					html article
-						class: #panel;
-						class: #'panel-default';
+					html tbsArticlePanel
+						beDefault;
 						with: [ html render: (OOShippingMCQComponent mcq: mcq index: i) ] ] ]

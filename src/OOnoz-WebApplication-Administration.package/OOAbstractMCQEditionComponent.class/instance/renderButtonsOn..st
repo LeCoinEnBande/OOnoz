@@ -17,5 +17,5 @@ renderButtonsOn: html
 				bePush;
 				beDanger;
 				dataToggle: 'modal';
-				dataTarget: '#' , html nextId;
+				dataTarget: '#' , self modalId;
 				with: #Annuler ]

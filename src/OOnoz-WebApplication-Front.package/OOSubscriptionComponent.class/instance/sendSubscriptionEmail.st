@@ -1,4 +1,4 @@
-as yet unclassified
+actions
 sendSubscriptionEmail
 	self flag: #todo.
 	self emailUtils

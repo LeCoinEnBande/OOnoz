@@ -9,13 +9,17 @@ renderConcreteFormOn: html
 				for: (id := html nextId);
 				tbsScreenReaderOnly;
 				with: label.
-			html textArea
+			html textInput
 				tbsFormControl;
 				id: id;
+				required;
 				placeholder: label;
 				callback: [ :title | self question description: title ];
-				value: self question description;
-				rows: 1 ].
+				onChange:
+					(html jQuery ajax
+						serializeThis;
+						onSuccess: (self refreshBadgeOn: html));
+				value: self question description ].
 	html div
 		id: self answersId;
 		with: [ self renderAnswersOn: html ]

@@ -1,8 +1,10 @@
 validation
 validate
 	self description isEmptyOrNil
-		ifTrue: [ self invalidate: 'Une question devrait avoir une description.' ].
-	(self answers size between: self questionClass minimumNumberOfAnswers and: self questionClass maximumNumberOfAnswers)
+		ifTrue: [ self invalidate: 'Une question doit avoir une description.' ].
+	(self answers size
+		between: self questionClass minimumNumberOfAnswers
+		and: self questionClass maximumNumberOfAnswers)
 		ifFalse: [ self
 				invalidate:
 					(String
@@ -13,7 +15,9 @@ validate
 								<< ' et ';
 								<< self questionClass maximumNumberOfAnswers;
 								<< $. ]) ].
-	((self answers select: #isRight) size between: self questionClass minNumberOfRightAnswers and: self questionClass maxNumberOfRightAnswers)
+	((self answers select: #isRight) size
+		between: self questionClass minNumberOfRightAnswers
+		and: self questionClass maxNumberOfRightAnswers)
 		ifFalse: [ self
 				invalidate:
 					(String
@@ -23,4 +27,8 @@ validate
 								<< self questionClass minNumberOfRightAnswers;
 								<< ' et ';
 								<< self questionClass maxNumberOfRightAnswers;
-								<< $. ]) ]
+								<< $. ]) ].
+	self answers
+		do: [ :a | 
+			a text isEmptyOrNil
+				ifTrue: [ self invalidate: 'Une réponse doit avoir un texte.' ] ]

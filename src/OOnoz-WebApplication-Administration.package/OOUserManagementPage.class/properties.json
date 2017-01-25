@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
+		"message" ],
 	"name" : "OOUserManagementPage",
 	"pools" : [
 		 ],
-	"super" : "OOComponent",
+	"super" : "OOPage",
 	"type" : "normal" }

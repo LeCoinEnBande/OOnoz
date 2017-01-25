@@ -1,8 +1,7 @@
 *OOnoz-WebApplication-Core
 themeMediaUrl
-	^ self subThemes
-		detect: [ :s | s hasMedia ]
-		ifFound: [ :s | s mediaLink ]
-		ifNone: [ self theme hasMedia
-				ifTrue: [ self theme mediaLink ]
-				ifFalse: [ self theme class defaultMediaLink ] ]
+	^ self imagePath
+		ifNil: [ self subThemes
+				detect: #hasMedia
+				ifFound: #mediaLink
+				ifNone: [ self theme ifNil: [ OOAbstractTheme defaultMediaLink ] ifNotNil: #themeMediaUrl ] ]

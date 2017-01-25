@@ -10,5 +10,5 @@
 	"name" : "OOPlayComponent",
 	"pools" : [
 		 ],
-	"super" : "OOComponent",
+	"super" : "OOPage",
 	"type" : "normal" }

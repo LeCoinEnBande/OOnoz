@@ -1,0 +1,15 @@
+@import "compass";
+
+@import "../modules/all";
+
+.footer
+{
+  padding-top: $second-margin;
+  padding-bottom: $second-margin;
+}
+
+.footer-inverse
+{
+  background: $inverse-shade1;
+  color: $base-shade1;
+}

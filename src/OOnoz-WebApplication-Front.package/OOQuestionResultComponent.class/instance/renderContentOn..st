@@ -1,8 +1,7 @@
 rendering
 renderContentOn: html
-	html article
-		class: #panel;
-		class: #'panel-default';
+	html tbsArticlePanel
+		beDefault;
 		with: [ self renderHeaderOn: html.
 			html div
 				id: self id;

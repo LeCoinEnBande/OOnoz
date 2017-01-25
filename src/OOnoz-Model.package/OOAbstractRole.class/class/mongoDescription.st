@@ -1,0 +1,3 @@
+accessing
+mongoDescription 
+	^ self subclassResponsibility 

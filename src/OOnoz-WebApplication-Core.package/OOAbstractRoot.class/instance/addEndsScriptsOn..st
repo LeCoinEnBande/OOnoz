@@ -24,11 +24,16 @@ addEndsScriptsOn: html
 			self configuration resourcesURL
 				, '/Dependencies/bootstrap-datepicker/locales/bootstrap-datepicker.fr.min.js'.
 	html script
+		url: self configuration resourcesURL , '/Dependencies/rate/bootstrap-rating.min.js'.
+	html script
 		url:
 			'https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.0/js/bootstrap-select.min.js'.
 	html script
 		url:
 			'https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.0/js/i18n/defaults-*.min.js'.
 	html script url: 'https://cdn.jsdelivr.net/jquery.autosize/3.0.17/autosize.min.js'.
+	html script
+		url: self configuration resourcesURL , '/Maquettes/script/partial/_navbar.js'.
+	html script url: self configuration resourcesURL , '/Maquettes/script/main.js'.
 	html document
 		addLoadScript: 'autosize($(''textarea''));$(''[data-toggle="tooltip"]'').tooltip();' js

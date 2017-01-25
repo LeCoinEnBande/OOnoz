@@ -10,4 +10,8 @@ renderSubThemeSelectionOn: html
 				list: self theme subThemes;
 				labels: [ :t | t title ];
 				callback: [ :t | self mcq subThemes: t ];
+				onChange:
+					(html jQuery ajax
+						serializeThisWithHidden;
+						onSuccess: (self refreshBadgeOn: html));
 				selected: self mcq subThemes ]

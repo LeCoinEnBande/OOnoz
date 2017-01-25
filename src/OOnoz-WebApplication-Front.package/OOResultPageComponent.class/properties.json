@@ -11,5 +11,5 @@
 	"name" : "OOResultPageComponent",
 	"pools" : [
 		 ],
-	"super" : "OOComponent",
+	"super" : "OOPage",
 	"type" : "normal" }

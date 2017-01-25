@@ -2,87 +2,56 @@
 
 @import "../modules/all";
 
+//Font Awesome Checkbox
 .checkbox input[type="checkbox"], .checkbox input[type="radio"]
 {
   display: none;
 }
 
 
-//Checkbox style
-.checkbox label::before
+.form-group
 {
-  border: $main-border-thickness solid $default-color;
-  @include border-radius();
+  margin-bottom: $main-line-height;
 }
-
-//!! DEBUG ONLY, will create a color property useless
-.checkbox-success input[type="checkbox"]:checked + label::before, .checkbox-success input[type="radio"]:checked + label::before
-{
-  @include btn($success-color);
-}
-
-.checkbox-success input:checked+label{
-  color: $success-color;
-}
-
-.checkbox-danger input[type="checkbox"]:checked + label::before, .checkbox-danger input[type="radio"]:checked + label::before
-{
-  @include btn($danger-color);
-}
-
-.checkbox-danger input:checked+label
-{
-  color: $danger-color;
-}
-
-//Radio style
-.radio label::before
-{
-  border: $main-border-thickness solid $default-color;
-}
-
-.radio-success input[type="radio"]:checked + label::before{
-  border-color: $success-color;
-}
-
-.radio-success input[type="radio"]:checked + label::after{
-  background-color: $success-color;
-}
-
-.radio-danger input[type="radio"]:checked + label::after
-{
-  background-color: $danger-color;
-}
-
-.radio-danger input[type="radio"]:checked + label::before
-{
-  border-color: $danger-color;
-}
-
-.checkbox input[type="checkbox"]:indeterminate + label::after, .checkbox input[type="radio"]:indeterminate + label::after
-{
-  display: none;
-}
-
-.radio label::after
-{
-  width: 9px;
-  height: 9px;
-  top: 4px;
-  left: 4px;
-  background-color: $default-color;
-}
-
-//Form style
 .form-control
 {
   @include border-radius();
   @include box-shadow(none);
   border: 0;
-  border-bottom: $second-border-thickness solid $default-color;
+  border-bottom: 1px solid $base-shade2;
+  padding: 0;
 }
 
-textarea
+.input-group-addon
 {
-  resize: none;
+  background-color: transparent;
+  @include border-radius();
+  border: 0;
+}
+
+.input-group-btn>.btn
+{
+  border: 0;
+  background-color: transparent;
+}
+
+//Input Group Button Style, may be move that part in Button Style ?
+
+.input-group-btn>.btn-danger
+{
+  background-color: transparent;
+  color: $danger-shade1;
+}
+
+.input-group-btn>.btn-danger:hover, .input-group-btn>.btn-danger:focus
+{
+  background-color: transparent;
+  color: $danger-shade2;
+}
+
+
+.input-group-btn>.btn-danger.active, .btn-danger:active //, .open>.dropdown-toggle.btn-danger, .btn-danger.active.focus, .btn-danger.active:focus, .btn-danger.active:hover, .btn-danger:active.focus, .btn-danger:active:focus, .btn-danger:active:hover, .open>.dropdown-toggle.btn-danger.focus, .open>.dropdown-toggle.btn-danger:focus, .open>.dropdown-toggle.btn-danger:hover
+{
+  background-color: transparent;
+  color: $danger-shade3;
 }

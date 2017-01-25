@@ -3,7 +3,7 @@ renderUserErrorOn: html
 	self hasBeenValidated ifFalse: [ ^ self ].
 	
 	[ self checkIfUserCanBeCreated ]
-		on: OOInvalidUser, OOIndisponibleUser
+		on: OOInvalidUser, OOUnavailableUser
 		do: [ :e | 
 			html tbsAlert
 				beDanger;

@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"profileComponent" ],
+		"profilComponent" ],
 	"name" : "OOProfilePage",
 	"pools" : [
 		 ],
-	"super" : "OOComponent",
+	"super" : "OOPage",
 	"type" : "normal" }

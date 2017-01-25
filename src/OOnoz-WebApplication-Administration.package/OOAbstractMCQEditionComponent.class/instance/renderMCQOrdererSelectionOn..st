@@ -4,7 +4,7 @@ renderMCQOrdererSelectionOn: html
 		tbsColumn: [ html
 				section: [ html heading
 						level3;
-						with: 'Ordre des quetions'.
+						with: 'Ordre des questions'.
 					html
 						section: [ | group |
 							group := html radioGroup.

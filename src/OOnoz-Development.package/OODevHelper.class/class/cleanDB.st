@@ -1,5 +1,8 @@
 db
 cleanDB
 	<script>
-	OOTheme selectAll do: #remove.
-	OOUser selectAll do: #remove
+	{OOTheme.
+	OOUser.
+	OOAbstractMCQ.
+	OOMCQResult.
+	OOMCQRate} do: #removeAll

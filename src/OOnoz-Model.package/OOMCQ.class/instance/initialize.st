@@ -5,4 +5,6 @@ initialize
 	self defaultOrderer.
 	self price: 0.
 	self markingScheme: OOStrictWithPenalityScheme.
-	self resetSubThemes
+	self resetSubThemes.
+	self isActivated: true.
+	self level: 1.

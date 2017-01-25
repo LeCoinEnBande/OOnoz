@@ -1,0 +1,14 @@
+{
+	"category" : "OOnoz-WebApplication-Core-Bootstrap",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "TBSArticlePanelTag",
+	"pools" : [
+		 ],
+	"super" : "TBSPanelTag",
+	"type" : "normal" }

@@ -1,3 +1,3 @@
 accessing
 markingScheme
-	^ self mcq ifNotNil: [ :m | m markingScheme ]
+	^ self mcq ifNotNil: #markingScheme

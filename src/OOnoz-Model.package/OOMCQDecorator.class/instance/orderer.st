@@ -1,3 +1,3 @@
 accessing
 orderer
-	^ self mcq ifNotNil: [ :m | m orderer ]
+	^ self mcq ifNotNil: #orderer

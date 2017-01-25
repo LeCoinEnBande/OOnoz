@@ -1,0 +1,3 @@
+accessing
+imagePath
+ ^ self subclassResponsibility 

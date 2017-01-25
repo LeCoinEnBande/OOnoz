@@ -7,24 +7,33 @@ tableEntriesFrom: mcq On: html
 		beInfoIf: mcq price > 0;
 		beDefaultIf: mcq price = 0;
 		with: mcq printPrice ].
+	[ html tbsLabel
+		beDefault;
+		class: 'difficulty-' , mcq level asString;
+		with: mcq level asString ].
 	[ | times |
 	times := (OOMCQResult selectMany: [ :result | result mcq = mcq and: [ result isFinished ] ]) size.
 	html tbsLabel
 		beInfoIf: times > 0;
 		beDangerIf: times = 0;
 		with: times asString , ' fois' ].
-	[ html tbsLabel
-		beSuccess;
-		with: 'TODO' ].
+	(OOMCQRate displayRateOf: mcq).
+	[ html form
+		class: 'material-switch';
+		with: [ html checkbox
+				id: html nextId;
+				callback: [ :bool | 
+					mcq
+						isActivated: bool;
+						save ];
+				onChange: html jQuery ajax serializeThisCheckbox;
+				value: mcq isActivated.
+			html label
+				for: html lastId;
+				class: 'label-success' ] ].
 	[ html anchor
 		callback: [ (self call: (OOMCQEditionComponent mcq: mcq))
 				ifTrue: [ self message: 'QCM édité.' ] ];
 		with: [ html tbsGlyphIcon
 				tbsTooltip: 'Éditer';
-				iconEdit ].
-	html space.
-	html anchor
-		callback: [ self delete: mcq ];
-		with: [ html tbsGlyphIcon
-				tbsTooltip: 'Supprimer';
-				iconTrash ] ]}
+				iconEdit ] ]}

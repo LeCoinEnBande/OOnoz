@@ -21,9 +21,10 @@ renderFormContentOn: html
 														onChange:
 															(html jQuery ajax
 																serializeThis;
-																onSuccess: ((html jQuery id: self id) load html: [ :r | self renderFormContentOn: r ])).
+																onSuccess: (self refreshOn: html)).
 													html label
 														tbsTooltip: class description;
 														for: html lastId;
 														with: class label ] ] ].
-							self renderConcreteFormOn: html ] ] ]
+							self renderConcreteFormOn: html ] ].
+			self renderFooterOn: html ]

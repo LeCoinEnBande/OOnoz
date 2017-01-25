@@ -3,7 +3,7 @@ renderErrorOn: html
 	self hasBeenValidated
 		ifFalse: [ ^ self ].
 	[ self checkValidity ]
-		on: OOInvalidSubTheme , OOIndisponibleSubTheme
+		on: OOInvalidSubTheme , OOUnavailableSubTheme
 		do: [ :e | 
 			html tbsAlert
 				beDanger;

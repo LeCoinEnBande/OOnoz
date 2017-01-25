@@ -4,21 +4,26 @@
 
 .alert
 {
-  @include border-radius();
-  border: $main-border-thickness solid transparent;
-}
-
-.alert-danger
-{
-  @include alert($danger-color);
+  @include border-radius($main-border-radius);
+  border: $main-border-radius solid transparent;
 }
 
 .alert-success
 {
-  @include alert($success-color);
+  @include alert($success-shade1);
+}
+
+.alert-danger
+{
+  @include alert($danger-shade1);
+}
+
+.alert-warning
+{
+  @include alert($warning-shade1);
 }
 
 .alert-primary
 {
-  @include alert($primary-color);
+  @include alert($primary-shade1);
 }

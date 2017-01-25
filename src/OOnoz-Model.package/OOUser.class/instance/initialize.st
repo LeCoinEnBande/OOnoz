@@ -4,4 +4,5 @@ initialize
 	self mcqs: OrderedCollection new.
 	self hasAvatar: false.
 	self beOtherGender.
-	self desactivate
+	self desactivate.
+	self role: OOPlayerRole

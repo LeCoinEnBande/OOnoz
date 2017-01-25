@@ -12,7 +12,11 @@
 		"markingScheme",
 		"orderer",
 		"price",
-		"subThemes" ],
+		"subThemes",
+		"isActivated",
+		"level",
+		"imagePath",
+		"backgroundPath" ],
 	"name" : "OOMCQ",
 	"pools" : [
 		 ],

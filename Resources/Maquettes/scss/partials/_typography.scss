@@ -2,25 +2,40 @@
 
 @import "../modules/all";
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat:700');
 
 body
 {
-  text-align: justify;
+  font-family: 'Lato', sans-serif;
 }
-
-//Reuse already existing Bootstrap class for alternative style heading
 
 h1,h2,h3,h4,h5,h6
 {
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
 }
 
-h1
+.navbar
 {
   text-transform: uppercase;
-  font-size: 35px;
-  color: $primary-color;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
 }
 
+.indicator
+{
+  //!! DEBUG ONLY
+  font-size: 35px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
 
+.indicator .breadcrumb li>a
+{
+  text-decoration: none;
+}
+
+.indicator .breadcrumb li>a:hover
+{
+  text-decoration: none;
+}

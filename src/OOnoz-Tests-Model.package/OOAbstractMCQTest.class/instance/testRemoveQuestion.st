@@ -1,9 +1,7 @@
 tests
 testRemoveQuestion
 	| aQuestion sizeBeforeRemoval |
-	aQuestion := OOBinaryQuestion
-		description: 'test'
-		answers: [ 'a1' add: 'a2' ].
+	aQuestion := OOBinaryQuestion description: 'test' answers: (Set with: (OOAnswer text: 'test' isRight: true)).
 	mcq addQuestion: aQuestion.
 	sizeBeforeRemoval := mcq questions size.
 	mcq removeQuestion: aQuestion.
