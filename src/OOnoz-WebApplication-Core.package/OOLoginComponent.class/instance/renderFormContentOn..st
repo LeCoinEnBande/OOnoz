@@ -1,9 +1,5 @@
 rendering
 renderFormContentOn: html
-	html heading
-		level2;
-		class: #h5;
-		with: 'Informations'.
 	html
 		tbsRow: [ html tbsColumn
 				mediumSize: 8;

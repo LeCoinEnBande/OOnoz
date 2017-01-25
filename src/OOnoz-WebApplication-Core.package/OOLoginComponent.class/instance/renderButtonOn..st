@@ -2,6 +2,10 @@ rendering
 renderButtonOn: html
 	html tbsButton
 		beSuccess;
-		beSubmit;
-		callback: [ self login ];
+		bePush;
+		onClick:
+			(html jQuery ajax
+				serializeForm;
+				callback: [ self login ];
+				onComplete: ((html jQuery id: 'connection') load html: [ :r | self renderComponentOn: r ]));
 		with: 'Connexion'
