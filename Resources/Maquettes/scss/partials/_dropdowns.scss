@@ -1,0 +1,31 @@
+@import "compass";
+
+@import "../modules/all";
+
+.dropdown-menu
+{
+  @include border-radius($main-border-radius);
+}
+
+//Bootstrap Select
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn)
+{
+  width: 100%;
+}
+
+.bootstrap-select>.btn.dropdown-toggle
+{
+  @include border-radius;
+  border: 0;
+  border-bottom: 1px solid $base-shade2;
+  padding: 0;
+
+  //!!DEBUG ONLY
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.bootstrap-select>.btn:hover.dropdown-toggle
+{
+  background-color: transparent;
+}

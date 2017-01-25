@@ -4,8 +4,9 @@
 
 .alert
 {
-  @include border-radius($main-border-radius);
-  border: $main-border-radius solid transparent;
+  @include border-radius();
+  border: 0;
+  border-left: $main-border-thickness solid transparent;
 }
 
 .alert-success
@@ -26,4 +27,15 @@
 .alert-primary
 {
   @include alert($primary-shade1);
+}
+
+.well
+{
+  background-color: transparent;
+  border: none;
+  @include border-radius();
+  @include box-shadow(none);
+  border-left: $main-border-thickness solid $inverse-shade1;
+  //!!DEBUG ONLY
+  padding: 5px 20px;
 }

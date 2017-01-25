@@ -12,15 +12,21 @@
 
 .navbar-default
 {
-  background-color: $base-shade1;
+  background-color: transparent;
 }
 
 .navbar.shrink
 {
   height: $main-line-height * 3;
-  border-bottom: 1px solid $base-shade2;
+  border-bottom: 1px solid;
   padding-top: $main-line-height;
   padding-bottom: $main-line-height;
+}
+
+.navbar.navbar-default.shrink
+{
+  background-color: $base-shade1;
+  border-color: $base-shade2;
 }
 
 .navbar.shrink .navbar-nav>li>a

@@ -2,6 +2,44 @@
 
 @import "../modules/all";
 
+.label
+{
+  display: inline-block;
+  //!!DEBUG ONLY
+  padding: 4px 4px 4px;
+  @include border-radius($main-border-radius);
+}
+
+.label-primary
+{
+  @include button($primary-shade1);
+}
+
+.label-success, .label-difficulty-1
+{
+  @include button($success-shade1);
+}
+
+.label-difficulty-2
+{
+  @include button(mix($success-shade1, $warning-shade1));
+}
+
+.label-warning, .label-difficulty-3
+{
+  @include button($warning-shade1);
+}
+
+.label-difficulty-4
+{
+  @include button(mix($danger-shade1, $warning-shade1));
+
+}
+
+.label-danger, .label-difficulty-5
+{
+  @include button($danger-shade1);
+}
 
 
 

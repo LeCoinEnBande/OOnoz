@@ -17,7 +17,7 @@ h1,h2,h3,h4,h5,h6
 
 .navbar
 {
-  text-transform: uppercase;
+  //text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
 }
@@ -38,4 +38,43 @@ h1,h2,h3,h4,h5,h6
 .indicator .breadcrumb li>a:hover
 {
   text-decoration: none;
+}
+
+.label
+{
+  font-weight: 500;
+  font-size: 100%;
+}
+
+.text-success
+{
+  color: $success-shade1;
+}
+
+.text-danger
+{
+  color: $danger-shade1;
+}
+
+.text-warning
+{
+  color: $warning-shade1;
+}
+
+a
+{
+  color: $primary-shade1;
+}
+
+a:focus,a:hover
+{
+  color: $primary-shade2;
+  text-decoration: none;
+}
+
+.navbar  .dropdown-menu>li>a
+{
+  font-family:  'Lato', sans-serif;
+  font-weight: 500;
+  text-transform: none;
 }

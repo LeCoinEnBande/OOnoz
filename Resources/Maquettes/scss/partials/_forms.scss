@@ -8,17 +8,50 @@
   display: none;
 }
 
+.checkbox input[type="checkbox"]:indeterminate + label::after, .checkbox input[type="radio"]:indeterminate + label::after
+{
+  display: none;
+}
+
+.radio label::before, .checkbox label::before
+{
+  border: 1px solid $base-shade2;
+}
+
+.checkbox label::before
+{
+  @include border-radius($main-border-radius);
+}
+
+.checkbox label::after
+{
+
+  //!!DEBUG ONLY
+  padding-top: 2px;
+  padding-left: 2px;
+  font-size: 13px;
+}
 
 .form-group
 {
   margin-bottom: $main-line-height;
 }
-.form-control
+
+.form-control, .bootstrap-tagsinput
 {
+  display: block;
   @include border-radius();
   @include box-shadow(none);
   border: 0;
   border-bottom: 1px solid $base-shade2;
+  padding: 0;
+  //!! DEBUG ONLY, will be a multiple of a default size ?
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.bootstrap-tagsinput input
+{
   padding: 0;
 }
 
@@ -27,6 +60,13 @@
   background-color: transparent;
   @include border-radius();
   border: 0;
+}
+
+.input-group-addon.checkbox
+{
+  padding-right: 0;
+  //!!DEBUG ONLY
+  padding-top: 8px;
 }
 
 .input-group-btn>.btn
@@ -54,4 +94,29 @@
 {
   background-color: transparent;
   color: $danger-shade3;
+}
+
+//Focus
+.form-control:hover
+{
+  outline: 0;
+  @include box-shadow(none);
+  border-color: $primary-shade1;
+  background-color: transparent;
+}
+
+.form-control:focus
+{
+  outline: 0;
+  @include box-shadow(none);
+  border-color: $primary-shade2;
+  background-color: transparent;
+}
+
+.form-control:active
+{
+  outline: 0;
+  @include box-shadow(none);
+  border-color: $primary-shade3;
+  background-color: transparent;
 }

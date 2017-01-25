@@ -21,6 +21,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+    <!--Font awesome-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!--Bootstrap select -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/css/bootstrap-select.min.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -33,7 +40,8 @@
     <link rel="stylesheet" href="../../../css/main.css">
 
 </head>
-<header>
+<body class="no-padding">
+<header class="jumbotron">
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <section class="navbar-header">
@@ -69,24 +77,17 @@
             </section>
         </div>
     </nav>
-</header>
-<body>
-<main>
-    <aside class="indicator mcq-indicator-1">
-        <div class="container">
-            <ol class="breadcrumb">
-                <li><a href="#">Questionnaire</a></li>
-                <li class="active">Jouer</li>
-            </ol>
-        </div>
-    </aside>
     <div class="container">
-        <div class="row">
-
-        </div>
+        <section class="jumbotron-content">
+            <h1>Le slogand d'OOnoz ici</h1>
+            <p>OOnoz est une plateforme de questionnaire à choix multiple en ligne</p>
+            <button class="btn btn-primary btn-lg">Jouer maintenant</button>
+        </section>
     </div>
+</header>
+<main>
+    <a href="#" class="btn btn-primary btn-top" id="goToTop" role="button" title="Revenir en haut de la page" data-toggle="tooltip" data-placement="left"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
 </main>
-
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -95,5 +96,20 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/bootstrap-select.min.js"></script>
+
+
+<!--Custom script -->
+<script type="text/javascript" src="../../../script/main.js"></script>
+<script type="text/javascript" src="../../../script/partial/_navbar.js"></script>
+<script type="text/javascript" src="../../../script/partial/_nav_buttons.js"></script>
+
+<script type="text/javascript">
+
+</script>
+
 </body>
 </html>

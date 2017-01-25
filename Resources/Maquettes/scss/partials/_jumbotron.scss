@@ -1,0 +1,19 @@
+@import "compass";
+
+@import "../modules/all";
+
+.jumbotron
+{
+  height: 100vh;
+  //background: image_url("http://blog.hdwallsource.com/wp-content/uploads/2015/05/toy-car-wallpaper-39199-40102-hd-wallpapers.jpg") no-repeat center fixed;
+  @include background-image(linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), image_url("http://blog.hdwallsource.com/wp-content/uploads/2015/05/toy-car-wallpaper-39199-40102-hd-wallpapers.jpg"));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center ;
+  background-size: cover;
+}
+
+.jumbotron-content
+{
+  padding-top: $main-navbar-height;
+}
