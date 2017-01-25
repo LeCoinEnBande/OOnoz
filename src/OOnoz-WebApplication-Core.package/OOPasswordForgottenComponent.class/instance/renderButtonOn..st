@@ -8,5 +8,5 @@ renderButtonOn: html
 	html space.
 	html tbsAnchor
 		beDanger;
-		callback: [ self answer ];
+		callback: [ self displayDefaultScreen ];
 		with: 'Annuler'

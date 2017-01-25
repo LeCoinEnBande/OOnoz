@@ -1,0 +1,14 @@
+{
+	"category" : "OOnoz-WebApplication-Front-Pages",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"subscriptionComp" ],
+	"name" : "OOSubscriptionPage",
+	"pools" : [
+		 ],
+	"super" : "OOPage",
+	"type" : "normal" }

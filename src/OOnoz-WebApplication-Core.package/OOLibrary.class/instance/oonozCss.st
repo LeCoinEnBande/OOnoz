@@ -24,6 +24,11 @@ background-color:rgba(244,67,54,1);
   font-size: 20px;
 }
 
+.jumbotron{
+	margin-bottom: 0px !important;
+	color: white !important;
+}
+
 .material-switch > input[type="checkbox"] {
     display: none;
 }

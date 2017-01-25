@@ -15,5 +15,5 @@ sendNewPassword
 								<< '<html><body>';
 								<< newPass;
 								<< '</body></html>' ]).
-			self answer: true ]
+			self displayDefaultScreen ]
 		ifFalse: [ self hasBeenValidated: true ]

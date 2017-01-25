@@ -1,8 +1,8 @@
 rendering
-renderLoginModalOn: canvas
-	canvas
-		tbsModalHeader: [ canvas tbsModalCloseIcon ariaLabel: #Close.
-			canvas tbsModalTitle
+renderLoginModalOn: html
+	html
+		tbsModalHeader: [ html tbsModalCloseIcon ariaLabel: #Close.
+			html tbsModalTitle
 				level: 4;
 				with: 'Connexion' ].
-	^ canvas tbsModalBody: [ canvas render: self loginComp ]
+	html tbsModalBody: [ html render: self loginComp ]

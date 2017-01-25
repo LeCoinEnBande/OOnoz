@@ -3,6 +3,6 @@ save
 	[ self checkIfUserCanBeCreated.
 	self sendSubscriptionEmail.
 	self user save.
-	self answer: true ]
+	self displayDefaultScreen ]
 		on: OOError
 		do: [ :err | self hasBeenValidated: true ]
