@@ -1,3 +1,3 @@
 accessing
 title
-	^ 'Liste des communautés'
+	^ 'Jouer un questionnaire'

@@ -1,14 +1,14 @@
 {
-	"category" : "OOnoz-WebApplication-Front-Pages",
+	"category" : "OOnoz-WebApplication-Front-Components",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"themeSelectionComponent" ],
-	"name" : "OOPlayPage",
+		 ],
+	"name" : "OOAbstractSelectionComponent",
 	"pools" : [
 		 ],
-	"super" : "OOPage",
+	"super" : "OOComponent",
 	"type" : "normal" }

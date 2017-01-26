@@ -1,3 +1,3 @@
 accessing
 breadcrumpLabel
-	^ 'Communautés'
+	^ 'Jouer'
