@@ -6,7 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
+		"filter",
+		"entitiesCached",
+		"page" ],
 	"name" : "OOAbstractSelectionComponent",
 	"pools" : [
 		 ],

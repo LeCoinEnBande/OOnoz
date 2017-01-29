@@ -1,3 +1,3 @@
 as yet unclassified
-entitiesToShow
+inputEntities
 	^ self subclassResponsibility

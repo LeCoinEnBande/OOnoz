@@ -1,3 +1,3 @@
 accessing
 themeSelectionComponent
-	^ themeSelectionComponent ifNil: [ themeSelectionComponent := OOThemeSelectionComponent new ]
+	^ themeSelectionComponent ifNil: [ themeSelectionComponent := OOSelectionTask page: self ]

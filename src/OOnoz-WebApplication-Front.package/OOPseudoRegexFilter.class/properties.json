@@ -1,0 +1,14 @@
+{
+	"category" : "OOnoz-WebApplication-Front-Filter",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "OOPseudoRegexFilter",
+	"pools" : [
+		 ],
+	"super" : "OOObject",
+	"type" : "normal" }

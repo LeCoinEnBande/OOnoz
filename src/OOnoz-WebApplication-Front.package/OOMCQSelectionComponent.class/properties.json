@@ -1,0 +1,14 @@
+{
+	"category" : "OOnoz-WebApplication-Front-Components",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"subtheme" ],
+	"name" : "OOMCQSelectionComponent",
+	"pools" : [
+		 ],
+	"super" : "OOAbstractSelectionComponent",
+	"type" : "normal" }

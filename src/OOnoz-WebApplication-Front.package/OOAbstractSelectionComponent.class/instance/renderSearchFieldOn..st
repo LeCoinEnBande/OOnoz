@@ -1,19 +1,25 @@
 rendering
 renderSearchFieldOn: html
 	html
-		tbsContainer: [ html
-				tbsRow: [ html tbsColumn
-						mediumSize: 10;
-						mediumOffset: 1;
-						with: [ html
-								form: [ html
-										tbsFormGroup: [ | label |
-											html label
-												for: html nextId;
-												tbsScreenReaderOnly;
-												with: (label := 'Rechercher parmis les xxx sous-thèmes').
-											html textInput
-												type: 'search';
-												placeholder: label;
-												id: html lastId;
-												tbsFormControl ] ] ] ] ]
+		tbsRow: [ html
+				tbsColMs: 10
+				mo: 1
+				with: [ html
+						tbsFormGroup: [ | label |
+							html label
+								for: html nextId;
+								tbsScreenReaderOnly;
+								with: (label := self searchFieldLabel).
+							html textInput
+								type: 'search';
+								placeholder: label;
+								id: html lastId;
+								onChange:
+									(html jQuery ajax
+										callback: [ :filt | self filter: filt ] value: (JSStream on: 'event.target.value');
+										onComplete:
+											((html jQuery id: 'queryResult') load
+												html: [ :r | self renderQueryResultContentOn: r ];
+												onComplete: 'salvattore.registerGrid(document.getElementById("queryResult"))' js));
+								tbsFormControl;
+								value: self filter ] ] ]

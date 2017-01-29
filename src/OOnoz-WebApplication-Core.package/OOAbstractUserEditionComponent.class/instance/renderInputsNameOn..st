@@ -1,9 +1,9 @@
 rendering
 renderInputsNameOn: html
 	html
-		tbsRow: [ html tbsColumn
-				mediumSize: 6;
-				mediumOffset: 0;
+		tbsRow: [ html
+				tbsColMs: 6
+				mo: 0
 				with: [ html
 						tbsFormGroup: [ | id label |
 							label := 'Prenom'.
@@ -19,9 +19,9 @@ renderInputsNameOn: html
 								placeholder: label;
 								callback: [ :firstName | self user firstName: firstName ];
 								value: self user firstName ] ].
-			html tbsColumn
-				mediumSize: 6;
-				mediumOffset: 0;
+			html
+				tbsColMs: 6
+				mo: 0
 				with: [ html
 						tbsFormGroup: [ | id label |
 							label := 'Nom'.

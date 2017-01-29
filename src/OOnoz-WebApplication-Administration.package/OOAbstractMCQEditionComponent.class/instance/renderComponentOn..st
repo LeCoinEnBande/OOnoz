@@ -2,9 +2,9 @@ rendering
 renderComponentOn: html
 	html
 		tbsContainer: [ html
-				tbsRow: [ html tbsColumn
-						mediumSize: 10;
-						mediumOffset: 1;
+				tbsRow: [ html
+						tbsColMs: 10
+						mo: 1
 						with: [ html
 								form: [ html
 										tbsPanelGroupId: #mcqCreation

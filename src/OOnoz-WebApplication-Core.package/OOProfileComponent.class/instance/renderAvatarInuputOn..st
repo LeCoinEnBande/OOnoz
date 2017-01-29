@@ -7,9 +7,9 @@ renderAvatarInuputOn: html
 				class: #h5;
 				with: 'Avatar'.
 			html
-				tbsRow: [ html tbsColumn
-						mediumSize: 6;
-						mediumOffset: 3;
+				tbsRow: [ html
+						tbsColMs: 6
+						mo: 3
 						with: [ html image
 								style: 'height: 100px; width: 100px; border-radius:5000px';
 								url:

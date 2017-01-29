@@ -7,9 +7,9 @@ renderAvatarManagementOn: html
 	html tbsContainer
 		class: #'text-center';
 		with: [ html
-				tbsRow: [ html tbsColumn
-						mediumSize: 6;
-						mediumOffset: 3;
+				tbsRow: [ html
+						tbsColMs: 6
+						mo: 3
 						with: [ self user hasAvatar
 								ifTrue: [ html tbsAnchor
 										beDanger;

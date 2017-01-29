@@ -1,10 +1,8 @@
 rendering
 renderRatingOn: html
 	html
-		tbsRow: [ html tbsColumn
-				mediumSize: 8;
-				mediumOffset: 2;
-				beCentered;
+		tbsRow: [ html
+				tbsColMs: 8 mo: 2 beCentered;
 				with: [ html
 						form: [ html label
 								for: html nextId;

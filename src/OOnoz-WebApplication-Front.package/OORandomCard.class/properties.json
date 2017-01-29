@@ -1,0 +1,15 @@
+{
+	"category" : "OOnoz-WebApplication-Front-Components",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"scope",
+		"page" ],
+	"name" : "OORandomCard",
+	"pools" : [
+		 ],
+	"super" : "OOComponent",
+	"type" : "normal" }

@@ -3,11 +3,7 @@ initPlayground
 	<script>
 	GTPlayground
 		openContents:
-			'| branch |
-branch := ''development''.
-
-OODevHelper 
+			'OODevHelper 
 	installGitFileTree;
-	installNewBranch: branch;
 	setupMemoryDB;
 	defaultServerLaunching.'

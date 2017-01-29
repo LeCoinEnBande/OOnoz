@@ -1,0 +1,15 @@
+{
+	"category" : "OOnoz-WebApplication-Front-Components",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"page",
+		"components" ],
+	"name" : "OOSelectionTask",
+	"pools" : [
+		 ],
+	"super" : "WATask",
+	"type" : "normal" }

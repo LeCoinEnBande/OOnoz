@@ -1,4 +1,3 @@
 rendering
 renderComponentOn: html
-	html
-		tbsContainer: [ html render: self themeSelectionComponent ]
+	html tbsContainer: [ html render: self themeSelectionComponent ]

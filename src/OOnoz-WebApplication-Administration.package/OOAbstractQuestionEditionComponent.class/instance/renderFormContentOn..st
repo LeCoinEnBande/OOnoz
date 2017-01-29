@@ -3,9 +3,9 @@ renderFormContentOn: html
 	html section
 		class: #'panel-body';
 		with: [ html
-				tbsRow: [ html tbsColumn
-						mediumSize: 8;
-						mediumOffset: 2;
+				tbsRow: [ html
+						tbsColMs: 8
+						mo: 2
 						with: [ html
 								tbsFormGroup: [ | group |
 									group := html radioGroup.

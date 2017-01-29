@@ -29,6 +29,10 @@ background-color:rgba(244,67,54,1);
 	color: white !important;
 }
 
+#queryResult figure:hover { 
+	border: 1px solid #1abc9c;
+ }
+
 .material-switch > input[type="checkbox"] {
     display: none;
 }

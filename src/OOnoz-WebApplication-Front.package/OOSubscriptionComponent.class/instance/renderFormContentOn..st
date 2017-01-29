@@ -5,9 +5,9 @@ renderFormContentOn: html
 		class: #h5;
 		with: 'Informations'.
 	html
-		tbsRow: [ html tbsColumn
-				mediumSize: 10;
-				mediumOffset: 1;
+		tbsRow: [ html
+				tbsColMs: 10
+				mo: 1
 				with: [ self renderUserErrorOn: html.
 					self renderInputsNameOn: html.
 					self renderEmailInputOn: html.
@@ -15,4 +15,4 @@ renderFormContentOn: html
 					self renderPasswordInputsOn: html.
 					self renderBirthdayOn: html.
 					self renderGenderInputOn: html.
-							self renderRoleInputOn: html ] ]
+					self renderRoleInputOn: html ] ]

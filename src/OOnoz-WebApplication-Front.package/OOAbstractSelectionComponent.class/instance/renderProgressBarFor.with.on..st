@@ -17,7 +17,7 @@ renderProgressBarFor: currentStep with: label on: html
 				class: 'bs-wizard-dot';
 				yourself.
 			currentStep < self stepNumber
-				ifTrue: [ anchor callback: [ self flag: #todo ] ].
+				ifTrue: [ anchor callback: [ self answer: self stepNumber - currentStep ] ].
 			html div
 				beCentered;
 				class: 'bs-wizard-info';

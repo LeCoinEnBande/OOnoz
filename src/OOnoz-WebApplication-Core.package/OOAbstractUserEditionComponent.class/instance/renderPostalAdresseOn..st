@@ -1,9 +1,9 @@
 rendering
 renderPostalAdresseOn: html
 	html
-		tbsRow: [ html tbsColumn
-				mediumSize: 6;
-				mediumOffset: 0;
+		tbsRow: [ html
+				tbsColMs: 6
+				mo: 0
 				with: [ html
 						tbsFormGroup: [ | id label |
 							label := 'Pays'.
@@ -17,9 +17,9 @@ renderPostalAdresseOn: html
 								list: self countries;
 								callback: [ :country | self user country: country ];
 								selected: self user country ] ].
-			html tbsColumn
-				mediumSize: 6;
-				mediumOffset: 0;
+			html
+				tbsColMs: 6
+				mo: 0
 				with: [ html
 						tbsFormGroup: [ | id label |
 							label := 'Région'.
@@ -34,9 +34,9 @@ renderPostalAdresseOn: html
 								callback: [ :state | self user state: state ];
 								selected: self user state ] ] ].
 	html
-		tbsRow: [ html tbsColumn
-				mediumSize: 6;
-				mediumOffset: 0;
+		tbsRow: [ html
+				tbsColMs: 6
+				mo: 0
 				with: [ html
 						tbsFormGroup: [ | id label |
 							label := 'Ville'.
@@ -52,9 +52,9 @@ renderPostalAdresseOn: html
 								placeholder: label;
 								callback: [ :city | self user city: city ];
 								value: self user city ] ].
-			html tbsColumn
-				mediumSize: 6;
-				mediumOffset: 0;
+			html
+				tbsColMs: 6
+				mo: 0
 				with: [ html
 						tbsFormGroup: [ | id label |
 							label := 'Code Postal'.
