@@ -5,5 +5,5 @@ initPlayground
 		openContents:
 			'OODevHelper 
 	installGitFileTree;
-	setupMemoryDB;
-	defaultServerLaunching.'
+	defaultServerLaunching;
+	setupMemoryDB.'
