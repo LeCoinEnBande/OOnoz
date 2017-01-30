@@ -1,7 +1,7 @@
 rendering
 renderButtonOn: html
 	html tbsButton
-		beSuccess;
+		bePrimary;
 		bePush;
 		onClick:
 			(html jQuery ajax
