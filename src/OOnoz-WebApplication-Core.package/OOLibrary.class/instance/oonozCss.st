@@ -33,6 +33,10 @@ background-color:rgba(244,67,54,1);
 	border: 1px solid #1abc9c;
  }
 
+#queryResult a figure {
+    color: #0f0f0f;
+}
+
 .material-switch > input[type="checkbox"] {
     display: none;
 }
