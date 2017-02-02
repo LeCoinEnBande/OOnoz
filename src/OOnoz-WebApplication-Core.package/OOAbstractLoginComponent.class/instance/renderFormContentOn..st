@@ -7,4 +7,4 @@ renderFormContentOn: html
 				with: [ self renderErrorOn: html.
 					self renderMailInputOn: html.
 					self renderPasswordInputOn: html.
-					self renderForgottenPasswordLinkOn: html ] ]
+					self renderButtonOn: html ] ]

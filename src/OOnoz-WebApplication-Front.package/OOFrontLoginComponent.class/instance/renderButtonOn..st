@@ -3,6 +3,7 @@ renderButtonOn: html
 	html tbsButton
 		bePrimary;
 		bePush;
+		style: 'margin-bottom: 20px; width: 100%;';
 		onClick:
 			(html jQuery ajax
 				serializeForm;

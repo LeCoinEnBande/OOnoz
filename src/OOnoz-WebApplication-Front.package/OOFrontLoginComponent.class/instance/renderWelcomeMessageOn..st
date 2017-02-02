@@ -1,6 +1,6 @@
 rendering
 renderWelcomeMessageOn: html
-	html text: 'Bienvenu'.
+	html text: 'Bienvenue'.
 	html break.
 	html tbsAnchor
 		callback: [ self rootComponent setInstanceOf: OOPlayPage ];

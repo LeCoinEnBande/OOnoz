@@ -1,0 +1,14 @@
+{
+	"category" : "OOnoz-WebApplication-Front-Components",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "OOFrontLoginComponent",
+	"pools" : [
+		 ],
+	"super" : "OOAbstractLoginComponent",
+	"type" : "normal" }

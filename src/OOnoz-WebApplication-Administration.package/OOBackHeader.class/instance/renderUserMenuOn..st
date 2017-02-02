@@ -1,24 +1,15 @@
 rendering
 renderUserMenuOn: html
-	self isLogged
-		ifFalse: [ ^ self ].
 	html tbsNavItem
 		tbsDropdown: [ html tbsDropdownAnchor
 				url: '#';
 				role: #button;
 				ariaHaspopup: true;
 				with: [ html
-						text: self currentUser displayName;
+						text: self currentUser displayName , ' (' , self currentUser role displayName , ')';
 						tbsCaret ].
 			html
 				tbsDropdownMenu: [ html
-						tbsDropdownMenuItem: [ html anchor
-								callback: [ self moveToPage: OOCommunitiesPage ];
-								with: 'Mes communautés' ];
-						tbsDropdownMenuItem: [ html anchor
-								callback: [ self moveToPage: OOPlayedMCQsPage ];
-								with: 'Mes questionnaires joués' ];
-						tbsDivider;
 						tbsDropdownMenuItem: [ html anchor
 								callback: [ self moveToPage: OOProfilePage ];
 								with: 'Voir mon profil' ];
@@ -29,5 +20,5 @@ renderUserMenuOn: html
 						tbsDivider;
 						tbsDropdownMenuItem: [ html anchor
 								callback: [ self logout ];
-								url: '/OOnozAdministration';
-								with: 'Basculer Collaborateur' ] ] ]
+								url: '/OOnoz';
+								with: 'Basculer joueur' ] ] ]

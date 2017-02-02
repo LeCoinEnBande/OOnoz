@@ -8,7 +8,7 @@
 	"instvars" : [
 		"hasBeenValidated",
 		"user" ],
-	"name" : "OOLoginComponent",
+	"name" : "OOAbstractLoginComponent",
 	"pools" : [
 		 ],
 	"super" : "OOComponent",

@@ -1,5 +1,7 @@
 rendering
 renderTitleAndDescriptionOn: html
-	html div
-		class: #'text-center';
-		with: [ html heading: self title ]
+	html header
+		beCentered;
+		with: [ html heading
+				level3;
+				with: self title ]

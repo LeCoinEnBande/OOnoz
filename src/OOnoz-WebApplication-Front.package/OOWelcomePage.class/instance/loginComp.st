@@ -1,3 +1,3 @@
 accessing
 loginComp
-	^ loginComp ifNil: [ loginComp := OOLoginComponent new ]
+	^ loginComp ifNil: [ loginComp := OOFrontLoginComponent new ]

@@ -1,0 +1,3 @@
+rendering
+passwordForgottenCallback
+	self rootComponent setInstanceOf: OOPasswordForgottenComponent

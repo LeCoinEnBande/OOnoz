@@ -1,0 +1,3 @@
+rendering
+passwordForgottenCallback
+	self subclassResponsibility 

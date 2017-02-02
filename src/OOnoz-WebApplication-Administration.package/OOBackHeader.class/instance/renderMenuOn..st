@@ -2,4 +2,4 @@ rendering
 renderMenuOn: html
 	super renderMenuOn: html.
 	self renderUserMenuOn: html.
-	self renderLoginDialogOn: html
+		 self currentUser displayName -> OOProfilePage

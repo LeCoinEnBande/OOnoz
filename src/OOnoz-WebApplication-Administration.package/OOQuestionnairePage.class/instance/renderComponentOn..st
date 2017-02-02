@@ -14,5 +14,5 @@ renderComponentOn: html
 						with: [ html tableHead: [ self renderHeaderOn: html ].
 							html
 								tableBody:
-									[ self currentUser mcqs do: [ :mcq | html tableRow: [ (self tableEntriesFrom: mcq On: html) do: [ :content | html tableData: content ] ] ] ] ] ] ].
+									[ self currentUser editableMcqs do: [ :mcq | html tableRow: [ (self tableEntriesFrom: mcq On: html) do: [ :content | html tableData: content ] ] ] ] ] ] ].
 	html document addLoadScript: '$(".material-switch").each(function(i,e){$(e).children("input[type=hidden]").prependTo(e)});' js

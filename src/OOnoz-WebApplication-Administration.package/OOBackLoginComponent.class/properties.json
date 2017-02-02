@@ -1,0 +1,14 @@
+{
+	"category" : "OOnoz-WebApplication-Administration-Components",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "OOBackLoginComponent",
+	"pools" : [
+		 ],
+	"super" : "OOAbstractLoginComponent",
+	"type" : "normal" }

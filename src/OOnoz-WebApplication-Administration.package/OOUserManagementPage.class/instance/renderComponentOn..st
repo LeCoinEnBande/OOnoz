@@ -2,12 +2,6 @@ rendering
 renderComponentOn: html
 	html
 		tbsContainer: [ self renderMessageOn: html.
-			html tbsAlert
-				beDanger;
-				beDismissible;
-				role: #alert;
-				with: [ html tbsDismissAlertButton.
-					html strong: 'Cette page changera totalement dans la livraison du lot 2.' ].
 			html
 				section: [ | toolbarId |
 					self renderToolbarFor: (toolbarId := #toolbar) on: html.
@@ -18,7 +12,5 @@ renderComponentOn: html
 						attributeAt: #'data-pagination' put: 'true';
 						attributeAt: 'data-toolbar' put: '#' , toolbarId;
 						with: [ html tableHead: [ self renderHeaderOn: html ].
-							html
-								tableBody:
-									[ OOUser selectAll do: [ :theme | html tableRow: [ (self tableEntriesFrom: theme On: html) do: [ :content | html tableData: content ] ] ] ] ] ] ].
+							html tableBody: [ OOUser selectAll do: [ :theme | html tableRow: [ (self tableEntriesFrom: theme On: html) do: [ :content | html tableData: content ] ] ] ] ] ] ].
 	html document addLoadScript: '$(".material-switch").each(function(i,e){$(e).children("input[type=hidden]").prependTo(e)});' js

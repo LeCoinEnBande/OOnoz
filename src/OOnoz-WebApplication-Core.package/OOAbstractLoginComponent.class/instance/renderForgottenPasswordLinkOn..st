@@ -1,5 +1,5 @@
 rendering
 renderForgottenPasswordLinkOn: html
 	html anchor
-		callback: [ self rootComponent setInstanceOf: OOPasswordForgottenComponent ];
+		callback: [ self passwordForgottenCallback ];
 		with: 'Mot de passe oublié'
