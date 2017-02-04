@@ -45,7 +45,15 @@ function initalizeClock(){
   });
 }
 
-
+function initSubscriptionForm() { 
+	$("#form").submit(function(e) {
+	    if(!$("input[type=checkbox]:checked").length) {
+	        $("#cguLabel").css("color", "red");
+	        return false;
+	    }
+    	return true;
+	});
+}
 
 
 

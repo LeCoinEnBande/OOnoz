@@ -1,0 +1,3 @@
+testing
+isAdmin
+	^ true

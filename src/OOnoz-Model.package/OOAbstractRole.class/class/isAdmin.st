@@ -1,0 +1,3 @@
+accessing
+isAdmin
+	^ false

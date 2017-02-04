@@ -16,7 +16,8 @@
 		"isActivated",
 		"level",
 		"imagePath",
-		"backgroundPath" ],
+		"backgroundPath",
+		"state" ],
 	"name" : "OOMCQ",
 	"pools" : [
 		 ],

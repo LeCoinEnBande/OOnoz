@@ -15,4 +15,5 @@ renderFormContentOn: html
 					self renderPasswordInputsOn: html.
 					self renderBirthdayOn: html.
 					self renderGenderInputOn: html.
-					self renderRoleInputOn: html ] ]
+					self renderRoleInputOn: html.
+					self renderCGUOn: html ] ]

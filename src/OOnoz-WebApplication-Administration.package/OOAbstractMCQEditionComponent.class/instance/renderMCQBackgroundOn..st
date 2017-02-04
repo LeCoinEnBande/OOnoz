@@ -18,7 +18,7 @@ renderMCQBackgroundOn: html
 								id: html lastId;
 								placeholder: label;
 								callback: [ :url | self mcq backgroundPath: (url ifEmpty: [ nil ]) ];
-								value: self theme mediaLink;
+								value: (self theme ifNotNil: #mediaLink);
 								onChange:
 									(html jQuery ajax
 										serializeThis;

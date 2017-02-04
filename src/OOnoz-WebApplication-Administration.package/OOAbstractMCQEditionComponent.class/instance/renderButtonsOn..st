@@ -2,11 +2,19 @@ rendering
 renderButtonsOn: html
 	html section
 		tbsPullRight;
-		with: [ html tbsButton
-				beSuccess;
-				beSubmit;
-				callback: [ self save ];
-				with: 'Publier le questionnaire'.
+		with: [ self currentUser isAdmin
+				ifTrue: [ html tbsButton
+						beSuccess;
+						beSubmit;
+						callback: [ self mcq state: #active.
+							self save ];
+						with: 'Publier le questionnaire' ]
+				ifFalse: [ html tbsButton
+						beSuccess;
+						beSubmit;
+						callback: [ self mcq isActivated: false; state: #undefined.
+							self save ];
+						with: 'Soumettre le questionnaire' ].
 			html space.
 			html tbsButton
 				beWarning;

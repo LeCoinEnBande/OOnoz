@@ -18,7 +18,7 @@ renderMCQImageOn: html
 								id: html lastId;
 								placeholder: label;
 								callback: [ :url | self mcq imagePath: (url ifEmpty: [ nil ]) ];
-								value: self theme mediaLink;
+								value: (self theme ifNotNil: #mediaLink);
 								onChange:
 									(html jQuery ajax
 										serializeThis;

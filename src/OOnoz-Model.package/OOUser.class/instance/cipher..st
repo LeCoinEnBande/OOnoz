@@ -1,6 +1,7 @@
 accessing
 cipher: aString
 	self mail ifNil: [ ^ self error: 'The mail is needed to set the passowrd.' ].
+	aString ifNil: [ ^ nil ].
 	^ (SHA256
 		hashMessage:
 			(String
