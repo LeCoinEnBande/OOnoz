@@ -14,7 +14,7 @@ renderSearchFieldOn: html
 								type: 'search';
 								placeholder: label;
 								id: html lastId;
-								onChange:
+								onKeyUp:
 									(html jQuery ajax
 										callback: [ :filt | self filter: filt ] value: (JSStream on: 'event.target.value');
 										onComplete:
@@ -22,4 +22,5 @@ renderSearchFieldOn: html
 												html: [ :r | self renderQueryResultContentOn: r ];
 												onComplete: 'salvattore.registerGrid(document.getElementById("queryResult"))' js));
 								tbsFormControl;
-								value: self filter ] ] ]
+								value: self filter ] ] ].
+						  
