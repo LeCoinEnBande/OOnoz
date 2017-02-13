@@ -8,9 +8,7 @@ renderToolbarFor: anId on: html
 						ifTrue: [ self message: 'Nouveau QCM créé.' ] ];
 				with: 'Ajouter'.
 			html space.
-			self flag: #todo	"We need to check if we keep this one."
-			"html tbsButton
-				beDanger;
-				disabled;
-				callback: [ self flag: #todo ];
-				with: 'Supprimer'" ]
+			html tbsAnchor
+				beSuccess;
+				callback: [ self call: OOValidationPage new ];
+				with: 'Validations' ]

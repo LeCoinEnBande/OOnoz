@@ -1,7 +1,8 @@
 rendering
 renderCGUOn: html
-	html
-		tbsFormGroup: [ html checkbox
+	html tbsFormGroup
+		class: 'checkbox';
+		with: [ html checkbox
 				id: html nextId;
 				value: false.
 			html label
