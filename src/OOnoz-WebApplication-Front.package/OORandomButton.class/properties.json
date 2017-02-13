@@ -8,7 +8,7 @@
 	"instvars" : [
 		"scope",
 		"page" ],
-	"name" : "OORandomCard",
+	"name" : "OORandomButton",
 	"pools" : [
 		 ],
 	"super" : "OOComponent",
