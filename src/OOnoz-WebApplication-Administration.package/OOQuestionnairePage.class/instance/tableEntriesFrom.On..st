@@ -22,14 +22,18 @@ tableEntriesFrom: mcq On: html
 		class: 'material-switch';
 		with: [ html checkbox
 				id: html nextId;
-				callback: [ :bool | 
-					mcq
-						isActivated: bool;
-						save ];
+				disabled: (self currentUser isAdmin not and: [ mcq state = #undefined ]);
+				onTrue: [ mcq
+						state: #active;
+						save ]
+					onFalse: [ mcq
+							state: #inactive;
+							save ];
 				onChange: html jQuery ajax serializeThisCheckbox;
 				value: mcq isActivated.
 			html label
 				for: html lastId;
+				tbsTooltip: 'En attente de validation' if: (self currentUser isAdmin not and: [ mcq state = #undefined ]);
 				class: 'label-success' ] ].
 	[ html anchor
 		callback: [ (self call: (OOMCQEditionComponent mcq: mcq))

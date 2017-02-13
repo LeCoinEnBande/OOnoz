@@ -7,5 +7,4 @@ renderEmptyGenericDialogOn: html
 		id: self rootDialogOpenId;
 		with: [ html tbsModalDialog
 				role: #document;
-				class: #'modal-sm';
 				with: [ html tbsModalContent id: self rootDialogId ] ]

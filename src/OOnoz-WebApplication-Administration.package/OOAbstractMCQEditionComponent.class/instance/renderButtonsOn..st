@@ -12,7 +12,7 @@ renderButtonsOn: html
 				ifFalse: [ html tbsButton
 						beSuccess;
 						beSubmit;
-						callback: [ self mcq isActivated: false; state: #undefined.
+						callback: [ self mcq state: #undefined.
 							self save ];
 						with: 'Soumettre le questionnaire' ].
 			html space.

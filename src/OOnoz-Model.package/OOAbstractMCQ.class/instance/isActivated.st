@@ -1,3 +1,3 @@
 accessing
 isActivated
- ^ self subclassResponsibility 
+	^ self state = #active
