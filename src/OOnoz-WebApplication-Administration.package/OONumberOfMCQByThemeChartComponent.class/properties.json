@@ -6,10 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"charts",
-		"selectedChart" ],
-	"name" : "OOStatisticsPage",
+		 ],
+	"name" : "OONumberOfMCQByThemeChartComponent",
 	"pools" : [
 		 ],
-	"super" : "OOPage",
+	"super" : "OOAbstractStatChartComponent",
 	"type" : "normal" }

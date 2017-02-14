@@ -6,4 +6,6 @@ initialize
 	app preferenceAt: #sessionClass put: OOSession.
 	app configuration at: #maximumAbsoluteAge put: 0.
 	app configuration at: #maximumRelativeAge put: self sessionDuration.
-	app addLibrary: OOLibrary
+	app
+		addLibrary: ChartJsLibrary;
+		addLibrary: OOLibrary

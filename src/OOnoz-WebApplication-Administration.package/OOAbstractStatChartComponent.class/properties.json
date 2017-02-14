@@ -6,10 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"charts",
-		"selectedChart" ],
-	"name" : "OOStatisticsPage",
+		 ],
+	"name" : "OOAbstractStatChartComponent",
 	"pools" : [
 		 ],
-	"super" : "OOPage",
+	"super" : "OOComponent",
 	"type" : "normal" }

@@ -80,4 +80,9 @@ background-color:rgba(244,67,54,1);
 .material-switch > input[type="checkbox"]:checked + label::after {
     background: inherit;
     left: 12px;
+}
+
+
+.chartJsChart{
+	width: 100%;
 }'

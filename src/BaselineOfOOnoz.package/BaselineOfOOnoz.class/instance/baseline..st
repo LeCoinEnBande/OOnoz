@@ -8,6 +8,7 @@ baseline: spec
 				seaside3: spec;
 				bootstrap: spec;
 				voyage: spec;
+				chartJs: spec;
 				mocketry: spec.
 			spec
 				package: 'OOnoz-Model' with: [ spec requires: #('Voyage') ];
@@ -18,7 +19,7 @@ baseline: spec
 				package: 'OOnoz-WebApplication-Core'
 					with: [ spec requires: #('Seaside3' 'OOnoz-Model' 'OOnoz-Model-Statistics' 'OOnoz-Server' 'Bootstrap') ];
 				package: 'OOnoz-WebApplication-Administration'
-					with: [ spec requires: #('OOnoz-WebApplication-Core') ];
+					with: [ spec requires: #('OOnoz-WebApplication-Core' 'ChartJs') ];
 				package: 'OOnoz-WebApplication-Front'
 					with: [ spec requires: #('OOnoz-WebApplication-Core') ];
 				package: 'OOnoz-Development' with: [ spec requires: #('Model' 'Tests' 'UI' 'STON') ].

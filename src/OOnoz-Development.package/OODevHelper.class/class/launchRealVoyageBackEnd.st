@@ -2,6 +2,6 @@ db
 launchRealVoyageBackEnd
 	<script>
 	| repository |
-	repository := VOMongoRepository host: 'mongodb-jecisc.alwaysdata.net' database: 'jecisc_pepit' username: 'jecisc_pepit' password: 'OOnozProject1'.
+	repository := VOMongoRepository host: 'ds159188.mlab.com' port: 59188 database: 'pepit' username: 'pepit2' password: 'OOnozProject1'.
 	repository enableSingleton.
 	^ repository
