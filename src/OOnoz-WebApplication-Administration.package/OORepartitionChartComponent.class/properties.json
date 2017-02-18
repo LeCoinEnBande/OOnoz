@@ -6,8 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "OONumberOfMCQByThemeChartComponent",
+		"modec",
+		"selectedTheme" ],
+	"name" : "OORepartitionChartComponent",
 	"pools" : [
 		 ],
 	"super" : "OOAbstractStatChartComponent",

@@ -1,5 +1,4 @@
 initialization
 initialize
 	super initialize.
-	self charts: (OOAbstractStatChartComponent allSubclasses collect: #new).
-	self selectedChart: self charts anyOne
+	self charts: (OOAbstractStatChartComponent allSubclasses collect: [ :c | c owner: self ])

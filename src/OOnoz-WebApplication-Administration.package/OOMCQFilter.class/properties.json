@@ -6,10 +6,13 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"owner",
-		"mcqFilter",
-		"mcqInputCache" ],
-	"name" : "OOAbstractStatChartComponent",
+		"keepChallenges",
+		"keepELearning",
+		"levels",
+		"keepInactives",
+		"keepActives",
+		"refreshScript" ],
+	"name" : "OOMCQFilter",
 	"pools" : [
 		 ],
 	"super" : "OOComponent",
