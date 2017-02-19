@@ -1,3 +1,3 @@
 *OOnoz-WebApplication-Core
 label
-	^ 'Questions Aléatoires'
+	^ 'Questions aléatoires'
