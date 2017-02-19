@@ -12,7 +12,7 @@ values
 					Array
 						with: (OOMCQResult count: [ :res | mcqs includes: res mcq ])
 						with: (OOMCQResult count: [ :res | (mcqs includes: res mcq) and: [ res isFinished ] ])
-						with: (OOMCQResult count: [ :res | (mcqs includes: res mcq) and: [ res isFinished and: [ res result > self successRate ] ] ]) ].
+						with: (OOMCQResult count: [ :res | (mcqs includes: res mcq) and: [ res isFinished and: [ res result >= self successRate ] ] ]) ].
 			users
 				-> (Array with: 'joués' -> (datas collect: #first) with: 'complétés' -> (datas collect: #second) with: 'réussis' -> (datas collect: #third)) ]
 		ifNotNil: [ :user | 
@@ -25,6 +25,6 @@ values
 					Array
 						with: (OOMCQResult count: [ :res | m = res mcq ])
 						with: (OOMCQResult count: [ :res | m = res mcq and: [ res isFinished ] ])
-						with: (OOMCQResult count: [ :res | m = res mcq and: [ res isFinished and: [ res result > self successRate ] ] ]) ].
+						with: (OOMCQResult count: [ :res | m = res mcq and: [ res isFinished and: [ res result >= self successRate ] ] ]) ].
 			mcqs
 				-> (Array with: 'joués' -> (datas collect: #first) with: 'complétés' -> (datas collect: #second) with: 'réussis' -> (datas collect: #third)) ]

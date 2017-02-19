@@ -1,0 +1,15 @@
+{
+	"category" : "OOnoz-WebApplication-Administration-Pages",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"mode",
+		"selectedTheme" ],
+	"name" : "OOCreditChartComponent",
+	"pools" : [
+		 ],
+	"super" : "OOAbstractStatChartComponent",
+	"type" : "normal" }

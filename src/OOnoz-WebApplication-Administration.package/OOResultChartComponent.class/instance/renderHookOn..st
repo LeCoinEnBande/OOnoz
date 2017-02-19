@@ -19,7 +19,7 @@ renderHookOn: html
 										attributeAt: 'data-slider-id' put: html nextId;
 										attributeAt: 'data-slider-min' put: '-20';
 										attributeAt: 'data-slider-max' put: '20';
-										attributeAt: 'data-slider-ticks' put: '[-10,0,10,20]';
-										attributeAt: 'data-slider-ticks-labels' put: '["-10","0","10","20"]';
+										attributeAt: 'data-slider-ticks' put: '[-20,-10,0,10,20]';
+										attributeAt: 'data-slider-ticks-labels' put: '["-20","-10","0","10","20"]';
 										attributeAt: 'data-slider-step' put: '1';
 										attributeAt: 'data-slider-value' put: self successRate asString ] ] ] ]

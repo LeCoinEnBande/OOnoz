@@ -5,7 +5,7 @@ renderChartOn: html
 	chart := ChartJsComponent
 		data:
 			((Chart2dData xObjects: values key function: values value)
-				title: [ :datas | self chartTitleFrom: datas ];
+				title: [ :datas :xObjects | self chartTitleFrom: xObjects ];
 				singleValueTooltip: '<key> à une note moyenne de <value>';
 				keyDisplayBlock: [ :object | 
 					object isUser

@@ -6,11 +6,11 @@ renderChartOn: html
 		data:
 			((Chart2dData xObjects: values key multiYObjects: values value)
 				title: [ :datas | self chartTitleFrom: datas ];
-				multiValueTooltip: 'Les questionnaires de <key> ont été <label> <value> fois';
+				multiValueTooltip: (self selectedCol ifNil: [ 'Les QCMs de <key> ont été <label> <value> fois' ] ifNotNil: [ '<key> a été <label> <value> fois.' ]);
 				keyDisplayBlock: [ :object | 
-					object isUser
+					(object isUser
 						ifTrue: [ object displayName ]
-						ifFalse: [ object title ] ];
+						ifFalse: [ object title ]) displayContractedTo: 14 ];
 				chartType: ChartBar;
 				yourself).
 	self selectedCol ifNil: [ chart callback: [ :value :key | self selectedCol: key ] ].

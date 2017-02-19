@@ -3,7 +3,7 @@ chartTitleFrom: datas
 	^ String
 		streamContents: [ :s | 
 			s
-				<< 'Répartition des QCMs parmis les ';
+				<< 'Répartition des QCMs parmis ';
 				<< datas size;
 				space;
 				<<
