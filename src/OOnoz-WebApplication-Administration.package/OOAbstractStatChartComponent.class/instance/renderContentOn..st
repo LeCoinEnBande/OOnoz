@@ -1,13 +1,22 @@
 rendering
 renderContentOn: html
 	self mcqInputCache: nil.
-	html tbsRow: [ self renderButtonsOn: html ].
-	self renderHookOn: html.
 	html
-		tbsRow: [ html tbsColumn
+		tbsRow: [ html heading
+				level3;
+				with: [ html text: self chartTitle.
+					5 timesRepeat: [ html space ].
+					self renderButtonsOn: html ] ].
+	html
+		tbsRow: [ html
+				tbsColumn: [ html
+						form: [ html render: self mcqFilter.
+							self renderHookOn: html ] ]
+				mediumSize: 2.
+			html tbsColumn
 				id: #'chart-stat';
 				mediumSize: 10;
-				with: [ self renderChartOn: html ].
-			html tbsColumn: [ html form: [ html render: self mcqFilter ] ] mediumSize: 2 ].
+				with: [ self renderChartOn: html.
+					self valuesCache: nil ] ].
 	html document
 		addLoadScript: '$(".checkbox").each(function(i,e){$(e).children("input[type=hidden]").prependTo(e)});$(".material-switch").each(function(i,e){$(e).children("input[type=hidden]").prependTo(e)})' js

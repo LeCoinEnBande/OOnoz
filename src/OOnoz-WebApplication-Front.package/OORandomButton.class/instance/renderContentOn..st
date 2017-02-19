@@ -5,4 +5,4 @@ renderContentOn: html
 		bePrimary;
 		class: '';
 		with: [ html span class: 'fa fa-random'.
-			html text: ' Aléatoire' ]
+			html text: ' QCM Aléatoire' ]

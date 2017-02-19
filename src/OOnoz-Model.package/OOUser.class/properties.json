@@ -20,7 +20,8 @@
 		"city",
 		"zip",
 		"address",
-		"role" ],
+		"role",
+		"credits" ],
 	"name" : "OOUser",
 	"pools" : [
 		 ],

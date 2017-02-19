@@ -1,11 +1,9 @@
 rendering
 renderChartOn: html
-	| chart values |
-	values := self values.
+	| chart |
 	chart := ChartJsComponent
 		data:
-			((Chart2dData xObjects: values key multiYObjects: values value)
-				title: [ :datas | self chartTitleFrom: datas ];
+			((Chart2dData xObjects: self values key multiYObjects: self values value)
 				multiValueTooltip: (self selectedCol ifNil: [ 'Les QCMs de <key> ont été <label> <value> fois' ] ifNotNil: [ '<key> a été <label> <value> fois.' ]);
 				keyDisplayBlock: [ :object | 
 					(object isUser

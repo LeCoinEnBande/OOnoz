@@ -1,5 +1,5 @@
 {
-	"category" : "OOnoz-WebApplication-Administration-Pages",
+	"category" : "OOnoz-WebApplication-Front-Pages",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
@@ -7,8 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "OODashboardPage",
+	"name" : "OORechargePage",
 	"pools" : [
 		 ],
-	"super" : "OOComponent",
+	"super" : "OOPage",
 	"type" : "normal" }

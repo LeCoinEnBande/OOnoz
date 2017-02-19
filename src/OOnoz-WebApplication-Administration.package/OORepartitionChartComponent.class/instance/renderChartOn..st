@@ -4,7 +4,6 @@ renderChartOn: html
 	chart := ChartJsComponent
 		data:
 			((Chart1dData values: self values)
-				title: [ :datas | self chartTitleFrom: datas ];
 				singleValueTooltip: '<key> possède <value> qcm(s)';
 				chartType: ChartDonut;
 				yourself).

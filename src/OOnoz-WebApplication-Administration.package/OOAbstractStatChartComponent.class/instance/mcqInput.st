@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 mcqInput
 	^ self mcqInputCache
 		ifNil: [ self mcqInputCache: (self mcqFilter filter: OOAbstractMCQ selectAll).

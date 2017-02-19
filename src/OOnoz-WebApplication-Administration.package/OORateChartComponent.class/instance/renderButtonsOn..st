@@ -5,7 +5,8 @@ renderButtonsOn: html
 		ifNotNil: [ html tbsAnchor
 				beDanger;
 				callback: [ self selectedTheme: nil ];
-				with: 'Retour aux thèmes' ]
+				with: [ html span class: 'fa fa-arrow-up'.
+					html text: ' Retour aux thèmes' ] ]
 		ifNil: [ super renderButtonsOn: html ].
 	html space.
 	modeNot := self mode = #thèmes
@@ -15,4 +16,5 @@ renderButtonsOn: html
 		bePrimary;
 		callback: [ self mode: modeNot.
 			self selectedTheme: nil ];
-		with: 'Répartition par ' , modeNot
+		with: [ html span class: 'fa fa-repeat '.
+			html text: ' Répartition par ' , modeNot ]

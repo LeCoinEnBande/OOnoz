@@ -2,7 +2,7 @@ rendering
 renderContentOn: html
 	html heading
 		level3;
-		with: 'Options'.
+		with: 'Filtres'.
 	html hr.
 	self renderKindOptionsOn: html.
 	self renderLevelOptionsOn: html.

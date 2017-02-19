@@ -4,7 +4,6 @@ renderChartOn: html
 	chart := ChartJsComponent
 		data:
 			((Chart2dData xObjects: self values key function: self values value)
-				title: [ :datas :xObjects | self chartTitleFrom: xObjects ];
 				singleValueTooltip: '<key> à rapporté <value> crédits';
 				keyDisplayBlock: [ :object | 
 					object isUser

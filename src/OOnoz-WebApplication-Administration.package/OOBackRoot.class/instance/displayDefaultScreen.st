@@ -1,3 +1,3 @@
 initialization
 displayDefaultScreen
-	self setInstanceOf: OODashboardPage
+	self setInstanceOf: OOStatisticsPage

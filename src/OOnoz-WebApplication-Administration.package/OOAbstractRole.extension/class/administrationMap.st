@@ -1,8 +1,7 @@
 *OOnoz-WebApplication-Administration
 administrationMap
 	^ OrderedDictionary new
-		add: 'Dashboard' -> OODashboardPage;
+		add: 'Statistiques' -> OOStatisticsPage;
 		add: 'Questionnaires' -> OOQuestionnairePage;
 		add: 'Livraisons' -> OOShippingPage;
-		add: 'Statistiques' -> OOStatisticsPage;
 		yourself

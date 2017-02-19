@@ -8,7 +8,8 @@
 	"instvars" : [
 		"owner",
 		"mcqFilter",
-		"mcqInputCache" ],
+		"mcqInputCache",
+		"valuesCache" ],
 	"name" : "OOAbstractStatChartComponent",
 	"pools" : [
 		 ],

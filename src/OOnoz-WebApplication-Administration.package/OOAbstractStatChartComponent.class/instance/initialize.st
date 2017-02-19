@@ -8,4 +8,5 @@ initialize
 					(html jQuery: #'chart-stat') load
 						html: [ :r | 
 							self mcqInputCache: nil.
-							self renderChartOn: r ] ])
+							self renderChartOn: r.
+							self valuesCache: nil ] ])

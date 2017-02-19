@@ -1,10 +1,10 @@
 rendering
-chartTitleFrom: datas
+chartTitle
 	^ String
 		streamContents: [ :s | 
 			s
 				<< 'Crédits dépensés parmis ';
-				<< datas size;
+				<< self values key size;
 				space;
 				<<
 					((self mode = #thèmes and: [ self selectedTheme isNotNil ])

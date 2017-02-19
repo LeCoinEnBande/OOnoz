@@ -13,4 +13,9 @@ renderLabelsOn: html
 				,
 					(self mcq price > 1
 						ifTrue: [ 's' ]
-						ifFalse: [ '' ])
+						ifFalse: [ '' ]).
+	html space.
+	html tbsLabel
+		beDefault;
+		class: 'difficulty-' , self mcq level asString;
+		with: 'Niveau ' , self mcq level asString

@@ -12,12 +12,7 @@ renderAvatarInuputOn: html
 						mo: 3
 						with: [ html image
 								style: 'height: 100px; width: 100px; border-radius:5000px';
-								url:
-									self configuration avatarsURL
-										,
-											(self user hasAvatar
-												ifFalse: [ 'default.png' ]
-												ifTrue: [ self user mail , '.png' ]).
+								url: (self user avatarUrlFrom: self configuration).
 							self renderAvatarErrorOn: html.
 							html
 								tbsFormGroup: [ html fileUpload

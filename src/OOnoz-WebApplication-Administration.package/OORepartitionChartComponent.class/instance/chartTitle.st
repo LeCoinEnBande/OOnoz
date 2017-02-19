@@ -1,10 +1,10 @@
 rendering
-chartTitleFrom: datas
+chartTitle
 	^ String
 		streamContents: [ :s | 
 			s
-				<< 'Notes des QCMs parmis les ';
-				<< datas size;
+				<< 'Répartition des QCMs parmis ';
+				<< self values size;
 				space;
 				<<
 					((self mode = #thèmes and: [ self selectedTheme isNotNil ])

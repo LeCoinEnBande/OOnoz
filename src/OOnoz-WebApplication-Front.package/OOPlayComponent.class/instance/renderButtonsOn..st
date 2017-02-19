@@ -7,7 +7,7 @@ renderButtonsOn: html
 						bePrimary;
 						dataToggle: 'modal';
 						dataTarget: '#' , html nextId;
-						disabled: (self mcq isChallenge and: [ self currentUser alreadyPlayedTo: self mcq ]);
+						disabled: ((self mcq isChallenge and: [ self currentUser alreadyPlayedTo: self mcq ]) or: [ self currentUser credits < self mcq price ]);
 						with: #Jouer.
 					self renderWarningModalOn: html ]
 				ifFalse: [ self renderPlayButtonOn: html ].

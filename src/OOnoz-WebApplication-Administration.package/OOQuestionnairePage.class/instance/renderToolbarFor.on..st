@@ -16,4 +16,5 @@ renderToolbarFor: anId on: html
 					html tbsAnchor
 						beSuccess;
 						callback: [ self call: OOValidationPage new ];
-						with: 'Validations' ] ]
+						with: [ html text: 'Validations  '.
+							html tbsBadge: (OOAbstractMCQ count: [ :m | m state = #undefined ]) ] ] ]

@@ -1,11 +1,9 @@
 rendering
 renderChartOn: html
-	| chart values |
-	values := self values.
+	| chart |
 	chart := ChartJsComponent
 		data:
-			((Chart2dData xObjects: values key function: values value)
-				title: [ :datas :xObjects | self chartTitleFrom: xObjects ];
+			((Chart2dData xObjects: self values key function: self values value)
 				singleValueTooltip: '<key> à une note moyenne de <value>';
 				keyDisplayBlock: [ :object | 
 					object isUser
