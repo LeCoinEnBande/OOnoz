@@ -1,7 +1,8 @@
 rendering
 renderPossibilitiesOn: html
-	^ html
-		tbsRow: [ self charts
+	html tbsRow
+		class: 'possibilities';
+		with: [ self charts
 				do: [ :class | 
 					html
 						tbsColumn: [ html anchor
@@ -9,7 +10,8 @@ renderPossibilitiesOn: html
 								with: [ html figure
 										class: 'thumbnail';
 										class: 'grid-item';
-										with: [ html
+										with: [ html image url: self configuration resourcesURL , '/images/' , class image.
+											html
 												figureCaption: [ html heading
 														level3;
 														with: class title.

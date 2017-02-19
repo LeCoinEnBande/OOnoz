@@ -1,5 +1,9 @@
 rendering
 renderTitleOn: html
+	self title
+		ifEmpty: [ html div style: 'margin-top: 20px;'.
+			^ self ].
+		
 	html
 		tbsContainer: [ html
 				tbsPageHeader: [ html

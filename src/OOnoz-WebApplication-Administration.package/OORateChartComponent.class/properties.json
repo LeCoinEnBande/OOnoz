@@ -8,7 +8,7 @@
 	"instvars" : [
 		"mode",
 		"selectedTheme" ],
-	"name" : "OORepartitionChartComponent",
+	"name" : "OORateChartComponent",
 	"pools" : [
 		 ],
 	"super" : "OOAbstractStatChartComponent",

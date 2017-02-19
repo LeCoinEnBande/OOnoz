@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"mode",
-		"selectedTheme" ],
-	"name" : "OORepartitionChartComponent",
+		"selectedCol",
+		"successRate" ],
+	"name" : "OOResultChartComponent",
 	"pools" : [
 		 ],
 	"super" : "OOAbstractStatChartComponent",

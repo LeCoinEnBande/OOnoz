@@ -1,3 +1,3 @@
 accessing
 title
-	^ 'Répartition des QCMs par thèmes'
+	^ 'Répartition des QCMs'

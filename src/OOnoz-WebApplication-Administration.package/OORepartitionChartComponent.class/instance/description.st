@@ -1,3 +1,3 @@
 accessing
 description
-	^ String loremIpsum: 500
+	^ 'Cet écran vous permettra de visualiser la répartition des QCMs parmis les différents thèmes, sous thèmes et fournisseurs.'

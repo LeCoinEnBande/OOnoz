@@ -1,0 +1,3 @@
+accessing
+image
+	^ 'result.jpg'

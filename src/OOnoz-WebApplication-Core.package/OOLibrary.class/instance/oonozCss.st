@@ -29,11 +29,11 @@ background-color:rgba(244,67,54,1);
 	color: white !important;
 }
 
-#queryResult figure:hover { 
-	border: 1px solid #1abc9c;
+#queryResult figure:hover, .possibilities figure:hover { 
+	border: 2px solid #1abc9c;
  }
 
-#queryResult a figure {
+#queryResult a figure, .possibilities a figure {
     color: #0f0f0f;
 }
 
