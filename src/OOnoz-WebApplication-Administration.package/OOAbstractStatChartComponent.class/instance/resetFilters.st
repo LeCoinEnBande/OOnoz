@@ -1,0 +1,3 @@
+initialization
+resetFilters
+	self mcqFilter resetFilters
