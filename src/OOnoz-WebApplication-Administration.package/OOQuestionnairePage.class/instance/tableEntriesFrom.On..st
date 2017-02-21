@@ -9,7 +9,7 @@ tableEntriesFrom: mcq On: html
 		with: mcq printPrice ].
 	[ html tbsLabel
 		beDefault;
-		class: 'difficulty-' , mcq level asString;
+		class: 'label-difficulty-' , mcq level asString;
 		with: mcq level asString ].
 	[ | times |
 	times := (OOMCQResult selectMany: [ :result | result mcq = mcq and: [ result isFinished ] ]) size.
@@ -34,7 +34,7 @@ tableEntriesFrom: mcq On: html
 			html label
 				for: html lastId;
 				tbsTooltip: 'En attente de validation' if: (self currentUser isAdmin not and: [ mcq state = #undefined ]);
-				class: 'label-success' ] ].
+				class: 'label-primary' ] ].
 	[ html anchor
 		callback: [ (self call: (OOMCQEditionComponent mcq: mcq))
 				ifTrue: [ self message: 'QCM édité.' ] ];

@@ -3,7 +3,7 @@ renderToolbarFor: anId on: html
 	html section
 		id: anId;
 		with: [ html tbsAnchor
-				beSuccess;
+				bePrimary;
 				callback: [ (self call: OOMCQCreationComponent new)
 						ifTrue: [ self
 								message:
@@ -14,7 +14,7 @@ renderToolbarFor: anId on: html
 			self currentUser can validateMCQs
 				ifTrue: [ html space.
 					html tbsAnchor
-						beSuccess;
+						beDefault;
 						callback: [ self call: OOValidationPage new ];
 						with: [ html text: 'Validations  '.
 							html tbsBadge: (OOAbstractMCQ count: [ :m | m state = #undefined ]) ] ] ]

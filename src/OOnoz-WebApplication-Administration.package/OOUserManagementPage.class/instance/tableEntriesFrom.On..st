@@ -19,7 +19,7 @@ tableEntriesFrom: anUser On: html
 				value: anUser isActivated.
 			html label
 				for: html lastId;
-				class: 'label-success' ] ].
+				class: 'label-primary' ] ].
 	[ html anchor
 		callback: [ (self call: (OOProfileComponent user: anUser))
 				ifTrue: [ self message: 'Utilisateur édité.' ] ];

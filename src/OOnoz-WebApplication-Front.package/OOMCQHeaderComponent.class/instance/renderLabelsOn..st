@@ -17,5 +17,5 @@ renderLabelsOn: html
 	html space.
 	html tbsLabel
 		beDefault;
-		class: 'difficulty-' , self mcq level asString;
+		class: 'label-difficulty-' , self mcq level asString;
 		with: 'Niveau ' , self mcq level asString

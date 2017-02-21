@@ -9,7 +9,7 @@ tableEntriesFrom: mcq On: html
 		with: mcq printPrice ].
 	[ html tbsLabel
 		beDefault;
-		class: 'difficulty-' , mcq level asString;
+		class: 'label-difficulty-' , mcq level asString;
 		with: mcq level asString ].
 	[ html anchor
 		callback: [ (self call: (OOMCQEditionComponent mcq: mcq))
