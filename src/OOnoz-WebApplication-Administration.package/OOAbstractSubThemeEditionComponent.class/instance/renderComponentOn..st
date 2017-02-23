@@ -7,6 +7,7 @@ renderComponentOn: html
 							html render: self subThemeComponent.
 							html div
 								tbsPullRight;
+								style: 'margin: 20px;';
 								with: [ self renderButtonsOn: html.
 									html tbsButton
 										bePush;

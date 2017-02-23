@@ -4,8 +4,8 @@ renderFormContentOn: html
 		class: #'panel-body';
 		with: [ html
 				tbsRow: [ html
-						tbsColMs: 8
-						mo: 2
+						tbsColumn
+						extraSmallSize: 12;
 						with: [ html
 								tbsFormGroup: [ | group |
 									group := html radioGroup.

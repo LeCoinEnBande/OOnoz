@@ -2,6 +2,7 @@ rendering
 renderButtonsOn: html
 	html section
 		tbsPullRight;
+		style: 'margin: 20px;';
 		with: [ self currentUser isAdmin
 				ifTrue: [ html tbsButton
 						beSuccess;

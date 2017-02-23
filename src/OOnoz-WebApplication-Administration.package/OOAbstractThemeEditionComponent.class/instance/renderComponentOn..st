@@ -35,6 +35,7 @@ renderComponentOn: html
 								with: 'Ajouter un sous-thème'.
 							html div
 								tbsPullRight;
+								style: 'margin: 20px;';
 								with: [ self renderButtonsOn: html.
 									html tbsButton
 										bePush;

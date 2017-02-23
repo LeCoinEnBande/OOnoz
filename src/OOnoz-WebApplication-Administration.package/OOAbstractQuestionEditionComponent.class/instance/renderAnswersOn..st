@@ -3,9 +3,9 @@ renderAnswersOn: html
 	self question class isAbstract
 		ifTrue: [ ^ self ].
 	self question renderAnswersFrom: self on: html.
+	html tbsFormGroup: [ self renderAddAnswerButtonOn: html ].
 	html
-		tbsFormGroup: [ self renderAddAnswerButtonOn: html.
-			self question hasCorrection
+		tbsFormGroup: [ self question hasCorrection
 				ifFalse: [ html space.
 					html tbsButton
 						beInfo;

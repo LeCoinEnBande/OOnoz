@@ -2,7 +2,6 @@ rendering
 renderContentOn: html
 	self mcq isChallenge
 		ifFalse: [ ^ self ].
-	html hr.
 	html
 		tbsFormGroup: [ html
 				section: [ html heading

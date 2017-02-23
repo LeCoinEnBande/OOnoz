@@ -1,7 +1,9 @@
 rendering
 renderMCQLevelOn: html
 	html
-		tbsColumn: [ html
+		tbsColMs: 6
+		mo: 4
+		with: [ html
 				section: [ html heading
 						level3;
 						with: 'Difficulté'.
@@ -19,4 +21,3 @@ renderMCQLevelOn: html
 										attributeAt: 'data-slider-ticks-labels' put: '["1","2","3","4","5"]';
 										attributeAt: 'data-slider-step' put: '1';
 										attributeAt: 'data-slider-value' put: self mcq level asString ] ] ] ]
-		mediumSize: 6

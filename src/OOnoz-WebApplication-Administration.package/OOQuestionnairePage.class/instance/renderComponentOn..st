@@ -7,6 +7,7 @@ renderComponentOn: html
 					self renderToolbarFor: (toolbarId := #toolbar) on: html.
 					html tbsTable
 						class: #'table-no-bordered';
+						attributeAt: #'data-sort-name' put: 'true';
 						attributeAt: #'data-toggle' put: 'table';
 						attributeAt: #'data-search' put: 'true';
 						attributeAt: #'data-pagination' put: 'true';

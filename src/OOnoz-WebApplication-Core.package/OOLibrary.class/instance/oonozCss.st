@@ -4,6 +4,62 @@ oonozCss
   display: flex;	
 }
 
+.bootstrap-table .fixed-table-container{
+	border: 1px solid transparent;
+}
+
+body .bootstrap-table .table.table-no-bordered > tbody > tr > td{
+    border-right: 2px solid transparent;
+}
+
+body .bootstrap-table .table > thead > tr > th {
+    border-bottom: 2px solid #26A69A;
+}
+
+div.slider-handle{
+	background-color: #1abc9c;
+	background-image: -webkit-linear-gradient(top,#26A69A 0,#00897B 100%);
+	background-image: -o-linear-gradient(top,#26A69A 0,#00897B 100%);
+	background-image: linear-gradient(to bottom,#26A69A 0,#00897B 100%);
+}
+
+div.slider-tick.in-selection {
+	background-image: -webkit-linear-gradient(top,#26A69A 0,#00897B 100%);
+	background-image: -o-linear-gradient(top,#26A69A 0,#00897B 100%);
+	background-image: linear-gradient(to bottom,#26A69A 0,#00897B 100%);
+}
+
+div.slider-selection.tick-slider-selection {
+    background-image: -webkit-linear-gradient(top,#4DB6AC 0,#80CBC4 100%);
+    background-image: -o-linear-gradient(top,#4DB6AC 0,#80CBC4 100%);
+    background-image: linear-gradient(to bottom,#4DB6AC 0,#80CBC4 100%);
+}
+
+div.slider.slider-horizontal .slider-track {
+    height: 6px;
+    margin-top: -2px;
+}
+
+div.slider.slider-horizontal .slider-tick{
+    margin-left: 0px;
+    margin-top: 6px;
+}
+
+div.slider-tick {
+    width: 10px;
+    height: 10px;
+}
+
+div.slider.slider-horizontal .slider-handle {
+    margin-left: -5px;
+    margin-top: 3px;
+}
+
+div.slider-handle {
+    width: 16px;
+    height: 16px;
+}
+
 .panel-default>.panel-heading .badge.badge-success{
 background-color:rgba(139,195,74 ,1);
 }
