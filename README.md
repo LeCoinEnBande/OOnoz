@@ -4,6 +4,8 @@
 ####TravisCI: Linux/OSX builds
 Master: [![Build Status](https://travis-ci.org/LeCoinEnBande/OOnoz.svg?branch=master)](https://travis-ci.org/LeCoinEnBande/OOnoz) | Development: [![Build Status](https://travis-ci.org/LeCoinEnBande/OOnoz.svg?branch=development)](https://travis-ci.org/LeCoinEnBande/OOnoz)
 
+[![Test Status](https://api.bob-bench.org/v1/badgeByUrl?branch=development&hosting=github&ci=travis-ci&repo=LeCoinEnBande%2FOOnoz)](https://bob-bench.org/r/gh/LeCoinEnBande/OOnoz)
+
 ####Windows builds
 Master: [![Build status](https://ci.appveyor.com/api/projects/status/bjheqaf3kvxfjk8w/branch/master?svg=true)](https://ci.appveyor.com/project/jecisc/OOnoz/branch/master) | Latest commit: [![Build status](https://ci.appveyor.com/api/projects/status/bjheqaf3kvxfjk8w?svg=true)](https://ci.appveyor.com/project/jecisc/OOnoz)
 

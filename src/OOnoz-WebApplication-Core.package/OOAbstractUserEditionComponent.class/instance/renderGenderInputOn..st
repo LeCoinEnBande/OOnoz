@@ -3,7 +3,7 @@ renderGenderInputOn: html
 	html
 		tbsColumn: [ html
 				section: [ html heading
-						level3;
+						level5;
 						with: 'Genre de l''utilisateur'.
 					html
 						section: [ | group |

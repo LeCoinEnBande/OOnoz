@@ -11,7 +11,9 @@
 		"levels",
 		"keepInactives",
 		"keepActives",
-		"refreshScript" ],
+		"refreshScript",
+		"keepFree",
+		"keepProfitables" ],
 	"name" : "OOMCQFilter",
 	"pools" : [
 		 ],

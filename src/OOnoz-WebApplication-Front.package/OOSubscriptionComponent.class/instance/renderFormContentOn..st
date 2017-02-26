@@ -1,8 +1,7 @@
 rendering
 renderFormContentOn: html
 	html heading
-		level2;
-		class: #h5;
+		level4;
 		with: 'Informations'.
 	html
 		tbsRow: [ html

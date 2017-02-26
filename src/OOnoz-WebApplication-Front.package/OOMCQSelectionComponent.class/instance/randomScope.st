@@ -1,3 +1,3 @@
 as yet unclassified
 randomScope
-	^ OOAbstractMCQ allActivesFromSubTheme: self subtheme playableBy: self currentUser
+	^ self mcqFilter filter: (OOAbstractMCQ allActivesFromSubTheme: self subtheme playableBy: self currentUser)

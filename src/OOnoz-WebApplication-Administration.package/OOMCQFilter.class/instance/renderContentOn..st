@@ -1,9 +1,7 @@
 rendering
 renderContentOn: html
-	html heading
-		level3;
-		with: 'Filtres'.
-	html hr.
-	self renderKindOptionsOn: html.
-	self renderLevelOptionsOn: html.
-	self renderStatesOptionsOn: html
+	self
+		renderKindOptionsOn: html;
+		renderLevelOptionsOn: html;
+		renderStatesOptionsOn: html;
+		renderPriceOptionsOn: html

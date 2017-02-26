@@ -1,3 +1,0 @@
-accessing
-question
-	^ question

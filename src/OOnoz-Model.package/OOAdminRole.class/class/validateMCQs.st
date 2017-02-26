@@ -1,3 +1,0 @@
-testing
-validateMCQs
-	^ true

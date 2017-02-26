@@ -13,6 +13,8 @@ renderPostalAdresseOn: html
 								with: label.
 							html select
 								id: id;
+								class: #selectpicker;
+								attributeAt: 'data-width' put: '100%';
 								required;
 								list: self countries;
 								callback: [ :country | self user country: country ];
@@ -29,6 +31,8 @@ renderPostalAdresseOn: html
 								with: label.
 							html select
 								id: id;
+								class: #selectpicker;
+								attributeAt: 'data-width' put: '100%';
 								required;
 								list: self statesList;
 								callback: [ :state | self user state: state ];

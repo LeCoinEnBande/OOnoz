@@ -1,3 +1,0 @@
-helpers
-maxNumberOfRightAnswers
-	^ 1

@@ -1,7 +1,7 @@
 rendering
 renderSaveButtonOn: html
 	html tbsButton
-		beSuccess;
+		bePrimary;
 		beSubmit;
 		callback: [ self save ];
 		with: 'Valider'

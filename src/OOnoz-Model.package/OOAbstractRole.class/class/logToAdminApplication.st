@@ -1,3 +1,0 @@
-testing
-logToAdminApplication
-	^ self subclassResponsibility

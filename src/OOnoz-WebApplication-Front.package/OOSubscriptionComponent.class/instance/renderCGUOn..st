@@ -2,6 +2,7 @@ rendering
 renderCGUOn: html
 	html tbsFormGroup
 		class: 'checkbox';
+		style: 'text-align: left;';
 		with: [ html checkbox
 				id: html nextId;
 				value: false.

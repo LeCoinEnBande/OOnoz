@@ -1,3 +1,3 @@
 accessing
 questionKinds
-	^ OOAbstractQuestion allSubclasses select: #isQuestionKind
+	^ OOAbstractQuestion allSubclasses
