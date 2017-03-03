@@ -15,4 +15,4 @@ renderButtonsOn: html
 			html tbsAnchor
 				beDanger;
 				callback: [ self answer ];
-				with: #Annuler ]
+				with: #Retour ]

@@ -5,7 +5,7 @@ sendSubscriptionEmail
 		sendEmailTo: self user mail
 		subject: 'Inscription à OOnoz'
 		htmlBody:
-			(self emailTemplate
+			((self emailTemplate
 				copyReplaceAll: '{{{URL}}}'
 				with:
 					(String
@@ -18,4 +18,4 @@ sendSubscriptionEmail
 								<< '/OOnozValidation?key=';
 								<< self user mail;
 								<< '&value=';
-								<< self user mail hash ]))
+								<< self user mail hash ])) copyReplaceAll: '{{{USERNAME}}}' with: self user displayName)

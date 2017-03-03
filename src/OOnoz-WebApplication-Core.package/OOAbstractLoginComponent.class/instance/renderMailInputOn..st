@@ -11,6 +11,7 @@ renderMailInputOn: html
 				tbsFormControl;
 				id: id;
 				required;
+				autofocus;
 				placeholder: label;
 				callback: [ :mail | self user: (OOUser selectOne: [ :u | u isActivated and: [ u mail = mail address ] ]) ];
 				value: self user mail ]

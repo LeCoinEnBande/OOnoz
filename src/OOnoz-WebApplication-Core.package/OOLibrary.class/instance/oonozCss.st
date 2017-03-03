@@ -1,6 +1,20 @@
 javascript
 oonozCss
-	^ '
+	^ '.alert{
+	text-align: justify;	
+}
+	
+.alert-info{
+background-color: transparent;
+border-color: #5bc0de;
+color: #5bc0de;
+-moz-border-radius: 0;
+-webkit-border-radius: 0;
+border-radius: 0;
+padding: 15px;
+margin-bottom: 20px;
+}
+
 body .indicator{
   background: #00695C;
 }	

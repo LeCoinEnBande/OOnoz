@@ -1,3 +1,3 @@
 accessing
 shouldAnswer
-	^ shouldAnswer
+	^ shouldAnswer ifNil: [ false ]

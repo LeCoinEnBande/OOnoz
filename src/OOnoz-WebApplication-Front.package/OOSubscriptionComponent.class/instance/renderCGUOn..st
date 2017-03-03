@@ -1,5 +1,7 @@
 rendering
 renderCGUOn: html
+	self currentUser isAdmin ifTrue: [ ^ self ].
+	
 	html tbsFormGroup
 		class: 'checkbox';
 		style: 'text-align: left;';
@@ -13,4 +15,5 @@ renderCGUOn: html
 					html anchor
 						onClickUpdateRootDialogWith: [ :r | self renderCGUModalOn: r ];
 						with: 'conditions d''utilisation'.
-					html text: ' de OOnoz.' ] ]
+					html text: ' de OOnoz.' ] ].
+	html document addLoadScript: 'initSubscriptionForm();' js

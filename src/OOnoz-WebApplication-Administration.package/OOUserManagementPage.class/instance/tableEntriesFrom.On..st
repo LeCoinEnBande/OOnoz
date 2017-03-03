@@ -21,7 +21,7 @@ tableEntriesFrom: anUser On: html
 				for: html lastId;
 				class: 'label-primary' ] ].
 	[ html anchor
-		callback: [ (self call: (OOProfileComponent user: anUser))
+		callback: [ (self call: (OOEditUserComponent user: anUser))
 				ifTrue: [ self message: 'Utilisateur édité.' ] ];
 		with: [ html tbsGlyphIcon
 				tbsTooltip: 'Éditer';

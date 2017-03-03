@@ -1,18 +1,16 @@
-actions
+action
 emailTemplate
 	^ '<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Inscription à OOnoz</title>
+    <title>Nouveau mot de passe</title>
 </head>
 <body style="background-color: #00695C;margin:0;padding:0;">
 <div style="background-color: #FFF;display:block;margin: auto;width:80%;color:black;margin-top:100px;border-radius: 5px; padding: 30px;font-family:''Lato'', ''Helvetica Neue'',Helvetica,Arial,sans-serif;">
-    <p>Merci {{{USERNAME}}} pour votre inscription! Pour activer votre compte veuillez cliquer sur le lien suivant ou le copier coller dans
-        l''URL de votre navigateur: </p>
-    <a href="{{{URL}}}"
-       style="text-decoration: none;color:#00695C;">{{{URL}}}</a>
-
+    <p>Bonjour {{{USERNAME}}},</p>
+    <br>
+    <p>Voici votre nouveau mot de passe: {{{PASSWORD}}}.</p>
 </div>
 </body>
 </html>'

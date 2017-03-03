@@ -1,0 +1,14 @@
+{
+	"category" : "OOnoz-WebApplication-Core-Components",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "OOEditUserComponent",
+	"pools" : [
+		 ],
+	"super" : "OOProfileComponent",
+	"type" : "normal" }

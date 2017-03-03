@@ -9,5 +9,4 @@ renderContentOn: html
 								id: 'form';
 								class: #'text-center';
 								with: [ self renderFormContentOn: html.
-									self renderButtonsOn: html ] ] ] ].
-	html document addLoadScript: 'initSubscriptionForm();' js
+									self renderButtonsOn: html ] ] ] ]

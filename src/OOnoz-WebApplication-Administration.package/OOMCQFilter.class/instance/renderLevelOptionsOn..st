@@ -4,8 +4,9 @@ renderLevelOptionsOn: html
 		section: [ html heading
 				level5;
 				with: 'Difficultés'.
-			html
-				tbsFormGroup: [ html multiSelect
+			html tbsFormGroup
+				style: 'min-width: 160px;';
+				with: [ html multiSelect
 						title: 'Niveaux';
 						class: #selectpicker;
 						attributeAt: 'autocomplete' put: 'off';

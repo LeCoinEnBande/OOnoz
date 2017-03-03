@@ -8,12 +8,6 @@ sendNewPassword
 			self emailUtils
 				sendEmailTo: self user mail
 				subject: 'Nouveau mot de passe'
-				htmlBody:
-					(String
-						streamContents: [ :s | 
-							s
-								<< '<html><body>';
-								<< newPass;
-								<< '</body></html>' ]).
+				htmlBody: ((self emailTemplate copyReplaceAll: '{{{PASSWORD}}}' with: newPass) copyReplaceAll: '{{{USERNAME}}}' with: self user displayName).
 			self returnToLogin ]
 		ifFalse: [ self hasBeenValidated: true ]

@@ -10,5 +10,5 @@ renderContentOn: html
 								with: m.
 							self message: nil ].
 					html heading: 'Le slogand d''OOnoz ici'.
-					html paragraph: 'OOnoz est une plateform de QCM en ligne.'.
+					html paragraph: 'OOnoz est une plateforme de QCM en ligne.'.
 					self renderPlayButtonOn: html ] ]

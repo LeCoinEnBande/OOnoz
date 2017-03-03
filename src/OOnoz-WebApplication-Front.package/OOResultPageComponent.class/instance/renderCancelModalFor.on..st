@@ -19,7 +19,7 @@ renderCancelModalFor: id on: html
 							html
 								tbsModalFooter: [ html tbsAnchor
 										callback: [ self finish ];
-										beSuccess;
+										bePrimary;
 										with: 'Oui'.
 									html tbsButton
 										dataDismiss: 'modal';
