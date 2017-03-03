@@ -1,5 +1,7 @@
 rendering
 renderStatesOptionsOn: html
+	self shouldDisplayState ifFalse: [ ^ self ].
+	
 	html
 		section: [ html heading
 				level5;

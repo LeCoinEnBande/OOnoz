@@ -13,7 +13,8 @@
 		"keepActives",
 		"refreshScript",
 		"keepFree",
-		"keepProfitables" ],
+		"keepProfitables",
+		"shouldDisplayState" ],
 	"name" : "OOMCQFilter",
 	"pools" : [
 		 ],

@@ -2,4 +2,6 @@ rendering
 renderEmptyContentOn: html
 	html tbsRow
 		class: #'text-center';
-		with: [ html text: 'Aucun cadeau à livrer.' ]
+		with: [ html tbsAlert
+				beWarning;
+				with: 'Aucun cadeau à livrer.' ]

@@ -1,3 +1,3 @@
 actions
 cancel
-	self displayDefaultScreen 
+	self displayDefaultScreen

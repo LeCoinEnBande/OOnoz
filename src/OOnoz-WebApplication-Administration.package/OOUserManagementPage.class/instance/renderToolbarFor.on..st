@@ -3,7 +3,7 @@ renderToolbarFor: anId on: html
 	html section
 		id: anId;
 		with: [ html tbsAnchor
-				beSuccess;
-				callback: [ (self call: OOSubscriptionComponent new)
+				bePrimary;
+				callback: [ (self call: OOAddUserComponent new)
 						ifTrue: [ self message: 'L''utilisateur a bien été créé.' ] ];
 				with: 'Ajouter' ]

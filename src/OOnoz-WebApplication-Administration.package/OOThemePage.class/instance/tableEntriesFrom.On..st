@@ -23,12 +23,12 @@ tableEntriesFrom: theme On: html
 	html space.
 	html tbsGlyphIcon
 		class: #clickable;
+		style: 'color: #1abc9c;';
 		onClick:
 			((html jQuery id: #'list-subthemes') load
 				html: [ :r | 
 					self subThemesComponent: (OOSubThemeListComponent theme: theme owner: self).
 					r render: self subThemesComponent ];
-				onComplete:
-					'$("table").bootstrapTable();$("html, body").scrollTop($("#list-subthemes").offset().top);' js);
+				onComplete: '$("table").bootstrapTable();$("html, body").scrollTop($("#list-subthemes").offset().top);' js);
 		tbsTooltip: 'Afficher les sous thèmes';
 		iconList ]}

@@ -1,4 +1,5 @@
 initialization
 initialize
 	super initialize.
-	self resetFilters
+	self resetFilters.
+	shouldDisplayState := true

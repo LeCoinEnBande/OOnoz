@@ -20,16 +20,8 @@ renderUserMenuOn: html
 			html
 				tbsDropdownMenu: [ html
 						tbsDropdownMenuItem: [ html anchor
-								callback: [ self moveToPage: OOCommunitiesPage ];
-								with: 'Mes communautés' ];
-						tbsDropdownMenuItem: [ html anchor
-								callback: [ self moveToPage: OOPlayedMCQsPage ];
-								with: 'Mes questionnaires joués' ];
-						tbsDivider;
-						tbsDropdownMenuItem: [ html anchor
 								callback: [ self moveToPage: OOProfilePage ];
 								with: 'Voir mon profil' ];
-						tbsDivider;
 						tbsDropdownMenuItem: [ html anchor
 								callback: [ self moveToPage: OORechargePage ];
 								with: 'Recharger des crédits' ];

@@ -24,7 +24,12 @@ renderForSearchOf: aComponent on: html
 							html space.
 							html tbsLabel
 								bePrimary;
-								with: self class kind ].
+								with: self class kind.
+							html space.
+							(self canBePlayedBy: aComponent currentUser)
+								ifFalse: [ html tbsLabel
+										beDanger;
+										with: 'Déjà joué' ] ].
 					html
 						figureCaption: [ html heading
 								level3;
