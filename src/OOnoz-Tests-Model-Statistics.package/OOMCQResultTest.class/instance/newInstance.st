@@ -1,6 +1,6 @@
 instance creation
 newInstance
-	^ self actualClass new
+	^ (self actualClass user: OOUser new mcq: OOMCQ new)
 		finished;
 		dateBegin:
 			(DateAndTime

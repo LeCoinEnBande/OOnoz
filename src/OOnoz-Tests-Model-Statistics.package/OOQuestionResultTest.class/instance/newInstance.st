@@ -1,3 +1,3 @@
 instance creation
 newInstance
-	^ self actualClass new
+	^ self actualClass owner: Mock new question: Mock new
