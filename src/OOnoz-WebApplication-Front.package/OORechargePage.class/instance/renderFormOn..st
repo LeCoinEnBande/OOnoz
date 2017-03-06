@@ -4,7 +4,7 @@ renderFormOn: html
 		article: [ html tbsArticlePanelHeader
 				with: [ html tbsPanelTitle
 						level2;
-						with: [ html text: #Rechargement ] ].
+						with: 'Rechargement' ].
 			html
 				form: [ html section
 						class: #'panel-body';
