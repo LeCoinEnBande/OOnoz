@@ -7,7 +7,7 @@ printHtmlForElementsFrom: start to: end context: aContext on: aStream
 	aContext document: document.
 	(WAHtmlCanvas context: aContext)
 		render: [ :htmlDyn | 
-			(start <= self entitiesCached size and: [ end >= 1 ])
+			(start < self entitiesCached size and: [ end >= 1 ])
 				ifTrue: [ self entitiesCached
 						from: (start max: 1)
 						to: (end min: self entitiesCached size)

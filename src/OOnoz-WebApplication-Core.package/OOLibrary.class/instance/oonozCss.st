@@ -4,7 +4,7 @@ oonozCss
 	text-align: justify;	
 }
 	
-.alert-info{
+body .alert.alert-info{
 background-color: transparent;
 border-color: #5bc0de;
 color: #5bc0de;
@@ -13,6 +13,15 @@ color: #5bc0de;
 border-radius: 0;
 padding: 15px;
 margin-bottom: 20px;
+}
+
+body .pagination > .active > a, body .pagination > .active > a:focus, .pagination > .active > a:hover, body .pagination > .active > span, body .pagination > .active > span:focus, .pagination > .active > span:hover {
+    background-color: #1abc9c;
+    border-color: #1abc9c;
+}
+
+body .pagination > li > a, body .pagination > li > span {
+    color: #1abc9c;
 }
 
 body .indicator{

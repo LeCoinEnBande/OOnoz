@@ -1,3 +1,5 @@
 accessing
 columns
-	^ #('Titre' 'Description' 'Actions')
+	^ {('Titre' -> true).
+	('Description' -> false).
+	('Actions' -> false)}

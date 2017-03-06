@@ -1,3 +1,11 @@
 accessing
 columns
-	^ #('Nom' 'Role' 'Adresse' 'Ville' 'Région' 'Pays' 'Email' 'Actif' 'Modifier')
+	^ {('Nom' -> true).
+	('Role' -> true).
+	('Adresse' -> false).
+	('Ville' -> true).
+	('Région' -> true).
+	('Pays' -> true).
+	('Email' -> false).
+	('Actif' -> false).
+	('Modifier' -> false)}
