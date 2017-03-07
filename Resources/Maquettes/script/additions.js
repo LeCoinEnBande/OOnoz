@@ -1,6 +1,4 @@
-javascript
-oonozJs
-	^ 'function getTimeRemaining(endtime){
+function getTimeRemaining(endtime){
   return timeFor(endtime - Date.parse(new Date()));
 }
 
@@ -110,4 +108,3 @@ function initMcqSelectionScroll() {
 window.addEventListener("load", function () {
     initMcqSelectionScroll();
 });
-'

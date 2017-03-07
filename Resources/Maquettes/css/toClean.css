@@ -1,6 +1,4 @@
-javascript
-oonozCss
-	^ '.alert{
+.alert{
 	text-align: justify;	
 }
 	
@@ -201,4 +199,4 @@ background-color:rgba(244,67,54,1);
 
 .chartJsChart{
 	width: 100%;
-}'
+}
