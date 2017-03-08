@@ -12,6 +12,5 @@ activate
 		protectConfigByPassword;
 		protectToolsByPassword;
 		removeDevToolbar;
-		useExceptionCatcherDiv;
 		setAsDefault.
 	Smalltalk snapshot: true andQuit: true
