@@ -1,0 +1,28 @@
+@import "compass";
+
+@import "../modules/all";
+
+.navbar
+{
+  border: 0;
+}
+
+.navbar-default
+{
+  background-color: transparent;
+
+  //!!DEBUG
+  margin: 40px;
+}
+
+.navbar-default .navbar-nav>li>a
+{
+  color: $default-color;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover
+{
+  background-color: transparent;
+  color: $primary-color;
+  //border-bottom: 1px solid $primary-color;
+}

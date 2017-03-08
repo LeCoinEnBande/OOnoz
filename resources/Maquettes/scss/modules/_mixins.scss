@@ -1,0 +1,20 @@
+//Panel mixin
+@mixin panel-heading($background-color)
+{
+  background-color: $background-color;
+}
+
+//Button
+@mixin button($background-color)
+{
+  background-color: $background-color;
+  border-color: $background-color;
+  color: $base-shade1;
+}
+
+@mixin  alert($color)
+{
+  background-color: transparent;
+  border-color: $color;
+  color: $color;
+}

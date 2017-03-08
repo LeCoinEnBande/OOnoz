@@ -1,0 +1,69 @@
+@import "compass";
+
+@import "../modules/all";
+
+.navbar
+{
+  height: $main-navbar-height;
+  border-bottom: 0;
+  padding-top: ($main-navbar-height - $main-line-height) / 2;
+  padding-bottom: ($main-navbar-height - $main-line-height) / 2;
+}
+
+.navbar-default
+{
+  background-color: transparent;
+}
+
+.navbar.shrink
+{
+  height: $main-line-height * 3;
+  border-bottom: 1px solid;
+  padding-top: $main-line-height;
+  padding-bottom: $main-line-height;
+}
+
+.navbar.navbar-default.shrink
+{
+  background-color: $base-shade1;
+  border-color: $base-shade2;
+}
+
+.navbar.shrink .navbar-nav>li>a
+{
+  //border-bottom: 0;
+}
+
+.navbar-brand
+{
+  padding: 0;
+}
+
+
+.nav>li>a
+{
+  padding: 0;
+}
+
+.nav>li
+{
+  padding: 0 15px;
+}
+
+.navbar-nav>li>a
+{
+  padding-top: 0 ;
+  padding-bottom: 0;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover
+{
+  color: $inverse-shade1;
+  background-color: transparent;
+  border-bottom: $main-border-thickness solid $primary-shade1;
+}
+
+.navbar-default .navbar-nav>li>a
+{
+  color: $inverse-shade1;
+}

@@ -1,0 +1,24 @@
+@import "partials/base";
+
+//Third party libraries
+//Already compiled CSS, no need to use the SCSS file
+@import "vendor/awesome-bootstrap-checkbox.css";
+
+//Please add module to alphabetical order, thx :)
+@import "partials/alerts";
+@import "partials/buttons";
+@import "partials/dropdowns";
+@import "partials/figures";
+@import "partials/forms";
+@import "partials/footer";
+@import "partials/helpers";
+@import "partials/jumbotron";
+@import "partials/label";
+@import "partials/list";
+@import "partials/navbars";
+@import "partials/panels";
+@import "partials/tables";
+@import "partials/tiles";
+@import "partials/typography";
+@import "partials/wizard";
+

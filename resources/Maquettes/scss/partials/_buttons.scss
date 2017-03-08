@@ -1,0 +1,64 @@
+@import "compass";
+
+@import "../modules/all";
+
+.btn
+{
+  @include border-radius($main-border-radius);
+}
+
+.btn-primary
+{
+  @include button($primary-shade1);
+}
+
+.btn-primary:hover, .btn-primary:focus
+{
+  @include button($primary-shade2);
+}
+
+.btn-primary.active, .btn-primary:active, .open>.dropdown-toggle.btn-primary, .btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover
+{
+  @include button($primary-shade3)
+}
+
+.btn-danger
+{
+  @include button($danger-shade1);
+}
+
+.btn-danger:hover, .btn-danger:focus
+{
+  @include button($danger-shade2);
+}
+
+.btn-danger.active, .btn-danger:active, .open>.dropdown-toggle.btn-danger, .btn-danger.active.focus, .btn-danger.active:focus, .btn-danger.active:hover, .btn-danger:active.focus, .btn-danger:active:focus, .btn-danger:active:hover, .open>.dropdown-toggle.btn-danger.focus, .open>.dropdown-toggle.btn-danger:focus, .open>.dropdown-toggle.btn-danger:hover
+{
+  @include button($danger-shade3)
+}
+
+.btn-warning
+{
+  @include button($warning-shade1);
+}
+
+.btn-warning:hover, .btn-warning:focus
+{
+  @include button($warning-shade2);
+}
+
+.btn-warning.active, .btn-warning:active, .open>.dropdown-toggle.btn-warning, .btn-warning.active.focus, .btn-warning.active:focus, .btn-warning.active:hover, .btn-warning:active.focus, .btn-warning:active:focus, .btn-warning:active:hover, .open>.dropdown-toggle.btn-warning.focus, .open>.dropdown-toggle.btn-warning:focus, .open>.dropdown-toggle.btn-warning:hover
+{
+  @include button($warning-shade3);
+}
+
+//Navigation button
+.btn-top
+{
+  //!! DEBUG ONLY
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display:none;
+}

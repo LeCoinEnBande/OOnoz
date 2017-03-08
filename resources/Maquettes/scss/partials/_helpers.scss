@@ -1,0 +1,42 @@
+@import "compass";
+
+@import "../modules/all";
+
+.page-header
+{
+  border-bottom: 0;
+}
+
+.indicator .breadcrumb>.active
+{
+  color: $base-shade1;
+}
+
+.indicator .breadcrumb li>a
+{
+  color: $base-shade1;
+}
+
+.mcq-indicator-1
+{
+  background: image_url("http://placekitten.com/g/1920/1000") repeat;
+}
+
+.breadcrumb
+{
+  @include border-radius();
+  background-color: transparent;
+  margin-bottom: $second-margin;
+  margin-top: $second-margin;
+}
+
+.breadcrumb>li+li:before
+{
+  color: $base-shade1;
+  //content: "\003A";
+}
+
+.no-padding
+{
+  padding: 0;
+}
