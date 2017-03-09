@@ -37,6 +37,9 @@
 .navbar-brand
 {
   padding: 0;
+
+  //@Refactor
+  padding-left: 15px;
 }
 
 
@@ -66,4 +69,23 @@
 .navbar-default .navbar-nav>li>a
 {
   color: $inverse-shade1;
+}
+
+.navbar-toggle
+{
+  //@Refactor
+  margin-top: -5px;
+  //@include button($primary-shade1);
+}
+
+.navbar-collapse.in, .navbar-collapse.collapsing
+{
+  background: $base-shade1;
+  position: relative;
+
+  //Refactor
+  top: -10px;
+
+  border-top: 0;
+  border-bottom: $second-border-thickness solid $base-shade2;
 }
