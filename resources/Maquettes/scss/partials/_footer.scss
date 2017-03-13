@@ -6,10 +6,16 @@
 {
   padding-top: $second-margin;
   padding-bottom: $second-margin;
+  margin-top: $second-margin;
 }
 
 .footer-inverse
 {
   background: $inverse-shade1;
   color: $base-shade1;
+}
+
+.footer-inverse a 
+{
+    color: $base-shade1;
 }

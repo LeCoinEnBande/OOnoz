@@ -9,7 +9,7 @@ body
 
 *:focus
 {
-  //DEBUG CAUSE ITS POSSIBLE BAD
+  //@Refactor
   outline: none;
   @include box-shadow(none);
 }
