@@ -1,7 +1,3 @@
 dependencies
 mocketry: spec
-	spec
-		configuration: 'Mocketry'
-		with: [ spec
-				version: #stable;
-				repository: 'http://smalltalkhub.com/mc/dionisiy/Mocketry/main' ]
+	spec baseline: 'Mocketry' with: [ spec repository: 'github://dionisiydk/Mocketry:v4.0.x' ]
