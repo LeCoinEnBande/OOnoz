@@ -1,7 +1,3 @@
 dependencies
 bootstrap: spec
-	spec
-		configuration: 'Bootstrap'
-		with: [ spec
-				version: #stable;
-				repository: 'http://smalltalkhub.com/mc/TorstenBergmann/Bootstrap/main' ]
+	spec baseline: 'Bootstrap' with: [ spec repository: 'github://astares/Seaside-Bootstrap:0.18.0/src' ]
