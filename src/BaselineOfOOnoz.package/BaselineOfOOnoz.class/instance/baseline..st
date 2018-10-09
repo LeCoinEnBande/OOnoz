@@ -25,7 +25,7 @@ baseline: spec
 				package: 'OOnoz-WebApplication-Core' with: [ spec requires: #('OOnoz-Model' 'OOnoz-Model-Statistics' 'OOnoz-Server' 'Bootstrap') ];
 				package: 'OOnoz-WebApplication-Administration' with: [ spec requires: #('OOnoz-WebApplication-Core' 'ChartJs') ];
 				package: 'OOnoz-WebApplication-Front' with: [ spec requires: #('OOnoz-WebApplication-Core') ];
-				package: 'OOnoz-Development' with: [ spec requires: #('Model' 'Tests' 'UI' 'STON') ].
+				package: 'OOnoz-Development' with: [ spec requires: #('Model' 'Tests' 'UI') ].
 				
 			"Groups"
 			spec
