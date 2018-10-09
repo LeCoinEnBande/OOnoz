@@ -4,6 +4,9 @@ baseline: spec
 	spec
 		for: #common
 		do: [ 
+			
+			spec postLoadDoIt: #hackForMetacelloBug.
+			
 			"Dependencies"
 			self
 				ston: spec;
