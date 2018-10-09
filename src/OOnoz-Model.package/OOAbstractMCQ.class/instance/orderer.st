@@ -1,3 +1,0 @@
-accessing
-orderer
-	^ self subclassResponsibility

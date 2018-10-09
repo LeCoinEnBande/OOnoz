@@ -1,3 +1,0 @@
-tests
-testCipher
-	self assert: user password equals: '4976621c376e7e64ec2f4937201a470bb4cfa06b89e109d13d354f45bbe8ddec'

@@ -1,3 +1,0 @@
-magicNumbers
-maxNumberOfRightAnswers
-	^ 1

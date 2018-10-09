@@ -1,3 +1,0 @@
-tests
-testOrder
-	self subclassResponsibility 

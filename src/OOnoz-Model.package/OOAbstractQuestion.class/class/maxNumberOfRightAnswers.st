@@ -1,3 +1,0 @@
-magicNumbers
-maxNumberOfRightAnswers
-	^ self subclassResponsibility

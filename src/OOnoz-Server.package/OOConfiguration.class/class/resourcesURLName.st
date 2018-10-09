@@ -1,3 +1,0 @@
-magicNumbers
-resourcesURLName
-	^ 'resources'

@@ -1,3 +1,0 @@
-magicNumbers
-minimumNumberOfQuestions
-	^ self maximumNumberOfQuestions

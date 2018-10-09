@@ -1,3 +1,0 @@
-accessing
-defaultConfigurationFileName
-	^ 'configurationServer.ston'

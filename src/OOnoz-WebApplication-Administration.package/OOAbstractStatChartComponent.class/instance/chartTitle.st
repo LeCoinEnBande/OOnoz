@@ -1,3 +1,0 @@
-accessing
-chartTitle
-	^ self subclassResponsibility 

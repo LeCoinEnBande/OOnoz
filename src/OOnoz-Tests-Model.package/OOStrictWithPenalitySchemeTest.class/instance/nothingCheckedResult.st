@@ -1,3 +1,0 @@
-helpers
-nothingCheckedResult
-	^ -1

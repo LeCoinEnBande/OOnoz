@@ -1,3 +1,0 @@
-accessing
-questionKinds
-	^ OOAbstractQuestion allSubclasses

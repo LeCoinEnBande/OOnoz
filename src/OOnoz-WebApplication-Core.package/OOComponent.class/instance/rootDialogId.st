@@ -1,3 +1,0 @@
-conveniance
-rootDialogId
-	^ #'root-dialog'

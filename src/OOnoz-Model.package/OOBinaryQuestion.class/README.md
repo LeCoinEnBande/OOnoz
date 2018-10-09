@@ -1,1 +1,0 @@
-I am a question with only two choices. Only one of those two choices is right. 

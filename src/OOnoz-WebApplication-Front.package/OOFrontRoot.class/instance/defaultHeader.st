@@ -1,3 +1,0 @@
-components
-defaultHeader
-	^ OOFrontHeader new

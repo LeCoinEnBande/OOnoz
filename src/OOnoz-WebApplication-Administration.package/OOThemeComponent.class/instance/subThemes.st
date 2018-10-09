@@ -1,3 +1,0 @@
-accessing
-subThemes
-	^ subThemes

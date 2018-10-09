@@ -1,3 +1,0 @@
-testing
-checkDisponibility
-	^ self subclassResponsibility 

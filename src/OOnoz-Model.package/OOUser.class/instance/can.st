@@ -1,3 +1,0 @@
-testing
-can
-	^ self role

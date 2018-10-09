@@ -1,5 +1,0 @@
-testing
-hasExplanation
-	"Hook"
-
-	^ true

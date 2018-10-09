@@ -1,3 +1,0 @@
-helpers
-allWrongResult
-	^ -1

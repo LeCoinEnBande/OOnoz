@@ -1,3 +1,0 @@
-accessing
-breadcrumpLabel
-	^ self subclassResponsibility

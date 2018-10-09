@@ -1,3 +1,0 @@
-testing
-isLogged
-	^ false

@@ -1,1 +1,0 @@
-I am a concrete explanation of an OOQuestion

@@ -1,3 +1,0 @@
-testing
-isUser
-	^ false

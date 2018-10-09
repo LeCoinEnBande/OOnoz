@@ -1,1 +1,0 @@
-OOEmailUtil sendEmailTo: 'cyril.ferlicot@gmail.com' subject: 'Inscription' htmlBody: '<html><head></head><body>This is html.</body></html>'

@@ -1,3 +1,0 @@
-accessing
-maxNumberOfRightAnswers
-	^ self questionClass maxNumberOfRightAnswers

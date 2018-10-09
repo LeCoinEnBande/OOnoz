@@ -1,3 +1,0 @@
-memento
-createMemento
-	^ self copy

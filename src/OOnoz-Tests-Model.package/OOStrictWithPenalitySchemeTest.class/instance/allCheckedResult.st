@@ -1,3 +1,0 @@
-helpers
-allCheckedResult
-	^ -1

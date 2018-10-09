@@ -1,3 +1,0 @@
-validation
-validateMCQ
-	self subclassResponsibility

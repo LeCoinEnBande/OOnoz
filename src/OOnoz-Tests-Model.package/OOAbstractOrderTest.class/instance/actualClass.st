@@ -1,3 +1,0 @@
-accessing
-actualClass
-	^ self subclassResponsibility 

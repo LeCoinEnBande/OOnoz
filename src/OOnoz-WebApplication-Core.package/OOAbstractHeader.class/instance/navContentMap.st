@@ -1,3 +1,0 @@
-accessing
-navContentMap
-	^ self subclassResponsibility

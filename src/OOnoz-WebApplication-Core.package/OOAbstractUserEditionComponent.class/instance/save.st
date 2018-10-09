@@ -1,3 +1,0 @@
-actions
-save
-	self subclassResponsibility 

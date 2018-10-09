@@ -1,3 +1,0 @@
-components
-defaultHeader
-	^ self subclassResponsibility

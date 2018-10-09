@@ -1,1 +1,0 @@
-I am the class which represent a user.

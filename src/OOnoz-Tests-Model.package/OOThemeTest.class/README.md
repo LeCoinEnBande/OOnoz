@@ -1,1 +1,0 @@
-An OOThemeTest is a test class for testing the behavior of OOTheme

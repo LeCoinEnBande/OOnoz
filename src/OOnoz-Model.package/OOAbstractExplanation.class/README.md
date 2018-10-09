@@ -1,1 +1,0 @@
-I am an abstract explanation of a question.

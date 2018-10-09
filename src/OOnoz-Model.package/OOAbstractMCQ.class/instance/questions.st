@@ -1,3 +1,0 @@
-accessing
-questions
-	^ self subclassResponsibility

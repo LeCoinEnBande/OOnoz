@@ -1,3 +1,0 @@
-STON
-stonName
-	^ #Configuration

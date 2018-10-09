@@ -1,3 +1,0 @@
-initialization
-displayDefaultScreen
-	self setInstanceOf: OOStatisticsPage

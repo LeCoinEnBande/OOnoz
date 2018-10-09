@@ -1,3 +1,0 @@
-helpers
-minNumberOfRightAnswers
-	^ self subclassResponsibility

@@ -1,3 +1,0 @@
-accessing
-successRate
-	^ successRate

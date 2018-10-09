@@ -1,3 +1,0 @@
-accessing
-image
-	^ 'result.jpg'

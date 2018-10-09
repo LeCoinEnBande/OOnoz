@@ -1,3 +1,0 @@
-accessing
-backgroundPath
- ^ self subclassResponsibility 
