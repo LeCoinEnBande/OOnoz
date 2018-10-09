@@ -7,7 +7,6 @@ baseline: spec
 			"Dependencies"
 			self
 				ston: spec;
-				seaside3: spec;
 				bootstrap: spec;
 				voyage: spec;
 				chartJs: spec;
@@ -20,7 +19,7 @@ baseline: spec
 				package: 'OOnoz-Tests-Model' with: [ spec requires: #('OOnoz-Model' 'Mocketry') ];
 				package: 'OOnoz-Tests-Model-Statistics' with: [ spec requires: #('OOnoz-Model-Statistics' 'Mocketry') ];
 				package: 'OOnoz-Server';
-				package: 'OOnoz-WebApplication-Core' with: [ spec requires: #('Seaside3' 'OOnoz-Model' 'OOnoz-Model-Statistics' 'OOnoz-Server' 'Bootstrap') ];
+				package: 'OOnoz-WebApplication-Core' with: [ spec requires: #('OOnoz-Model' 'OOnoz-Model-Statistics' 'OOnoz-Server' 'Bootstrap') ];
 				package: 'OOnoz-WebApplication-Administration' with: [ spec requires: #('OOnoz-WebApplication-Core' 'ChartJs') ];
 				package: 'OOnoz-WebApplication-Front' with: [ spec requires: #('OOnoz-WebApplication-Core') ];
 				package: 'OOnoz-Development' with: [ spec requires: #('Model' 'Tests' 'UI' 'STON') ].
