@@ -1,4 +1,0 @@
-helpers
-generateThemes
-	OOInstancesGenerator generateThemes
-
