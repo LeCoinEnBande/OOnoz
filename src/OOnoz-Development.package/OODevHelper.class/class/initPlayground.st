@@ -3,7 +3,6 @@ initPlayground
 	<script>
 	GTPlayground
 		openContents:
-			'OODevHelper 
-	installGitFileTree;
+			'OODevHelper
 	defaultServerLaunching;
 	setupMemoryDB.'

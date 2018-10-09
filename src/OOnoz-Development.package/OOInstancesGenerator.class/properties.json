@@ -1,14 +1,13 @@
 {
-	"category" : "OOnoz-Development",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		"Lorem" ],
 	"commentStamp" : "",
-	"instvars" : [
-		 ],
-	"name" : "OOInstancesGenerator",
-	"pools" : [
-		 ],
 	"super" : "OOObject",
-	"type" : "normal" }
+	"category" : "OOnoz-Development",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"Lorem"
+	],
+	"instvars" : [ ],
+	"name" : "OOInstancesGenerator",
+	"type" : "normal"
+}
