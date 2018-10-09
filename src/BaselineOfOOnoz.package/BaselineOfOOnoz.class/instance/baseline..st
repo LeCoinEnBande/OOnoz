@@ -9,7 +9,6 @@ baseline: spec
 			
 			"Dependencies"
 			self
-				ston: spec;
 				bootstrap: spec;
 				voyage: spec;
 				chartJs: spec;
