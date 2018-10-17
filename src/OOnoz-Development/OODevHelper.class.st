@@ -6,7 +6,7 @@ I am a design pattern Interface.
 Class {
 	#name : #OODevHelper,
 	#superclass : #OOObject,
-	#category : 'OOnoz-Development'
+	#category : #'OOnoz-Development'
 }
 
 { #category : #db }

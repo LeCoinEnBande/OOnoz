@@ -9,18 +9,17 @@ BaselineOfOOnoz >> baseline: spec [
 	<baseline>
 	spec
 		for: #common
-		do: [ 
-			
-			spec postLoadDoIt: #hackForMetacelloBug.
-			
+		do: [ spec postLoadDoIt: #hackForMetacelloBug.
+
 			"Dependencies"
 			self
 				bootstrap: spec;
 				voyage: spec;
 				chartJs: spec;
-				mocketry: spec.
-			
-			"Packages"	
+				mocketry: spec;
+				spec: spec.
+
+			"Packages"
 			spec
 				package: 'OOnoz-Model' with: [ spec requires: #('Voyage') ];
 				package: 'OOnoz-Model-Statistics' with: [ spec requires: #('OOnoz-Model') ];
@@ -30,8 +29,8 @@ BaselineOfOOnoz >> baseline: spec [
 				package: 'OOnoz-WebApplication-Core' with: [ spec requires: #('OOnoz-Model' 'OOnoz-Model-Statistics' 'OOnoz-Server' 'Bootstrap') ];
 				package: 'OOnoz-WebApplication-Administration' with: [ spec requires: #('OOnoz-WebApplication-Core' 'ChartJs') ];
 				package: 'OOnoz-WebApplication-Front' with: [ spec requires: #('OOnoz-WebApplication-Core') ];
-				package: 'OOnoz-Development' with: [ spec requires: #('Model' 'Tests' 'UI') ].
-				
+				package: 'OOnoz-Development' with: [ spec requires: #('Model' 'Tests' 'UI' 'Spec') ].
+
 			"Groups"
 			spec
 				group: 'Model' with: #('OOnoz-Model' 'OOnoz-Model-Statistics');
@@ -76,6 +75,11 @@ BaselineOfOOnoz >> projectClass [
 		on: NotFound
 		do: [ super projectClass ]
 
+]
+
+{ #category : #dependencies }
+BaselineOfOOnoz >> spec: spec [
+	spec baseline: 'Spec' with: [ spec repository: 'github://pharo-spec/Spec/src' ]
 ]
 
 { #category : #dependencies }
