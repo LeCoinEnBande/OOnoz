@@ -9,15 +9,17 @@ BaselineOfOOnoz >> baseline: spec [
 	<baseline>
 	spec
 		for: #common
-		do: [ spec postLoadDoIt: #hackForMetacelloBug.
+		do: [
+			spec
+				preLoadDoIt: #loadSpec;
+				postLoadDoIt: #hackForMetacelloBug.
 
 			"Dependencies"
 			self
 				bootstrap: spec;
 				voyage: spec;
 				chartJs: spec;
-				mocketry: spec;
-				spec: spec.
+				mocketry: spec.
 
 			"Packages"
 			spec
@@ -29,7 +31,7 @@ BaselineOfOOnoz >> baseline: spec [
 				package: 'OOnoz-WebApplication-Core' with: [ spec requires: #('OOnoz-Model' 'OOnoz-Model-Statistics' 'OOnoz-Server' 'Bootstrap') ];
 				package: 'OOnoz-WebApplication-Administration' with: [ spec requires: #('OOnoz-WebApplication-Core' 'ChartJs') ];
 				package: 'OOnoz-WebApplication-Front' with: [ spec requires: #('OOnoz-WebApplication-Core') ];
-				package: 'OOnoz-Development' with: [ spec requires: #('Model' 'Tests' 'UI' 'Spec') ].
+				package: 'OOnoz-Development' with: [ spec requires: #('Model' 'Tests' 'UI') ].
 
 			"Groups"
 			spec
@@ -64,6 +66,21 @@ BaselineOfOOnoz >> hackForMetacelloBug [
 		load: 'core'
 ]
 
+{ #category : #hack }
+BaselineOfOOnoz >> loadSpec [
+	"Since Spec is in Pharo but also in its own repo, I cannot just depend on Spec or else it will mess up things. For now, I'll just force load Spec in a preload."
+
+	Metacello new
+		githubUser: 'pharo-spec'
+			project: 'Spec'
+			commitish: 'master'
+			path: 'src';
+		baseline: 'Spec';
+		onConflict: [ :e | e useIncoming ];
+		onWarningLog;
+		load
+]
+
 { #category : #dependencies }
 BaselineOfOOnoz >> mocketry: spec [
 	spec baseline: 'Mocketry' with: [ spec repository: 'github://dionisiydk/Mocketry:v4.0.x' ]
@@ -75,11 +92,6 @@ BaselineOfOOnoz >> projectClass [
 		on: NotFound
 		do: [ super projectClass ]
 
-]
-
-{ #category : #dependencies }
-BaselineOfOOnoz >> spec: spec [
-	spec baseline: 'Spec' with: [ spec repository: 'github://pharo-spec/Spec/src' ]
 ]
 
 { #category : #dependencies }
