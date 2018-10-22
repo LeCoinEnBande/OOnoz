@@ -7,11 +7,6 @@ environment:
   SCI_RUN: /cygdrive/c/smalltalkCI-master/run.sh
   matrix:
     - SMALLTALK: Pharo-7.0
-    - SMALLTALK: Pharo-6.1
-    
-matrix:
-  allow_failures:
-    - SMALLTALK: Pharo-7.0
 
 platform:
   - x86
