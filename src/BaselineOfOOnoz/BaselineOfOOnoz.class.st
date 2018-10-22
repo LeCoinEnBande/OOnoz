@@ -10,16 +10,15 @@ BaselineOfOOnoz >> baseline: spec [
 	spec
 		for: #common
 		do: [
-			spec
-				preLoadDoIt: #loadSpec;
-				postLoadDoIt: #hackForMetacelloBug.
+			spec postLoadDoIt: #hackForMetacelloBug.
 
 			"Dependencies"
 			self
 				bootstrap: spec;
 				voyage: spec;
 				chartJs: spec;
-				mocketry: spec.
+				mocketry: spec;
+				spec: spec.
 
 			"Packages"
 			spec
@@ -31,7 +30,7 @@ BaselineOfOOnoz >> baseline: spec [
 				package: 'OOnoz-WebApplication-Core' with: [ spec requires: #('OOnoz-Model' 'OOnoz-Model-Statistics' 'OOnoz-Server' 'Bootstrap') ];
 				package: 'OOnoz-WebApplication-Administration' with: [ spec requires: #('OOnoz-WebApplication-Core' 'ChartJs') ];
 				package: 'OOnoz-WebApplication-Front' with: [ spec requires: #('OOnoz-WebApplication-Core') ];
-				package: 'OOnoz-Development' with: [ spec requires: #('Model' 'Tests' 'UI') ].
+				package: 'OOnoz-Development' with: [ spec requires: #('Model' 'Tests' 'UI' 'Spec') ].
 
 			"Groups"
 			spec
@@ -87,6 +86,11 @@ BaselineOfOOnoz >> projectClass [
 		on: NotFound
 		do: [ super projectClass ]
 
+]
+
+{ #category : #dependencies }
+BaselineOfOOnoz >> spec: spec [
+	spec baseline: 'Spec' with: [ spec repository: 'github://jecisc/Spec:85-make-spec-load-in-non-interactive-alternative/src' ]
 ]
 
 { #category : #dependencies }
