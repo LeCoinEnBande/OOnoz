@@ -65,16 +65,6 @@ BaselineOfOOnoz >> hackForMetacelloBug [
 		load: 'core'
 ]
 
-{ #category : #hack }
-BaselineOfOOnoz >> loadSpec [
-	"Since Spec is in Pharo but also in its own repo, I cannot just depend on Spec or else it will mess up things. For now, I'll just force load Spec in a preload."
-	 
-	Metacello new
-		githubUser: 'jecisc' project: 'Spec' commitish: '85-make-spec-load-in-non-interactive-alternative' path: 'src';
-		baseline: 'Spec';
-		load
-]
-
 { #category : #dependencies }
 BaselineOfOOnoz >> mocketry: spec [
 	spec baseline: 'Mocketry' with: [ spec repository: 'github://dionisiydk/Mocketry:v4.0.x' ]
@@ -90,7 +80,7 @@ BaselineOfOOnoz >> projectClass [
 
 { #category : #dependencies }
 BaselineOfOOnoz >> spec: spec [
-	spec baseline: 'Spec' with: [ spec repository: 'github://jecisc/Spec:85-make-spec-load-in-non-interactive-alternative/src' ]
+	spec baseline: 'Spec' with: [ spec repository: 'github://pharo-spec/Spec:master/src' ]
 ]
 
 { #category : #dependencies }
