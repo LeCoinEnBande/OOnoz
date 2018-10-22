@@ -69,10 +69,9 @@ BaselineOfOOnoz >> hackForMetacelloBug [
 { #category : #hack }
 BaselineOfOOnoz >> loadSpec [
 	"Since Spec is in Pharo but also in its own repo, I cannot just depend on Spec or else it will mess up things. For now, I'll just force load Spec in a preload."
-	RPackageOrganizer default packages select: [ :e | e name beginsWith: 'Spec-' ] thenDo: #removeFromSystem.
 	 
 	Metacello new
-		githubUser: 'pharo-spec' project: 'Spec' commitish: 'master' path: 'src';
+		githubUser: 'jecisc' project: 'Spec' commitish: '85-make-spec-load-in-non-interactive-alternative' path: 'src';
 		baseline: 'Spec';
 		load
 ]
