@@ -65,7 +65,11 @@ OODevHelper class >> initPlayground [
 		openContents:
 			'OODevHelper
 	defaultServerLaunching;
-	setupMemoryDB.'
+	setupMemoryDB.
+	
+	
+	
+	OOConfigurerPresenter open'
 ]
 
 { #category : #db }

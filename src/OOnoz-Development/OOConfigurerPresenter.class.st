@@ -6,8 +6,7 @@ Class {
 		'validationBlock',
 		'portLabel',
 		'portInput',
-		'emailLabel',
-		'emailInput'
+		'emailPresenter'
 	],
 	#category : #'OOnoz-Development-Configuration'
 }
@@ -17,11 +16,7 @@ OOConfigurerPresenter class >> defaultSpec [
 	^ SpecLayout composed
 		newColumn: [ :col | 
 			col
-				newRow: [ :row | 
-					row
-						add: #emailLabel width: self oonozLabelWidth;
-						add: #emailInput ]
-					height: self inputTextHeight;
+				newRow: [ :r | r add: #emailPresenter ] height: self labelledPresenterHeight;
 				addSpacer ]
 ]
 
@@ -36,6 +31,17 @@ OOConfigurerPresenter class >> title [
 	^ 'Configuration wizard'
 ]
 
+{ #category : #specs }
+OOConfigurerPresenter class >> worldMenuEntryOn: aBuilder [
+	<worldMenu>
+	(aBuilder item: #Configurer)
+		order: 10.0;
+		label: 'Configurer';
+		iconName: 'smallWindow';
+		action: [ self open ];
+		withSeparatorAfter
+]
+
 { #category : #accessing }
 OOConfigurerPresenter >> configuration [
 	^ configuration
@@ -47,23 +53,13 @@ OOConfigurerPresenter >> configuration: anObject [
 ]
 
 { #category : #accessing }
-OOConfigurerPresenter >> emailInput [
-	^ emailInput
+OOConfigurerPresenter >> emailPresenter [
+	^ emailPresenter
 ]
 
-{ #category : #accessing }
-OOConfigurerPresenter >> emailInput: anObject [
-	emailInput := anObject
-]
-
-{ #category : #accessing }
-OOConfigurerPresenter >> emailLabel [
-	^ emailLabel
-]
-
-{ #category : #accessing }
-OOConfigurerPresenter >> emailLabel: anObject [
-	emailLabel := anObject
+{ #category : #specs }
+OOConfigurerPresenter >> extent [ 
+	^ 500 @ 400
 ]
 
 { #category : #initialization }
@@ -74,12 +70,7 @@ OOConfigurerPresenter >> initialize [
 
 { #category : #initialization }
 OOConfigurerPresenter >> initializeWidgets [
-	emailLabel := self newLabel.
-	emailInput := self newTextInput.
-	portLabel := self newLabel.
-	portInput := self newTextInput.
-	
-	emailLabel label: 'Email'.
+	emailPresenter := self instantiate: (LabelledPresenter label: 'Email' input: self newTextInput description: 'Email adress to use to send activation and informations emails.')
 ]
 
 { #category : #accessing }
